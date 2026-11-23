@@ -1,0 +1,9 @@
+{
+  "equipo1": "CENTRAL PADEL A",
+  "equipo2": "UD BAGATAZO 2008",
+  "partidos": [
+    { "partido": 1, "pareja1": ["MARCO REMOLINA PABLO", "ALEX BLANCO SOLLET"], "pareja2": ["CARLOS EUGENIO BARRERA", "JOEL JESUS FERNANDEZ MUÑOZ"], "sets": [{ "e1": 7, "e2": 6 }, { "e1": 6, "e2": 2 }], "obs1": null, "obs2": null },
+    { "partido": 2, "pareja1": ["RAMON CAMARENA GOMEZ", "JAVIER MENA MORENO"], "pareja2": ["JAVIER ELOY PEREZ PEREZ", "OSCAR DOMINGUEZ MONTES DE OCA"], "sets": [{ "e1": 6, "e2": 3 }, { "e1": 2, "e2": 6 }, { "e1": 1, "e2": 0 }], "obs1": "Abandono", "obs2": null },
+    { "partido": 3, "pareja1": ["JORGE RUIZ GUTIERREZ", "CRISTIAN GERMAN GUTIERREZ GUTIERREZ"], "pareja2": ["CANDIDO JORGE ALFARO", "IÑIGO JOFRE MANZANARES"], "sets": [{ "e1": 6, "e2": 1 }, { "e1": 6, "e2": 2 }], "obs1": null, "obs2": null }
+  ]
+}

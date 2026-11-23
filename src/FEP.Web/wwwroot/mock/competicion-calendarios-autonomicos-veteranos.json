@@ -1,0 +1,407 @@
+{
+    "categoria":  "veteranos",
+    "titulo":  "Calendario de veteranos de las federaciones territoriales",
+    "temporada":  2026,
+    "actualizado":  "2026-10-07",
+    "ranking":  "Ranking de Veteranos FEP",
+    "maximoPruebasPorFederacion":  4,
+    "introduccion":  [
+                         "El Reglamento Técnico General de la FEP (RTG) permite a las federaciones autonómicas incluir hasta 4 pruebas de veteranos como puntuables para el Ranking de Veteranos FEP (punto 3.9.1.1 del RTG). Las características de dichas pruebas se presentan en el punto 3.9.1.3 del RTG."
+                     ],
+    "actualizacionesRanking":  null,
+    "participacion":  "La participación de todos los deportistas con licencia emitida por cualquier federación autonómica es libre en todas las pruebas que se incluyen en este calendario, a excepción de aquellas pruebas que otorgan los títulos de campeones regionales. En ese caso deberá consultarse a la federación autonómica acerca de los criterios de participación.",
+    "leyenda":  "Pruebas incluidas actualmente en el Ranking de Veteranos FEP.",
+    "federaciones":  [
+                         {
+                             "clave":  "andalucia",
+                             "idFederacion":  6,
+                             "territorio":  "Andalucía",
+                             "nombre":  "Federación Andaluza de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 16 al 22 de marzo",
+                                                 "fechaInicio":  "2026-03-16",
+                                                 "fechaFin":  "2026-03-22",
+                                                 "nombre":  "CAMPEONATO DE ANDALUCÍA DE VETERANOS - VET 2000 35*",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 14 al 20 de septiembre",
+                                                 "fechaInicio":  "2026-09-14",
+                                                 "fechaFin":  "2026-09-20",
+                                                 "nombre":  "5ª PRUEBA CIRCUITO ANDALUZ DE VETERANOS - VET 1600 30*",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 28 de septiembre al 4 de octubre",
+                                                 "fechaInicio":  "2026-09-28",
+                                                 "fechaFin":  "2026-10-04",
+                                                 "nombre":  "6ª PRUEBA CIRCUITO ANDALUZ DE VETERANOS - VET 1600 30*",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "aragon",
+                             "idFederacion":  11,
+                             "territorio":  "Aragón",
+                             "nombre":  "Federación Aragonesa de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 23 al 29 de marzo",
+                                                 "fechaInicio":  "2026-03-23",
+                                                 "fechaFin":  "2026-03-29",
+                                                 "nombre":  "CIRCUITO DE VETERANOS 2",
+                                                 "sede":  "REGAL PADEL CLUB",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 13 al 19 de abril",
+                                                 "fechaInicio":  "2026-04-13",
+                                                 "fechaFin":  "2026-04-19",
+                                                 "nombre":  "CTO. DE ARAGÓN POR PAREJAS VETERANOS +35 +45 +55",
+                                                 "sede":  "CLUB DE TENIS OSCA",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 9 al 15 de noviembre",
+                                                 "fechaInicio":  "2026-11-09",
+                                                 "fechaFin":  "2026-11-15",
+                                                 "nombre":  "CIRCUITO DE VETERANOS 5",
+                                                 "sede":  "MONTECANAL CENTRO DEPORTIVO",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  false,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "canarias",
+                             "idFederacion":  18,
+                             "territorio":  "Canarias",
+                             "nombre":  "Federación Canaria de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 10 al 12 de abril",
+                                                 "fechaInicio":  "2026-04-10",
+                                                 "fechaFin":  "2026-04-12",
+                                                 "nombre":  "CAMPEONATO DE CANARIAS DE VETERANOS 2026",
+                                                 "sede":  "Puertito de Guimar (Tenerife). 2.000 € en premios",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "cantabria",
+                             "idFederacion":  13,
+                             "territorio":  "Cantabria",
+                             "nombre":  "Federación Cántabra de Pádel",
+                             "pruebas":  [
+
+                                         ]
+                         },
+                         {
+                             "clave":  "cataluna",
+                             "idFederacion":  2,
+                             "territorio":  "Cataluña",
+                             "nombre":  "Federació Catalana de Pàdel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 18 al 25 de octubre",
+                                                 "fechaInicio":  "2026-10-18",
+                                                 "fechaFin":  "2026-10-25",
+                                                 "nombre":  "Campionat de Catalunya Veterans",
+                                                 "sede":  "CT Barcino",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  false,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "castilla-la-mancha",
+                             "idFederacion":  22,
+                             "territorio":  "Castilla-La Mancha",
+                             "nombre":  "Federación de Pádel de Castilla-La Mancha",
+                             "pruebas":  [
+
+                                         ]
+                         },
+                         {
+                             "clave":  "castilla-y-leon",
+                             "idFederacion":  21,
+                             "territorio":  "Castilla y León",
+                             "nombre":  "Federación de Pádel de Castilla y León",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 4 al 6 de septiembre",
+                                                 "fechaInicio":  "2026-09-04",
+                                                 "fechaFin":  "2026-09-06",
+                                                 "nombre":  "PUNTUABLE VETERANOS FEP. FERIAS Y FIESTAS VALLADOLID",
+                                                 "sede":  "CLUB RAQUETA (Valladolid)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 7 al 8 de noviembre",
+                                                 "fechaInicio":  "2026-11-07",
+                                                 "fechaFin":  "2026-11-08",
+                                                 "nombre":  "PUNTUABLE VETERANOS FEP. CAMPEONATO CASTILLA Y LEÓN",
+                                                 "sede":  "VALLADOLID",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  false,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "comunidad-valenciana",
+                             "idFederacion":  14,
+                             "territorio":  "Comunidad Valenciana",
+                             "nombre":  "Federación de Pádel de la Comunitat Valenciana",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "23 de octubre",
+                                                 "fechaInicio":  "2026-10-23",
+                                                 "fechaFin":  "2026-10-23",
+                                                 "nombre":  "CAMPEONATO AUTONÓMICO VETERANOS PAREJAS",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  false,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "murcia",
+                             "idFederacion":  15,
+                             "territorio":  "Región de Murcia",
+                             "nombre":  "Federación de Pádel de la Región de Murcia",
+                             "pruebas":  [
+
+                                         ]
+                         },
+                         {
+                             "clave":  "baleares",
+                             "idFederacion":  17,
+                             "territorio":  "Baleares",
+                             "nombre":  "Federación de Pádel de les Illes Balears",
+                             "pruebas":  [
+
+                                         ]
+                         },
+                         {
+                             "clave":  "asturias",
+                             "idFederacion":  7,
+                             "territorio":  "Principado de Asturias",
+                             "nombre":  "Federación de Pádel del Principado de Asturias",
+                             "pruebas":  [
+
+                                         ]
+                         },
+                         {
+                             "clave":  "extremadura",
+                             "idFederacion":  12,
+                             "territorio":  "Extremadura",
+                             "nombre":  "Federación Extremeña de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "18 de abril",
+                                                 "fechaInicio":  "2026-04-18",
+                                                 "fechaFin":  "2026-04-18",
+                                                 "nombre":  "3ª PRUEBA CIRCUITO DIPUTACIÓN DE BADAJOZ 2026",
+                                                 "sede":  "BADAJOZ",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 28 al 29 de noviembre",
+                                                 "fechaInicio":  "2026-11-28",
+                                                 "fechaFin":  "2026-11-29",
+                                                 "nombre":  "CAMP. EXTREMADURA DE VETERANOS 2026",
+                                                 "sede":  "BADAJOZ",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  false,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "galicia",
+                             "idFederacion":  8,
+                             "territorio":  "Galicia",
+                             "nombre":  "Federación Gallega de Pádel",
+                             "pruebas":  [
+
+                                         ]
+                         },
+                         {
+                             "clave":  "madrid",
+                             "idFederacion":  1,
+                             "territorio":  "Comunidad de Madrid",
+                             "nombre":  "Federación Madrileña de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 10 al 12 de abril",
+                                                 "fechaInicio":  "2026-04-10",
+                                                 "fechaFin":  "2026-04-12",
+                                                 "nombre":  "III PRUEBA CIRCUITO VETERANOS BULLPADEL",
+                                                 "sede":  "Parque Deportivo Puerta de Hierro",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 8 al 10 de mayo",
+                                                 "fechaInicio":  "2026-05-08",
+                                                 "fechaFin":  "2026-05-10",
+                                                 "nombre":  "IV PRUEBA CIRCUITO VETERANOS BULLPADEL",
+                                                 "sede":  "Parque Deportivo Puerta de Hierro",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 5 al 7 de septiembre",
+                                                 "fechaInicio":  "2026-09-05",
+                                                 "fechaFin":  "2026-09-07",
+                                                 "nombre":  "V PRUEBA CIRCUITO VETERANOS BULLPADEL",
+                                                 "sede":  "Sede sin determinar",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 5 al 11 de octubre",
+                                                 "fechaInicio":  "2026-10-05",
+                                                 "fechaFin":  "2026-10-11",
+                                                 "nombre":  "CAMPEONATO DE MADRID DE VETERANOS POR PAREJAS",
+                                                 "sede":  "Sede sin determinar",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  false,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "melilla",
+                             "idFederacion":  9,
+                             "territorio":  "Melilla",
+                             "nombre":  "Federación Melillense de Pádel",
+                             "pruebas":  [
+
+                                         ]
+                         },
+                         {
+                             "clave":  "navarra",
+                             "idFederacion":  10,
+                             "territorio":  "Navarra",
+                             "nombre":  "Federación Navarra de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 1 al 8 de noviembre",
+                                                 "fechaInicio":  "2026-11-01",
+                                                 "fechaFin":  "2026-11-08",
+                                                 "nombre":  "3ª Prueba Circuito Navarro de Veteranos 2026 - Trofeo Asador Mutiloa (Campeonato Navarro por Parejas)",
+                                                 "sede":  "La Bandeja Pádel Club (Mutilva)",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  false,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 11 al 13 de diciembre",
+                                                 "fechaInicio":  "2026-12-11",
+                                                 "fechaFin":  "2026-12-13",
+                                                 "nombre":  "Máster Navarro de Veteranos +40 y +50 y Veteranas +35 y +45 2026",
+                                                 "sede":  "Pistas Universidad Pública de Navarra (UPNA)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  false,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "pais-vasco",
+                             "idFederacion":  3,
+                             "territorio":  "País Vasco",
+                             "nombre":  "Federación Vasca de Pádel",
+                             "pruebas":  [
+
+                                         ]
+                         }
+                     ]
+}

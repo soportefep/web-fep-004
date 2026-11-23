@@ -1,0 +1,246 @@
+{
+    "torneo":  {
+                   "id":  30120,
+                   "titulo":  "CIRCUITO DE VETERANOS 2 (GUIPÚZCOA)",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2026-10-02",
+                   "fechaFin":  "2026-10-04",
+                   "lugar":  "Donostia/San Sebastián"
+               },
+    "genero":  "M",
+    "categoria":  "Cat50",
+    "nivel":  1,
+    "cuadro":  "Final",
+    "publicado":  true,
+    "notas":  null,
+    "formato":  "eliminatoria",
+    "plantilla":  "Cuadro8",
+    "participantes":  [
+                          {
+                              "avance":  3,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "G. FERNANDEZ-MIRANDA MANCISIDOR - J. URDIAIN SOLANO",
+                              "jugadores":  [
+                                                "G. FERNANDEZ-MIRANDA MANCISIDOR",
+                                                "J. URDIAIN SOLANO"
+                                            ],
+                              "cabezaSerie":  2
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "J. MONREAL ARRUFAT - A. GARCIA RODRIGUEZ-MANZANEQUE",
+                              "jugadores":  [
+                                                "J. MONREAL ARRUFAT",
+                                                "A. GARCIA RODRIGUEZ-MANZANEQUE"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "A. GONZALEZ HUBERTY - F. ORDOÑEZ BUSTELO",
+                              "jugadores":  [
+                                                "A. GONZALEZ HUBERTY",
+                                                "F. ORDOÑEZ BUSTELO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "O. MARTIN GUINART - C. MARTIN GARCIA",
+                              "jugadores":  [
+                                                "O. MARTIN GUINART",
+                                                "C. MARTIN GARCIA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "A. RON ARRIBAS - J. GARCIA-ARINO GARCIA",
+                              "jugadores":  [
+                                                "A. RON ARRIBAS",
+                                                "J. GARCIA-ARINO GARCIA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "A. LERGA GURPEGUI - I. TORRES ZALBA",
+                              "jugadores":  [
+                                                "A. LERGA GURPEGUI",
+                                                "I. TORRES ZALBA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "J. GARCIA-ARIÑO GARCIA - J. GAJATE MARTIN",
+                              "jugadores":  [
+                                                "J. GARCIA-ARIÑO GARCIA",
+                                                "J. GAJATE MARTIN"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "R. REVILLA GARCIA - F. GARCIA MURGA",
+                              "jugadores":  [
+                                                "R. REVILLA GARCIA",
+                                                "F. GARCIA MURGA"
+                                            ],
+                              "cabezaSerie":  1
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "G. FERNANDEZ-MIRANDA MANCISIDOR - J. URDIAIN SOLANO",
+                              "jugadores":  [
+                                                "G. FERNANDEZ-MIRANDA MANCISIDOR",
+                                                "J. URDIAIN SOLANO"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "A. GONZALEZ HUBERTY - F. ORDOÑEZ BUSTELO",
+                              "jugadores":  [
+                                                "A. GONZALEZ HUBERTY",
+                                                "F. ORDOÑEZ BUSTELO"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "A. RON ARRIBAS - J. GARCIA-ARINO GARCIA",
+                              "jugadores":  [
+                                                "A. RON ARRIBAS",
+                                                "J. GARCIA-ARINO GARCIA"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "R. REVILLA GARCIA - F. GARCIA MURGA",
+                              "jugadores":  [
+                                                "R. REVILLA GARCIA",
+                                                "F. GARCIA MURGA"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "A. GONZALEZ HUBERTY - F. ORDOÑEZ BUSTELO",
+                              "jugadores":  [
+                                                "A. GONZALEZ HUBERTY",
+                                                "F. ORDOÑEZ BUSTELO"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "A. RON ARRIBAS - J. GARCIA-ARINO GARCIA",
+                              "jugadores":  [
+                                                "A. RON ARRIBAS",
+                                                "J. GARCIA-ARINO GARCIA"
+                                            ]
+                          },
+                          {
+                              "avance":  0,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "A. GONZALEZ HUBERTY - F. ORDOÑEZ BUSTELO",
+                              "jugadores":  [
+                                                "A. GONZALEZ HUBERTY",
+                                                "F. ORDOÑEZ BUSTELO"
+                                            ]
+                          }
+                      ],
+    "partidos":  [
+                     {
+                         "avance":  3,
+                         "posicion":  1,
+                         "resultado":  "2/6-6/3-11/9",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  2,
+                         "resultado":  "6/2-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  3,
+                         "resultado":  "6/3-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  4,
+                         "resultado":  "6/1-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  1,
+                         "resultado":  "6/3-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  2,
+                         "resultado":  "6/3-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  1,
+                         "posicion":  1,
+                         "resultado":  "6/3-3/6-10/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     }
+                 ],
+    "cabezasSerie":  [
+                         {
+                             "cabezaSerie":  1,
+                             "nombre":  "R. REVILLA GARCIA/F. GARCIA MURGA",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  2,
+                             "nombre":  "G. FERNANDEZ-MIRANDA MANCISIDOR/J. URDIAIN SOLANO",
+                             "puntos":  null
+                         }
+                     ],
+    "clasificacion":  [
+
+                      ],
+    "otrosCuadros":  [
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         }
+                     ]
+}

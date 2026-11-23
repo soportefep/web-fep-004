@@ -1,0 +1,338 @@
+{
+    "id":  28714,
+    "anio":  2026,
+    "titulo":  "CAMPEONATO DE ESPAÑA DE VETERANOS 2026",
+    "categoria":  "veteranos",
+    "seleccion":  false,
+    "fechaInicio":  "2026-06-26",
+    "fechaFin":  "2026-06-28",
+    "ciudad":  "San Pedro de Alcántara",
+    "sedes":  [
+                  {
+                      "nombre":  "NUEVA ALCÁNTARA CLUB",
+                      "web":  null,
+                      "latitud":  null,
+                      "longitud":  null
+                  }
+              ],
+    "cuotas":  [
+                   23
+               ],
+    "generos":  [
+                    {
+                        "genero":  "masculino",
+                        "categorias":  [
+                                           "Cat35",
+                                           "Cat40",
+                                           "Cat45",
+                                           "Cat50",
+                                           "Cat55",
+                                           "Cat60"
+                                       ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categorias":  [
+                                           "Cat35",
+                                           "Cat40",
+                                           "Cat45",
+                                           "Cat50",
+                                           "Cat55"
+                                       ]
+                    },
+                    {
+                        "genero":  "mixto",
+                        "categorias":  [
+                                           "Cat40",
+                                           "Cat55"
+                                       ]
+                    }
+                ],
+    "notaPrensaHtml":  null,
+    "marcadores":  [
+
+                   ],
+    "cuadrosPublicados":  true,
+    "cuadros":  [
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "Cat35",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=M\u0026Nivel=1\u0026Cat=Cat35\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "Cat40",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=M\u0026Nivel=1\u0026Cat=Cat40\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "Cat45",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=M\u0026Nivel=1\u0026Cat=Cat45\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=M\u0026Nivel=1\u0026Cat=Cat45\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "Cat50",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=M\u0026Nivel=1\u0026Cat=Cat50\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=M\u0026Nivel=1\u0026Cat=Cat50\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "Cat55",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=M\u0026Nivel=1\u0026Cat=Cat55\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=M\u0026Nivel=1\u0026Cat=Cat55\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "Cat60",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=M\u0026Nivel=1\u0026Cat=Cat60\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=M\u0026Nivel=1\u0026Cat=Cat60\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "Cat35",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=F\u0026Nivel=1\u0026Cat=Cat35\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=F\u0026Nivel=1\u0026Cat=Cat35\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "Cat40",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=F\u0026Nivel=1\u0026Cat=Cat40\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=F\u0026Nivel=1\u0026Cat=Cat40\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "Cat45",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=F\u0026Nivel=1\u0026Cat=Cat45\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=F\u0026Nivel=1\u0026Cat=Cat45\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "Cat50",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=F\u0026Nivel=1\u0026Cat=Cat50\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=F\u0026Nivel=1\u0026Cat=Cat50\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "Cat55",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=F\u0026Nivel=1\u0026Cat=Cat55\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "mixto",
+                        "categoria":  "Cat40",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=X\u0026Nivel=1\u0026Cat=Cat40\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "mixto",
+                        "categoria":  "Cat55",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28714\u0026Genero=X\u0026Nivel=1\u0026Cat=Cat55\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    }
+                ],
+    "cuadroHonor":  [
+
+                    ],
+    "notificacionesHtml":  "\u003cbr\u003e\r\n                       \u003cp\u003e\r\n\t\u003cstrong\u003eINSCRIPCI\u0026Oacute;N ABIERTA: CAMPEONATO DE ESPA\u0026Ntilde;A DE VETERANOS 2026\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\tEl Campeonato de Espa\u0026ntilde;a de Veteranos abre sus puertas el fin de semana del 26 al 28 de junio en las instalaciones del NUEVA ALC\u0026Aacute;NTARA CLUB, en San Pedro de Alc\u0026aacute;ntara (M\u0026aacute;laga).\u003c/p\u003e\r\n\u003cp\u003e\r\n\tSe convocan todas las categor\u0026iacute;as de veteranos en sus tres modalidades (masculino, femenino y mixto): +35, +40, +45, +50, +55 y +60\u003c/p\u003e\r\n\u003cp\u003e\r\n\tLos jugadores podr\u0026aacute;n inscribirse en su categor\u0026iacute;a (masculina o femenina) y adem\u0026aacute;s en la mixta.\u003c/p\u003e\r\n\u003cp\u003e\r\n\tINFORMACI\u0026Oacute;N EN\u0026nbsp;CIRCULAR 08.2026-SG.\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cbr\u003e\r\n                       \r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\r\n\r\n                        \u003chr class=\"prl-article-divider\"\u003e",
+    "adjuntos":  [
+                     {
+                         "titulo":  "CLUB NUEVA ALCÁNTARA",
+                         "tipo":  null,
+                         "archivo":  "WhatsApp Video 2026-06-10 at 11.25.30.mp4",
+                         "url":  "https://www.padelfederacion.es/Paginas/Torneos/2026/WhatsApp%20Video%202026-06-10%20at%2011.25.30.mp4"
+                     },
+                     {
+                         "titulo":  "CIRCULAR 08.2026-SG",
+                         "tipo":  null,
+                         "archivo":  "CIRCULAR 08.2026-SG.pdf",
+                         "url":  "https://www.padelfederacion.es/Paginas/Torneos/2026/CIRCULAR%2008.2026-SG.pdf"
+                     }
+                 ],
+    "inscritosParejas":  [
+                             {
+                                 "genero":  "masculino",
+                                 "parejas":  88,
+                                 "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=M\u0026id=28714"
+                             },
+                             {
+                                 "genero":  "femenino",
+                                 "parejas":  29,
+                                 "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=F\u0026id=28714"
+                             },
+                             {
+                                 "genero":  "mixto",
+                                 "parejas":  12,
+                                 "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=X\u0026id=28714"
+                             }
+                         ],
+    "entrenadores":  {
+                         "numero":  8,
+                         "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=C\u0026id=28714"
+                     },
+    "inscripcion":  {
+                        "abierta":  false,
+                        "fechaLimite":  null,
+                        "individual":  false,
+                        "informacionHtml":  null,
+                        "condicionesHtml":  null,
+                        "formularioUrl":  "https://www.padelfederacion.es/Camp_Parejas_Veteranos.asp?IdTorneo=28714"
+                    },
+    "infoAdicionalHtml":  null,
+    "cartel":  null,
+    "cartelUrl":  null,
+    "noticias":  [
+
+                 ],
+    "urlWebActual":  "https://www.padelfederacion.es/Camp_Parejas_Veteranos.asp?IdTorneo=28714",
+    "consultado":  "2026-11-17T18:35:30"
+}

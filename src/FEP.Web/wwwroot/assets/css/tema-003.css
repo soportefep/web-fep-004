@@ -1,0 +1,225 @@
+/* =========================================================================
+   FEP · Prototipo 003 — Tema "Editorial deportivo"
+   Capa de diseño que se carga DESPUÉS de fep.css en todas las páginas.
+   No cambia el HTML ni el JS comunes: redefine tokens y restiliza barra
+   superior, cabecera, botones, cabeceras de página interiores y pie.
+   - Blanco y negro de alto contraste, filetes finos, esquinas rectas.
+   - Archivo variable: titulares condensados en mayúsculas, texto normal.
+   - Rojo FEP como color principal y azul pista como segundo acento.
+   ========================================================================= */
+
+:root {
+  --ink: #0A0A0A;
+  --ink-2: #1C1C1C;
+  --blue: #0038E0;
+  --blue-dark: #002BB0;
+  --red: #E4002B;
+  --red-dark: #B80022;
+  --red-soft: #FFE8EC;
+  --paper: #F2F2EF;
+
+  /* Tokens heredados de fep.css reasignados al nuevo tema */
+  --navy: var(--ink);
+  --navy-2: var(--ink-2);
+  --gray-bg: var(--paper);
+  --gray-chip: #EDEDEA;
+  --line: #D9D9D5;
+  --text: #0A0A0A;
+  --text-2: #5F5F5A;
+  --text-3: #33332F;
+  --on-dark: #CFCFCA;
+  --on-dark-2: #9A9A94;
+
+  --radius-sm: 0;
+  --radius: 0;
+  --radius-lg: 0;
+
+  --font: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+}
+
+body { font-stretch: 100%; letter-spacing: -.005em; }
+::selection { background: var(--red); color: #fff; }
+
+/* ---------- Titulares: condensados y en mayúsculas ---------- */
+.h2, .page-hero__title, .hero__title, .ranking__title, .ed-display {
+  font-family: var(--font); font-stretch: 68%; font-weight: 800; text-transform: uppercase;
+  letter-spacing: -.01em; line-height: .92;
+}
+.h2 { font-size: clamp(38px, 4.6vw, 64px); }
+
+.eyebrow {
+  font-size: 12px; font-weight: 700; letter-spacing: .14em; color: var(--ink);
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.eyebrow:not(.eyebrow--line)::before { content: ""; width: 22px; height: 3px; background: var(--red); flex: none; }
+.eyebrow--line::before { width: 22px; height: 3px; background: var(--red); }
+.tag-red { letter-spacing: .1em; }
+.link-red { text-transform: uppercase; letter-spacing: .08em; font-size: 12px; font-weight: 800; }
+
+/* ---------- Botones: rectos, en mayúsculas ---------- */
+.btn { border-radius: 0; text-transform: uppercase; letter-spacing: .08em; font-weight: 800; font-size: 12.5px; }
+.btn--sm { height: 36px; padding: 0 14px; font-size: 11.5px; }
+.btn--lg { height: 54px; padding: 0 26px; }
+.btn--outline { border: 2px solid var(--ink); color: var(--ink); background: #fff; }
+.btn--outline:hover { background: var(--ink); color: #fff; }
+.btn--blue { background: var(--blue); color: #fff; }
+.btn--blue:hover { background: var(--blue-dark); }
+.btn--white { background: #fff; color: var(--ink); }
+.btn--white:hover { background: var(--red); color: #fff; }
+.btn--line-white { border: 2px solid #fff; color: #fff; background: transparent; }
+.btn--line-white:hover { background: #fff; color: var(--ink); }
+.chip, .subnav__btn, .subnav__list a { border-radius: 0 !important; }
+
+/* ---------- Barra superior: negra ---------- */
+.topbar { background: var(--ink); color: var(--on-dark); }
+.topbar__extranet { border-radius: 0; border-color: rgba(255, 255, 255, .5); }
+.topbar__links .topbar__extranet:hover { background: var(--red); border-color: var(--red); }
+.fed-strip__flag { border-radius: 0; }
+
+/* ---------- Cabecera: blanca, filete negro grueso ---------- */
+.header { border-bottom: 3px solid var(--ink); }
+.header.is-scrolled { border-bottom-color: var(--ink); box-shadow: none; }
+.header__inner { height: 84px; }
+.header__logo::before { width: 8px; height: 100%; top: 0; transform: none; left: 0; }
+.header__logo { padding-left: 20px; }
+.header__logo img { height: 58px; }
+.nav__link {
+  height: 84px; padding: 0 14px; font-stretch: 75%; font-size: 17px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .02em;
+}
+.nav__item.has-sub > .nav__link { padding-right: 4px; }
+.nav__link:hover, .nav__item.is-open > .nav__link { color: var(--red); }
+.nav__item.is-current > .nav__link { color: var(--ink); box-shadow: inset 0 -6px 0 var(--red); }
+.nav__toggle { border-radius: 0; border-color: var(--ink); color: var(--ink); }
+.nav__item.is-open > .nav__toggle { background: var(--red); border-color: var(--red); }
+/* Desplegable negro: lleva borde blanco para que se distinga cuando se abre sobre fondos
+   oscuros (la portada negra o el carrusel), y un filete negro exterior para verse también sobre blanco. */
+.nav__sub {
+  top: calc(100% + 3px); border-radius: 0; border: 2px solid #fff; border-top: 6px solid var(--red);
+  background: var(--ink); box-shadow: 0 0 0 1px var(--ink), 0 24px 48px rgba(0, 0, 0, .45);
+}
+.nav__sub-head { border-bottom-color: rgba(255, 255, 255, .15); }
+.nav__sub-title { color: #fff; font-stretch: 75%; font-size: 18px; text-transform: uppercase; }
+.nav__sub-count { color: var(--on-dark-2); }
+.nav__burger-icon span { background: var(--red); }
+.nav__sub-group { color: var(--red); }
+.nav__sub--mega .nav__sub-col + .nav__sub-col { border-left-color: rgba(255, 255, 255, .12); }
+.nav__sub-list a { color: var(--on-dark); border-radius: 0; }
+.nav__sub-list a:hover, .nav__sub-list a:focus-visible { background: var(--red); color: #fff; }
+.nav__sub-list a:hover .nav__sub-arrow, .nav__sub-list a:focus-visible .nav__sub-arrow { color: #fff; }
+.nav__sub :focus-visible { outline-color: #fff; }
+.header__search-btn { border-radius: 0; width: 44px; height: 44px; border: 2px solid var(--ink); }
+.header__search-btn:hover { background: var(--ink); color: #fff; }
+.header__actions .acceso { height: 44px; }
+
+.search { background: var(--ink); border-top: 0; }
+.search__form input { border-radius: 0; border: 0; height: 48px; }
+.search__form .btn { height: 48px; }
+
+@media (max-width: 1439px) {
+  .nav__link { padding: 0 10px; font-size: 16px; }
+}
+@media (max-width: 1279px) {
+  .header__inner { height: 72px; }
+  .header__logo img { height: 50px; }
+  .header__burger { background: var(--ink); width: 48px; height: 48px; }
+  .header__burger-bar, .header__burger-bar::before, .header__burger-bar::after { background: #fff; }
+  .nav-panel { border-left: 8px solid var(--red); }
+  .nav__link, .nav__item.has-sub > .nav__link { height: 60px; font-size: 24px; }
+  .nav__item.is-current > .nav__link { box-shadow: none; color: var(--red); }
+  .nav__sub { background: #fff; border: 0; border-left: 3px solid var(--red); box-shadow: none; }
+  .nav__sub-list a { color: var(--text-3); }
+  .nav__sub :focus-visible { outline-color: var(--red); }
+  .nav-panel__quick a { background: var(--ink); text-transform: uppercase; font-stretch: 75%; font-weight: 800; letter-spacing: .04em; }
+  .nav-panel__quick a:hover, .nav-panel__quick a:focus-visible { background: var(--red); }
+}
+@media (max-width: 640px) {
+  .header__inner { height: 64px; }
+  .header__logo { padding-left: 12px; }
+  .header__logo::before { width: 5px; }
+  .header__logo img { height: 42px; }
+  .header__burger { width: 44px; height: 44px; }
+}
+
+/* ---------- Cabecera de páginas interiores ---------- */
+.page-hero {
+  position: relative; overflow: hidden; isolation: isolate;
+  background: var(--ink); padding: 40px 0 56px; border-bottom: 10px solid var(--red);
+}
+/* Bloque diagonal azul pista a la derecha */
+.page-hero::after {
+  content: ""; position: absolute; z-index: -1; top: 0; bottom: 0; right: 0; width: 34%;
+  background: var(--blue); clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 100%); opacity: .9;
+}
+.page-hero__title { font-size: clamp(40px, 5.2vw, 80px); margin-top: 18px; max-width: 22ch; text-wrap: balance; }
+/* El contenido no debe pisar la franja diagonal azul de la derecha */
+@media (min-width: 861px) { .page-hero > .container { padding-right: calc(34% + 24px); } }
+.page-hero .eyebrow--line { color: #fff; }
+.page-hero__lead { color: var(--on-dark); }
+.page-hero__stats strong { font-stretch: 70%; font-size: 34px; color: #fff; }
+.page-hero__stats li { border-left: 3px solid var(--red); padding-left: 10px; }
+@media (max-width: 860px) {
+  .page-hero::after { width: 22%; opacity: .7; }
+}
+
+.subnav { border-bottom: 2px solid var(--ink); }
+
+/* Patrocinadores */
+.patro-tile { border-radius: 0; }
+
+/* ---------- Pie ---------- */
+.footer { background: var(--ink); border-top: 10px solid var(--red); padding-top: 0; overflow: hidden; }
+/* Gran rótulo en contorno que abre el pie */
+.footer::before {
+  content: "Somos pádel"; display: block; white-space: nowrap;
+  padding: 72px var(--gutter) 8px; margin-bottom: 40px; border-bottom: 1px solid rgba(255, 255, 255, .15);
+  font-stretch: 62%; font-weight: 900; text-transform: uppercase; line-height: .82; letter-spacing: -.01em;
+  font-size: clamp(80px, 17vw, 260px); color: transparent; -webkit-text-stroke: 2px rgba(255, 255, 255, .55);
+}
+.footer__logo { border-radius: 0; }
+.footer__col h2 { font-stretch: 75%; font-size: 15px; text-transform: uppercase; letter-spacing: .06em; color: #fff; }
+.footer__col h2::before { content: ""; display: block; width: 22px; height: 3px; margin-bottom: 12px; background: var(--red); }
+.footer__col a { font-size: 13.5px; }
+.footer__social-link { border-radius: 0; }
+.footer__social-link:hover, .footer__social-link:focus-visible { background: var(--red); border-color: var(--red); }
+
+.volver-arriba { border-radius: 0; }
+
+/* Móviles muy estrechos (≤ 400 px): la cabecera no cabía y el botón del menú quedaba cortado */
+@media (max-width: 400px) {
+  .header__inner { gap: 6px; }
+  .header__logo { padding-left: 10px; }
+  .header__logo img { height: 34px; }
+  .header__actions { gap: 4px; }
+  .header__search-btn, .header__actions .acceso { width: 38px; height: 38px; padding: 0; }
+  .header__burger { width: 40px; height: 40px; }
+}
+
+/* =========================================================================
+   Páginas interiores: ajustes de maquetación (revisión de campeonato-equipos.html)
+   ========================================================================= */
+/* Listas con clase (componentes): sin la sangría por defecto del navegador, que las descuadraba */
+.page-content ol[class], .page-content ul[class] { margin: 0; padding-left: 0; list-style: none; }
+
+/* Títulos de sección con la tipografía del tema */
+.org-group__title, .cpe-section__title {
+  font-stretch: 72%; font-weight: 800; text-transform: uppercase; letter-spacing: 0;
+  font-size: clamp(26px, 2.4vw, 34px); line-height: 1;
+}
+.page-note__title { font-stretch: 75%; font-weight: 800; text-transform: uppercase; font-size: 18px; }
+
+/* Patrocinadores: esquinas rectas como el resto del tema */
+.patro-tile, .patro-nivel--principales .patro-tile { border-radius: 0 !important; }
+
+/* Tablas de contenido enriquecido (reglamentos, resultados…) */
+.ms-table-wrap { border: 0; border-top: 3px solid var(--ink); border-radius: 0; }
+.ms-table { font-size: 14px; }
+.ms-table th, .ms-table td { padding: 8px 12px; }
+.ms-table td:first-child { width: 72px; font-stretch: 78%; font-weight: 800; }
+.ms-table tbody tr:nth-child(even) td { background: var(--paper); }
+/* Fila de una sola celda = título de bloque (p. ej. "JUNIOR 1ª") */
+.ms-table tr:has(> td:only-child) td, .ms-table tr:has(> td[colspan]) td {
+  background: var(--ink) !important; color: #fff; font-stretch: 75%; font-weight: 800; font-size: 16px;
+  letter-spacing: .04em; text-transform: uppercase; padding-block: 10px;
+}

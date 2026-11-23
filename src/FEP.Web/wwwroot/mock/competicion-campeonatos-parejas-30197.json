@@ -1,0 +1,71 @@
+{
+    "id":  30197,
+    "anio":  2026,
+    "titulo":  "📢CANCELADO  ❌ CIRCUITO DE VETERANOS 3 (cÓRDOBA)",
+    "categoria":  "veteranos",
+    "seleccion":  false,
+    "fechaInicio":  "2026-10-30",
+    "fechaFin":  "2026-11-01",
+    "ciudad":  "Córdoba",
+    "sedes":  [
+                  {
+                      "nombre":  "Club de Pádel Arruzafa",
+                      "web":  null,
+                      "latitud":  null,
+                      "longitud":  null
+                  }
+              ],
+    "cuotas":  [
+                   23
+               ],
+    "generos":  [
+
+                ],
+    "notaPrensaHtml":  null,
+    "marcadores":  [
+
+                   ],
+    "cuadrosPublicados":  false,
+    "cuadros":  [
+
+                ],
+    "cuadroHonor":  [
+
+                    ],
+    "notificacionesHtml":  "\u003cbr\u003e\r\n                       \u003cp\u003e\r\n\t\u003cspan style=\"color:#0000ff;\"\u003e\u003cspan style=\"font-size:20px;\"\u003e\u003cstrong\u003eCANCELADO POR FALTA DE INSCRIPCI\u0026Oacute;N \u003c/strong\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cspan style=\"color:#0000ff;\"\u003e\u003cspan style=\"font-size:20px;\"\u003e\u003cstrong\u003eSE PROCEDER\u0026Aacute; A LA DEVOLUCI\u0026Oacute;N DEL IMPORTE DE LA INSCRIPCI\u0026Oacute;N\u003c/strong\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\r\n\u003cbr\u003e\r\n                       \r\n                        \u003chr class=\"prl-article-divider\"\u003e",
+    "adjuntos":  [
+
+                 ],
+    "inscritosParejas":  [
+                             {
+                                 "genero":  "masculino",
+                                 "parejas":  6,
+                                 "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=M\u0026id=30197"
+                             },
+                             {
+                                 "genero":  "femenino",
+                                 "parejas":  1,
+                                 "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=F\u0026id=30197"
+                             }
+                         ],
+    "entrenadores":  {
+                         "numero":  1,
+                         "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=C\u0026id=30197"
+                     },
+    "inscripcion":  {
+                        "abierta":  false,
+                        "fechaLimite":  null,
+                        "individual":  false,
+                        "informacionHtml":  null,
+                        "condicionesHtml":  null,
+                        "formularioUrl":  "https://www.padelfederacion.es/Camp_Parejas_Veteranos.asp?IdTorneo=30197"
+                    },
+    "infoAdicionalHtml":  null,
+    "cartel":  null,
+    "cartelUrl":  null,
+    "noticias":  [
+
+                 ],
+    "urlWebActual":  "https://www.padelfederacion.es/Camp_Parejas_Veteranos.asp?IdTorneo=30197",
+    "consultado":  "2026-11-17T18:35:30"
+}

@@ -1,0 +1,115 @@
+{
+    "id":  3,
+    "nombre":  "FEDERACION VASCA DE PÁDEL",
+    "nacional":  false,
+    "imagen":  "images/3.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-3.jpg",
+    "presidente":  "KARMEL IDARRAGA ARIÑO",
+    "direccion":  "Pº DE ROTABURU Nº1 9º",
+    "codigoPostal":  "20018",
+    "localidad":  "SAN SEBASTIAN",
+    "telefonos":  [
+                      "645 733 746"
+                  ],
+    "email":  "fvpadel@fvpadel.com",
+    "web":  "https://www.fvpadel.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  6501,
+                      "puesto":  9,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  98,
+                      "arbitros":  13,
+                      "clubes":  44,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  2783,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  2679,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  3108,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  3224,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  3204,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  3213,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  3149,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  4949,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  4635,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  6271,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  4856,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  5517,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  5747,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  6539,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  6501,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  4278,
+                                     "femenino":  2223,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  342,
+                                     "sub23":  357,
+                                     "senior":  2644,
+                                     "veteranos":  3158,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

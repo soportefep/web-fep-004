@@ -1,0 +1,109 @@
+{
+    "id":  28133,
+    "anio":  2026,
+    "titulo":  "XLII CAMPEONATO DE ESPAÑA POR EQUIPOS DE 1ª CAT. ABSOLUTA",
+    "categoria":  "absoluto",
+    "seleccion":  false,
+    "sillaRuedas":  false,
+    "fechaInicio":  "2026-02-13",
+    "fechaFin":  "2026-02-15",
+    "ciudad":  "Zaragoza",
+    "sedes":  [
+                  {
+                      "nombre":  "URBAN SPORT ZARAGOZA",
+                      "web":  "https://www.usport.es/",
+                      "latitud":  null,
+                      "longitud":  null
+                  }
+              ],
+    "cuotas":  [
+                   185
+               ],
+    "generos":  [
+                    {
+                        "genero":  "masculino",
+                        "categorias":  [
+
+                                       ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categorias":  [
+
+                                       ]
+                    }
+                ],
+    "notaPrensaHtml":  null,
+    "marcadores":  [
+
+                   ],
+    "videos":  [
+                   {
+                       "titulo":  "Semifinales, sábado por la mañana",
+                       "url":  "https://www.youtube.com/embed/LC3hm8qtWRQ"
+                   },
+                   {
+                       "titulo":  "Semifinales, sábado por la tarde",
+                       "url":  "https://www.youtube.com/embed/lekU4_qKeP4"
+                   },
+                   {
+                       "titulo":  "Finales, domingo por la mañana",
+                       "url":  "https://www.youtube.com/embed/UzF6hLvfLW4"
+                   }
+               ],
+    "cuadrosPublicados":  true,
+    "cuadros":  [
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "ABSOLUTO",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28133\u0026Genero=M\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "ABSOLUTO",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28133\u0026Genero=F\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    }
+                ],
+    "notificacionesHtml":  "\u003cp\u003e\r\n\t\u003cstrong\u003ePREINSCRIPCI\u0026Oacute;N OBLIGATORIA\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003eTodos los equipos deber\u0026aacute;n hacer una preinscripci\u0026oacute;n\u003c/strong\u003e\u0026nbsp;previa a la inscripci\u0026oacute;n final de los jugadores/as.\u003c/p\u003e\r\n\u003cp\u003e\r\n\tEsta preinscripci\u0026oacute;n es obligatoria y ayuda a definir si habr\u0026aacute; alguna vacante que ofrecer a equipos clasificados en segunda categor\u0026iacute;a, tal como establece el Reglamento T\u0026eacute;cnico General.\u003c/p\u003e\r\n\u003cp\u003e\r\n\tSe debe acceder al sistema de preinscripci\u0026oacute;n de nuestra web para realizar el tr\u0026aacute;mite\u003c/p\u003e\r\n\u003cp\u003e\r\n\tJunto con la habitual carta de autorizaci\u0026oacute;n del responsable del club, correctamente cumplimentada, se debe aportar copia de la transferencia bancaria por el importe de la inscripci\u0026oacute;n.\u0026nbsp;(\u003cstrong\u003e185\u003c/strong\u003e\u0026nbsp;\u0026euro;/equipo). Abono en La Caixa CCC:\u0026nbsp;\u0026nbsp;ES04 2100 9055 15 2200860752,\u0026nbsp;\u0026nbsp;indicando el concepto de la transferencia: \u0026quot;inscripci\u0026oacute;n equipo 1\u0026ordf; masculino o femenino\u0026nbsp;Club XXXX\u0026quot; (por ejemplo).\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cspan style=\"color:#0000ff;\"\u003e\u003cstrong\u003ePlazo l\u0026iacute;mite de\u0026nbsp;\u003c/strong\u003e\u003cstrong\u003epreinscripci\u0026oacute;n\u003c/strong\u003e\u003cstrong\u003e: MI\u0026Eacute;RCOLES, 21 de enero a las 12.00 horas.\u003c/strong\u003e\u003c/span\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\tUna vez finalizado el plazo de preinscripci\u0026oacute;n, se proceder\u0026aacute; al env\u0026iacute;o de las instrucciones para realizar la inscripci\u0026oacute;n final de los jugadores/as que formar\u0026aacute;n el equipo (fecha l\u0026iacute;mite para completar los listados: 28/01/2025, 14.00 h.)\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\tEQUIPOS CONVOCADOS\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u0026nbsp;\u003c/p\u003e\r\n\u003ctable border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:389px;\" width=\"389\"\u003e\r\n\t\u003ctbody\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:389px;height:28px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t1\u0026ordf; CATEGOR\u0026Iacute;A ABSOLUTA\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:24px;\"\u003e\r\n\t\t\t\t\u0026nbsp;\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:24px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tMASCULINA\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t1\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tREAL CLUB DE POLO BARCELONA\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t2\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tSECCION DEPORTIVA CLUB RIO GRANDE SIPADEL\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t3\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tREIAL CLUB DE TENNIS BARCELONA 1899\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t4\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tEL PERU CACERES WELLNESS\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t5\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tREAL ZARAGOZA CLUB DE TENIS\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t6\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tCLUB DE TENIS CHAMART\u0026Iacute;N\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t7\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tTENNIS CLUB BADALONA\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t8\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tCENTRAL P\u0026Aacute;DEL\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u0026nbsp;\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u0026nbsp;\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:24px;\"\u003e\r\n\t\t\t\t\u0026nbsp;\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:24px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tFEMENINA\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t1\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tREAL CLUB DE POLO BARCELONA\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t2\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tCLUB DE P\u0026Aacute;DEL LA VOLEA - HUELVA\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t3\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tCLUB FIT POINT\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t4\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tREIAL CLUB DE TENNIS BARCELONA 1899\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t5\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tP\u0026Aacute;DEL INDOOR ARAG\u0026Oacute;N\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t6\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tCLUB DE TENIS CHAMART\u0026Iacute;N\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t7\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tCLUB DE TENIS Y P\u0026Aacute;DEL LA CAPELLAN\u0026Iacute;A\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:10px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp align=\"center\"\u003e\r\n\t\t\t\t\t8\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:379px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tREAL ZARAGOZA CLUB DE TENIS\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\u003c/tbody\u003e\r\n\u003c/table\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e",
+    "adjuntos":  [
+
+                 ],
+    "inscritosParejas":  [
+
+                         ],
+    "inscripcion":  {
+                        "abierta":  false,
+                        "fechaLimite":  null,
+                        "por":  "clubes",
+                        "informacionHtml":  null,
+                        "acciones":  [
+
+                                     ],
+                        "equiposInscritosUrl":  "https://www.padelfederacion.es/Camp_Equipos_Modificar.asp?idtorneo=28133",
+                        "fechaLimitePuntuacion":  null
+                    },
+    "infoAdicionalHtml":  null,
+    "cartel":  null,
+    "cartelUrl":  null,
+    "noticias":  [
+
+                 ],
+    "urlWebActual":  "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=28133",
+    "consultado":  "2026-11-13T10:00:00"
+}

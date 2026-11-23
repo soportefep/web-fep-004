@@ -1,0 +1,54 @@
+{
+    "torneo":  {
+                   "id":  23263,
+                   "titulo":  "XXXVIII CAMPEONATO ABSOLUTO DE ESPAÑA",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2023-06-25",
+                   "fechaFin":  "2023-07-02",
+                   "lugar":  "Torrent"
+               },
+    "cuadros":  [
+                    {
+                        "genero":  "M",
+                        "categoria":  "ABSOLUTO",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "ABSOLUTO",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "ABSOLUTO",
+                        "nivel":  31,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "ABSOLUTO",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "ABSOLUTO",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "ABSOLUTO",
+                        "nivel":  31,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    }
+                ]
+}

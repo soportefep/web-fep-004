@@ -1,0 +1,115 @@
+{
+    "id":  7,
+    "nombre":  "FEDERACION DE PADEL DEL PRINCIPADO DE ASTURIAS",
+    "nacional":  false,
+    "imagen":  "images/7.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-7.jpg",
+    "presidente":  "LUCÍA CARREÑO BUSTA",
+    "direccion":  "C/ DINDURRA 20",
+    "codigoPostal":  "33202",
+    "localidad":  "GIJÓN",
+    "telefonos":  [
+
+                  ],
+    "email":  "contacto@fppastur.com",
+    "web":  "https://www.fppastur.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  2183,
+                      "puesto":  14,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  30,
+                      "arbitros":  8,
+                      "clubes":  31,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  493,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  664,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  519,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  788,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  922,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  1032,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  1234,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  1328,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  1214,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  1316,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  1289,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  1488,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  1494,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  1866,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  2183,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  1300,
+                                     "femenino":  883,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  218,
+                                     "sub23":  86,
+                                     "senior":  760,
+                                     "veteranos":  1119,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

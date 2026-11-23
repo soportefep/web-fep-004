@@ -1,0 +1,55 @@
+{
+  "datosDePrueba": true,
+  "nota": "DATOS DE PRUEBA del prototipo: club ficticio. La API real (GET /api/v1/area-privada/club/{id}) los devolverá solo con la sesión del club iniciada.",
+  "tipo": "club",
+  "id": "0999001",
+  "nombre": "CLUB DE PÁDEL EJEMPLO",
+  "federacion": "Federación de Pádel de Madrid",
+  "provincia": "MADRID",
+  "localidad": "Madrid",
+  "temporada": 2026,
+  "estado": { "alta": "activa", "vigenteHasta": "2026-12-31", "cuota": "pagada" },
+  "contacto": {
+    "presidente": "Persona de ejemplo",
+    "direccion": "Calle de Ejemplo, 1",
+    "codigoPostal": "28000",
+    "telefono": "910 000 000",
+    "email": "club@ejemplo.es",
+    "web": "https://www.ejemplo.es"
+  },
+  "instalaciones": { "pistas": 8, "cubiertas": 4, "iluminadas": 8 },
+  "licencias": [
+    { "licencia": "900001", "jugador": "EJEMPLO DEMO, ALEX", "genero": "M", "categoria": "CAT-35", "estado": "activa", "vigenteHasta": "2026-12-31" },
+    { "licencia": "900011", "jugador": "PRUEBA MUESTRA, LUCÍA", "genero": "F", "categoria": "SEN", "estado": "activa", "vigenteHasta": "2026-12-31" },
+    { "licencia": "900012", "jugador": "MODELO CASO, PABLO", "genero": "M", "categoria": "JUN", "estado": "activa", "vigenteHasta": "2026-12-31" },
+    { "licencia": "900013", "jugador": "EJEMPLO SEGUNDO, MARTA", "genero": "F", "categoria": "CAD", "estado": "activa", "vigenteHasta": "2026-12-31" },
+    { "licencia": "900014", "jugador": "DEMO TERCERO, IKER", "genero": "M", "categoria": "INF", "estado": "pendiente", "vigenteHasta": null },
+    { "licencia": "900015", "jugador": "MUESTRA CUARTO, SARA", "genero": "F", "categoria": "CAT-45", "estado": "activa", "vigenteHasta": "2026-12-31" },
+    { "licencia": "900016", "jugador": "CASO QUINTO, DIEGO", "genero": "M", "categoria": "SEN", "estado": "caducada", "vigenteHasta": "2025-12-31" },
+    { "licencia": "900017", "jugador": "PRUEBA SEXTO, NOA", "genero": "F", "categoria": "ALE", "estado": "activa", "vigenteHasta": "2026-12-31" },
+    { "licencia": "900018", "jugador": "MODELO SÉPTIMO, HUGO", "genero": "M", "categoria": "BEN", "estado": "activa", "vigenteHasta": "2026-12-31" },
+    { "licencia": "900019", "jugador": "EJEMPLO OCTAVO, VERA", "genero": "F", "categoria": "SUB-23", "estado": "pendiente", "vigenteHasta": null }
+  ],
+  "equipos": [
+    { "nombre": "CLUB DE PÁDEL EJEMPLO A", "competicion": "XLIII Cto. España Equipos 1ª", "categoria": "1.ª masculina", "fechaInicio": "2027-02-12", "fechaFin": "2027-02-14", "estado": "inscrito", "enlace": "campeonatos.html" },
+    { "nombre": "CLUB DE PÁDEL EJEMPLO", "competicion": "I Copa de Ligas Autonómicas de Veteranos", "categoria": "Veteranos", "fechaInicio": "2026-11-27", "fechaFin": "2026-11-29", "estado": "inscrito", "enlace": "campeonato-equipos.html?id=28854" }
+  ],
+  "torneos": [
+    { "titulo": "Torneo de Navidad (ejemplo)", "fechaInicio": "2026-12-18", "fechaFin": "2026-12-20", "categoria": "Absoluto", "puntuable": true, "estado": "aprobado" },
+    { "titulo": "Open de primavera (ejemplo)", "fechaInicio": "2027-04-09", "fechaFin": "2027-04-11", "categoria": "Absoluto", "puntuable": true, "estado": "solicitado" },
+    { "titulo": "Torneo de menores de otoño (ejemplo)", "fechaInicio": "2026-10-16", "fechaFin": "2026-10-18", "categoria": "Menores", "puntuable": true, "estado": "celebrado" }
+  ],
+  "tramites": [
+    { "titulo": "Renovación del alta del club para 2027", "estado": "pendiente", "fechaLimite": "2026-12-31" },
+    { "titulo": "Seguro de responsabilidad civil del club", "estado": "vigente", "fechaLimite": "2026-12-31" },
+    { "titulo": "Licencias pendientes de validar", "estado": "pendiente", "detalle": "2 licencias esperan la documentación del jugador/a" }
+  ],
+  "documentos": [
+    { "titulo": "Certificado de club federado 2026", "tipo": "PDF" },
+    { "titulo": "Recibo de la cuota de alta 2026", "tipo": "PDF" },
+    { "titulo": "Listado de licencias del club 2026", "tipo": "XLS" }
+  ],
+  "avisos": [
+    { "fecha": "2026-11-20", "texto": "Abierto el plazo de renovación del alta de clubes para la temporada 2027." }
+  ]
+}

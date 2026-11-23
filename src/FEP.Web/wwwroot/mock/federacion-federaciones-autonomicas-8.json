@@ -1,0 +1,115 @@
+{
+    "id":  8,
+    "nombre":  "FEDERACIÓN GALLEGA DE PÁDEL",
+    "nacional":  false,
+    "imagen":  "images/8.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-8.jpg",
+    "presidente":  "MANUEL FERNANDEZ PRADO",
+    "direccion":  "Calle Ría do Burgo, 9 entresuelo",
+    "codigoPostal":  "15008",
+    "localidad":  "A CORUÑA",
+    "telefonos":  [
+                      "981 231 537"
+                  ],
+    "email":  "administracion@fgpadel.com",
+    "web":  "https://www.fgpadel.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  11373,
+                      "puesto":  3,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  19,
+                      "arbitros":  4,
+                      "clubes":  18,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  510,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  613,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  645,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  1064,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  915,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  5707,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  6213,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  4632,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  5268,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  9226,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  8116,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  7403,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  8798,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  10765,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  11373,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  7177,
+                                     "femenino":  4196,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  505,
+                                     "sub23":  470,
+                                     "senior":  4167,
+                                     "veteranos":  6231,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

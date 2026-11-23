@@ -1,0 +1,6 @@
+[
+  { "nombre": "X", "url": "https://twitter.com/padelfederacion", "icono": "fa fa-x-twitter", "orden": 1 },
+  { "nombre": "YouTube", "url": "http://www.youtube.com/user/FedEspPadel", "icono": "fa fa-youtube", "orden": 2 },
+  { "nombre": "LinkedIn", "url": "https://www.linkedin.com/company/federacion-espanola-de-padel", "icono": "fa fa-linkedin", "orden": 3 },
+  { "nombre": "Instagram", "url": "https://www.instagram.com/padelfederacion/", "icono": "fa fa-instagram", "orden": 4 }
+]

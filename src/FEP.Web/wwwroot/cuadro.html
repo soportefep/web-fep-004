@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuadros del torneo · Federación Española de Pádel</title>
+  <meta name="description" content="Cuadros, resultados y horarios de los torneos de la Federación Española de Pádel: eliminatorias, liguillas, cabezas de serie y detalle de cada enfrentamiento.">
+  <!-- Base de la API nueva. Vacío = mismo origen. Si la API no responde se usan los JSON de /mock. -->
+  <meta name="fep-api-base" content="">
+  <!-- Web actual: destino temporal de los enlaces a páginas aún no migradas -->
+  <meta name="fep-legacy-base" content="https://www.padelfederacion.es/">
+  <meta name="theme-color" content="#111B2B">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fep.css">
+  <link rel="stylesheet" href="assets/css/tema-003.css">
+  <!-- Scripts clásicos con defer (no módulos): así la página también funciona abierta desde disco -->
+  <script defer src="mock/mocks.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/comun.js"></script>
+  <script defer src="assets/js/cuadro.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ BARRA SUPERIOR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <nav class="fed-strip" id="fed-strip" aria-label="Federaciones autonómicas">
+        <ul class="fed-strip__list" id="fed-strip-lista"></ul>
+      </nav>
+      <ul class="topbar__links">
+        <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+        <li><a class="topbar__extranet" href="https://www.padelfederacion.es/ControlAcceso.asp" title="Acceso a la gestión interna">Extranet</a></li>
+        <li><button type="button" class="topbar__lang" aria-label="Idioma: español" aria-disabled="true">ES <span aria-hidden="true">⌄</span></button></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ CABECERA ============ -->
+  <header class="header" id="cabecera">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
+        <img src="assets/img/logo.png" alt="Federación Española de Pádel" width="210" height="70">
+      </a>
+
+      <button type="button" class="header__burger" id="menu-abrir" aria-controls="menu-principal" aria-expanded="false">
+        <span class="sr-only">Abrir menú</span>
+        <span class="header__burger-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-panel" id="menu-principal" aria-label="Menú principal">
+        <div class="nav-panel__head">
+          <img src="assets/img/logo.png" alt="" width="150" height="50">
+          <button type="button" class="nav-panel__close" id="menu-cerrar"><span class="sr-only">Cerrar menú</span><span aria-hidden="true">✕</span></button>
+        </div>
+        <nav aria-label="Principal">
+          <!-- Menú principal (5 secciones). comun.js (MENU_FEP) pinta los desplegables y accesos móviles -->
+          <ul class="nav" id="nav-principal">
+            <li class="nav__item" data-menu-key="competicion"><a class="nav__link" href="calendariofep.html">Competición</a></li>
+            <li class="nav__item" data-menu-key="licencias"><a class="nav__link" href="https://www.padelfederacion.es/Licencias_Buscar">Licencias</a></li>
+            <li class="nav__item" data-menu-key="formacion"><a class="nav__link" href="https://www.padelfederacion.es/Formacion_Calendario">Formación</a></li>
+            <li class="nav__item" data-menu-key="actualidad"><a class="nav__link" href="https://www.padelfederacion.es/Noticias">Actualidad</a></li>
+            <li class="nav__item" data-menu-key="federacion"><a class="nav__link" href="organos-de-gobierno.html">La Federación</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-panel__extra">
+          <li><a href="ley-de-transparencia.html">Transparencia</a></li>
+        </ul>
+      </div>
+
+      <div class="header__actions">
+        <button type="button" class="header__search-btn" id="buscar-abrir" aria-controls="buscador" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="sr-only">Buscar</span>
+        </button>
+        <a class="btn btn--outline btn--sm acceso" id="mi-club" href="#" aria-label="Mi Club (próximamente)">
+          Mi Club
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12M9 21v-6h6v6M3 21h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--red btn--sm acceso" id="mi-portal" href="#" aria-label="Mi Portal (próximamente)">
+          Mi Portal
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Buscador: envía temporalmente al buscador de la web actual -->
+    <div class="search" id="buscador" hidden>
+      <form class="container search__form" action="https://www.padelfederacion.es/busqueda.asp" method="post" role="search">
+        <label for="texto-busqueda" class="sr-only">Texto a buscar</label>
+        <input id="texto-busqueda" name="textobusqueda" type="search" placeholder="Buscar en la web de la FEP…" required>
+        <button type="submit" class="btn btn--red btn--sm">Buscar</button>
+      </form>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="menu-fondo" hidden></div>
+
+
+  <!-- Página migrada desde los cuadros de torneo (Previo.asp / PrevioEquipos.asp y las páginas a las que redirigían:
+       Cuadro4…128, CuadroPrevia*, CuadroPrePrevia*, CuadroEquipos*, Liguilla*, EquiposEnfrentamientos). Una sola página
+       para todos los tamaños: recibe ?torneo=<IdPrueba>&genero=M&categoria=ABSOLUTO&nivel=1&cuadro=Final (también los
+       nombres antiguos IdTorneo, Genero, Cat, Nivel, Cuadro). Solo con ?torneo= muestra el primer cuadro publicado.
+       Datos: GET /api/v1/competicion/cuadros/{torneo}[/{genero}/{categoria}/{nivel}/{cuadro}] (respaldo: mock/). -->
+  <main id="contenido" class="pagina cdr">
+
+    <!-- ============ CABECERA DE PÁGINA ============ -->
+    <section class="page-hero cdr-hero" aria-labelledby="titulo-pagina">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Estás en">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="campeonatos.html">Campeonatos</a></li>
+            <li><a id="cdr-miga-torneo" href="campeonatos.html">Torneo</a></li>
+            <li aria-current="page">Cuadros</li>
+          </ol>
+        </nav>
+        <p class="eyebrow eyebrow--line" id="cdr-eyebrow">Cuadros y resultados</p>
+        <h1 class="page-hero__title cdr-hero__title" id="titulo-pagina">Cuadros del torneo</h1>
+        <p class="cdr-hero__meta" id="cdr-meta"></p>
+        <ul class="page-hero__stats" id="cdr-resumen" aria-label="Resumen del cuadro"></ul>
+      </div>
+    </section>
+
+    <!-- ============ SELECTOR DE CUADRO ============ -->
+    <nav class="cdr-picker" id="cdr-picker" aria-label="Elegir cuadro" hidden>
+      <div class="container cdr-picker__inner">
+        <div class="cdr-picker__row" id="cdr-generos" role="group" aria-label="Género" hidden></div>
+        <div class="cdr-picker__row" id="cdr-categorias" role="group" aria-label="Categoría"></div>
+        <div class="cdr-picker__row" id="cdr-tipos" role="group" aria-label="Cuadro"></div>
+      </div>
+    </nav>
+
+    <div class="container cdr-body" id="cdr-contenido" aria-busy="true">
+      <div class="cdr-skeleton" id="cdr-skeleton" aria-hidden="true">
+        <span class="sk sk--title"></span>
+        <div class="cdr-skeleton__cols"><span class="sk sk--card"></span><span class="sk sk--card"></span><span class="sk sk--card"></span><span class="sk sk--card"></span></div>
+      </div>
+      <p class="empty" id="cdr-error" hidden>No se ha podido cargar este cuadro. Puedes consultarlo en la <a id="cdr-error-enlace" href="https://www.padelfederacion.es/Campeonatos">web actual de la FEP</a>.</p>
+      <p class="empty" id="cdr-vacio" hidden>Todavía no hay cuadros publicados para este torneo.</p>
+      <p class="empty" id="cdr-no-publicado" hidden>Los cuadros de esta categoría aún no están disponibles.</p>
+
+      <div id="cdr-vista" hidden>
+        <!-- Campeón -->
+        <section class="cdr-champion" id="cdr-campeon" aria-labelledby="cdr-campeon-titulo" hidden>
+          <span class="cdr-champion__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z M17 6h3v2a3 3 0 0 1-3 3M7 6H4v2a3 3 0 0 0 3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div class="cdr-champion__text">
+            <p class="cdr-champion__label" id="cdr-campeon-titulo">Campeones</p>
+            <p class="cdr-champion__name" id="cdr-campeon-nombre"></p>
+          </div>
+          <p class="cdr-champion__final" id="cdr-campeon-final"></p>
+        </section>
+
+        <!-- Barra de herramientas -->
+        <div class="cdr-toolbar" role="toolbar" aria-label="Opciones del cuadro">
+          <div class="cdr-seg" role="group" aria-label="Vista">
+            <button type="button" class="cdr-seg__btn" data-vista="cuadro" aria-pressed="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M3 5h6v4H3zM3 15h6v4H3zM9 7h3v10H9M12 12h4M16 10h5v4h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              Cuadro
+            </button>
+            <button type="button" class="cdr-seg__btn" data-vista="rondas" aria-pressed="false">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              Por rondas
+            </button>
+          </div>
+          <label class="cdr-search">
+            <span class="sr-only" id="cdr-buscar-etiqueta">Buscar jugador, pareja o equipo</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input type="search" id="cdr-buscar" placeholder="Buscar jugador o pareja…" autocomplete="off" aria-describedby="cdr-buscar-estado">
+          </label>
+          <p class="cdr-toolbar__status" id="cdr-buscar-estado" role="status" aria-live="polite"></p>
+          <div class="cdr-toolbar__actions">
+            <button type="button" class="cdr-icon-btn" id="cdr-compartir">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M12 3v12M7 8l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Compartir</span>
+            </button>
+            <button type="button" class="cdr-icon-btn" id="cdr-imprimir">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 9V3h10v6M7 17H4v-7h16v7h-3M7 14h10v7H7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <span>Imprimir</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cuadro de eliminatorias (vista "Cuadro") -->
+        <div class="cdr-bracket-wrap" id="cdr-bracket-wrap">
+          <button type="button" class="cdr-scroll cdr-scroll--prev" data-dir="-1" aria-label="Ver rondas anteriores" hidden>‹</button>
+          <div class="cdr-bracket" id="cdr-bracket" tabindex="0" role="region" aria-label="Cuadro de eliminatorias"></div>
+          <button type="button" class="cdr-scroll cdr-scroll--next" data-dir="1" aria-label="Ver rondas siguientes" hidden>›</button>
+        </div>
+
+        <!-- Por rondas (vista móvil por defecto) -->
+        <div class="cdr-rounds" id="cdr-rondas" hidden>
+          <div class="cdr-tabs" id="cdr-rondas-tabs" role="tablist" aria-label="Rondas"></div>
+          <div id="cdr-rondas-panel" role="tabpanel" tabindex="0"></div>
+        </div>
+
+        <!-- Liguilla -->
+        <section class="cdr-league" id="cdr-liguilla" aria-labelledby="cdr-liguilla-titulo" hidden>
+          <h2 class="cdr-section__title" id="cdr-liguilla-titulo">Clasificación</h2>
+          <div class="cdr-table-wrap" tabindex="0" role="region" aria-labelledby="cdr-liguilla-titulo">
+            <table class="cdr-table">
+              <thead>
+                <tr>
+                  <th scope="col">Pos.</th><th scope="col" class="cdr-table__name" id="cdr-liguilla-col">Pareja</th>
+                  <th scope="col"><abbr title="Puntos">Pts</abbr></th>
+                  <th scope="col"><abbr title="Partidos ganados">PG</abbr></th><th scope="col"><abbr title="Partidos perdidos">PP</abbr></th>
+                  <th scope="col"><abbr title="Diferencia de sets">± Sets</abbr></th><th scope="col"><abbr title="Diferencia de juegos">± Juegos</abbr></th>
+                </tr>
+              </thead>
+              <tbody id="cdr-clasificacion"></tbody>
+            </table>
+          </div>
+          <h2 class="cdr-section__title">Partidos</h2>
+          <div class="cdr-days" id="cdr-jornadas"></div>
+        </section>
+
+        <!-- Información del cuadro (TextoCuadros) -->
+        <details class="cdr-notes" id="cdr-notas" hidden>
+          <summary>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Información del cuadro, sedes y normas
+          </summary>
+          <div class="cdr-notes__body" id="cdr-notas-texto"></div>
+        </details>
+
+        <!-- Cabezas de serie -->
+        <section class="cdr-seeds" id="cdr-cabezas" aria-labelledby="cdr-cabezas-titulo" hidden>
+          <h2 class="cdr-section__title" id="cdr-cabezas-titulo">Cabezas de serie</h2>
+          <ol class="cdr-seeds__list" id="cdr-cabezas-lista"></ol>
+        </section>
+
+        <p class="cdr-legend" id="cdr-leyenda">
+          <span><span class="cdr-seed">1</span> cabeza de serie</span>
+          <span><span class="cdr-legend__win"></span> pasa de ronda</span>
+          <span class="cdr-legend__tv"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 21h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> partido retransmitido</span>
+        </p>
+      </div>
+
+      <aside class="page-note cdr-note" aria-labelledby="nota-competicion">
+        <h2 class="page-note__title" id="nota-competicion">Más competición</h2>
+        <p>Consulta todos los <a href="campeonatos.html">campeonatos y torneos de la FEP</a>, el <a href="calendariofep.html">calendario de competición</a> y los <a href="rankings.html">rankings</a>.</p>
+      </aside>
+    </div>
+
+    <!-- Detalle de una eliminatoria por equipos (EquiposEnfrentamientos.asp) -->
+    <dialog class="cdr-dialog" id="cdr-dialogo" aria-labelledby="cdr-dialogo-titulo">
+      <div class="cdr-dialog__head">
+        <div>
+          <p class="cdr-dialog__eyebrow" id="cdr-dialogo-ronda"></p>
+          <h2 class="cdr-dialog__title" id="cdr-dialogo-titulo">Eliminatoria</h2>
+        </div>
+        <button type="button" class="cdr-dialog__close" id="cdr-dialogo-cerrar"><span class="sr-only">Cerrar</span><span aria-hidden="true">✕</span></button>
+      </div>
+      <div class="cdr-dialog__body" id="cdr-dialogo-cuerpo" aria-live="polite"></div>
+    </dialog>
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
+            <img src="assets/img/logo-pie-negativo.png" alt="Federación Española de Pádel" width="123" height="56">
+          </a>
+          <p>Impulsamos el pádel. Acompañamos a quienes lo hacen posible.</p>
+          <!-- Rellenado con /api/v1/redes-sociales; estos son los del Figma por si la API no responde -->
+          <ul class="footer__social" id="redes-lista">
+            <li><a href="https://www.instagram.com/padelfederacion/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.youtube.com/user/FedEspPadel" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://x.com/padelfederacion" target="_blank" rel="noopener">X <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+        <nav class="footer__col" aria-labelledby="pie-descubre">
+          <h2 id="pie-descubre">Descubre</h2>
+          <ul>
+            <li><a href="organos-de-gobierno.html">Federación</a></li>
+            <li><a href="https://www.padelfederacion.es/Calendario.asp">Competiciones</a></li>
+            <li><a href="rankings.html">Rankings</a></li>
+            <li><a href="https://www.padelfederacion.es/Noticias.asp">Actualidad</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-labelledby="pie-federacion">
+          <h2 id="pie-federacion">Tu federación</h2>
+          <ul>
+            <li><a href="https://www.padelfederacion.es/Licencias_Intro.asp">Licencias</a></li>
+            <li><a href="https://www.padelfederacion.es/Formacion_Calendario.asp">Formación</a></li>
+            <li><a href="https://www.padelfederacion.es/Documentos_Normativas.asp">Documentación</a></li>
+            <li><a href="https://www.padelfederacion.es/Portal-del-Federado">Portal del federado</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-labelledby="pie-ayuda">
+          <h2 id="pie-ayuda">Te ayudamos</h2>
+          <ul>
+            <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+            <li><a href="federaciones.html">Federaciones territoriales</a></li>
+            <li><a href="https://www.padelfederacion.es/SolicitudArbitraje_Intro.asp">Arbitraje</a></li>
+            <li><a href="accesibilidad.html">Accesibilidad</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="anio">2026</span> Federación Española de Pádel</p>
+        <ul>
+          <li><a href="https://www.padelfederacion.es/Aviso_Legal">Aviso legal</a></li>
+          <li><a href="https://www.padelfederacion.es/Politica_Privacidad">Privacidad</a></li>
+          <li><a href="https://www.padelfederacion.es/Politica_Cookies">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "torneo": { "id": 28676, "titulo": "VI COPA DE ESPAÑA DE LIGAS AUTONÓMICAS - HEAD", "tipo": "equipos", "fechaInicio": "2026-11-13", "fechaFin": "2026-11-15", "lugar": "Barcelona" },
+  "cuadros": [
+    { "genero": "M", "categoria": "ABSOLUTO", "nivel": 1, "cuadro": "Final", "publicado": true },
+    { "genero": "M", "categoria": "ABSOLUTO", "nivel": 1, "cuadro": "Consola", "publicado": true },
+    { "genero": "M", "categoria": "ABSOLUTO", "nivel": 2, "cuadro": "Final", "publicado": true }
+  ]
+}

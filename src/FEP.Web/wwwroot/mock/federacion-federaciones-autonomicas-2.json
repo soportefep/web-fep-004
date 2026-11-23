@@ -1,0 +1,115 @@
+{
+    "id":  2,
+    "nombre":  "FEDERACIO CATALANA DE PADEL",
+    "nacional":  false,
+    "imagen":  "images/2.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-2.jpg",
+    "presidente":  "Felipe Ródenas Morera",
+    "direccion":  "VIA AUGUSTA, 13-15-1ª PLANTA DESPATX 108",
+    "codigoPostal":  null,
+    "localidad":  "BARCELONA",
+    "telefonos":  [
+                      "933076284"
+                  ],
+    "email":  "padel@fcpadel.cat",
+    "web":  "https://www.fcpadel.cat",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  30844,
+                      "puesto":  1,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  151,
+                      "arbitros":  16,
+                      "clubes":  379,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  9582,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  10358,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  11621,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  12010,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  13026,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  16780,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  18805,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  21508,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  19284,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  21486,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  25115,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  26755,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  28796,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  30375,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  30844,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  18925,
+                                     "femenino":  11919,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  4053,
+                                     "sub23":  1784,
+                                     "senior":  9855,
+                                     "veteranos":  15152,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

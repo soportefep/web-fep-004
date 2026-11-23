@@ -1,0 +1,183 @@
+{
+    "actualizado":  "2026-11-12",
+    "areas":  [
+                  {
+                      "clave":  "organigrama",
+                      "titulo":  "Organigrama",
+                      "descripcion":  "Junta Directiva, Dirección Deportiva Federativa, selección absoluta y equipo administrativo, según el organigrama publicado por la FEP. La selección y el equipo técnico de menores están en el apartado siguiente.",
+                      "imagen":  "images/ORGANIGRAMA-FEP.png",
+                      "imagenUrl":  "assets/img/fep/equipo/organigrama-fep.png",
+                      "imagenAlt":  "Organigrama de la Federación Española de Pádel",
+                      "grupos":  [
+                                     {
+                                         "clave":  "junta-directiva",
+                                         "titulo":  "Junta Directiva",
+                                         "miembros":  [
+                                                          {
+                                                              "nombre":  "Javier Rodríguez Piris",
+                                                              "cargo":  "Presidente"
+                                                          },
+                                                          {
+                                                              "nombre":  "Francisco Sanz Fominaya",
+                                                              "cargo":  "Vicepresidente 1"
+                                                          },
+                                                          {
+                                                              "nombre":  "José Pérez García",
+                                                              "cargo":  "Vicepresidente 2"
+                                                          },
+                                                          {
+                                                              "nombre":  "Jesús Vázquez Tallón",
+                                                              "cargo":  "Vicepresidente 3"
+                                                          },
+                                                          {
+                                                              "nombre":  "Concha Velasco Martín",
+                                                              "cargo":  "Secretaria General"
+                                                          },
+                                                          {
+                                                              "nombre":  "José Mª Alda Hoyos",
+                                                              "cargo":  "Vocal Área Económica"
+                                                          },
+                                                          {
+                                                              "nombre":  "Tania Santos Alves",
+                                                              "cargo":  "Vocal de Eventos"
+                                                          },
+                                                          {
+                                                              "nombre":  "Lucia Iborra Broseta",
+                                                              "cargo":  "Vocal de Innovación y Proyectos"
+                                                          },
+                                                          {
+                                                              "nombre":  "Francisca Rojas Ponce",
+                                                              "cargo":  "Vocal Mujer"
+                                                          },
+                                                          {
+                                                              "nombre":  "Carmen de la Cruz Grao",
+                                                              "cargo":  "Vocal de Competición"
+                                                          },
+                                                          {
+                                                              "nombre":  "Diego Muñoz Marín",
+                                                              "cargo":  "Vocal de Formación e Investigación"
+                                                          },
+                                                          {
+                                                              "nombre":  "Paula García Rguez.",
+                                                              "cargo":  "Vocal de Base y Promoción"
+                                                          },
+                                                          {
+                                                              "nombre":  "Victoria Barcina Hidalgo",
+                                                              "cargo":  "Vocal CTAP"
+                                                          },
+                                                          {
+                                                              "nombre":  "Silvia Rial Fuertes",
+                                                              "cargo":  "Vocal de Responsabilidad Social Corporativa (RSC)"
+                                                          },
+                                                          {
+                                                              "nombre":  "Marta Porras Cuesta",
+                                                              "cargo":  "Vocal de Gobernanza Interna y RRHH"
+                                                          },
+                                                          {
+                                                              "nombre":  "Antonio José López Castro",
+                                                              "cargo":  "Vocal Pádel Inclusivo"
+                                                          },
+                                                          {
+                                                              "nombre":  "Lucia Carreño Busta",
+                                                              "cargo":  "Vocal de Dinamización Territorial"
+                                                          },
+                                                          {
+                                                              "nombre":  "Patricia Pina Somoano",
+                                                              "cargo":  "Vocal de Alianzas Estratégicas"
+                                                          }
+                                                      ]
+                                     },
+                                     {
+                                         "clave":  "area-deportiva",
+                                         "titulo":  "Área deportiva",
+                                         "miembros":  [
+                                                          {
+                                                              "nombre":  "Javier Casadesús García",
+                                                              "cargo":  "Dirección Deportiva Federativa"
+                                                          },
+                                                          {
+                                                              "nombre":  "Juanjo Gutiérrez Vicario",
+                                                              "cargo":  "Seleccionador absolutos"
+                                                          }
+                                                      ]
+                                     },
+                                     {
+                                         "clave":  "equipo-administrativo",
+                                         "titulo":  "Equipo administrativo",
+                                         "miembros":  [
+                                                          {
+                                                              "nombre":  "Vanesa Magro Herráiz",
+                                                              "cargo":  null
+                                                          },
+                                                          {
+                                                              "nombre":  "Carmen Fernández-Vegue",
+                                                              "cargo":  null
+                                                          },
+                                                          {
+                                                              "nombre":  "Cristina San Valentín Blanco",
+                                                              "cargo":  null
+                                                          },
+                                                          {
+                                                              "nombre":  "Virginia Romero Herrero",
+                                                              "cargo":  null
+                                                          },
+                                                          {
+                                                              "nombre":  "Íñigo Roa Menoyo",
+                                                              "cargo":  null
+                                                          }
+                                                      ]
+                                     }
+                                 ]
+                  },
+                  {
+                      "clave":  "menores",
+                      "titulo":  "Equipo de menores",
+                      "descripcion":  "Seleccionadores y equipo técnico de menores, según el organigrama publicado por la FEP.",
+                      "imagen":  "images/MENORES-FEP.png",
+                      "imagenUrl":  "assets/img/fep/equipo/menores-fep.png",
+                      "imagenAlt":  "Equipo de menores de la Federación Española de Pádel",
+                      "grupos":  [
+                                     {
+                                         "clave":  "seleccionadores",
+                                         "titulo":  "Seleccionadores de menores",
+                                         "miembros":  [
+                                                          {
+                                                              "nombre":  "Oriol Moyés Munne",
+                                                              "cargo":  "Seleccionador femenino"
+                                                          },
+                                                          {
+                                                              "nombre":  "José Luis Gutiérrez del Álamo",
+                                                              "cargo":  "Seleccionador masculino"
+                                                          }
+                                                      ]
+                                     },
+                                     {
+                                         "clave":  "equipo-tecnico",
+                                         "titulo":  "Equipo técnico",
+                                         "miembros":  [
+                                                          {
+                                                              "nombre":  "Javier Sánchez Espadiña",
+                                                              "cargo":  null
+                                                          },
+                                                          {
+                                                              "nombre":  "Haizea Zamora Garaikoetxea",
+                                                              "cargo":  null
+                                                          },
+                                                          {
+                                                              "nombre":  "Toni Méndez Ferrer",
+                                                              "cargo":  null
+                                                          },
+                                                          {
+                                                              "nombre":  "Gonzalo Gutiérrez García",
+                                                              "cargo":  null
+                                                          },
+                                                          {
+                                                              "nombre":  "Idoia Martín Egaña",
+                                                              "cargo":  null
+                                                          }
+                                                      ]
+                                     }
+                                 ]
+                  }
+              ]
+}

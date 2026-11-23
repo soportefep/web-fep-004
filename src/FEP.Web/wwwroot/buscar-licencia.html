@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buscar y consultar tu licencia · Federación Española de Pádel</title>
+  <meta name="description" content="Busca tu número de licencia de la Federación Española de Pádel (jugador/a, técnico/a, juez-árbitro o pádel en silla de ruedas) por nombre, apellidos o fecha de nacimiento, y accede a los datos de tu licencia con tu clave.">
+  <!-- Base de la API nueva. Vacío = mismo origen. Si la API no responde se usan los JSON de /mock. -->
+  <meta name="fep-api-base" content="">
+  <!-- Web actual: destino temporal de los enlaces a páginas aún no migradas -->
+  <meta name="fep-legacy-base" content="https://www.padelfederacion.es/">
+  <meta name="theme-color" content="#111B2B">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fep.css">
+  <link rel="stylesheet" href="assets/css/tema-003.css">
+  <!-- Scripts clásicos con defer (no módulos): así la página también funciona abierta desde disco -->
+  <script defer src="mock/mocks.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/comun.js"></script>
+  <script defer src="assets/js/buscar-licencia.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ BARRA SUPERIOR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <nav class="fed-strip" id="fed-strip" aria-label="Federaciones autonómicas">
+        <ul class="fed-strip__list" id="fed-strip-lista"></ul>
+      </nav>
+      <ul class="topbar__links">
+        <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+        <li><a class="topbar__extranet" href="https://www.padelfederacion.es/ControlAcceso.asp" title="Acceso a la gestión interna">Extranet</a></li>
+        <li><button type="button" class="topbar__lang" aria-label="Idioma: español" aria-disabled="true">ES <span aria-hidden="true">⌄</span></button></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ CABECERA ============ -->
+  <header class="header" id="cabecera">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
+        <img src="assets/img/logo.png" alt="Federación Española de Pádel" width="210" height="70">
+      </a>
+
+      <button type="button" class="header__burger" id="menu-abrir" aria-controls="menu-principal" aria-expanded="false">
+        <span class="sr-only">Abrir menú</span>
+        <span class="header__burger-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-panel" id="menu-principal" aria-label="Menú principal">
+        <div class="nav-panel__head">
+          <img src="assets/img/logo.png" alt="" width="150" height="50">
+          <button type="button" class="nav-panel__close" id="menu-cerrar"><span class="sr-only">Cerrar menú</span><span aria-hidden="true">✕</span></button>
+        </div>
+        <nav aria-label="Principal">
+          <!-- Menú principal (5 secciones). comun.js (MENU_FEP) pinta los desplegables y accesos móviles -->
+          <ul class="nav" id="nav-principal">
+            <li class="nav__item" data-menu-key="competicion"><a class="nav__link" href="calendariofep.html">Competición</a></li>
+            <li class="nav__item" data-menu-key="licencias"><a class="nav__link" href="https://www.padelfederacion.es/Licencias_Buscar">Licencias</a></li>
+            <li class="nav__item" data-menu-key="formacion"><a class="nav__link" href="https://www.padelfederacion.es/Formacion_Calendario">Formación</a></li>
+            <li class="nav__item" data-menu-key="actualidad"><a class="nav__link" href="https://www.padelfederacion.es/Noticias">Actualidad</a></li>
+            <li class="nav__item" data-menu-key="federacion"><a class="nav__link" href="organos-de-gobierno.html">La Federación</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-panel__extra">
+          <li><a href="ley-de-transparencia.html">Transparencia</a></li>
+        </ul>
+      </div>
+
+      <div class="header__actions">
+        <button type="button" class="header__search-btn" id="buscar-abrir" aria-controls="buscador" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="sr-only">Buscar</span>
+        </button>
+        <a class="btn btn--outline btn--sm acceso" id="mi-club" href="#" aria-label="Mi Club (próximamente)">
+          Mi Club
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12M9 21v-6h6v6M3 21h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--red btn--sm acceso" id="mi-portal" href="#" aria-label="Mi Portal (próximamente)">
+          Mi Portal
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Buscador: envía temporalmente al buscador de la web actual -->
+    <div class="search" id="buscador" hidden>
+      <form class="container search__form" action="https://www.padelfederacion.es/busqueda.asp" method="post" role="search">
+        <label for="texto-busqueda" class="sr-only">Texto a buscar</label>
+        <input id="texto-busqueda" name="textobusqueda" type="search" placeholder="Buscar en la web de la FEP…" required>
+        <button type="submit" class="btn btn--red btn--sm">Buscar</button>
+      </form>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="menu-fondo" hidden></div>
+
+
+  <!-- Página migrada desde Licencias_Buscar.asp (/Licencias_Buscar) y, en la sección #consulta, Licencias_TuLicencia.asp
+       (/Consulta_Tu_Licencia: el acceso con número de licencia y clave sigue en la web actual). Los resultados llegan de GET /api/v1/licencias
+       (sin caché; respaldo: mock/licencias.json) y el desplegable de federaciones de
+       GET /api/v1/federacion/federaciones-autonomicas (respaldo: mock/federacion-federaciones-autonomicas.json).
+       Los criterios (con la fecha de nacimiento) no se guardan en la URL de la página. -->
+  <main id="contenido" class="pagina">
+
+    <!-- ============ CABECERA DE PÁGINA ============ -->
+    <section class="page-hero" aria-labelledby="titulo-pagina">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Estás en">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><span>Licencias</span></li>
+            <li aria-current="page">Buscar / consulta tu licencia</li>
+          </ol>
+        </nav>
+        <p class="eyebrow eyebrow--line">Licencias</p>
+        <h1 class="page-hero__title" id="titulo-pagina">Busca y consulta tu licencia.</h1>
+        <p class="page-hero__lead">Consigue tu número de licencia federativa buscando por tu fecha de nacimiento, por parte de tu nombre o apellidos, o por ambas cosas. Con tu número y tu clave puedes consultar y modificar los datos de tu licencia.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTENIDO ============ -->
+    <div class="container page-layout">
+      <nav class="page-toc" aria-labelledby="toc-titulo">
+        <p class="page-toc__title" id="toc-titulo">En esta página</p>
+        <ul class="page-toc__list" id="lic-indice">
+          <li><a href="#buscar" class="is-active" aria-current="true"><span>Buscar licencia</span></a></li>
+          <li><a href="#resultados"><span>Resultados</span></a></li>
+          <li><a href="#consulta"><span>Consulta tu licencia</span></a></li>
+          <li><a href="#ayuda"><span>Ayuda</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="page-content" id="lic-contenido">
+        <!-- ============ BUSCADOR ============ -->
+        <section class="clubs-search lic-search" id="buscar" aria-labelledby="lic-buscar-titulo">
+          <h2 class="org-group__title" id="lic-buscar-titulo">Buscador de licencias</h2>
+          <form class="clubs-form lic-form" id="lic-form" role="search" aria-labelledby="lic-buscar-titulo" novalidate>
+            <div class="clubs-form__field">
+              <label for="lic-tipo">Tipo de licencia</label>
+              <select id="lic-tipo" name="tipo">
+                <option value="jugador">Jugador/a</option>
+                <option value="tecnico">Técnico/a</option>
+                <option value="arbitro">Juez-árbitro</option>
+                <option value="silla-ruedas">Pádel en silla de ruedas</option>
+              </select>
+            </div>
+            <div class="clubs-form__field" id="lic-campo-federacion">
+              <label for="lic-federacion">Federación <span class="lic-form__req" id="lic-federacion-req">(obligatoria)</span></label>
+              <select id="lic-federacion" name="federacion" aria-describedby="lic-federacion-ayuda">
+                <option value="">Elige tu federación</option>
+              </select>
+              <p class="clubs-form__help" id="lic-federacion-ayuda">La federación autonómica que expidió tu licencia.</p>
+            </div>
+            <fieldset class="lic-fecha" aria-describedby="lic-fecha-ayuda">
+              <legend class="lic-fecha__legend">Fecha de nacimiento</legend>
+              <div class="clubs-form__field">
+                <label for="lic-dia">Día</label>
+                <select id="lic-dia" name="dia">
+                  <option value="">--</option>
+                </select>
+              </div>
+              <div class="clubs-form__field">
+                <label for="lic-mes">Mes</label>
+                <select id="lic-mes" name="mes">
+                  <option value="">--</option>
+                </select>
+              </div>
+              <div class="clubs-form__field">
+                <label for="lic-anio">Año</label>
+                <select id="lic-anio" name="anio">
+                  <option value="">--</option>
+                </select>
+              </div>
+              <p class="clubs-form__help lic-fecha__help" id="lic-fecha-ayuda">Opcional si escribes tu nombre o apellidos. Si la indicas, completa el día, el mes y el año.</p>
+            </fieldset>
+            <div class="clubs-form__field clubs-form__field--texto">
+              <label for="lic-texto">Nombre o apellidos</label>
+              <input id="lic-texto" name="busqueda" type="search" maxlength="100" autocomplete="off" placeholder="Por ejemplo: garcía lópez" aria-describedby="lic-texto-ayuda">
+              <p class="clubs-form__help" id="lic-texto-ayuda">Puedes escribir solo una parte: deben aparecer todas las palabras. No distingue mayúsculas ni tildes.</p>
+            </div>
+            <p class="est-form__error lic-form__error" id="lic-error" role="alert" hidden></p>
+            <div class="clubs-form__actions">
+              <button type="submit" class="btn btn--red btn--lg" id="lic-enviar">Buscar</button>
+              <button type="reset" class="clubs-form__reset">Limpiar</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- ============ RESULTADOS (los pinta buscar-licencia.js) ============ -->
+        <section class="clubs-results" id="resultados" aria-labelledby="resultados-titulo">
+          <div class="clubs-results__head">
+            <h2 class="org-group__title" id="resultados-titulo">Resultados <span class="org-count" id="lic-total" hidden></span></h2>
+            <p class="clubs-results__status" id="lic-estado" role="status" aria-live="polite"></p>
+          </div>
+          <p class="empty" id="lic-inicio">Rellena el buscador para ver tu número de licencia. Por protección de datos solo se muestran el número, los apellidos y el nombre.</p>
+          <div class="org-skeleton" id="lic-skeleton" aria-hidden="true" hidden>
+            <span class="sk sk--table"></span>
+          </div>
+          <div class="est-aviso lic-aviso" id="lic-mas" hidden></div>
+          <div class="clubs-table-wrap" id="lic-tabla-wrap" hidden>
+            <table class="org-table lic-table">
+              <caption class="sr-only" id="lic-caption">Licencias encontradas</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Licencia</th>
+                  <th scope="col">Primer apellido</th>
+                  <th scope="col">Segundo apellido</th>
+                  <th scope="col">Nombre</th>
+                </tr>
+              </thead>
+              <tbody id="lic-filas"></tbody>
+            </table>
+          </div>
+          <div class="est-aviso lic-aviso" id="lic-vacio" hidden>
+            <p><strong>No hemos encontrado ninguna licencia con esos datos.</strong></p>
+            <p>Vuelve a intentarlo por si ha sido un error al escribir: prueba con menos palabras (solo un apellido), sin la fecha de nacimiento o con otra federación.</p>
+          </div>
+          <p class="empty" id="lic-error-carga" hidden>No se ha podido hacer la búsqueda. Puedes buscar tu licencia en la <a href="https://www.padelfederacion.es/Licencias_Buscar">web actual de la FEP</a>.</p>
+          <p class="org-updated" id="lic-nota-estadisticas" hidden>En las licencias de jugador/a, el número enlaza a sus estadísticas.</p>
+        </section>
+
+        <!-- ============ CONSULTA TU LICENCIA (Licencias_TuLicencia.asp; el acceso con clave sigue en la web actual) ============ -->
+        <section class="lic-consulta" id="consulta" aria-labelledby="lic-consulta-titulo">
+          <h2 class="org-group__title" id="lic-consulta-titulo">Consulta y modifica tu licencia</h2>
+          <p>Cada licencia (jugador/a, técnico/a, juez-árbitro y pádel en silla de ruedas) tiene una clave única y personal. Con tu número de licencia y tu clave puedes consultar los datos de tu ficha federativa, cambiar tu clave de acceso y la opción de envío de comunicaciones, elegir el club de competición nacional para las pruebas por equipos de la FEP y descargar tu carné federativo.</p>
+          <p>La primera vez tienes que solicitar la clave con el <a href="https://www.padelfederacion.es/Licencias_SolicitaClave.asp">formulario de solicitud</a>, en el que aceptas las condiciones de protección de datos. Si no conoces tu número de licencia, búscalo <a href="#buscar">más arriba</a>. En las licencias de silla de ruedas escribe solo el número, sin «PS».</p>
+          <div class="lic-consulta__acciones">
+            <a class="btn btn--red btn--lg" href="https://www.padelfederacion.es/Consulta_Tu_Licencia">Acceder con mi licencia y clave</a>
+            <a class="lic-consulta__enlace" href="https://www.padelfederacion.es/Licencias_SolicitaClave.asp">Solicita tu clave / No recuerdo la clave</a>
+          </div>
+          <p class="org-updated">El acceso se hace, de momento, en la web actual de la FEP. Te aconsejamos entrar desde un dispositivo de confianza y no desde equipos públicos.</p>
+        </section>
+        <!-- ============ AYUDA ============ -->
+        <aside class="page-note" id="ayuda" aria-labelledby="nota-ayuda">
+          <h2 class="page-note__title" id="nota-ayuda">¿No encuentras tu licencia?</h2>
+          <p>Las licencias de jugador/a y de pádel en silla de ruedas se buscan entre las de la última temporada de cada federación autonómica. Si no apareces, consulta con tu federación o con el <a href="https://www.padelfederacion.es/Portal-del-Federado">Portal de atención al federado/a</a>.</p>
+          <p>¿Ya tienes tu número? Consulta tus <a href="estadisticas.html">estadísticas</a> o el <a href="ranking-absoluto.html">ranking</a>. Árbitros y técnicos también aparecen en el <a href="https://www.padelfederacion.es/Registro_Nacional_Arbitros">Registro Nacional de Árbitros</a> y el <a href="https://www.padelfederacion.es/Registro_Nacional_Tecnicos">Registro Nacional de Técnicos</a>.</p>
+        </aside>
+      </div>
+
+      <!-- ============ PATROCINADORES (columna derecha) ============
+           comun.js (NIVELES_PATRO) pinta aquí tres bloques: principales, patrocinadores y productos homologados. -->
+      <aside class="page-sponsors" id="patrocinadores-lateral" aria-labelledby="patro-lateral-titulo" hidden>
+        <p class="page-sponsors__title" id="patro-lateral-titulo">Patrocinadores FEP</p>
+        <ul class="page-sponsors__list" id="patrocinadores-lista"></ul>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
+            <img src="assets/img/logo-pie-negativo.png" alt="Federación Española de Pádel" width="123" height="56">
+          </a>
+          <p>Impulsamos el pádel. Acompañamos a quienes lo hacen posible.</p>
+          <!-- Rellenado con /api/v1/redes-sociales; estos son los del Figma por si la API no responde -->
+          <ul class="footer__social" id="redes-lista">
+            <li><a href="https://www.instagram.com/padelfederacion/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.youtube.com/user/FedEspPadel" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://x.com/padelfederacion" target="_blank" rel="noopener">X <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+        <nav class="footer__col" aria-labelledby="pie-descubre">
+          <h2 id="pie-descubre">Descubre</h2>
+          <ul>
+            <li><a href="organos-de-gobierno.html">Federación</a></li>
+            <li><a href="https://www.padelfederacion.es/Calendario.asp">Competiciones</a></li>
+            <li><a href="rankings.html">Rankings</a></li>
+            <li><a href="https://www.padelfederacion.es/Noticias.asp">Actualidad</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-labelledby="pie-federacion">
+          <h2 id="pie-federacion">Tu federación</h2>
+          <ul>
+            <li><a href="https://www.padelfederacion.es/Licencias_Intro.asp">Licencias</a></li>
+            <li><a href="https://www.padelfederacion.es/Formacion_Calendario.asp">Formación</a></li>
+            <li><a href="https://www.padelfederacion.es/Documentos_Normativas.asp">Documentación</a></li>
+            <li><a href="https://www.padelfederacion.es/Portal-del-Federado">Portal del federado</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-labelledby="pie-ayuda">
+          <h2 id="pie-ayuda">Te ayudamos</h2>
+          <ul>
+            <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+            <li><a href="federaciones.html">Federaciones territoriales</a></li>
+            <li><a href="https://www.padelfederacion.es/SolicitudArbitraje_Intro.asp">Arbitraje</a></li>
+            <li><a href="accesibilidad.html">Accesibilidad</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="anio">2026</span> Federación Española de Pádel</p>
+        <ul>
+          <li><a href="https://www.padelfederacion.es/Aviso_Legal">Aviso legal</a></li>
+          <li><a href="https://www.padelfederacion.es/Politica_Privacidad">Privacidad</a></li>
+          <li><a href="https://www.padelfederacion.es/Politica_Cookies">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

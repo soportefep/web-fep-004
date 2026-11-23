@@ -1,0 +1,815 @@
+{
+    "temporada":  2027,
+    "abierta":  false,
+    "fechaLimite":  "2026-11-20T14:00:00",
+    "titulo":  "Organización de torneos 2027",
+    "introduccion":  [
+                         "La Federación Española de Pádel abre la convocatoria para que clubes y entidades soliciten organizar las pruebas del calendario oficial 2027: campeonatos de España, circuitos nacionales de menores y de veteranos y pruebas de pádel en silla.",
+                         "Antes de presentar la solicitud, consulta el calendario provisional y las condiciones de organización. Cada solicitud corresponde a una prueba."
+                     ],
+    "avisoCerrado":  "El proceso de licitación de torneos para la temporada 2027 ha finalizado.",
+    "documentos":  [
+                       {
+                           "clave":  "calendario-provisional",
+                           "titulo":  "Calendario provisional 2027",
+                           "descripcion":  "Pruebas del calendario oficial 2027 con sus fechas previstas.",
+                           "archivo":  "docs/Calendario-2027-131026.pdf",
+                           "url":  "https://www.padelfederacion.es/refs/docs/Calendario-2027-131026.pdf"
+                       },
+                       {
+                           "clave":  "condiciones",
+                           "titulo":  "Condiciones de organización de torneos",
+                           "descripcion":  "Bases de la licitación de las pruebas del calendario 2027: lo que la FEP pide a las sedes y a las entidades organizadoras.",
+                           "archivo":  "docs/Bases-de-Licitacion-2027.pdf",
+                           "url":  "https://www.padelfederacion.es/refs/docs/Bases-de-Licitacion-2027.pdf"
+                       }
+                   ],
+    "pasos":  [
+                  {
+                      "orden":  1,
+                      "titulo":  "Datos de la solicitud",
+                      "texto":  "Elige la prueba, indica la sede (comunidad, provincia, localidad y club) y los datos de la entidad organizadora y de la persona responsable."
+                  },
+                  {
+                      "orden":  2,
+                      "titulo":  "Autorización firmada",
+                      "texto":  "Descarga la autorización con los datos de tu propuesta, fírmala en nombre de la entidad y adjúntala."
+                  },
+                  {
+                      "orden":  3,
+                      "titulo":  "Oferta",
+                      "texto":  "Detalla lo que ofrece la sede: pistas disponibles, instalaciones y servicios para jugadores, árbitros y público."
+                  },
+                  {
+                      "orden":  4,
+                      "titulo":  "Fianza",
+                      "texto":  "Si la prueba tiene fianza, elige cómo pagarla (transferencia bancaria o pasarela de pago). Al terminar recibirás por email el resguardo de la solicitud."
+                  }
+              ],
+    "grupos":  [
+                   {
+                       "clave":  "menores",
+                       "titulo":  "Torneos de menores"
+                   },
+                   {
+                       "clave":  "absolutos",
+                       "titulo":  "Torneos absolutos y sub-23"
+                   },
+                   {
+                       "clave":  "veteranos",
+                       "titulo":  "Torneos de veteranos"
+                   },
+                   {
+                       "clave":  "silla",
+                       "titulo":  "Torneos de pádel en silla"
+                   }
+               ],
+    "torneos":  [
+                    {
+                        "id":  5662,
+                        "titulo":  "Open de pádel en silla-Enero",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-01-22",
+                        "fechaFin":  "2027-01-24",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5663,
+                        "titulo":  "Circuito Nacional de Menores 1– Acceso mediante clasificatorio territorial + ranking nacional",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-02-05",
+                        "fechaFin":  "2027-02-07",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5664,
+                        "titulo":  "Open de pádel en silla-Feb1",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-02-05",
+                        "fechaFin":  "2027-02-07",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5665,
+                        "titulo":  "XLIII Cto. España Equipos 1ª",
+                        "grupo":  "absolutos",
+                        "fechaInicio":  "2027-02-12",
+                        "fechaFin":  "2027-02-14",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5666,
+                        "titulo":  "1ª Prueba Circuito Nacional cat. Por edades, +35,+40,+45,+50,+55 fem y +40,+45,+50,+55,+60 masc",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-02-19",
+                        "fechaFin":  "2027-02-21",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5667,
+                        "titulo":  "Open de pádel en silla-Feb2",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-02-19",
+                        "fechaFin":  "2027-02-21",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5668,
+                        "titulo":  "Cto. España Equipos Cadete",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-03-05",
+                        "fechaFin":  "2027-03-07",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5713,
+                        "titulo":  "Open de pádel en silla-Mar1",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-03-05",
+                        "fechaFin":  "2027-03-07",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5669,
+                        "titulo":  "Cto. España Equipos 2ª",
+                        "grupo":  "absolutos",
+                        "fechaInicio":  "2027-03-12",
+                        "fechaFin":  "2027-03-14",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5670,
+                        "titulo":  "Circuito Nacional de Menores 2– Acceso mediante clasificatorio territorial + ranking nacional.",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-03-19",
+                        "fechaFin":  "2027-03-21",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5671,
+                        "titulo":  "Open de pádel en silla-Mar2",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-03-19",
+                        "fechaFin":  "2027-03-21",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5672,
+                        "titulo":  "2ª Prueba Circuito Nacional cat. Por edades, +35,+40,+45,+50,+55 fem y +40,+45,+50,+55,+60 masc",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-04-02",
+                        "fechaFin":  "2027-04-04",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5673,
+                        "titulo":  "Open de pádel en silla-Abr1",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-04-02",
+                        "fechaFin":  "2027-04-04",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5674,
+                        "titulo":  "Open de pádel en silla-Abr2",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-04-16",
+                        "fechaFin":  "2027-04-18",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5675,
+                        "titulo":  "Circuito Nacional de Menores 3– Acceso mediante clasificatorio territorial + ranking nacional.",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-04-23",
+                        "fechaFin":  "2027-04-25",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5676,
+                        "titulo":  "V Cto. España Equipos por edades 1ª, 2ª y 3ª cat. Masculino +55 y Femenino +50",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-04-30",
+                        "fechaFin":  "2027-05-02",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5677,
+                        "titulo":  "Cto. España Equipos 3ª Fase Previa",
+                        "grupo":  "absolutos",
+                        "fechaInicio":  "2027-05-07",
+                        "fechaFin":  "2027-05-09",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5678,
+                        "titulo":  "Open de pádel en silla-May1",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-05-07",
+                        "fechaFin":  "2027-05-09",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5679,
+                        "titulo":  "XX Cto. España Selecciones Autonómicas por edades +35fem, +40 masc",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-05-14",
+                        "fechaFin":  "2027-05-16",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5680,
+                        "titulo":  "*Circuito Nacional de Menores 4— acceso únicamente por ranking nacional",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-05-21",
+                        "fechaFin":  "2027-05-23",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5681,
+                        "titulo":  "Open de pádel en silla-May2",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-05-21",
+                        "fechaFin":  "2027-05-23",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5714,
+                        "titulo":  "*Circuito Nacional de Menores 4— acceso únicamente por ranking nacional",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-05-21",
+                        "fechaFin":  "2027-05-23",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5682,
+                        "titulo":  "VIX Cto. España Equipos 1ª, 2ª y 3ª cat. Por edades masc +50 y fem +45",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-06-04",
+                        "fechaFin":  "2027-06-06",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5683,
+                        "titulo":  "Open de pádel en silla-Jun",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-06-04",
+                        "fechaFin":  "2027-06-06",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5684,
+                        "titulo":  "Cto. España Equipos 3ª Fase Final",
+                        "grupo":  "absolutos",
+                        "fechaInicio":  "2027-06-11",
+                        "fechaFin":  "2027-06-13",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5685,
+                        "titulo":  "Cto. España por edades +35,+40,+45,+50,+55,+60 fem y +35,+40,+45,+50,+55,+60 masc",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-06-25",
+                        "fechaFin":  "2027-06-27",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5686,
+                        "titulo":  "Cto. España de pádel en silla",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-06-25",
+                        "fechaFin":  "2027-06-27",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5687,
+                        "titulo":  "*Circuito Nacional de Menores 5— acceso únicamente por ranking nacional",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-07-09",
+                        "fechaFin":  "2027-07-11",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5688,
+                        "titulo":  "Clasificatorio Autonómico Campeonato de España de Menores",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-07-26",
+                        "fechaFin":  "2027-08-01",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5689,
+                        "titulo":  "Previa open Nacional Campeonato de España de Menores",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-08-09",
+                        "fechaFin":  "2027-08-15",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5690,
+                        "titulo":  "XL CAMPEONATO DE ESPAÑA DE MENORES",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-08-23",
+                        "fechaFin":  "2027-08-29",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5691,
+                        "titulo":  "XXIV Cto. España Equipos 1ª cat. Por edades ,masc +40 y fem +35",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-09-10",
+                        "fechaFin":  "2027-09-12",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5692,
+                        "titulo":  "XXIV Cto. España Selecciones Autonómicas Menores",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-09-17",
+                        "fechaFin":  "2027-09-19",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5693,
+                        "titulo":  "Cto. España Equipos 2ª cat. Por edades +40 masc y Ve +35 Fem",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-09-24",
+                        "fechaFin":  "2027-09-26",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5694,
+                        "titulo":  "II Cto. España Selecciones Autonómicas de pádel en silla",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-09-24",
+                        "fechaFin":  "2027-09-26",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5695,
+                        "titulo":  "Cto. España de parejas por edades mixto. +35,+40,+45,+50,+55,+60",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-10-01",
+                        "fechaFin":  "2027-10-03",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5696,
+                        "titulo":  "Open de pádel en silla-Oct1",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-10-01",
+                        "fechaFin":  "2027-10-03",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5697,
+                        "titulo":  "Circuito Nacional de Menores 6– Acceso mediante clasificatorio territorial + ranking nacional.",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-10-08",
+                        "fechaFin":  "2027-10-10",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5698,
+                        "titulo":  "Open de pádel en silla-Oct2",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-10-15",
+                        "fechaFin":  "2027-10-17",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5699,
+                        "titulo":  "*Circuito Nacional de Menores 7— acceso únicamente por ranking nacional",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-10-29",
+                        "fechaFin":  "2027-10-31",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5715,
+                        "titulo":  "*Circuito Nacional de Menores 7 — acceso únicamente por ranking nacional",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-10-29",
+                        "fechaFin":  "2027-10-31",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5700,
+                        "titulo":  "3ª Prueba Circuito Nacional cat. Por edades, +35,+40,+45,+50,+55 fem y +40,+45,+50,+55,+60 masc",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-11-05",
+                        "fechaFin":  "2027-11-07",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5701,
+                        "titulo":  "Open de pádel en silla-Nov1",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-11-05",
+                        "fechaFin":  "2027-11-07",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5702,
+                        "titulo":  "Cto. España Equipos Junior e Infantil",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-11-05",
+                        "fechaFin":  "2027-11-07",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5703,
+                        "titulo":  "VII COPA DE ESPAÑA LIGAS AUTONÓMICAS",
+                        "grupo":  "absolutos",
+                        "fechaInicio":  "2027-11-12",
+                        "fechaFin":  "2027-11-14",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5704,
+                        "titulo":  "II Copa de España de Ligas Autonómicas Plata",
+                        "grupo":  "absolutos",
+                        "fechaInicio":  "2027-11-12",
+                        "fechaFin":  "2027-11-14",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5705,
+                        "titulo":  "Cto. España Equipos 3ª cat. Por edades masc +40 y fem. +35",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-11-19",
+                        "fechaFin":  "2027-11-21",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5706,
+                        "titulo":  "*Circuito Nacional de Menores 8— acceso únicamente por ranking nacional",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-11-19",
+                        "fechaFin":  "2027-11-21",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5707,
+                        "titulo":  "II Copa de España de Ligas Autonómicas por edades +35 fem, +40 masc.",
+                        "grupo":  "veteranos",
+                        "fechaInicio":  "2027-11-26",
+                        "fechaFin":  "2027-11-28",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5708,
+                        "titulo":  "Open de pádel en silla-Nov2",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-11-26",
+                        "fechaFin":  "2027-11-28",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5709,
+                        "titulo":  "Master final de pádel en silla",
+                        "grupo":  "silla",
+                        "fechaInicio":  "2027-12-10",
+                        "fechaFin":  "2027-12-12",
+                        "fianza":  null
+                    },
+                    {
+                        "id":  5710,
+                        "titulo":  "Master final de Menores",
+                        "grupo":  "menores",
+                        "fechaInicio":  "2027-12-10",
+                        "fechaFin":  "2027-12-12",
+                        "fianza":  null
+                    }
+                ],
+    "comunidades":  [
+                        {
+                            "id":  1,
+                            "nombre":  "ANDALUCÍA",
+                            "provincias":  [
+                                               {
+                                                   "id":  4,
+                                                   "nombre":  "ALMERÍA"
+                                               },
+                                               {
+                                                   "id":  11,
+                                                   "nombre":  "CÁDIZ"
+                                               },
+                                               {
+                                                   "id":  14,
+                                                   "nombre":  "CÓRDOBA"
+                                               },
+                                               {
+                                                   "id":  18,
+                                                   "nombre":  "GRANADA"
+                                               },
+                                               {
+                                                   "id":  21,
+                                                   "nombre":  "HUELVA"
+                                               },
+                                               {
+                                                   "id":  23,
+                                                   "nombre":  "JAEN"
+                                               },
+                                               {
+                                                   "id":  29,
+                                                   "nombre":  "MÁLAGA"
+                                               },
+                                               {
+                                                   "id":  41,
+                                                   "nombre":  "SEVILLA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  2,
+                            "nombre":  "ARAGÓN",
+                            "provincias":  [
+                                               {
+                                                   "id":  22,
+                                                   "nombre":  "HUESCA"
+                                               },
+                                               {
+                                                   "id":  44,
+                                                   "nombre":  "TERUEL"
+                                               },
+                                               {
+                                                   "id":  50,
+                                                   "nombre":  "ZARAGOZA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  3,
+                            "nombre":  "ASTURIAS",
+                            "provincias":  [
+                                               {
+                                                   "id":  33,
+                                                   "nombre":  "ASTURIAS"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  19,
+                            "nombre":  "C.VALENCIANA",
+                            "provincias":  [
+                                               {
+                                                   "id":  3,
+                                                   "nombre":  "ALICANTE"
+                                               },
+                                               {
+                                                   "id":  12,
+                                                   "nombre":  "CASTELLÓN"
+                                               },
+                                               {
+                                                   "id":  46,
+                                                   "nombre":  "VALENCIA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  4,
+                            "nombre":  "CANTABRIA",
+                            "provincias":  [
+                                               {
+                                                   "id":  39,
+                                                   "nombre":  "CANTABRIA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  5,
+                            "nombre":  "CASTILLA LA MANCHA",
+                            "provincias":  [
+                                               {
+                                                   "id":  2,
+                                                   "nombre":  "ALBACETE"
+                                               },
+                                               {
+                                                   "id":  13,
+                                                   "nombre":  "CIUDAD REAL"
+                                               },
+                                               {
+                                                   "id":  16,
+                                                   "nombre":  "CUENCA"
+                                               },
+                                               {
+                                                   "id":  19,
+                                                   "nombre":  "GUADALAJARA"
+                                               },
+                                               {
+                                                   "id":  45,
+                                                   "nombre":  "TOLEDO"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  6,
+                            "nombre":  "CASTILLA LEÓN",
+                            "provincias":  [
+                                               {
+                                                   "id":  5,
+                                                   "nombre":  "ÁVILA"
+                                               },
+                                               {
+                                                   "id":  9,
+                                                   "nombre":  "BURGOS"
+                                               },
+                                               {
+                                                   "id":  24,
+                                                   "nombre":  "LEÓN"
+                                               },
+                                               {
+                                                   "id":  34,
+                                                   "nombre":  "PALENCIA"
+                                               },
+                                               {
+                                                   "id":  37,
+                                                   "nombre":  "SALAMANCA"
+                                               },
+                                               {
+                                                   "id":  40,
+                                                   "nombre":  "SEGOVIA"
+                                               },
+                                               {
+                                                   "id":  42,
+                                                   "nombre":  "SORIA"
+                                               },
+                                               {
+                                                   "id":  47,
+                                                   "nombre":  "VALLADOLID"
+                                               },
+                                               {
+                                                   "id":  49,
+                                                   "nombre":  "ZAMORA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  7,
+                            "nombre":  "CATALUÑA",
+                            "provincias":  [
+                                               {
+                                                   "id":  8,
+                                                   "nombre":  "BARCELONA"
+                                               },
+                                               {
+                                                   "id":  17,
+                                                   "nombre":  "GIRONA"
+                                               },
+                                               {
+                                                   "id":  25,
+                                                   "nombre":  "LLEIDA"
+                                               },
+                                               {
+                                                   "id":  43,
+                                                   "nombre":  "TARRAGONA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  8,
+                            "nombre":  "CEUTA",
+                            "provincias":  [
+                                               {
+                                                   "id":  51,
+                                                   "nombre":  "CEUTA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  9,
+                            "nombre":  "EXTREMADURA",
+                            "provincias":  [
+                                               {
+                                                   "id":  6,
+                                                   "nombre":  "BADAJOZ"
+                                               },
+                                               {
+                                                   "id":  10,
+                                                   "nombre":  "CACERES"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  10,
+                            "nombre":  "GALICIA",
+                            "provincias":  [
+                                               {
+                                                   "id":  15,
+                                                   "nombre":  "A CORUÑA"
+                                               },
+                                               {
+                                                   "id":  27,
+                                                   "nombre":  "LUGO"
+                                               },
+                                               {
+                                                   "id":  32,
+                                                   "nombre":  "OURENSE"
+                                               },
+                                               {
+                                                   "id":  36,
+                                                   "nombre":  "PONTEVEDRA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  11,
+                            "nombre":  "ILLES BALEARS",
+                            "provincias":  [
+                                               {
+                                                   "id":  7,
+                                                   "nombre":  "BALEARES"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  12,
+                            "nombre":  "ISLAS CANARIAS",
+                            "provincias":  [
+                                               {
+                                                   "id":  35,
+                                                   "nombre":  "LAS PALMAS"
+                                               },
+                                               {
+                                                   "id":  38,
+                                                   "nombre":  "STA CRUZ DE TENERIFE"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  13,
+                            "nombre":  "LA RIOJA",
+                            "provincias":  [
+                                               {
+                                                   "id":  26,
+                                                   "nombre":  "LA RIOJA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  14,
+                            "nombre":  "MADRID",
+                            "provincias":  [
+                                               {
+                                                   "id":  28,
+                                                   "nombre":  "MADRID"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  15,
+                            "nombre":  "MELILLA",
+                            "provincias":  [
+                                               {
+                                                   "id":  52,
+                                                   "nombre":  "MELILLA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  16,
+                            "nombre":  "MURCIA",
+                            "provincias":  [
+                                               {
+                                                   "id":  30,
+                                                   "nombre":  "MURCIA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  17,
+                            "nombre":  "NAVARRA",
+                            "provincias":  [
+                                               {
+                                                   "id":  31,
+                                                   "nombre":  "NAVARRA"
+                                               }
+                                           ]
+                        },
+                        {
+                            "id":  18,
+                            "nombre":  "PAIS VASCO",
+                            "provincias":  [
+                                               {
+                                                   "id":  1,
+                                                   "nombre":  "ÁLAVA"
+                                               },
+                                               {
+                                                   "id":  48,
+                                                   "nombre":  "BIZKAIA"
+                                               },
+                                               {
+                                                   "id":  20,
+                                                   "nombre":  "GIPUZKOA"
+                                               }
+                                           ]
+                        }
+                    ],
+    "proteccionDatos":  [
+                            "Le informamos de la existencia de un fichero titularidad del que LA FEDERACION ESPAÑOLA DE PADEL (FEP) es responsable y en el que se guardan los datos personales que Ud. nos proporciona, con la finalidad del mantenimiento y gestión de su relación con la FEP y de la información sobre sus servicios y actividades. Sus datos podrán ser cedidos a las empresas patrocinadoras de la FEP para remitir información sobre sus servicios y actividades.",
+                            "Le informamos que algunos de sus datos podrán ser incorporados a la página web de la FEP con relación a su participación en competición o inclusión en las clasificaciones. Usted puede ejercitar sus derechos de acceso, rectificación, cancelación y, en su caso, oposición enviando una solicitud por escrito, acompañada de una fotocopia de su DNI dirigida a la FEDERACION ESPAÑOLA DE PADEL, C/ Francisco Silvela, 36 1º of.9, 28028 MADRID"
+                        ],
+    "envioUrl":  "https://www.padelfederacion.es/Organizacion_P0.asp",
+    "actualizado":  "2026-11-16"
+}

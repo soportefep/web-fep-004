@@ -1,0 +1,116 @@
+{
+    "id":  18,
+    "nombre":  "FEDERACION CANARIA DE PADEL",
+    "nacional":  false,
+    "imagen":  "images/18.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-18.jpg",
+    "presidente":  "Diego Gil Acosta",
+    "direccion":  "Calle León y Castillo 26 , 3º ofic 10",
+    "codigoPostal":  "35003",
+    "localidad":  "LAS PALMAS",
+    "telefonos":  [
+                      "928635685",
+                      "619 410 232"
+                  ],
+    "email":  "info@canariaspadel.es",
+    "web":  "https://canariaspadel.es/",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  7645,
+                      "puesto":  5,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  98,
+                      "arbitros":  28,
+                      "clubes":  1,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  649,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  382,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  584,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  905,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  1174,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  1610,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  1977,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  2201,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  2836,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  3646,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  4843,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  5900,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  6855,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  7467,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  7645,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  5365,
+                                     "femenino":  2280,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  534,
+                                     "sub23":  268,
+                                     "senior":  2961,
+                                     "veteranos":  3882,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

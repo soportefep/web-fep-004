@@ -1,0 +1,73 @@
+{
+    "id":  28544,
+    "anio":  2026,
+    "titulo":  "CIRCUITO DE VETERANOS 1 (MÉRIDA)",
+    "categoria":  "veteranos",
+    "seleccion":  false,
+    "fechaInicio":  "2026-05-29",
+    "fechaFin":  "2026-05-31",
+    "ciudad":  "MÉRIDA",
+    "sedes":  [
+                  {
+                      "nombre":  "C.D. PADELMERIDA",
+                      "web":  null,
+                      "latitud":  null,
+                      "longitud":  null
+                  }
+              ],
+    "cuotas":  [
+                   23
+               ],
+    "generos":  [
+
+                ],
+    "notaPrensaHtml":  null,
+    "marcadores":  [
+
+                   ],
+    "cuadrosPublicados":  false,
+    "cuadros":  [
+
+                ],
+    "cuadroHonor":  [
+
+                    ],
+    "notificacionesHtml":  "\u003cbr\u003e\r\n                       \u003ch2\u003e\r\n\t\u003cstrong\u003e\u003cspan style=\"font-size:16px;\"\u003eLamentamos comunicar la cancelaci\u0026oacute;n de la prueba. Esta decisi\u0026oacute;n se debe a la falta de inscripciones suficientes y a las bajas de \u0026uacute;ltima hora de varias parejas confirmadas.\u003c/span\u003e\u003c/strong\u003e\u003c/h2\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003e\u003cspan style=\"font-size:16px;\"\u003eEn los pr\u0026oacute;ximos d\u0026iacute;as se proceder\u0026aacute; al reembolso \u0026iacute;ntegro de la inscripci\u0026oacute;n en la misma tarjeta bancaria con la que se realiz\u0026oacute; el pago.\u003c/span\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003e\u003cspan style=\"font-size:16px;\"\u003eEn la FEP seguimos apostando fuerte por el p\u0026aacute;del de veteranos y estamos poniendo todo nuestro esfuerzo en activar con \u0026eacute;xito las siguientes citas del calendario.\u003c/span\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cbr /\u003e\r\n\u003cbr\u003e\r\n                       \r\n\t\t\t\t\t\t\t\r\n\r\n                        \u003chr class=\"prl-article-divider\"\u003e",
+    "adjuntos":  [
+                     {
+                         "titulo":  "HOTELES RECOMENDADOS",
+                         "tipo":  null,
+                         "archivo":  "AlojamientosCircuitoNacionalVerteranosMerida.pdf",
+                         "url":  "https://www.padelfederacion.es/Paginas/Torneos/2026/AlojamientosCircuitoNacionalVerteranosMerida.pdf"
+                     }
+                 ],
+    "inscritosParejas":  [
+                             {
+                                 "genero":  "masculino",
+                                 "parejas":  9,
+                                 "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=M\u0026id=28544"
+                             },
+                             {
+                                 "genero":  "femenino",
+                                 "parejas":  4,
+                                 "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=F\u0026id=28544"
+                             }
+                         ],
+    "entrenadores":  null,
+    "inscripcion":  {
+                        "abierta":  false,
+                        "fechaLimite":  null,
+                        "individual":  false,
+                        "informacionHtml":  null,
+                        "condicionesHtml":  null,
+                        "formularioUrl":  "https://www.padelfederacion.es/Camp_Parejas_Veteranos.asp?IdTorneo=28544"
+                    },
+    "infoAdicionalHtml":  null,
+    "cartel":  null,
+    "cartelUrl":  null,
+    "noticias":  [
+
+                 ],
+    "urlWebActual":  "https://www.padelfederacion.es/Camp_Parejas_Veteranos.asp?IdTorneo=28544",
+    "consultado":  "2026-11-17T18:35:30"
+}

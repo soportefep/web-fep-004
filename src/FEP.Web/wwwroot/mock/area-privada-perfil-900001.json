@@ -1,0 +1,55 @@
+{
+  "datosDePrueba": true,
+  "nota": "DATOS DE PRUEBA del prototipo: jugador ficticio. La API real (GET /api/v1/area-privada/perfil/{id}) los devolverá solo con la sesión del federado iniciada.",
+  "tipo": "jugador",
+  "id": "900001",
+  "nombre": "ALEX",
+  "apellidos": "EJEMPLO DEMO",
+  "genero": "M",
+  "categoria": "CAT-35",
+  "licencia": {
+    "numero": "900001",
+    "tipo": "Jugador/a",
+    "temporada": 2026,
+    "estado": "activa",
+    "vigenteHasta": "2026-12-31",
+    "club": "CLUB DE PÁDEL EJEMPLO",
+    "clubId": "0999001",
+    "federacion": "Federación de Pádel de Madrid",
+    "seguro": "Seguro deportivo incluido"
+  },
+  "ranking": {
+    "nombre": "Ranking Único Absoluto masculino",
+    "enlace": "ranking-absoluto.html",
+    "posicion": 412,
+    "puntos": 3120,
+    "variacion": 15,
+    "torneosRanking": 9,
+    "evolucion": [
+      { "mes": "JUN", "posicion": 560 },
+      { "mes": "JUL", "posicion": 528 },
+      { "mes": "AGO", "posicion": 505 },
+      { "mes": "SEP", "posicion": 470 },
+      { "mes": "OCT", "posicion": 427 },
+      { "mes": "NOV", "posicion": 412 }
+    ]
+  },
+  "balance": { "partidos": { "ganados": 31, "perdidos": 17 }, "torneos": 12 },
+  "inscripciones": [
+    { "titulo": "Torneo de Navidad (ejemplo)", "fechaInicio": "2026-12-18", "fechaFin": "2026-12-20", "sede": "MADRID · CLUB DE PÁDEL EJEMPLO", "categoria": "Absoluto", "pareja": "PRUEBA MUESTRA, LUCÍA", "estado": "confirmada" },
+    { "titulo": "1.ª Prueba Circuito Nacional de Veteranos", "fechaInicio": "2027-02-19", "fechaFin": "2027-02-21", "sede": "En licitación", "categoria": "Veteranos +35", "pareja": null, "estado": "plazo abierto", "enlace": "calendariofep.html" }
+  ],
+  "historial": [
+    { "titulo": "Torneo de menores de otoño (ejemplo)", "fecha": "2026-10-18", "ronda": "Final", "puntos": 640 },
+    { "titulo": "Open de verano (ejemplo)", "fecha": "2026-07-12", "ronda": "Semifinal", "puntos": 420 },
+    { "titulo": "Torneo de primavera (ejemplo)", "fecha": "2026-04-26", "ronda": "Cuartos de final", "puntos": 310 }
+  ],
+  "certificados": [
+    { "titulo": "Certificado de licencia federativa 2026", "tipo": "PDF" },
+    { "titulo": "Certificado de federado para el seguro deportivo", "tipo": "PDF" },
+    { "titulo": "Historial de resultados 2026", "tipo": "PDF" }
+  ],
+  "avisos": [
+    { "fecha": "2026-11-20", "texto": "Ya puedes renovar tu licencia para la temporada 2027." }
+  ]
+}

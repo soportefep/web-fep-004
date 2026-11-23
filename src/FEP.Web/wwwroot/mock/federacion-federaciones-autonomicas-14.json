@@ -1,0 +1,115 @@
+{
+    "id":  14,
+    "nombre":  "FEDERACION DE PADEL DE LA COMUNITAT VALENCIANA",
+    "nacional":  false,
+    "imagen":  "images/14.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-14.jpg",
+    "presidente":  "PALOMA CERDÁ SANCHO",
+    "direccion":  "CALLE ALFAHUIR 44 BAJO",
+    "codigoPostal":  "46020",
+    "localidad":  "VALENCIA",
+    "telefonos":  [
+                      "962054167"
+                  ],
+    "email":  "info@padelcv.com",
+    "web":  "https://www.padelcv.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  7417,
+                      "puesto":  6,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  94,
+                      "arbitros":  17,
+                      "clubes":  109,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  2932,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  3691,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  4558,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  5527,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  6184,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  6725,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  6704,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  6554,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  7051,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  8184,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  7897,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  7558,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  7365,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  7337,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  7417,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  4853,
+                                     "femenino":  2564,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  965,
+                                     "sub23":  683,
+                                     "senior":  3227,
+                                     "veteranos":  2542,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

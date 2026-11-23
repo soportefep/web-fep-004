@@ -1,0 +1,17 @@
+{
+  "cuenta": "padelfederacion",
+  "perfilUrl": "https://www.instagram.com/padelfederacion/",
+  "reelsUrl": "https://www.instagram.com/padelfederacion/reels/",
+  "datosDePrueba": true,
+  "nota": "DATOS DE PRUEBA para el prototipo. La API real (GET /api/v1/redes-sociales/instagram-reels) los obtendrá de la Instagram Graph API (/{ig-user-id}/media con media_product_type = REELS): descripcion = caption, fecha = timestamp, miniaturaUrl = thumbnail_url, enlace = permalink. Las miniaturas de aquí son fotos de noticias de la web y los enlaces van a la pestaña de reels del perfil.",
+  "reels": [
+    { "id": "prueba-1", "descripcion": "VI Copa de España HEAD de ligas autonómicas: así se vivió en Barcelona", "fecha": "2026-11-16T19:30:00", "miniaturaUrl": "assets/img/fep/noticias/2042157828.jpg", "enlace": "https://www.instagram.com/padelfederacion/reels/" },
+    { "id": "prueba-2", "descripcion": "45 millones de visualizaciones durante el FIP World Cup 2026. ¡Gracias!", "fecha": "2026-11-12T13:00:00", "miniaturaUrl": "assets/img/fep/noticias/5083860099.jpg", "enlace": "https://www.instagram.com/padelfederacion/reels/" },
+    { "id": "prueba-3", "descripcion": "Campeonato de España Infantil y Junior en Aragón: los mejores momentos", "fecha": "2026-11-10T18:45:00", "miniaturaUrl": "assets/img/fep/noticias/7801740348.jpg", "enlace": "https://www.instagram.com/padelfederacion/reels/" },
+    { "id": "prueba-4", "descripcion": "Histórico doblete en Qatar: el podio, desde dentro", "fecha": "2026-11-08T22:10:00", "miniaturaUrl": "assets/img/fep/noticias/1208982169.jpg", "enlace": "https://www.instagram.com/padelfederacion/reels/" },
+    { "id": "prueba-5", "descripcion": "¡Estamos en la final del FIP World Cup 2026!", "fecha": "2026-11-07T20:00:00", "miniaturaUrl": "assets/img/fep/noticias/1265699088.jpg", "enlace": "https://www.instagram.com/padelfederacion/reels/" },
+    { "id": "prueba-6", "descripcion": "España saluda a las semis", "fecha": "2026-11-06T21:30:00", "miniaturaUrl": "assets/img/fep/noticias/8553205192.jpg", "enlace": "https://www.instagram.com/padelfederacion/reels/" },
+    { "id": "prueba-7", "descripcion": "Campeones de España por equipos junior: el trofeo ya está en casa", "fecha": "2026-11-05T17:15:00", "miniaturaUrl": "assets/img/fep/portada/cto-espana-junior-2026.jpg", "enlace": "https://www.instagram.com/padelfederacion/reels/" },
+    { "id": "prueba-8", "descripcion": "Formación FEP: abiertas nuevas convocatorias para técnicos y árbitros", "fecha": "2026-11-03T12:00:00", "miniaturaUrl": "assets/img/fep/destacados/formacionfep.jpg", "enlace": "https://www.instagram.com/padelfederacion/reels/" }
+  ]
+}

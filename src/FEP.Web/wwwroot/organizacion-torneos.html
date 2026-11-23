@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organización de torneos · Federación Española de Pádel</title>
+  <meta name="description" content="Convocatoria de la Federación Española de Pádel para organizar las pruebas del calendario oficial: calendario provisional, condiciones de organización, pruebas que se pueden solicitar y formulario de solicitud.">
+  <!-- Base de la API nueva. Vacío = mismo origen. Si la API no responde se usan los JSON de /mock. -->
+  <meta name="fep-api-base" content="">
+  <!-- Web actual: destino temporal de los enlaces a páginas aún no migradas -->
+  <meta name="fep-legacy-base" content="https://www.padelfederacion.es/">
+  <meta name="theme-color" content="#111B2B">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fep.css">
+  <link rel="stylesheet" href="assets/css/tema-003.css">
+  <!-- Scripts clásicos con defer (no módulos): así la página también funciona abierta desde disco -->
+  <script defer src="mock/mocks.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/comun.js"></script>
+  <script defer src="assets/js/organizacion-torneos.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ BARRA SUPERIOR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <nav class="fed-strip" id="fed-strip" aria-label="Federaciones autonómicas">
+        <ul class="fed-strip__list" id="fed-strip-lista"></ul>
+      </nav>
+      <ul class="topbar__links">
+        <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+        <li><a class="topbar__extranet" href="https://www.padelfederacion.es/ControlAcceso.asp" title="Acceso a la gestión interna">Extranet</a></li>
+        <li><button type="button" class="topbar__lang" aria-label="Idioma: español" aria-disabled="true">ES <span aria-hidden="true">⌄</span></button></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ CABECERA ============ -->
+  <header class="header" id="cabecera">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
+        <img src="assets/img/logo.png" alt="Federación Española de Pádel" width="210" height="70">
+      </a>
+
+      <button type="button" class="header__burger" id="menu-abrir" aria-controls="menu-principal" aria-expanded="false">
+        <span class="sr-only">Abrir menú</span>
+        <span class="header__burger-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-panel" id="menu-principal" aria-label="Menú principal">
+        <div class="nav-panel__head">
+          <img src="assets/img/logo.png" alt="" width="150" height="50">
+          <button type="button" class="nav-panel__close" id="menu-cerrar"><span class="sr-only">Cerrar menú</span><span aria-hidden="true">✕</span></button>
+        </div>
+        <nav aria-label="Principal">
+          <!-- Menú principal (5 secciones). comun.js (MENU_FEP) pinta los desplegables y accesos móviles -->
+          <ul class="nav" id="nav-principal">
+            <li class="nav__item" data-menu-key="competicion"><a class="nav__link" href="calendariofep.html">Competición</a></li>
+            <li class="nav__item" data-menu-key="licencias"><a class="nav__link" href="https://www.padelfederacion.es/Licencias_Buscar">Licencias</a></li>
+            <li class="nav__item" data-menu-key="formacion"><a class="nav__link" href="https://www.padelfederacion.es/Formacion_Calendario">Formación</a></li>
+            <li class="nav__item" data-menu-key="actualidad"><a class="nav__link" href="https://www.padelfederacion.es/Noticias">Actualidad</a></li>
+            <li class="nav__item" data-menu-key="federacion"><a class="nav__link" href="organos-de-gobierno.html">La Federación</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-panel__extra">
+          <li><a href="ley-de-transparencia.html">Transparencia</a></li>
+        </ul>
+      </div>
+
+      <div class="header__actions">
+        <button type="button" class="header__search-btn" id="buscar-abrir" aria-controls="buscador" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="sr-only">Buscar</span>
+        </button>
+        <a class="btn btn--outline btn--sm acceso" id="mi-club" href="#" aria-label="Mi Club (próximamente)">
+          Mi Club
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12M9 21v-6h6v6M3 21h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--red btn--sm acceso" id="mi-portal" href="#" aria-label="Mi Portal (próximamente)">
+          Mi Portal
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Buscador: envía temporalmente al buscador de la web actual -->
+    <div class="search" id="buscador" hidden>
+      <form class="container search__form" action="https://www.padelfederacion.es/busqueda.asp" method="post" role="search">
+        <label for="texto-busqueda" class="sr-only">Texto a buscar</label>
+        <input id="texto-busqueda" name="textobusqueda" type="search" placeholder="Buscar en la web de la FEP…" required>
+        <button type="submit" class="btn btn--red btn--sm">Buscar</button>
+      </form>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="menu-fondo" hidden></div>
+
+  <!-- Página migrada desde Organizacion_Torneos.asp (/Organizacion_Torneos) y Organizacion_FueraPlazo.asp. El contenido
+       llega de GET /api/v1/competicion/organizacion-torneos y los clubes de cada provincia de
+       GET /api/v1/competicion/organizacion-torneos/clubes?provincia= (respaldo: mock/competicion-organizacion-torneos*.json).
+       El formulario se envía, como en el ASP, a Organizacion_P0.asp de la web actual, donde siguen los pasos 2 a 4. -->
+  <main id="contenido" class="pagina">
+
+    <!-- ============ CABECERA DE PÁGINA ============ -->
+    <section class="page-hero" aria-labelledby="titulo-pagina">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Estás en">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><span>Competición</span></li>
+            <li aria-current="page">Organización de torneos</li>
+          </ol>
+        </nav>
+        <p class="eyebrow eyebrow--line">Competición</p>
+        <h1 class="page-hero__title" id="titulo-pagina">Organización de torneos.</h1>
+        <p class="page-hero__lead">Convocatoria para que clubes y entidades soliciten organizar las pruebas del calendario oficial de la FEP: documentos de la convocatoria, pruebas que se pueden solicitar y formulario de solicitud.</p>
+        <ul class="page-hero__stats" id="orgt-resumen" aria-label="Resumen de la convocatoria"></ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTENIDO ============ -->
+    <div class="container page-layout">
+      <!-- Índice lateral: solo las secciones visibles (lo completa organizacion-torneos.js) -->
+      <nav class="page-toc" aria-labelledby="toc-titulo">
+        <p class="page-toc__title" id="toc-titulo">En esta página</p>
+        <ul class="page-toc__list" id="orgt-indice"></ul>
+      </nav>
+
+      <div class="page-content" id="orgt-contenido" aria-busy="true">
+        <div class="org-skeleton" id="orgt-skeleton" aria-hidden="true">
+          <span class="sk sk--title"></span>
+          <span class="sk sk--card"></span>
+          <span class="sk sk--card"></span>
+          <span class="sk sk--table"></span>
+        </div>
+        <p class="empty" id="orgt-error" hidden>No se ha podido cargar la convocatoria. Puedes consultarla en la <a href="https://www.padelfederacion.es/Organizacion_Torneos">web actual de la FEP</a>.</p>
+
+        <!-- Estado de la convocatoria (abierta con su plazo, o cerrada: Organizacion_FueraPlazo.asp) -->
+        <section class="orgt-estado" id="convocatoria" aria-labelledby="convocatoria-titulo" hidden>
+          <p class="eyebrow" id="orgt-estado-etiqueta">Convocatoria abierta</p>
+          <h2 class="orgt-estado__title" id="convocatoria-titulo">Organización de torneos</h2>
+          <div class="orgt-estado__text" id="orgt-intro"></div>
+          <p class="orgt-plazo" id="orgt-plazo" hidden></p>
+        </section>
+
+        <!-- Documentos de la convocatoria (SFEP_Calendario_Archivo) -->
+        <section class="calf-section" id="documentos" aria-labelledby="documentos-titulo" hidden>
+          <h2 class="org-group__title" id="documentos-titulo">Documentos de la convocatoria <span class="org-count" id="orgt-docs-total">…</span></h2>
+          <ul class="doc-list" id="orgt-docs"></ul>
+        </section>
+
+        <!-- Pasos del proceso: el 1 es el formulario de esta página; el resto, en la web actual -->
+        <section class="calf-section" id="proceso" aria-labelledby="proceso-titulo" hidden>
+          <h2 class="org-group__title" id="proceso-titulo">Cómo se solicita</h2>
+          <ol class="orgt-pasos" id="orgt-pasos"></ol>
+          <p class="org-updated">El primer paso se completa en esta página. Al enviar el formulario, la solicitud continúa en la web actual de la FEP con los pasos siguientes.</p>
+        </section>
+
+        <!-- Formulario de solicitud: mismos nombres de campo que el ASP (los lee Organizacion_P0.asp).
+             La web actual trabaja en Windows-1252: accept-charset para que tildes y eñes lleguen bien. -->
+        <section class="calf-section" id="solicitud" aria-labelledby="solicitud-titulo" hidden>
+          <h2 class="org-group__title" id="solicitud-titulo">Formulario de solicitud</h2>
+          <p class="orgt-nota">Los campos marcados con <span aria-hidden="true">*</span><span class="sr-only">asterisco</span> son obligatorios.</p>
+          <div class="clubs-search orgt-search">
+            <form class="clubs-form orgt-form" id="orgt-form" method="post" action="https://www.padelfederacion.es/Organizacion_P0.asp" accept-charset="windows-1252" novalidate aria-labelledby="solicitud-titulo">
+              <input type="hidden" name="accion" value="modificar">
+
+              <div class="orgt-errores" id="orgt-errores" tabindex="-1" hidden>
+                <p class="orgt-errores__title" id="orgt-errores-titulo">Revisa estos datos antes de continuar:</p>
+                <ul id="orgt-errores-lista"></ul>
+              </div>
+
+              <fieldset class="orgt-fieldset">
+                <legend class="orgt-legend">Prueba</legend>
+                <div class="clubs-form__field orgt-field--ancho">
+                  <label for="orgt-torneo">Prueba que quieres organizar *</label>
+                  <select id="orgt-torneo" name="torneo" required aria-describedby="orgt-torneo-info">
+                    <option value="0">Selecciona una prueba</option>
+                  </select>
+                </div>
+                <p class="orgt-info" id="orgt-torneo-info" aria-live="polite" hidden></p>
+              </fieldset>
+
+              <fieldset class="orgt-fieldset">
+                <legend class="orgt-legend">Sede</legend>
+                <div class="clubs-form__field">
+                  <label for="orgt-comunidad">Comunidad autónoma *</label>
+                  <select id="orgt-comunidad" name="comunidad" required>
+                    <option value="0">Selecciona una comunidad</option>
+                  </select>
+                </div>
+                <div class="clubs-form__field">
+                  <label for="orgt-provincia">Provincia *</label>
+                  <select id="orgt-provincia" name="provincia" required disabled>
+                    <option value="0">Elige antes la comunidad</option>
+                  </select>
+                </div>
+                <div class="clubs-form__field">
+                  <label for="orgt-localidad">Localidad *</label>
+                  <input id="orgt-localidad" name="localidad" type="text" maxlength="50" autocomplete="address-level2" required>
+                </div>
+                <div class="clubs-form__field">
+                  <label for="orgt-club">Club sede</label>
+                  <select id="orgt-club" name="club" disabled aria-describedby="orgt-club-ayuda">
+                    <option value="0">Elige antes la provincia</option>
+                  </select>
+                </div>
+                <div class="clubs-form__field orgt-field--ancho">
+                  <label for="orgt-club2">Club sede (si no aparece en la lista)</label>
+                  <input id="orgt-club2" name="club2" type="text" maxlength="150" aria-describedby="orgt-club-ayuda">
+                  <p class="clubs-form__help" id="orgt-club-ayuda">Elige el club en la lista o, si no lo encuentras, escribe su nombre. Uno de los dos es obligatorio.</p>
+                </div>
+              </fieldset>
+
+              <fieldset class="orgt-fieldset">
+                <legend class="orgt-legend">Organizador y contacto</legend>
+                <div class="clubs-form__field orgt-field--ancho">
+                  <label for="orgt-organizador">Entidad organizadora *</label>
+                  <input id="orgt-organizador" name="organizador" type="text" maxlength="150" autocomplete="organization" required>
+                </div>
+                <div class="clubs-form__field orgt-field--ancho">
+                  <label for="orgt-responsable">Persona responsable (nombre y apellidos) *</label>
+                  <input id="orgt-responsable" name="responsable" type="text" maxlength="100" autocomplete="name" required>
+                </div>
+                <div class="clubs-form__field">
+                  <label for="orgt-telefono">Teléfono de contacto *</label>
+                  <input id="orgt-telefono" name="telefono" type="tel" maxlength="15" autocomplete="tel" inputmode="tel" required>
+                </div>
+                <div class="clubs-form__field">
+                  <label for="orgt-email">Email de contacto *</label>
+                  <input id="orgt-email" name="email" type="email" maxlength="100" autocomplete="email" required>
+                </div>
+              </fieldset>
+
+              <fieldset class="orgt-fieldset">
+                <legend class="orgt-legend">Protección de datos</legend>
+                <div class="orgt-lopd orgt-field--ancho" id="orgt-lopd"></div>
+                <label class="camp-check orgt-field--ancho" for="orgt-acepto">
+                  <input type="checkbox" id="orgt-acepto" name="lopd" value="S" required>
+                  <span>He leído y acepto la política de protección de datos *</span>
+                </label>
+              </fieldset>
+
+              <div class="clubs-form__actions">
+                <button type="submit" class="btn btn--red" id="orgt-enviar">Continuar con la solicitud <span aria-hidden="true">→</span></button>
+                <p class="clubs-form__help" id="orgt-envio-ayuda">Al continuar, la solicitud se guarda en la web actual de la FEP, donde se completan los pasos siguientes.</p>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- Pruebas licitables por mes (calendario lateral BarraLateralLicitacion.inc) -->
+        <section class="calf-section clubs-results" id="pruebas" aria-labelledby="pruebas-titulo" hidden>
+          <div class="clubs-results__head">
+            <h2 class="org-group__title" id="pruebas-titulo">Pruebas que se pueden solicitar <span class="org-count" id="orgt-total">…</span></h2>
+            <p class="clubs-results__status" id="orgt-estado" role="status" aria-live="polite"></p>
+          </div>
+          <form class="clubs-form orgt-filtro" id="orgt-filtro" aria-label="Filtrar las pruebas" novalidate>
+            <div class="clubs-form__field">
+              <label for="orgt-grupo">Tipo de prueba</label>
+              <select id="orgt-grupo" name="grupo">
+                <option value="">Todas</option>
+              </select>
+            </div>
+          </form>
+          <div class="camp-list" id="orgt-lista"></div>
+          <p class="org-updated">Fechas del calendario provisional: pueden cambiar. Pulsa «Solicitar» en una prueba para elegirla en el formulario.</p>
+        </section>
+
+        <aside class="page-note" aria-labelledby="nota-competicion">
+          <h2 class="page-note__title" id="nota-competicion">Más competición</h2>
+          <p>Consulta el <a href="calendariofep.html">calendario oficial FEP</a> de cada temporada y los <a href="campeonatos.html">campeonatos y torneos de la FEP</a>.</p>
+        </aside>
+      </div>
+
+      <!-- ============ PATROCINADORES (columna derecha) ============
+           comun.js (NIVELES_PATRO) pinta aquí tres bloques: principales, patrocinadores y productos homologados. -->
+      <aside class="page-sponsors" id="patrocinadores-lateral" aria-labelledby="patro-lateral-titulo" hidden>
+        <p class="page-sponsors__title" id="patro-lateral-titulo">Patrocinadores FEP</p>
+        <ul class="page-sponsors__list" id="patrocinadores-lista"></ul>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
+            <img src="assets/img/logo-pie-negativo.png" alt="Federación Española de Pádel" width="123" height="56">
+          </a>
+          <p>Impulsamos el pádel. Acompañamos a quienes lo hacen posible.</p>
+          <!-- Rellenado con /api/v1/redes-sociales; estos son los del Figma por si la API no responde -->
+          <ul class="footer__social" id="redes-lista">
+            <li><a href="https://www.instagram.com/padelfederacion/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.youtube.com/user/FedEspPadel" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://x.com/padelfederacion" target="_blank" rel="noopener">X <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+        <nav class="footer__col" aria-labelledby="pie-descubre">
+          <h2 id="pie-descubre">Descubre</h2>
+          <ul>
+            <li><a href="organos-de-gobierno.html">Federación</a></li>
+            <li><a href="https://www.padelfederacion.es/Calendario.asp">Competiciones</a></li>
+            <li><a href="rankings.html">Rankings</a></li>
+            <li><a href="https://www.padelfederacion.es/Noticias.asp">Actualidad</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-labelledby="pie-federacion">
+          <h2 id="pie-federacion">Tu federación</h2>
+          <ul>
+            <li><a href="https://www.padelfederacion.es/Licencias_Intro.asp">Licencias</a></li>
+            <li><a href="https://www.padelfederacion.es/Formacion_Calendario.asp">Formación</a></li>
+            <li><a href="https://www.padelfederacion.es/Documentos_Normativas.asp">Documentación</a></li>
+            <li><a href="https://www.padelfederacion.es/Portal-del-Federado">Portal del federado</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-labelledby="pie-ayuda">
+          <h2 id="pie-ayuda">Te ayudamos</h2>
+          <ul>
+            <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+            <li><a href="federaciones.html">Federaciones territoriales</a></li>
+            <li><a href="https://www.padelfederacion.es/SolicitudArbitraje_Intro.asp">Arbitraje</a></li>
+            <li><a href="accesibilidad.html">Accesibilidad</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="anio">2026</span> Federación Española de Pádel</p>
+        <ul>
+          <li><a href="https://www.padelfederacion.es/Aviso_Legal">Aviso legal</a></li>
+          <li><a href="https://www.padelfederacion.es/Politica_Privacidad">Privacidad</a></li>
+          <li><a href="https://www.padelfederacion.es/Politica_Cookies">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

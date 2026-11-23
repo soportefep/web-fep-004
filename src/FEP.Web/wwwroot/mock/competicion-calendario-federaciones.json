@@ -1,0 +1,225 @@
+[
+    {
+        "id":  6,
+        "territorio":  "Andalucía",
+        "nombre":  "Federación Andaluza de Pádel",
+        "abreviatura":  "ANDALUZA",
+        "temporadas":  [
+                           2027,
+                           2026,
+                           2025,
+                           2024,
+                           2023,
+                           2022,
+                           2021,
+                           2020,
+                           2019,
+                           2018,
+                           2017,
+                           2016,
+                           2015,
+                           2014,
+                           2013
+                       ]
+    },
+    {
+        "id":  11,
+        "territorio":  "Aragón",
+        "nombre":  "Federación Aragonesa de Pádel",
+        "abreviatura":  "ARAGONESA",
+        "temporadas":  [
+                           2027,
+                           2026,
+                           2025,
+                           2024,
+                           2023,
+                           2022,
+                           2021,
+                           2020,
+                           2019
+                       ]
+    },
+    {
+        "id":  7,
+        "territorio":  "Principado de Asturias",
+        "nombre":  "Federación de Pádel del Principado de Asturias",
+        "abreviatura":  "ASTURIANA",
+        "temporadas":  [
+                           2026,
+                           2025,
+                           2024,
+                           2023
+                       ]
+    },
+    {
+        "id":  17,
+        "territorio":  "Baleares",
+        "nombre":  "Federación de Pádel de les Illes Balears",
+        "abreviatura":  "BALEAR",
+        "temporadas":  [
+                           2015,
+                           2014
+                       ]
+    },
+    {
+        "id":  18,
+        "territorio":  "Canarias",
+        "nombre":  "Federación Canaria de Pádel",
+        "abreviatura":  "CANARIA",
+        "temporadas":  [
+                           2026,
+                           2018
+                       ]
+    },
+    {
+        "id":  13,
+        "territorio":  "Cantabria",
+        "nombre":  "Federación Cántabra de Pádel",
+        "abreviatura":  "CANTABRA",
+        "temporadas":  [
+                           2026,
+                           2025,
+                           2024,
+                           2023,
+                           2022,
+                           2020
+                       ]
+    },
+    {
+        "id":  22,
+        "territorio":  "Castilla-La Mancha",
+        "nombre":  "Federación de Pádel de Castilla-La Mancha",
+        "abreviatura":  "CASTILLA LA MANCHA",
+        "temporadas":  [
+                           2023,
+                           2016,
+                           2015
+                       ]
+    },
+    {
+        "id":  21,
+        "territorio":  "Castilla y León",
+        "nombre":  "Federación de Pádel de Castilla y León",
+        "abreviatura":  "CASTILLA Y LEON",
+        "temporadas":  [
+                           2026,
+                           2025,
+                           2024,
+                           2023,
+                           2022,
+                           2021,
+                           2020,
+                           2019,
+                           2018,
+                           2017
+                       ]
+    },
+    {
+        "id":  2,
+        "territorio":  "Cataluña",
+        "nombre":  "Federació Catalana de Pàdel",
+        "abreviatura":  "CATALANA",
+        "temporadas":  [
+                           2024,
+                           2023
+                       ]
+    },
+    {
+        "id":  16,
+        "territorio":  "Ceuta",
+        "nombre":  "Federación de Pádel de Ceuta",
+        "abreviatura":  "CEUTI",
+        "temporadas":  [
+
+                       ]
+    },
+    {
+        "id":  14,
+        "territorio":  "Comunidad Valenciana",
+        "nombre":  "Federación de Pádel de la Comunitat Valenciana",
+        "abreviatura":  "COM.VALENCIANA",
+        "temporadas":  [
+                           2021,
+                           2020,
+                           2019,
+                           2018,
+                           2017,
+                           2016
+                       ]
+    },
+    {
+        "id":  12,
+        "territorio":  "Extremadura",
+        "nombre":  "Federación Extremeña de Pádel",
+        "abreviatura":  "EXTREMEÑA",
+        "temporadas":  [
+                           2021
+                       ]
+    },
+    {
+        "id":  8,
+        "territorio":  "Galicia",
+        "nombre":  "Federación Gallega de Pádel",
+        "abreviatura":  "GALLEGA",
+        "temporadas":  [
+                           2022,
+                           2021
+                       ]
+    },
+    {
+        "id":  1,
+        "territorio":  "Comunidad de Madrid",
+        "nombre":  "Federación Madrileña de Pádel",
+        "abreviatura":  "MADRILEÑA",
+        "temporadas":  [
+                           2015,
+                           2014,
+                           2013
+                       ]
+    },
+    {
+        "id":  9,
+        "territorio":  "Melilla",
+        "nombre":  "Federación Melillense de Pádel",
+        "abreviatura":  "MELILLENSE",
+        "temporadas":  [
+
+                       ]
+    },
+    {
+        "id":  15,
+        "territorio":  "Región de Murcia",
+        "nombre":  "Federación de Pádel de la Región de Murcia",
+        "abreviatura":  "MURCIANA",
+        "temporadas":  [
+                           2019
+                       ]
+    },
+    {
+        "id":  10,
+        "territorio":  "Navarra",
+        "nombre":  "Federación Navarra de Pádel",
+        "abreviatura":  "NAVARRA",
+        "temporadas":  [
+
+                       ]
+    },
+    {
+        "id":  19,
+        "territorio":  "La Rioja",
+        "nombre":  "Federación de La Rioja",
+        "abreviatura":  "RIOJANA",
+        "temporadas":  [
+
+                       ]
+    },
+    {
+        "id":  3,
+        "territorio":  "País Vasco",
+        "nombre":  "Federación Vasca de Pádel",
+        "abreviatura":  "VASCA",
+        "temporadas":  [
+                           2023
+                       ]
+    }
+]

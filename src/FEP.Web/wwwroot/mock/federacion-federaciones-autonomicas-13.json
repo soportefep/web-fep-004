@@ -1,0 +1,115 @@
+{
+    "id":  13,
+    "nombre":  "FEDERACION CANTABRA DE PADEL",
+    "nacional":  false,
+    "imagen":  "images/13.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-13.jpg",
+    "presidente":  "HONORIO GARCIA RODRIGUEZ",
+    "direccion":  "CASA DEL DEPORTE. AVDA. DEL DEPORTE S/N LOCAL 104",
+    "codigoPostal":  "319012",
+    "localidad":  "SANTANDER",
+    "telefonos":  [
+                      "691 439 982"
+                  ],
+    "email":  "info@federacioncantabradepadel.com",
+    "web":  "https://www.federacioncantabradepadel.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  6697,
+                      "puesto":  8,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  20,
+                      "arbitros":  6,
+                      "clubes":  37,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  1681,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  1827,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  2115,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  2358,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  2706,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  2822,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  2829,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  3123,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  3076,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  3557,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  4240,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  4647,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  5044,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  5326,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  6697,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  4428,
+                                     "femenino":  2269,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  342,
+                                     "sub23":  429,
+                                     "senior":  3214,
+                                     "veteranos":  2712,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

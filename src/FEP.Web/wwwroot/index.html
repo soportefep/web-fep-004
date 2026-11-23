@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Federación Española de Pádel · FEP</title>
+  <meta name="description" content="Página oficial de la Federación Española de Pádel con información sobre calendarios, torneos, rankings, licencias, formación y actualidad del pádel en España.">
+  <!-- Base de la API nueva. Vacío = mismo origen. Si la API no responde se usan los JSON de /mock. -->
+  <meta name="fep-api-base" content="">
+  <!-- Web actual: destino temporal de los enlaces a páginas aún no migradas -->
+  <meta name="fep-legacy-base" content="https://www.padelfederacion.es/">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fep.css">
+  <link rel="stylesheet" href="assets/css/tema-003.css">
+  <link rel="stylesheet" href="assets/css/home-003.css">
+  <link rel="preload" as="image" href="assets/img/fep/noticias/1208982169.jpg">
+  <!-- Scripts clásicos con defer (no módulos): así la página también funciona abierta desde disco -->
+  <script defer src="mock/mocks.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/comun.js"></script>
+  <script defer src="assets/js/home-003.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ BARRA SUPERIOR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <nav class="fed-strip" id="fed-strip" aria-label="Federaciones autonómicas">
+        <ul class="fed-strip__list" id="fed-strip-lista"></ul>
+      </nav>
+      <ul class="topbar__links">
+        <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+        <li><a class="topbar__extranet" href="https://www.padelfederacion.es/ControlAcceso.asp" title="Acceso a la gestión interna">Extranet</a></li>
+        <li><button type="button" class="topbar__lang" aria-label="Idioma: español" aria-disabled="true">ES <span aria-hidden="true">⌄</span></button></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ CABECERA ============ -->
+  <header class="header" id="cabecera">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
+        <img src="assets/img/logo.png" alt="Federación Española de Pádel" width="210" height="70">
+      </a>
+
+      <button type="button" class="header__burger" id="menu-abrir" aria-controls="menu-principal" aria-expanded="false">
+        <span class="sr-only">Abrir menú</span>
+        <span class="header__burger-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-panel" id="menu-principal" aria-label="Menú principal">
+        <div class="nav-panel__head">
+          <img src="assets/img/logo.png" alt="" width="150" height="50">
+          <button type="button" class="nav-panel__close" id="menu-cerrar"><span class="sr-only">Cerrar menú</span><span aria-hidden="true">✕</span></button>
+        </div>
+        <nav aria-label="Principal">
+          <!-- Menú principal (5 secciones). comun.js (MENU_FEP) pinta los desplegables y accesos móviles -->
+          <ul class="nav" id="nav-principal">
+            <li class="nav__item" data-menu-key="competicion"><a class="nav__link" href="calendariofep.html">Competición</a></li>
+            <li class="nav__item" data-menu-key="licencias"><a class="nav__link" href="https://www.padelfederacion.es/Licencias_Buscar">Licencias</a></li>
+            <li class="nav__item" data-menu-key="formacion"><a class="nav__link" href="https://www.padelfederacion.es/Formacion_Calendario">Formación</a></li>
+            <li class="nav__item" data-menu-key="actualidad"><a class="nav__link" href="https://www.padelfederacion.es/Noticias">Actualidad</a></li>
+            <li class="nav__item" data-menu-key="federacion"><a class="nav__link" href="organos-de-gobierno.html">La Federación</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-panel__extra">
+          <li><a href="ley-de-transparencia.html">Transparencia</a></li>
+        </ul>
+      </div>
+
+      <div class="header__actions">
+        <button type="button" class="header__search-btn" id="buscar-abrir" aria-controls="buscador" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="sr-only">Buscar</span>
+        </button>
+        <a class="btn btn--outline btn--sm acceso" id="mi-club" href="#" aria-label="Mi Club (próximamente)">
+          Mi Club
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12M9 21v-6h6v6M3 21h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--red btn--sm acceso" id="mi-portal" href="#" aria-label="Mi Portal (próximamente)">
+          Mi Portal
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Buscador: envía temporalmente al buscador de la web actual -->
+    <div class="search" id="buscador" hidden>
+      <form class="container search__form" action="https://www.padelfederacion.es/busqueda.asp" method="post" role="search">
+        <label for="texto-busqueda" class="sr-only">Texto a buscar</label>
+        <input id="texto-busqueda" name="textobusqueda" type="search" placeholder="Buscar en la web de la FEP…" required>
+        <button type="submit" class="btn btn--red btn--sm">Buscar</button>
+      </form>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="menu-fondo" hidden></div>
+
+  <main id="contenido" class="home-003">
+
+    <!-- ============ PORTADA PARTIDA: titular (negro) + destacados (foto) ============
+         Las 2 diapositivas son fijas (data-titulo + data-enlace = pie enlazado). Lo controla home-003.js. -->
+    <section class="ed-hero" aria-labelledby="ed-hero-titulo">
+      <div class="ed-hero__text">
+        <div class="ed-hero__head">
+          <p class="ed-hero__kicker"><span>FEP</span><span>Temporada <span id="ed-temporada">2026</span></span></p>
+          <h1 class="ed-display ed-hero__title" id="ed-hero-titulo">Un deporte.<br>Toda una <em>comunidad.</em></h1>
+        </div>
+        <p class="ed-hero__lead">Competimos, crecemos y hacemos historia. Vive el pádel desde tu federación.</p>
+        <div class="ed-hero__ctas">
+          <a class="btn btn--red btn--lg" href="calendariofep.html">Explora la competición <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <!-- Campeonatos y torneos de la FEP: cada uno enlaza a su ficha (sede, fechas, categorías, cuadros…) -->
+          <a class="btn btn--line-white btn--lg" href="campeonatos.html">Ver torneos <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+        <p class="ed-hero__claim">En la pista. Contigo.</p>
+      </div>
+
+      <div class="ed-hero__media" aria-roledescription="carrusel" aria-label="Destacados">
+        <div class="ed-hero__slides" id="hero-slides">
+          <!-- Cada foto tiene su propio encuadre (--foco = punto que se mantiene visible al recortar),
+               porque sus formatos son muy distintos.
+               1 · FIP World Cup Qatar 2026 (1920×1282): el podio con los trofeos, un poco por encima del centro.
+               Si una foto futura es pequeña (p. ej. 650×434), añade ed-slide--marco y un <img class="ed-slide__fondo">
+               con la misma foto delante: se verá enmarcada sobre un fondo desenfocado en vez de pixelada. -->
+          <figure class="ed-slide is-active" aria-roledescription="diapositiva" aria-label="1 de 2" style="--foco: 50% 35%"
+                  data-titulo="Histórico doblete en Qatar"
+                  data-enlace="https://www.padelfederacion.es/noticia.asp?Idnoticia=2976">
+            <img src="assets/img/fep/noticias/1208982169.jpg" alt="La selección española, campeona femenina y masculina del FIP World Cup Qatar 2026, celebra en el podio con los dos trofeos" width="1920" height="1282">
+          </figure>
+          <!-- 2 · Campeonato de España Junior: banner panorámico (2880×1000) con el trofeo a la derecha;
+               --foco centra el recorte en el trofeo en cualquier tamaño de marco. -->
+          <figure class="ed-slide" aria-roledescription="diapositiva" aria-label="2 de 2" style="--foco: 71% 42%"
+                  data-titulo="El futuro del pádel español brilla en Aragón tras un Campeonato de España Infantil y Junior de récord"
+                  data-enlace="https://www.padelfederacion.es/noticia.asp?Idnoticia=2977">
+            <img src="assets/img/fep/portada/cto-espana-junior-2026.jpg" alt="Trofeo de campeón del Campeonato de España por Equipos Junior, Zaragoza 2026" width="2880" height="1000" loading="lazy" decoding="async">
+          </figure>
+        </div>
+        <div class="ed-hero__bar">
+          <p class="ed-hero__count" aria-hidden="true"><strong id="hero-n">01</strong> / <span id="hero-total">02</span></p>
+          <a class="ed-hero__caption" id="hero-caption" href="#" hidden></a>
+          <div class="ed-hero__ctrl">
+            <button type="button" class="ed-sq" id="hero-prev" aria-label="Destacado anterior"><span aria-hidden="true">←</span></button>
+            <button type="button" class="ed-sq" id="hero-pause" aria-pressed="false"><span class="sr-only">Pausar carrusel</span><span aria-hidden="true" class="ed-pause"></span></button>
+            <button type="button" class="ed-sq" id="hero-next" aria-label="Destacado siguiente"><span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TELETIPO: próximas citas (eventos destacados + formación) ============ -->
+    <section class="ed-ticker" aria-label="Próximas citas" id="ticker" hidden>
+      <p class="ed-ticker__label">Próximas citas</p>
+      <div class="ed-ticker__viewport">
+        <ul class="ed-ticker__track" id="ticker-lista"></ul>
+      </div>
+    </section>
+
+    <!-- ============ AVISOS (solo si la API devuelve avisos) ============ -->
+    <section class="ed-avisos" id="extras" aria-label="Avisos" hidden>
+      <div class="container ed-avisos__inner" id="avisos-bloque" hidden>
+        <h2 class="ed-avisos__label">Avisos</h2>
+        <ul class="ed-avisos__list" id="avisos-lista"></ul>
+      </div>
+    </section>
+
+    <!-- ============ 01 · ACCESOS DIRECTOS: índice numerado ============
+         Gestiones: destacados de la barra lateral de la web actual ("Tu licencia" y "Solicitar certificados" van en Mi Portal) -->
+    <nav class="container ed-block ed-index" aria-labelledby="indice-titulo">
+      <header class="ed-block__head">
+        <p class="ed-num" aria-hidden="true">01</p>
+        <h2 class="h2" id="indice-titulo">Accesos directos</h2>
+      </header>
+      <ol class="ed-index__list">
+        <li><a href="calendariofep.html"><span class="ed-index__n" aria-hidden="true">01</span><strong>Calendario</strong><span class="ed-index__d">Encuentra tu próxima cita</span><span class="ed-index__go" aria-hidden="true">↗</span></a></li>
+        <li><a href="rankings.html"><span class="ed-index__n" aria-hidden="true">02</span><strong>Rankings</strong><span class="ed-index__d">Consulta la clasificación</span><span class="ed-index__go" aria-hidden="true">↗</span></a></li>
+        <li><a href="campeonatos.html"><span class="ed-index__n" aria-hidden="true">03</span><strong>Campeonatos</strong><span class="ed-index__d">Campeonatos de España y torneos oficiales</span><span class="ed-index__go" aria-hidden="true">↗</span></a></li>
+        <li><a href="organizacion-torneos.html"><span class="ed-index__n" aria-hidden="true">04</span><strong>Organización de torneos</strong><span class="ed-index__d"><em>Gestiones</em> · Solicita organizar un torneo FEP</span><span class="ed-index__go" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://www.padelfederacion.es/Portal-del-Federado"><span class="ed-index__n" aria-hidden="true">05</span><strong>Portal de Atención al Federado/a</strong><span class="ed-index__d"><em>Gestiones</em> · Consultas y gestiones de tu licencia</span><span class="ed-index__go" aria-hidden="true">↗</span></a></li>
+      </ol>
+    </nav>
+
+    <!-- ============ 02 · LO QUE NOS MUEVE: portada de periódico ============ -->
+    <section class="container ed-block" aria-labelledby="news-titulo">
+      <header class="ed-block__head">
+        <p class="ed-num" aria-hidden="true">02</p>
+        <div>
+          <p class="eyebrow">El pádel, al día</p>
+          <h2 class="h2" id="news-titulo">Lo que nos mueve.</h2>
+        </div>
+        <a class="ed-more" href="https://www.padelfederacion.es/Noticias.asp">Toda la actualidad <span aria-hidden="true">↗</span></a>
+      </header>
+      <div class="ed-news" id="noticias-lista" aria-busy="true">
+        <div class="ed-news__lead"><span class="sk sk--photo"></span><span class="sk sk--text"></span></div>
+      </div>
+      <p class="empty" id="noticias-vacio" hidden>No hay noticias destacadas ahora mismo. Consulta <a href="https://www.padelfederacion.es/Noticias.asp">toda la actualidad</a>.</p>
+    </section>
+
+    <!-- ============ PATROCINADORES PRINCIPALES (antes de "La próxima cita") ============
+         Mismo componente que las páginas interiores: comun.js pinta en #patrocinadores-lateral los tres
+         bloques (principales, patrocinadores y productos homologados). home-003.js deja aquí los principales
+         y lleva los otros dos a la franja de debajo del ranking (#patrocinadores-resto). -->
+    <section class="ed-sponsors ed-sponsors--principales" aria-labelledby="patro-lateral-titulo">
+      <div class="container">
+        <aside class="page-sponsors" id="patrocinadores-lateral" aria-labelledby="patro-lateral-titulo" hidden>
+          <p class="page-sponsors__title" id="patro-lateral-titulo">Patrocinadores FEP</p>
+          <ul class="page-sponsors__list" id="patrocinadores-lista"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ 03 · LA PRÓXIMA CITA: marcador / tabla ============
+         Eventos destacados (por su orden) + inscripciones de formación abiertas. -->
+    <section class="container ed-block" aria-labelledby="agenda-titulo">
+      <header class="ed-block__head">
+        <p class="ed-num" aria-hidden="true">03</p>
+        <div>
+          <p class="eyebrow">En juego</p>
+          <h2 class="h2" id="agenda-titulo">La próxima cita está aquí.</h2>
+        </div>
+        <a class="ed-more" href="https://www.padelfederacion.es/Calendario.asp">Calendario completo <span aria-hidden="true">↗</span></a>
+      </header>
+      <div class="ed-tabs" role="group" aria-label="Filtrar citas" id="filtros-citas">
+        <button type="button" class="ed-tab is-active" data-grupo="" aria-pressed="true">Calendario FEP</button>
+        <!-- Los demás filtros (eventos y cada tipo de formación) los añade home-003.js según los datos -->
+        <!-- Calendarios de las federaciones territoriales (CalendarioFT.asp migrado) -->
+        <a class="ed-tab ed-tab--link" href="calendarioft.html" id="filtro-territoriales">Territoriales <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="ed-board" role="table" aria-label="Próximas citas" aria-describedby="agenda-titulo">
+        <div class="ed-board__head" role="rowgroup">
+          <div class="ed-board__row" role="row">
+            <span role="columnheader">Fecha</span>
+            <span role="columnheader">Competición</span>
+            <span role="columnheader">Sede</span>
+            <span role="columnheader">Tipo</span>
+            <span role="columnheader"><span class="sr-only">Enlace</span></span>
+          </div>
+        </div>
+        <div class="ed-board__body" role="rowgroup" id="eventos-lista" aria-live="polite" aria-busy="true">
+          <div class="ed-board__row" role="row" aria-hidden="true"><span class="sk sk--text"></span></div>
+        </div>
+      </div>
+      <button type="button" class="btn btn--outline btn--lg ed-board__more" id="eventos-mas" hidden>Ver más citas</button>
+      <p class="empty" id="eventos-vacio" hidden>No hay eventos destacados para este filtro. Consulta el <a href="https://www.padelfederacion.es/Calendario.asp">calendario completo</a>.</p>
+    </section>
+
+    <!-- ============ 04 · RANKING: franja azul pista ============ -->
+    <section class="ed-ranking" aria-labelledby="ranking-titulo">
+      <div class="container ed-ranking__inner">
+        <header class="ed-ranking__head">
+          <p class="ed-num ed-num--white" aria-hidden="true">04</p>
+          <div>
+            <p class="eyebrow ed-eyebrow-white">Cada punto cuenta</p>
+            <h2 class="h2 ed-ranking__title" id="ranking-titulo">Tu lugar en el juego.</h2>
+            <p class="ed-ranking__lead">Consulta el ranking nacional por categoría y sigue la evolución de la temporada.</p>
+          </div>
+          <a class="btn btn--white btn--lg" href="rankings.html">Ver rankings y estadísticas <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </header>
+        <ul class="ed-ranking__grid">
+          <li><a href="ranking-absoluto.html"><span class="ed-ranking__k">Absoluto</span><span>Masculino y femenino</span><span class="ed-ranking__go" aria-hidden="true">↗</span></a></li>
+          <li><a href="ranking-menores.html"><span class="ed-ranking__k">Menores</span><span>Todas las categorías</span><span class="ed-ranking__go" aria-hidden="true">↗</span></a></li>
+          <li><a href="ranking-veteranos.html"><span class="ed-ranking__k">Veteranos</span><span>Por grupo de edad</span><span class="ed-ranking__go" aria-hidden="true">↗</span></a></li>
+          <li><a href="ranking-silla-ruedas.html"><span class="ed-ranking__k">Silla de ruedas</span><span>Pádel en silla de ruedas</span><span class="ed-ranking__go" aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+      <p class="ed-ranking__bg" aria-hidden="true">Ranking</p>
+    </section>
+
+    <!-- ============ PATROCINADORES Y PRODUCTOS HOMOLOGADOS (debajo del ranking) ============
+         Los rellena home-003.js con los bloques "Patrocinadores" y "Productos homologados" de comun.js. -->
+    <section class="ed-sponsors ed-sponsors--resto" id="patrocinadores-resto-franja" aria-label="Patrocinadores y productos homologados" hidden>
+      <div class="container ed-sponsors__resto" id="patrocinadores-resto"></div>
+    </section>
+
+    <!-- ============ 05 · CRECEMOS JUNTOS ============ -->
+    <section class="container ed-block" aria-labelledby="opps-titulo">
+      <header class="ed-block__head">
+        <p class="ed-num" aria-hidden="true">05</p>
+        <div>
+          <p class="eyebrow">Crecemos juntos</p>
+          <h2 class="h2" id="opps-titulo">Más oportunidades. La misma pasión.</h2>
+        </div>
+      </header>
+      <div class="ed-opps">
+        <article class="ed-opp">
+          <img class="ed-opp__img" src="assets/img/fep/destacados/crecemos-formacion.jpg" alt="Formación by Federación Española de Pádel" width="1200" height="800" loading="lazy">
+          <p class="ed-opp__tag">Formación</p>
+          <h3 class="ed-opp__title">Aprender para llegar más lejos.</h3>
+          <p class="ed-opp__text">Cursos para técnicos y árbitros, jornadas y recursos para seguir creciendo.</p>
+          <!-- Convocatorias abiertas (/api/v1/formacion/convocatorias) -->
+          <ul class="ed-opp__calls" id="convocatorias-lista" hidden></ul>
+          <a class="ed-more ed-more--sm" href="https://www.padelfederacion.es/Formacion_Inscripciones.asp">Explorar formación <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="ed-opp">
+          <img class="ed-opp__img" src="assets/img/fep/destacados/crecemos-mujer-deporte.jpg" alt="Programas Mujer y Deporte" width="1200" height="800" loading="lazy">
+          <p class="ed-opp__tag">Mujer y deporte</p>
+          <h3 class="ed-opp__title">El futuro también se juega en femenino.</h3>
+          <p class="ed-opp__text">Iniciativas, referentes y oportunidades para impulsar el pádel femenino.</p>
+          <a class="ed-more ed-more--sm" href="https://www.padelfederacion.es/MujerYPadel.asp">Mujer y Pádel <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="ed-opp">
+          <img class="ed-opp__img" src="assets/img/fep/destacados/crecemos-padel-adaptado.jpg" alt="Pádel Adaptado: FEDDF, FEDC y FEDPC" width="1200" height="800" loading="lazy">
+          <p class="ed-opp__tag">Pádel adaptado</p>
+          <h3 class="ed-opp__title">Una pista sin barreras.</h3>
+          <p class="ed-opp__text">Competiciones y proyectos que acercan el pádel a todas las personas.</p>
+          <a class="ed-more ed-more--sm" href="https://www.padelfederacion.es/Padel-Adaptado">Conocer el programa <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ REELS: últimos reels de Instagram ============
+         GET /api/v1/redes-sociales/instagram-reels (hoy, mock de prueba). La API real los obtendrá de la
+         Instagram Graph API en el servidor (el token nunca llega al navegador). Lo pinta home-003.js;
+         si no hay reels, la sección queda oculta. -->
+    <!-- Formato tipo "stories": título corto con filete, tarjetas verticales con el texto encima y
+         flechas redondas superpuestas en los extremos del carrusel. -->
+    <section class="ed-reels" id="reels" aria-labelledby="reels-titulo" hidden>
+      <div class="container">
+        <header class="ed-reels__head">
+          <h2 class="ed-reels__title" id="reels-titulo">Reels</h2>
+          <a class="ed-reels__perfil" id="reels-perfil" href="https://www.instagram.com/padelfederacion/" target="_blank" rel="noopener">@padelfederacion en Instagram <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+        </header>
+        <p class="ed-reels__aviso" id="reels-aviso" hidden>Vista previa con datos de prueba: las miniaturas son provisionales.</p>
+        <div class="ed-reels__carril" role="region" aria-roledescription="carrusel" aria-labelledby="reels-titulo">
+          <ul class="ed-reels__track" id="reels-lista" tabindex="0"></ul>
+          <button type="button" class="ed-reels__flecha ed-reels__flecha--prev" id="reels-prev" aria-label="Reels anteriores"><span aria-hidden="true">←</span></button>
+          <button type="button" class="ed-reels__flecha ed-reels__flecha--next" id="reels-next" aria-label="Reels siguientes"><span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+    <!-- ============ 06 · UNA FEDERACIÓN ABIERTA ============ -->
+    <section class="container ed-block ed-split" aria-labelledby="near-titulo">
+      <div class="ed-near">
+        <header class="ed-block__head">
+          <p class="ed-num" aria-hidden="true">06</p>
+          <div>
+            <p class="eyebrow">Una federación abierta</p>
+            <h2 class="h2" id="near-titulo">Cerca de la pista. Al servicio del deporte.</h2>
+          </div>
+        </header>
+        <p class="ed-near__lead">Conoce la FEP, su organización y los recursos para una gestión transparente.</p>
+        <ul class="ed-near__list">
+          <li><a href="organos-de-gobierno.html"><strong>La federación</strong><span>Organización y federaciones territoriales</span><span class="ed-near__go" aria-hidden="true">↗</span></a></li>
+          <li><a href="ley-de-transparencia.html"><strong>Transparencia</strong><span>Estatutos, cuentas y buen gobierno</span><span class="ed-near__go" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.padelfederacion.es/Documentos_Reglamentos.asp"><strong>Documentos y hemeroteca</strong><span>Reglamentos, circulares y archivo</span><span class="ed-near__go" aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
+            <img src="assets/img/logo-pie-negativo.png" alt="Federación Española de Pádel" width="123" height="56">
+          </a>
+          <p>Impulsamos el pádel. Acompañamos a quienes lo hacen posible.</p>
+          <!-- Rellenado con /api/v1/redes-sociales; estos son los del Figma por si la API no responde -->
+          <ul class="footer__social" id="redes-lista">
+            <li><a href="https://www.instagram.com/padelfederacion/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.youtube.com/user/FedEspPadel" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://x.com/padelfederacion" target="_blank" rel="noopener">X <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+        <nav class="footer__col" aria-labelledby="pie-descubre">
+          <h2 id="pie-descubre">Descubre</h2>
+          <ul>
+            <li><a href="organos-de-gobierno.html">Federación</a></li>
+            <li><a href="https://www.padelfederacion.es/Calendario.asp">Competiciones</a></li>
+            <li><a href="rankings.html">Rankings</a></li>
+            <li><a href="https://www.padelfederacion.es/Noticias.asp">Actualidad</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-labelledby="pie-federacion">
+          <h2 id="pie-federacion">Tu federación</h2>
+          <ul>
+            <li><a href="https://www.padelfederacion.es/Licencias_Intro.asp">Licencias</a></li>
+            <li><a href="https://www.padelfederacion.es/Formacion_Calendario.asp">Formación</a></li>
+            <li><a href="https://www.padelfederacion.es/Documentos_Normativas.asp">Documentación</a></li>
+            <li><a href="https://www.padelfederacion.es/Portal-del-Federado">Portal del federado</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-labelledby="pie-ayuda">
+          <h2 id="pie-ayuda">Te ayudamos</h2>
+          <ul>
+            <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+            <li><a href="federaciones.html">Federaciones territoriales</a></li>
+            <li><a href="https://www.padelfederacion.es/SolicitudArbitraje_Intro.asp">Arbitraje</a></li>
+            <li><a href="accesibilidad.html">Accesibilidad</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="anio">2026</span> Federación Española de Pádel</p>
+        <ul>
+          <li><a href="https://www.padelfederacion.es/Aviso_Legal">Aviso legal</a></li>
+          <li><a href="https://www.padelfederacion.es/Politica_Privacidad">Privacidad</a></li>
+          <li><a href="https://www.padelfederacion.es/Politica_Cookies">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

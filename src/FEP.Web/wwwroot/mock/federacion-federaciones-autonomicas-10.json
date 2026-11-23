@@ -1,0 +1,116 @@
+{
+    "id":  10,
+    "nombre":  "FEDERACION NAVARRA DE PADEL",
+    "nacional":  false,
+    "imagen":  "images/10.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-10.jpg",
+    "presidente":  "PEDRO GARCIA",
+    "direccion":  "Navarra Arena. Casa del Deporte. Calle Sadar s/n",
+    "codigoPostal":  "31006",
+    "localidad":  "PAMPLONA",
+    "telefonos":  [
+                      "695830922",
+                      "657266438"
+                  ],
+    "email":  "contacto@federacionnavarradepadel.com",
+    "web":  "https://www.federacionnavarradepadel.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  4465,
+                      "puesto":  11,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  46,
+                      "arbitros":  34,
+                      "clubes":  17,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  2382,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  2749,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  2946,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  3206,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  3242,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  3234,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  3316,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  3285,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  3033,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  3515,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  3726,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  3859,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  3945,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  4224,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  4465,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  2864,
+                                     "femenino":  1601,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  628,
+                                     "sub23":  225,
+                                     "senior":  1514,
+                                     "veteranos":  2098,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

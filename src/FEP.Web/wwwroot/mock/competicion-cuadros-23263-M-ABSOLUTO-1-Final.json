@@ -1,0 +1,872 @@
+{
+    "torneo":  {
+                   "id":  23263,
+                   "titulo":  "XXXVIII CAMPEONATO ABSOLUTO DE ESPAÑA",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2023-06-25",
+                   "fechaFin":  "2023-07-02",
+                   "lugar":  "Torrent"
+               },
+    "genero":  "M",
+    "categoria":  "ABSOLUTO",
+    "nivel":  1,
+    "cuadro":  "Final",
+    "publicado":  true,
+    "notas":  "\u003cdiv style=\"font-family: Arial, Helvetica, sans-serif; font-size: small;\"\u003e\r\n\tComplejo deportivo Parc Central\u0026nbsp; Rda Vicente Pallard\u0026oacute; 6, Torrent .",
+    "formato":  "eliminatoria",
+    "plantilla":  "Cuadro32",
+    "participantes":  [
+                          {
+                              "avance":  5,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "E. ALONSO CHILLARON - J. ESBRI GONZALEZ",
+                              "jugadores":  [
+                                                "E. ALONSO CHILLARON",
+                                                "J. ESBRI GONZALEZ"
+                                            ],
+                              "cabezaSerie":  2
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  2,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "J. CORDOBA LUGO - J. HERNANDEZ NEGRIN",
+                              "jugadores":  [
+                                                "J. CORDOBA LUGO",
+                                                "J. HERNANDEZ NEGRIN"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "S. ALOS BOAL - A. GASCA ROMERO",
+                              "jugadores":  [
+                                                "S. ALOS BOAL",
+                                                "A. GASCA ROMERO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "I. GARCIA ACEITUNO - D. DE CASTRO BAUTISTA",
+                              "jugadores":  [
+                                                "I. GARCIA ACEITUNO",
+                                                "D. DE CASTRO BAUTISTA"
+                                            ],
+                              "cabezaSerie":  6
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  6,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "I. RAMIREZ DEL CAMPO - J. MUÑOZ ENRILE",
+                              "jugadores":  [
+                                                "I. RAMIREZ DEL CAMPO",
+                                                "J. MUÑOZ ENRILE"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "R. PERALTA CORREDOR - D. SIMON TOMAS",
+                              "jugadores":  [
+                                                "R. PERALTA CORREDOR",
+                                                "D. SIMON TOMAS"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  9,
+                              "tipo":  "pareja",
+                              "nombre":  "J. URIARTE GAY - D. MARTINEZ OTERO",
+                              "jugadores":  [
+                                                "J. URIARTE GAY",
+                                                "D. MARTINEZ OTERO"
+                                            ],
+                              "cabezaSerie":  4
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  10,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  11,
+                              "tipo":  "pareja",
+                              "nombre":  "M. ORTEGA RIPOLL - C. MARTI VAÑO",
+                              "jugadores":  [
+                                                "M. ORTEGA RIPOLL",
+                                                "C. MARTI VAÑO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  12,
+                              "tipo":  "pareja",
+                              "nombre":  "D. SANTIGOSA SASTRE - D. GALA SANCHEZ",
+                              "jugadores":  [
+                                                "D. SANTIGOSA SASTRE",
+                                                "D. GALA SANCHEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  13,
+                              "tipo":  "pareja",
+                              "nombre":  "J. FERNANDEZ MUÑOZ - C. EUGENIO BARRERA",
+                              "jugadores":  [
+                                                "J. FERNANDEZ MUÑOZ",
+                                                "C. EUGENIO BARRERA"
+                                            ],
+                              "cabezaSerie":  7
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  14,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  15,
+                              "tipo":  "pareja",
+                              "nombre":  "J. BAUTISTA ORTIZ - J. RICO DASI",
+                              "jugadores":  [
+                                                "J. BAUTISTA ORTIZ",
+                                                "J. RICO DASI"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  16,
+                              "tipo":  "pareja",
+                              "nombre":  "M. GONZALEZ GARCIA - F. JURADO SOSA",
+                              "jugadores":  [
+                                                "M. GONZALEZ GARCIA",
+                                                "F. JURADO SOSA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  17,
+                              "tipo":  "pareja",
+                              "nombre":  "A. GARCIA BASSAS - P. VERA CASTILLO",
+                              "jugadores":  [
+                                                "A. GARCIA BASSAS",
+                                                "P. VERA CASTILLO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  18,
+                              "tipo":  "pareja",
+                              "nombre":  "A. REINO BREHCIST - J. SEÑORAN FRUCTUOSO",
+                              "jugadores":  [
+                                                "A. REINO BREHCIST",
+                                                "J. SEÑORAN FRUCTUOSO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  19,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  20,
+                              "tipo":  "pareja",
+                              "nombre":  "P. BELLUATI LOPEZ - H. GARCIA MARTINEZ",
+                              "jugadores":  [
+                                                "P. BELLUATI LOPEZ",
+                                                "H. GARCIA MARTINEZ"
+                                            ],
+                              "cabezaSerie":  8
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  21,
+                              "tipo":  "pareja",
+                              "nombre":  "E. ARIJA OCHOA DE ALDA - S. ARIAS AZNAR",
+                              "jugadores":  [
+                                                "E. ARIJA OCHOA DE ALDA",
+                                                "S. ARIAS AZNAR"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  22,
+                              "tipo":  "pareja",
+                              "nombre":  "O. VAZQUEZ FERNANDEZ - C. RAMOS ABAD",
+                              "jugadores":  [
+                                                "O. VAZQUEZ FERNANDEZ",
+                                                "C. RAMOS ABAD"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  23,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  24,
+                              "tipo":  "pareja",
+                              "nombre":  "J. COLLANTES GUIJO - R. LORENTE TORTOSA",
+                              "jugadores":  [
+                                                "J. COLLANTES GUIJO",
+                                                "R. LORENTE TORTOSA"
+                                            ],
+                              "cabezaSerie":  3
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  25,
+                              "tipo":  "pareja",
+                              "nombre":  "A. GARCIA JIMENEZ - J. PUERTO ELVIRA",
+                              "jugadores":  [
+                                                "A. GARCIA JIMENEZ",
+                                                "J. PUERTO ELVIRA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  26,
+                              "tipo":  "pareja",
+                              "nombre":  "J. PEREZ PEREZ - B. TRUJILLO CHANG",
+                              "jugadores":  [
+                                                "J. PEREZ PEREZ",
+                                                "B. TRUJILLO CHANG"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  27,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  28,
+                              "tipo":  "pareja",
+                              "nombre":  "H. DE LA FUENTE CAMBA - V. SANCHEZ VERA",
+                              "jugadores":  [
+                                                "H. DE LA FUENTE CAMBA",
+                                                "V. SANCHEZ VERA"
+                                            ],
+                              "cabezaSerie":  5
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  29,
+                              "tipo":  "pareja",
+                              "nombre":  "A. JEREZ CARNERO - M. ARAGON HERRERA",
+                              "jugadores":  [
+                                                "A. JEREZ CARNERO",
+                                                "M. ARAGON HERRERA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  30,
+                              "tipo":  "pareja",
+                              "nombre":  "J. PEREZ MORILLAS - M. CORDOBA LUGO",
+                              "jugadores":  [
+                                                "J. PEREZ MORILLAS",
+                                                "M. CORDOBA LUGO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  31,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  32,
+                              "tipo":  "pareja",
+                              "nombre":  "D. GIL BATISTA - I. JOFRE MANZANARES",
+                              "jugadores":  [
+                                                "D. GIL BATISTA",
+                                                "I. JOFRE MANZANARES"
+                                            ],
+                              "cabezaSerie":  1
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "E. ALONSO CHILLARON - J. ESBRI GONZALEZ",
+                              "jugadores":  [
+                                                "E. ALONSO CHILLARON",
+                                                "J. ESBRI GONZALEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "S. ALOS BOAL - A. GASCA ROMERO",
+                              "jugadores":  [
+                                                "S. ALOS BOAL",
+                                                "A. GASCA ROMERO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "I. GARCIA ACEITUNO - D. DE CASTRO BAUTISTA",
+                              "jugadores":  [
+                                                "I. GARCIA ACEITUNO",
+                                                "D. DE CASTRO BAUTISTA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "I. RAMIREZ DEL CAMPO - J. MUÑOZ ENRILE",
+                              "jugadores":  [
+                                                "I. RAMIREZ DEL CAMPO",
+                                                "J. MUÑOZ ENRILE"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "J. URIARTE GAY - D. MARTINEZ OTERO",
+                              "jugadores":  [
+                                                "J. URIARTE GAY",
+                                                "D. MARTINEZ OTERO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "M. ORTEGA RIPOLL - C. MARTI VAÑO",
+                              "jugadores":  [
+                                                "M. ORTEGA RIPOLL",
+                                                "C. MARTI VAÑO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "J. FERNANDEZ MUÑOZ - C. EUGENIO BARRERA",
+                              "jugadores":  [
+                                                "J. FERNANDEZ MUÑOZ",
+                                                "C. EUGENIO BARRERA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "J. BAUTISTA ORTIZ - J. RICO DASI",
+                              "jugadores":  [
+                                                "J. BAUTISTA ORTIZ",
+                                                "J. RICO DASI"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  9,
+                              "tipo":  "pareja",
+                              "nombre":  "A. GARCIA BASSAS - P. VERA CASTILLO",
+                              "jugadores":  [
+                                                "A. GARCIA BASSAS",
+                                                "P. VERA CASTILLO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  10,
+                              "tipo":  "pareja",
+                              "nombre":  "P. BELLUATI LOPEZ - H. GARCIA MARTINEZ",
+                              "jugadores":  [
+                                                "P. BELLUATI LOPEZ",
+                                                "H. GARCIA MARTINEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  11,
+                              "tipo":  "pareja",
+                              "nombre":  "E. ARIJA OCHOA DE ALDA - S. ARIAS AZNAR",
+                              "jugadores":  [
+                                                "E. ARIJA OCHOA DE ALDA",
+                                                "S. ARIAS AZNAR"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  12,
+                              "tipo":  "pareja",
+                              "nombre":  "J. COLLANTES GUIJO - R. LORENTE TORTOSA",
+                              "jugadores":  [
+                                                "J. COLLANTES GUIJO",
+                                                "R. LORENTE TORTOSA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  13,
+                              "tipo":  "pareja",
+                              "nombre":  "J. PEREZ PEREZ - B. TRUJILLO CHANG",
+                              "jugadores":  [
+                                                "J. PEREZ PEREZ",
+                                                "B. TRUJILLO CHANG"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  14,
+                              "tipo":  "pareja",
+                              "nombre":  "H. DE LA FUENTE CAMBA - V. SANCHEZ VERA",
+                              "jugadores":  [
+                                                "H. DE LA FUENTE CAMBA",
+                                                "V. SANCHEZ VERA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  15,
+                              "tipo":  "pareja",
+                              "nombre":  "J. PEREZ MORILLAS - M. CORDOBA LUGO",
+                              "jugadores":  [
+                                                "J. PEREZ MORILLAS",
+                                                "M. CORDOBA LUGO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  16,
+                              "tipo":  "pareja",
+                              "nombre":  "D. GIL BATISTA - I. JOFRE MANZANARES",
+                              "jugadores":  [
+                                                "D. GIL BATISTA",
+                                                "I. JOFRE MANZANARES"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "E. ALONSO CHILLARON - J. ESBRI GONZALEZ",
+                              "jugadores":  [
+                                                "E. ALONSO CHILLARON",
+                                                "J. ESBRI GONZALEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "I. RAMIREZ DEL CAMPO - J. MUÑOZ ENRILE",
+                              "jugadores":  [
+                                                "I. RAMIREZ DEL CAMPO",
+                                                "J. MUÑOZ ENRILE"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "M. ORTEGA RIPOLL - C. MARTI VAÑO",
+                              "jugadores":  [
+                                                "M. ORTEGA RIPOLL",
+                                                "C. MARTI VAÑO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "J. BAUTISTA ORTIZ - J. RICO DASI",
+                              "jugadores":  [
+                                                "J. BAUTISTA ORTIZ",
+                                                "J. RICO DASI"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "A. GARCIA BASSAS - P. VERA CASTILLO",
+                              "jugadores":  [
+                                                "A. GARCIA BASSAS",
+                                                "P. VERA CASTILLO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "E. ARIJA OCHOA DE ALDA - S. ARIAS AZNAR",
+                              "jugadores":  [
+                                                "E. ARIJA OCHOA DE ALDA",
+                                                "S. ARIAS AZNAR"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "H. DE LA FUENTE CAMBA - V. SANCHEZ VERA",
+                              "jugadores":  [
+                                                "H. DE LA FUENTE CAMBA",
+                                                "V. SANCHEZ VERA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "D. GIL BATISTA - I. JOFRE MANZANARES",
+                              "jugadores":  [
+                                                "D. GIL BATISTA",
+                                                "I. JOFRE MANZANARES"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "I. RAMIREZ DEL CAMPO - J. MUÑOZ ENRILE",
+                              "jugadores":  [
+                                                "I. RAMIREZ DEL CAMPO",
+                                                "J. MUÑOZ ENRILE"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "J. BAUTISTA ORTIZ - J. RICO DASI",
+                              "jugadores":  [
+                                                "J. BAUTISTA ORTIZ",
+                                                "J. RICO DASI"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "E. ARIJA OCHOA DE ALDA - S. ARIAS AZNAR",
+                              "jugadores":  [
+                                                "E. ARIJA OCHOA DE ALDA",
+                                                "S. ARIAS AZNAR"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "D. GIL BATISTA - I. JOFRE MANZANARES",
+                              "jugadores":  [
+                                                "D. GIL BATISTA",
+                                                "I. JOFRE MANZANARES"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "J. BAUTISTA ORTIZ - J. RICO DASI",
+                              "jugadores":  [
+                                                "J. BAUTISTA ORTIZ",
+                                                "J. RICO DASI"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "D. GIL BATISTA - I. JOFRE MANZANARES",
+                              "jugadores":  [
+                                                "D. GIL BATISTA",
+                                                "I. JOFRE MANZANARES"
+                                            ]
+                          },
+                          {
+                              "avance":  0,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "J. BAUTISTA ORTIZ - J. RICO DASI",
+                              "jugadores":  [
+                                                "J. BAUTISTA ORTIZ",
+                                                "J. RICO DASI"
+                                            ]
+                          }
+                      ],
+    "partidos":  [
+                     {
+                         "avance":  5,
+                         "posicion":  2,
+                         "resultado":  "7/6-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  4,
+                         "resultado":  "7/6-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  6,
+                         "resultado":  "6/1-5/7-7/5",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  8,
+                         "resultado":  "6/1-7/6",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  9,
+                         "resultado":  "6/2-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  11,
+                         "resultado":  "6/2-4/6-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  13,
+                         "resultado":  "7/6-7/6",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  15,
+                         "resultado":  "6/3-7/6",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  1,
+                         "resultado":  "7/5-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  2,
+                         "resultado":  "6/4-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  3,
+                         "resultado":  "6/3-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  4,
+                         "resultado":  "6/2-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  5,
+                         "resultado":  "6/3-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  6,
+                         "resultado":  "6/2-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  7,
+                         "resultado":  "6/4-2/6-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  8,
+                         "resultado":  "6/2-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  1,
+                         "resultado":  "6/4-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  2,
+                         "resultado":  "7/5-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  3,
+                         "resultado":  "6/2-4/6-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  4,
+                         "resultado":  "6/0-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  1,
+                         "resultado":  "3/6-6/3-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  2,
+                         "resultado":  "6/3-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  1,
+                         "posicion":  1,
+                         "resultado":  "6/3-7/5",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     }
+                 ],
+    "cabezasSerie":  [
+                         {
+                             "cabezaSerie":  1,
+                             "nombre":  "D. GIL BATISTA/I. JOFRE MANZANARES",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  2,
+                             "nombre":  "E. ALONSO CHILLARON/J. ESBRI GONZALEZ",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  3,
+                             "nombre":  "J. COLLANTES GUIJO/R. LORENTE TORTOSA",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  4,
+                             "nombre":  "J. URIARTE GAY/D. MARTINEZ OTERO",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  5,
+                             "nombre":  "H. DE LA FUENTE CAMBA/V. SANCHEZ VERA",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  6,
+                             "nombre":  "I. GARCIA ACEITUNO/D. DE CASTRO BAUTISTA",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  7,
+                             "nombre":  "J. FERNANDEZ MUÑOZ/C. EUGENIO BARRERA",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  8,
+                             "nombre":  "P. BELLUATI LOPEZ/H. GARCIA MARTINEZ",
+                             "puntos":  null
+                         }
+                     ],
+    "clasificacion":  [
+
+                      ],
+    "otrosCuadros":  [
+                         {
+                             "genero":  "M",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         }
+                     ]
+}

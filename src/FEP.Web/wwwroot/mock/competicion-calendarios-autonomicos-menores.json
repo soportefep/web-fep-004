@@ -1,0 +1,1166 @@
+{
+    "categoria":  "menores",
+    "titulo":  "Calendario de menores de las federaciones territoriales",
+    "temporada":  2026,
+    "actualizado":  "2026-11-04",
+    "ranking":  "Ranking de Menores FEP",
+    "maximoPruebasPorFederacion":  6,
+    "introduccion":  [
+                         "El Reglamento Técnico General de la FEP (RTG) permite a las federaciones autonómicas incluir hasta 6 pruebas de menores como puntuables para el Ranking de Menores FEP (punto 3.10.1 del RTG). Las características de dichas pruebas se presentan en el punto 3.10.2 del RTG.",
+                         "Estas pruebas, junto con los torneos clasificatorios territoriales, los torneos TyC y TyC PREMIUM, el Campeonato de España de Menores y el Máster de Menores, son las que componen las pruebas puntuables del Ranking de Menores FEP."
+                     ],
+    "actualizacionesRanking":  {
+                                   "texto":  "Así, se establecen en el RTG (punto 3.10.9) 3 momentos en los que se introducen dichos torneos autonómicos:",
+                                   "momentos":  [
+                                                    {
+                                                        "orden":  1,
+                                                        "titulo":  "Tras el TyC 2",
+                                                        "descripcion":  "En la actualización tras la disputa del TyC 2 se pueden introducir hasta un máximo de 2 torneos autonómicos.",
+                                                        "maximoTorneos":  2,
+                                                        "fecha":  null
+                                                    },
+                                                    {
+                                                        "orden":  2,
+                                                        "titulo":  "Antes del Campeonato de España de Menores",
+                                                        "descripcion":  "En la actualización que haremos el miércoles anterior a la apertura del CEM se pueden introducir hasta dos torneos autonómicos más. Como abriremos la inscripción el 10 de julio, esta actualización se llevará a cabo el miércoles 8 de julio.",
+                                                        "maximoTorneos":  2,
+                                                        "fecha":  "2026-07-08"
+                                                    },
+                                                    {
+                                                        "orden":  3,
+                                                        "titulo":  "Antes del Máster de Menores",
+                                                        "descripcion":  "En la actualización que haremos el miércoles anterior a la apertura del Máster de Menores se pueden introducir hasta dos torneos autonómicos más. Como abriremos la inscripción el 30 de octubre, esta actualización se llevará a cabo el miércoles 28 de octubre.",
+                                                        "maximoTorneos":  2,
+                                                        "fecha":  "2026-10-28"
+                                                    }
+                                                ]
+                               },
+    "participacion":  "La participación de todos los deportistas con licencia emitida por cualquier federación autonómica es libre en todas las pruebas que se incluyen en este calendario, a excepción de aquellas pruebas que otorgan los títulos de campeones regionales. En ese caso deberá consultarse a la federación autonómica acerca de los criterios de participación.",
+    "leyenda":  "Pruebas incluidas actualmente en el Ranking de Menores FEP.",
+    "federaciones":  [
+                         {
+                             "clave":  "andalucia",
+                             "idFederacion":  6,
+                             "territorio":  "Andalucía",
+                             "nombre":  "Federación Andaluza de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 26 de enero al 1 de febrero",
+                                                 "fechaInicio":  "2026-01-26",
+                                                 "fechaFin":  "2026-02-01",
+                                                 "nombre":  "2ª prueba Circuito Andaluz de Menores",
+                                                 "sede":  "CP Liceo Sport. Club Propadel Indoor (Almería)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 9 al 15 de febrero",
+                                                 "fechaInicio":  "2026-02-09",
+                                                 "fechaFin":  "2026-02-15",
+                                                 "nombre":  "3ª prueba Circuito Andaluz de Menores",
+                                                 "sede":  "Club Avanzza Padel (Alcalá de Guadaira, Sevilla)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 1 al 7 de junio",
+                                                 "fechaInicio":  "2026-06-01",
+                                                 "fechaFin":  "2026-06-07",
+                                                 "nombre":  "6ª prueba Circuito Andaluz de Menores",
+                                                 "sede":  "Club Padel Premium. Club Pádel Indoor Jaén (Jaén)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 22 al 28 de junio",
+                                                 "fechaInicio":  "2026-06-22",
+                                                 "fechaFin":  "2026-06-28",
+                                                 "nombre":  "Campeonato de Andalucía de Menores",
+                                                 "sede":  "Club Pádel Jacaranda (Cádiz)",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  5,
+                                                 "fechas":  "Del 7 al 13 de septiembre",
+                                                 "fechaInicio":  "2026-09-07",
+                                                 "fechaFin":  "2026-09-13",
+                                                 "nombre":  "7ª prueba Circuito Andaluz de Menores",
+                                                 "sede":  "Club Pádel El mirador (Marbella)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  6,
+                                                 "fechas":  "Del 12 al 18 de octubre",
+                                                 "fechaInicio":  "2026-10-12",
+                                                 "fechaFin":  "2026-10-18",
+                                                 "nombre":  "8ª prueba Circuito Andaluz de Menores",
+                                                 "sede":  "CD Amigos Pádel Córdoba (Córdoba)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "aragon",
+                             "idFederacion":  11,
+                             "territorio":  "Aragón",
+                             "nombre":  "Federación Aragonesa de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 13 al 15 de febrero",
+                                                 "fechaInicio":  "2026-02-13",
+                                                 "fechaFin":  "2026-02-15",
+                                                 "nombre":  "CAM 2",
+                                                 "sede":  "Indoor Huesca",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 5 al 7 de junio",
+                                                 "fechaInicio":  "2026-06-05",
+                                                 "fechaFin":  "2026-06-07",
+                                                 "nombre":  "CAM 7. Campeonato de Aragón por Parejas de Menores",
+                                                 "sede":  "Montecanal Centro Deportivo",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 3 al 5 de julio",
+                                                 "fechaInicio":  "2026-07-03",
+                                                 "fechaFin":  "2026-07-05",
+                                                 "nombre":  "CAM 8",
+                                                 "sede":  "Padel Plaza Indoor",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 4 al 6 de septiembre",
+                                                 "fechaInicio":  "2026-09-04",
+                                                 "fechaFin":  "2026-09-06",
+                                                 "nombre":  "CAM 9",
+                                                 "sede":  "Padel Indoor Aragón",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  5,
+                                                 "fechas":  "Del 23 al 25 de octubre",
+                                                 "fechaInicio":  "2026-10-23",
+                                                 "fechaFin":  "2026-10-25",
+                                                 "nombre":  "CAM 10",
+                                                 "sede":  "C.D. Stadium Casablanca",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "canarias",
+                             "idFederacion":  18,
+                             "territorio":  "Canarias",
+                             "nombre":  "Federación Canaria de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 13 al 15 de febrero",
+                                                 "fechaInicio":  "2026-02-13",
+                                                 "fechaFin":  "2026-02-15",
+                                                 "nombre":  "TORNEO MENORES AENAGA",
+                                                 "sede":  "Castillo de Aguimes (Gran Canaria)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 27 de febrero al 1 de marzo",
+                                                 "fechaInicio":  "2026-02-27",
+                                                 "fechaFin":  "2026-03-01",
+                                                 "nombre":  "TORNEO DE MENORES",
+                                                 "sede":  "Club Miramar (Tenerife)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 10 al 12 de abril",
+                                                 "fechaInicio":  "2026-04-10",
+                                                 "fechaFin":  "2026-04-12",
+                                                 "nombre":  "TORNEO MENORES",
+                                                 "sede":  "OCEÁNICO (Tenerife)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 26 al 28 de junio",
+                                                 "fechaInicio":  "2026-06-26",
+                                                 "fechaFin":  "2026-06-28",
+                                                 "nombre":  "CTO. DE CANARIAS DE MENORES",
+                                                 "sede":  "Puertito de Guimar (Tenerife)",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  5,
+                                                 "fechas":  "Del 25 al 27 de septiembre",
+                                                 "fechaInicio":  "2026-09-25",
+                                                 "fechaFin":  "2026-09-27",
+                                                 "nombre":  "TORNEO BARCELÓ",
+                                                 "sede":  "Club la Calzada (Gran Canaria)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  6,
+                                                 "fechas":  "Del 9 al 11 de octubre",
+                                                 "fechaInicio":  "2026-10-09",
+                                                 "fechaFin":  "2026-10-11",
+                                                 "nombre":  "TORNEO OTAGUA",
+                                                 "sede":  "Hyde Park (Lanzarote)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "cantabria",
+                             "idFederacion":  13,
+                             "territorio":  "Cantabria",
+                             "nombre":  "Federación Cántabra de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 13 al 15 de febrero",
+                                                 "fechaInicio":  "2026-02-13",
+                                                 "fechaFin":  "2026-02-15",
+                                                 "nombre":  "Puntuable FEP",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 12 al 14 de junio",
+                                                 "fechaInicio":  "2026-06-12",
+                                                 "fechaFin":  "2026-06-14",
+                                                 "nombre":  "Puntuable FEP",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 3 al 5 de julio",
+                                                 "fechaInicio":  "2026-07-03",
+                                                 "fechaFin":  "2026-07-05",
+                                                 "nombre":  "Puntuable FEP",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 11 al 13 de septiembre",
+                                                 "fechaInicio":  "2026-09-11",
+                                                 "fechaFin":  "2026-09-13",
+                                                 "nombre":  "Puntuable FEP",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  5,
+                                                 "fechas":  "Del 16 al 18 de octubre",
+                                                 "fechaInicio":  "2026-10-16",
+                                                 "fechaFin":  "2026-10-18",
+                                                 "nombre":  "Campeonato Autonómico de Menores",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "cataluna",
+                             "idFederacion":  2,
+                             "territorio":  "Cataluña",
+                             "nombre":  "Federació Catalana de Pàdel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "13, 14, 15, 20, 21 y 22 de febrero",
+                                                 "fechaInicio":  "2026-02-13",
+                                                 "fechaFin":  "2026-02-22",
+                                                 "nombre":  "I Super Gran Slam",
+                                                 "sede":  "Club Padel 7 Malgrat",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "5, 6, 7, 12, 13 y 14 de junio",
+                                                 "fechaInicio":  "2026-06-05",
+                                                 "fechaFin":  "2026-06-14",
+                                                 "nombre":  "III Super Gran Slam",
+                                                 "sede":  "Club Natació Lleida",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 28 de junio al 5 de julio",
+                                                 "fechaInicio":  "2026-06-28",
+                                                 "fechaFin":  "2026-07-05",
+                                                 "nombre":  "IV Super Gran Slam",
+                                                 "sede":  "CATALUNYA PADEL CLUB",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "18, 19, 20, 25, 26 y 27 de septiembre",
+                                                 "fechaInicio":  "2026-09-18",
+                                                 "fechaFin":  "2026-09-27",
+                                                 "nombre":  "VI Super Gran Slam",
+                                                 "sede":  "Club Pàdel Indoor Figueres",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  5,
+                                                 "fechas":  "Octubre, en dos fases",
+                                                 "fechaInicio":  "2026-10-02",
+                                                 "fechaFin":  "2026-10-25",
+                                                 "nombre":  "Campionat de Catalunya de menores",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+                                                               {
+                                                                   "fechas":  "2, 3, 4, 9, 10 y 11 de octubre",
+                                                                   "fechaInicio":  "2026-10-02",
+                                                                   "fechaFin":  "2026-10-11",
+                                                                   "descripcion":  "Categorías benjamín, infantil y júnior",
+                                                                   "sede":  "Club Pàdel Cambrils"
+                                                               },
+                                                               {
+                                                                   "fechas":  "16, 17, 18, 23, 24 y 25 de octubre",
+                                                                   "fechaInicio":  "2026-10-16",
+                                                                   "fechaFin":  "2026-10-25",
+                                                                   "descripcion":  "Categorías alevín y cadete",
+                                                                   "sede":  "Pàdel Park Llavaneres"
+                                                               }
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "castilla-la-mancha",
+                             "idFederacion":  22,
+                             "territorio":  "Castilla-La Mancha",
+                             "nombre":  "Federación de Pádel de Castilla-La Mancha",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 21 al 22 de febrero",
+                                                 "fechaInicio":  "2026-02-21",
+                                                 "fechaFin":  "2026-02-22",
+                                                 "nombre":  null,
+                                                 "sede":  "Argamasilla de Calatrava (Ciudad Real)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 13 al 14 de junio",
+                                                 "fechaInicio":  "2026-06-13",
+                                                 "fechaFin":  "2026-06-14",
+                                                 "nombre":  "Campeonato Regional",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 5 al 6 de septiembre",
+                                                 "fechaInicio":  "2026-09-05",
+                                                 "fechaFin":  "2026-09-06",
+                                                 "nombre":  null,
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 10 al 11 de octubre",
+                                                 "fechaInicio":  "2026-10-10",
+                                                 "fechaFin":  "2026-10-11",
+                                                 "nombre":  null,
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "castilla-y-leon",
+                             "idFederacion":  21,
+                             "territorio":  "Castilla y León",
+                             "nombre":  "Federación de Pádel de Castilla y León",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 20 al 22 de febrero",
+                                                 "fechaInicio":  "2026-02-20",
+                                                 "fechaFin":  "2026-02-22",
+                                                 "nombre":  "PUNTUABLE MENORES FEP",
+                                                 "sede":  "TENIS 5 PADEL PRIX, ONZONILLA (LEÓN)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 20 al 22 de marzo",
+                                                 "fechaInicio":  "2026-03-20",
+                                                 "fechaFin":  "2026-03-22",
+                                                 "nombre":  "PUNTUABLE MENORES FEP",
+                                                 "sede":  "PÁDEL INDOOR SORIA, GOLMAYO (SORIA)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 22 al 24 de mayo",
+                                                 "fechaInicio":  "2026-05-22",
+                                                 "fechaFin":  "2026-05-24",
+                                                 "nombre":  "PUNTUABLE MENORES FEP",
+                                                 "sede":  "CLUB GUIJUELENSE, GUIJUELO (SALAMANCA)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 12 al 14 de junio",
+                                                 "fechaInicio":  "2026-06-12",
+                                                 "fechaFin":  "2026-06-14",
+                                                 "nombre":  "PUNTUABLE MENORES FEP. Campeonato de Menores de Castilla y León",
+                                                 "sede":  "PADELYOU (SALAMANCA)",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  5,
+                                                 "fechas":  "Del 2 al 4 de octubre",
+                                                 "fechaInicio":  "2026-10-02",
+                                                 "fechaFin":  "2026-10-04",
+                                                 "nombre":  "PUNTUABLE MENORES FEP",
+                                                 "sede":  "PRADO SPORT, ARANDA DE DUERO (BURGOS)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  6,
+                                                 "fechas":  "Del 23 al 25 de octubre",
+                                                 "fechaInicio":  "2026-10-23",
+                                                 "fechaFin":  "2026-10-25",
+                                                 "nombre":  "PUNTUABLE MENORES FEP",
+                                                 "sede":  "DST SPORT CENTER, SAN ROMAN DE BEMBIBRE (LEÓN)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "comunidad-valenciana",
+                             "idFederacion":  14,
+                             "territorio":  "Comunidad Valenciana",
+                             "nombre":  "Federación de Pádel de la Comunitat Valenciana",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 13 al 15 de febrero",
+                                                 "fechaInicio":  "2026-02-13",
+                                                 "fechaFin":  "2026-02-15",
+                                                 "nombre":  "Autonómico 2",
+                                                 "sede":  "Padelpoint Denia",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 24 al 26 de abril",
+                                                 "fechaInicio":  "2026-04-24",
+                                                 "fechaFin":  "2026-04-26",
+                                                 "nombre":  "Autonómico 4",
+                                                 "sede":  "Masquepadel Castellón",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 3 al 5 de julio",
+                                                 "fechaInicio":  "2026-07-03",
+                                                 "fechaFin":  "2026-07-05",
+                                                 "nombre":  "Campeonato autonómico de Menores",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 11 al 13 de septiembre",
+                                                 "fechaInicio":  "2026-09-11",
+                                                 "fechaFin":  "2026-09-13",
+                                                 "nombre":  "Autonómico 9",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  5,
+                                                 "fechas":  "Del 23 al 25 de octubre",
+                                                 "fechaInicio":  "2026-10-23",
+                                                 "fechaFin":  "2026-10-25",
+                                                 "nombre":  "Autonómico 10",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "murcia",
+                             "idFederacion":  15,
+                             "territorio":  "Región de Murcia",
+                             "nombre":  "Federación de Pádel de la Región de Murcia",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 20 al 22 de febrero",
+                                                 "fechaInicio":  "2026-02-20",
+                                                 "fechaFin":  "2026-02-22",
+                                                 "nombre":  null,
+                                                 "sede":  "VILLAESCUSA SPORT SAN JAVIER",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 10 al 12 de abril",
+                                                 "fechaInicio":  "2026-04-10",
+                                                 "fechaFin":  "2026-04-12",
+                                                 "nombre":  null,
+                                                 "sede":  "MMG MAR MENOR RESORT TORRE PACHECO",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 12 al 14 de junio",
+                                                 "fechaInicio":  "2026-06-12",
+                                                 "fechaFin":  "2026-06-14",
+                                                 "nombre":  null,
+                                                 "sede":  "MONTEPADEL MURCIA",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 16 al 18 de octubre",
+                                                 "fechaInicio":  "2026-10-16",
+                                                 "fechaFin":  "2026-10-18",
+                                                 "nombre":  "Campeonato Regional de Menores por Parejas",
+                                                 "sede":  "CLUB CORDILLERA MURCIA",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "baleares",
+                             "idFederacion":  17,
+                             "territorio":  "Baleares",
+                             "nombre":  "Federación de Pádel de les Illes Balears",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 10 al 12 de abril",
+                                                 "fechaInicio":  "2026-04-10",
+                                                 "fechaFin":  "2026-04-12",
+                                                 "nombre":  "IV PRUEBA CIRCUITO Btravel de menores",
+                                                 "sede":  "Palma Racket",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 10 al 12 de julio",
+                                                 "fechaInicio":  "2026-07-10",
+                                                 "fechaFin":  "2026-07-12",
+                                                 "nombre":  "VII PRUEBA CIRCUITO BTRAVEL DE MENORES - CTO. DE BALEARES (Autonómico)",
+                                                 "sede":  "Nou Poliesportiu Sa Cabana",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 11 al 13 de septiembre",
+                                                 "fechaInicio":  "2026-09-11",
+                                                 "fechaFin":  "2026-09-13",
+                                                 "nombre":  "VIII PRUEBA CIRCUITO BTRAVEL DE MENORES",
+                                                 "sede":  "Indoor Manacor",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "asturias",
+                             "idFederacion":  7,
+                             "territorio":  "Principado de Asturias",
+                             "nombre":  "Federación de Pádel del Principado de Asturias",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 13 al 15 de febrero",
+                                                 "fechaInicio":  "2026-02-13",
+                                                 "fechaFin":  "2026-02-15",
+                                                 "nombre":  null,
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 10 al 12 de abril",
+                                                 "fechaInicio":  "2026-04-10",
+                                                 "fechaFin":  "2026-04-12",
+                                                 "nombre":  null,
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 5 al 7 de junio",
+                                                 "fechaInicio":  "2026-06-05",
+                                                 "fechaFin":  "2026-06-07",
+                                                 "nombre":  "Campeonato de Asturias de Menores",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 11 al 13 de septiembre",
+                                                 "fechaInicio":  "2026-09-11",
+                                                 "fechaFin":  "2026-09-13",
+                                                 "nombre":  null,
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  5,
+                                                 "fechas":  "Del 16 al 18 de octubre",
+                                                 "fechaInicio":  "2026-10-16",
+                                                 "fechaFin":  "2026-10-18",
+                                                 "nombre":  null,
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "extremadura",
+                             "idFederacion":  12,
+                             "territorio":  "Extremadura",
+                             "nombre":  "Federación Extremeña de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 26 al 27 de septiembre",
+                                                 "fechaInicio":  "2026-09-26",
+                                                 "fechaFin":  "2026-09-27",
+                                                 "nombre":  "Circuito Burger King de Menores",
+                                                 "sede":  "Ochentasport (Badajoz)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 24 al 25 de octubre",
+                                                 "fechaInicio":  "2026-10-24",
+                                                 "fechaFin":  "2026-10-25",
+                                                 "nombre":  "Circuito Burger King de Menores",
+                                                 "sede":  "Liceo Sportcenter (Plasencia)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "galicia",
+                             "idFederacion":  8,
+                             "territorio":  "Galicia",
+                             "nombre":  "Federación Gallega de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 14 al 15 de febrero",
+                                                 "fechaInicio":  "2026-02-14",
+                                                 "fechaFin":  "2026-02-15",
+                                                 "nombre":  "1ª PRUEBA CIRCUITO PADELPRIX",
+                                                 "sede":  "Padel Prix Cerceda (Cerceda - La Coruña)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 7 al 8 de marzo",
+                                                 "fechaInicio":  "2026-03-07",
+                                                 "fechaFin":  "2026-03-08",
+                                                 "nombre":  "2ª PRUEBA CIRCUITO PADELPRIX",
+                                                 "sede":  "Padel Prix Ourense (Ourense)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 10 al 12 de abril",
+                                                 "fechaInicio":  "2026-04-10",
+                                                 "fechaFin":  "2026-04-12",
+                                                 "nombre":  "TORNEO DE MENORES CENTRO DEPORTIVO D10",
+                                                 "sede":  "Centro Deportivo D10 (Lugo)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 29 de junio al 5 de julio",
+                                                 "fechaInicio":  "2026-06-29",
+                                                 "fechaFin":  "2026-07-05",
+                                                 "nombre":  "CAMPEONATO GALLEGO DE MENORES XUNTA DE GALICIA",
+                                                 "sede":  "Sede por confirmar",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  5,
+                                                 "fechas":  "Del 12 al 13 de septiembre",
+                                                 "fechaInicio":  "2026-09-12",
+                                                 "fechaFin":  "2026-09-13",
+                                                 "nombre":  "TORNEO DE MENORES PADELBIT",
+                                                 "sede":  "Padelbit (Ourense)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  6,
+                                                 "fechas":  "Del 3 al 4 de octubre",
+                                                 "fechaInicio":  "2026-10-03",
+                                                 "fechaFin":  "2026-10-04",
+                                                 "nombre":  "3ª PRUEBA CIRCUITO DE MENORES PÁDELPRIX",
+                                                 "sede":  "Padel Prix Santiago (Santiago de Compostela - La Coruña)",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "madrid",
+                             "idFederacion":  1,
+                             "territorio":  "Comunidad de Madrid",
+                             "nombre":  "Federación Madrileña de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 12 al 15 de febrero",
+                                                 "fechaInicio":  "2026-02-12",
+                                                 "fechaFin":  "2026-02-15",
+                                                 "nombre":  null,
+                                                 "sede":  "Padel Indoor Alcalá",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 19 al 22 de marzo",
+                                                 "fechaInicio":  "2026-03-19",
+                                                 "fechaFin":  "2026-03-22",
+                                                 "nombre":  null,
+                                                 "sede":  "Punta Chica",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 4 al 7 de junio",
+                                                 "fechaInicio":  "2026-06-04",
+                                                 "fechaFin":  "2026-06-07",
+                                                 "nombre":  "Campeonato de Madrid de Menores",
+                                                 "sede":  "Parque Deportivo Puerta de Hierro",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 25 al 28 de junio",
+                                                 "fechaInicio":  "2026-06-25",
+                                                 "fechaFin":  "2026-06-28",
+                                                 "nombre":  null,
+                                                 "sede":  "Padel Indoor Alcalá",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  5,
+                                                 "fechas":  "Del 24 al 27 de septiembre",
+                                                 "fechaInicio":  "2026-09-24",
+                                                 "fechaFin":  "2026-09-27",
+                                                 "nombre":  null,
+                                                 "sede":  "Padel Soto Torrejón",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  6,
+                                                 "fechas":  "Del 1 al 4 de octubre",
+                                                 "fechaInicio":  "2026-10-01",
+                                                 "fechaFin":  "2026-10-04",
+                                                 "nombre":  null,
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "melilla",
+                             "idFederacion":  9,
+                             "territorio":  "Melilla",
+                             "nombre":  "Federación Melillense de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 17 al 19 de julio",
+                                                 "fechaInicio":  "2026-07-17",
+                                                 "fechaFin":  "2026-07-19",
+                                                 "nombre":  null,
+                                                 "sede":  "Real Club Marítimo de Melilla",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 21 al 27 de septiembre",
+                                                 "fechaInicio":  "2026-09-21",
+                                                 "fechaFin":  "2026-09-27",
+                                                 "nombre":  null,
+                                                 "sede":  "Centro de Pádel Ciudad Autónoma de Melilla",
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "navarra",
+                             "idFederacion":  10,
+                             "territorio":  "Navarra",
+                             "nombre":  "Federación Navarra de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "13 de septiembre",
+                                                 "fechaInicio":  "2026-09-13",
+                                                 "fechaFin":  "2026-09-13",
+                                                 "nombre":  "CTO NAVARRO POR PAREJAS DE MENORES (JDN)",
+                                                 "sede":  "Navarra Pádel Máster Club Deportivo (Mutilva)",
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  false,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         },
+                         {
+                             "clave":  "pais-vasco",
+                             "idFederacion":  3,
+                             "territorio":  "País Vasco",
+                             "nombre":  "Federación Vasca de Pádel",
+                             "pruebas":  [
+                                             {
+                                                 "orden":  1,
+                                                 "fechas":  "Del 6 al 12 de abril",
+                                                 "fechaInicio":  "2026-04-06",
+                                                 "fechaFin":  "2026-04-12",
+                                                 "nombre":  "III CVM",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  2,
+                                                 "fechas":  "Del 22 al 28 de junio",
+                                                 "fechaInicio":  "2026-06-22",
+                                                 "fechaFin":  "2026-06-28",
+                                                 "nombre":  "CTO. Euskadi Menores Puntuable",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  true,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  3,
+                                                 "fechas":  "Del 31 de agosto al 6 de septiembre",
+                                                 "fechaInicio":  "2026-08-31",
+                                                 "fechaFin":  "2026-09-06",
+                                                 "nombre":  "V CVM Puntuable",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             },
+                                             {
+                                                 "orden":  4,
+                                                 "fechas":  "Del 5 al 11 de octubre",
+                                                 "fechaInicio":  "2026-10-05",
+                                                 "fechaFin":  "2026-10-11",
+                                                 "nombre":  "VI CVM Puntuable",
+                                                 "sede":  null,
+                                                 "campeonatoAutonomico":  false,
+                                                 "enRanking":  true,
+                                                 "fases":  [
+
+                                                           ]
+                                             }
+                                         ]
+                         }
+                     ]
+}

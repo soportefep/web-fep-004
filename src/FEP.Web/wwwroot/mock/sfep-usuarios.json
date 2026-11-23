@@ -1,0 +1,45 @@
+{
+  "datosDePrueba": true,
+  "nota": "DATOS DE PRUEBA del prototipo SFEP (extranet de gestión), sin conexión a base de datos. Dos tipos de usuario: Empleado (personal de la FEP, federación 0) y Autonómica (usuario de una federación autonómica: solo ve sus fichas y 'Calendario' en lugar de 'Portal web'). En producción: GET /api/v1/sfep/usuarios solo existirá para la sesión iniciada con usuario y contraseña SFEP; permisos según SFEP_Usuarios_Permisos.",
+  "items": [
+    {
+      "id": 9001,
+      "nombre": "Empleado",
+      "perfil": "Personal FEP",
+      "federacion": { "id": 0, "nombre": "FEDERACIÓN ESPAÑOLA DE PÁDEL" },
+      "personalFep": true,
+      "eventosAsignados": true,
+      "accesoServidor": true,
+      "permisos": { "fichas": true, "fichasNueva": true, "fichasModificar": true, "torneos": true, "ranking": true, "sanciones": true, "banco": true, "comunicaciones": true, "portal": true, "configuracion": true, "informes": true, "clubes": true, "calendario": true },
+      "avisos": [
+        { "evento": "XXI Cto. España Selecciones Autonómicas Absoluto", "tarea": "Cerrar la designación de jueces-árbitro", "fechaTope": "2026-11-21" },
+        { "evento": "I Copa de Ligas Autonómicas de Veteranos", "tarea": "Enviar cuadros definitivos a los clubes", "fechaTope": "2026-11-24" },
+        { "evento": "Gala anual del pádel (ejemplo)", "tarea": "Confirmar sala y catering", "fechaTope": "2026-12-05" }
+      ],
+      "notas": [
+        { "id": 1, "fecha": "2026-11-23T09:12", "autor": "Persona Ejemplo A", "texto": "Revisad las fichas pendientes de validar antes del viernes." },
+        { "id": 2, "fecha": "2026-11-22T17:40", "autor": "Persona Ejemplo B", "texto": "Ya está subida la normativa 2027 al portal; falta la versión en PDF accesible." }
+      ]
+    },
+    {
+      "id": 9002,
+      "nombre": "Autonómica",
+      "perfil": "Federación autonómica",
+      "federacion": { "id": 3, "nombre": "FEDERACIÓN AUTONÓMICA DE EJEMPLO" },
+      "personalFep": false,
+      "eventosAsignados": false,
+      "accesoServidor": false,
+      "permisos": { "fichas": true, "fichasNueva": true, "fichasModificar": true, "torneos": true, "ranking": true, "sanciones": true, "banco": false, "comunicaciones": true, "portal": false, "configuracion": false, "informes": true, "clubes": true, "calendario": true },
+      "resumen": [
+        { "valor": "3.904", "etiqueta": "Fichas activas", "modulo": "fichas" },
+        { "valor": "5", "etiqueta": "Torneos en curso", "modulo": "torneos" },
+        { "valor": "1", "etiqueta": "Sanciones vigentes", "modulo": "sanciones" },
+        { "valor": "62", "etiqueta": "Clubes", "modulo": "clubes" }
+      ],
+      "avisos": [],
+      "notas": [
+        { "id": 3, "fecha": "2026-11-20T11:05", "autor": "Persona Ejemplo A", "texto": "Recordatorio: el plazo de alta de torneos del primer trimestre cierra el 15 de diciembre." }
+      ]
+    }
+  ]
+}

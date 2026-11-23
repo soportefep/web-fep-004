@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>Junta Directiva FEP</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .cols { position: absolute; left: 96px; right: 96px; top: 318px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 30px; }
+  .col { display: grid; align-content: start; }
+  .vp { min-height: 188px; position: relative; padding-right: 86px; }
+  .vp .num { position: absolute; right: 20px; top: 18px; color: #fff; opacity: .55; }
+  .vp .nom { font-size: 34px; }
+  /* Vocales colgando de su vicepresidencia */
+  .vocales { position: relative; margin-left: 26px; padding-left: 26px; border-left: 3px solid var(--ink); display: grid; gap: 12px; padding-top: 18px; }
+  .vocal { position: relative; border: 0; border-left: 8px solid var(--red); background: var(--paper); padding: 11px 18px; gap: 4px; }
+  .vocal::before { content: ""; position: absolute; left: -34px; top: 50%; width: 26px; height: 3px; background: var(--ink); }
+  .vocal .rol { font-size: 13.5px; color: var(--gray); letter-spacing: .1em; }
+  .vocal .nom { font-size: 25px; }
+  .sg { min-height: 188px; }
+  .sg .nom { font-size: 34px; }
+  .nota { margin-top: 26px; font-size: 18px; font-weight: 600; line-height: 1.45; color: var(--gray); }
+  .nota b { color: var(--ink); }
+</style></head>
+<body>
+  <div class="diag"></div><div class="filete"></div>
+  <header class="cab">
+    <div>
+      <p class="kicker">Federación Española de Pádel · Órganos de gobierno</p>
+      <h1>Junta Directiva</h1>
+    </div>
+    <img class="logo" src="logo.png" alt="">
+  </header>
+
+  <div class="cols">
+    <div class="col">
+      <div class="card card--ink vp"><span class="num">01</span><p class="rol">Vicepresidencia 1 · Economía y Tesorería</p><p class="nom">Francisco Sanz Fominaya</p></div>
+      <ul class="vocales">
+        <li class="card vocal"><p class="rol">Vocal Área Económica</p><p class="nom">José Mª Alda Hoyos</p></li>
+        <li class="card vocal"><p class="rol">Vocal de Eventos</p><p class="nom">Tania Santos Alves</p></li>
+        <li class="card vocal"><p class="rol">Vocal de Innovación y Proyectos</p><p class="nom">Lucia Iborra Broseta</p></li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="card card--ink vp"><span class="num">02</span><p class="rol">Vicepresidencia 2 · Deportiva, Promoción y Relaciones Internacionales</p><p class="nom">José Pérez García</p></div>
+      <ul class="vocales">
+        <li class="card vocal"><p class="rol">Vocal Mujer</p><p class="nom">Francisca Rojas Ponce</p></li>
+        <li class="card vocal"><p class="rol">Vocal de Competición</p><p class="nom">Carmen de la Cruz Grao</p></li>
+        <li class="card vocal"><p class="rol">Vocal de Formación e Investigación</p><p class="nom">Diego Muñoz Marín</p></li>
+        <li class="card vocal"><p class="rol">Vocal de Base y Promoción</p><p class="nom">Paula García Rguez.</p></li>
+        <li class="card vocal"><p class="rol">Vocal CTAP</p><p class="nom">Victoria Barcina Hidalgo</p></li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="card card--ink vp"><span class="num">03</span><p class="rol">Vicepresidencia 3 · Área Social, Relaciones Institucionales y Dinamización Territorial</p><p class="nom">Jesús Vázquez Tallón</p></div>
+      <ul class="vocales">
+        <li class="card vocal"><p class="rol">Vocal de Responsabilidad Social Corporativa (RSC)</p><p class="nom">Silvia Rial Fuertes</p></li>
+        <li class="card vocal"><p class="rol">Vocal de Gobernanza Interna y RRHH</p><p class="nom">Marta Porras Cuesta</p></li>
+        <li class="card vocal"><p class="rol">Vocal Pádel Inclusivo</p><p class="nom">Antonio José López Castro</p></li>
+        <li class="card vocal"><p class="rol">Vocal de Dinamización Territorial</p><p class="nom">Lucia Carreño Busta</p></li>
+        <li class="card vocal"><p class="rol">Vocal de Alianzas Estratégicas</p><p class="nom">Patricia Pina Somoano</p></li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="card card--red sg"><p class="rol">Secretaría General</p><p class="nom">Concha Velasco Martín</p></div>
+      <p class="nota"><b>3 vicepresidencias</b> y <b>13 vocalías</b> organizadas por áreas de trabajo.</p>
+    </div>
+  </div>
+
+  <footer class="pie"><span><b>FEP</b> · padelfederacion.es</span><span>Junta Directiva</span></footer>
+</body></html>

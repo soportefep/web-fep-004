@@ -1,0 +1,201 @@
+/* =========================================================================
+   FEP · Prototipo 003 — Calendario FEP en formato "cartelera de temporada"
+   Solo para calendariofep.html (main.cal-003). Va después de fep.css y tema-003.css.
+   No cambia el JavaScript (calendario-fep.js): reordena y restiliza lo que pinta.
+   - El índice lateral pasa a ser una barra negra de meses, fija bajo la cabecera.
+   - Los filtros, una barra horizontal compacta.
+   - Cada mes: nombre grande fijo a la izquierda y fichas de prueba en rejilla.
+   - Calendarios en PDF en tarjetas y patrocinadores en una franja al final.
+   ========================================================================= */
+
+.cal-003 { --cab: 87px; --rail: 58px; }               /* alto de la cabecera fija y de la barra de meses */
+@media (max-width: 1279px) { .cal-003 { --cab: 75px; } }
+@media (max-width: 640px) { .cal-003 { --cab: 67px; --rail: 50px; } }
+
+/* ---------- Estructura: una sola columna (barra de meses · contenido · patrocinadores) ---------- */
+.cal-003 .page-layout,
+.cal-003 .page-layout:has(.page-sponsors:not([hidden])) {
+  display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: "toc" "content" "sponsors";
+  gap: 0; padding-top: 0; padding-bottom: 0;
+}
+.cal-003 .page-content { grid-area: content; padding-top: 40px; }
+.cal-003 .subnav { border-bottom: 0; }
+
+/* ---------- Barra de meses (antes índice lateral) ---------- */
+.cal-003 .page-toc {
+  grid-area: toc; position: sticky; top: var(--cab); z-index: 20; margin: 0; padding: 0; border: 0;
+  background: var(--ink); color: #fff;
+  box-shadow: 0 0 0 100vmax var(--ink); clip-path: inset(0 -100vmax);   /* fondo negro a todo el ancho */
+}
+.cal-003 .page-toc__title { display: none; }
+.cal-003 .page-toc__list {
+  display: flex; gap: 0; margin: 0; height: var(--rail); border: 0;
+  overflow-x: auto; scrollbar-width: none;
+}
+.cal-003 .page-toc__list::-webkit-scrollbar { display: none; }
+.cal-003 .page-toc__list li { flex: none; }
+.cal-003 .page-toc__list a {
+  display: flex; align-items: center; gap: 8px; height: 100%; margin: 0; padding: 0 16px;
+  border: 0; border-right: 1px solid rgba(255, 255, 255, .12); border-radius: 0; white-space: nowrap;
+  font-stretch: 75%; font-weight: 800; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: rgba(255, 255, 255, .72);
+  transition: background-color .2s, color .2s;
+}
+.cal-003 .page-toc__list li:first-child a { padding-left: 0; }
+.cal-003 .page-toc__list a:hover { color: #fff; background: rgba(255, 255, 255, .06); }
+.cal-003 .page-toc__list a.is-active { color: #fff; background: var(--red); padding-left: 16px; }
+.cal-003 .page-toc__count {
+  min-width: 0; padding: 2px 6px; border-radius: 0; background: rgba(255, 255, 255, .14);
+  font-stretch: 100%; font-size: 11px; font-weight: 700; color: #fff;
+}
+.cal-003 .page-toc__list a.is-active .page-toc__count { background: rgba(0, 0, 0, .25); }
+.cal-003 .page-toc :focus-visible { outline: 3px solid #fff; outline-offset: -3px; }
+
+/* Las anclas no deben quedar bajo la cabecera + barra de meses */
+.cal-003 .calf-section, .cal-003 .calf-licit, .cal-003 .clubs-results, .cal-003 #pruebas .camp-month {
+  scroll-margin-top: calc(var(--cab) + var(--rail) + 20px);
+}
+
+/* ---------- Convocatoria de organización de torneos ---------- */
+.cal-003 .calf-licit {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 18px 32px;
+  padding: 0 0 24px; border: 0; border-bottom: 3px solid var(--ink); border-radius: 0; background: none;
+}
+.cal-003 .calf-licit__img { border-radius: 0; }
+.cal-003 .calf-licit__title { font-stretch: 72%; font-weight: 800; font-size: 32px; line-height: 1; text-transform: uppercase; }
+
+/* ---------- Filtros: barra horizontal compacta ---------- */
+.cal-003 .clubs-search {
+  margin-top: 32px; padding: 18px 20px; border: 0; border-radius: 0; background: var(--paper); border-left: 8px solid var(--red);
+}
+.cal-003 .clubs-search .org-group__title { font-size: 18px; letter-spacing: .06em; }
+.cal-003 .camp-form {
+  grid-template-columns: 150px 220px minmax(0, 1fr) auto; align-items: end; gap: 12px 16px; margin-top: 12px;
+}
+.cal-003 .clubs-form label { font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+.cal-003 .clubs-form select, .cal-003 .clubs-form input { height: 44px; border: 2px solid var(--ink); border-radius: 0; background-color: #fff; }
+.cal-003 .clubs-form__actions { grid-column: auto; flex-wrap: nowrap; height: 44px; }
+.cal-003 .clubs-form .camp-check { font-size: 13px; font-weight: 600; white-space: nowrap; text-transform: none; letter-spacing: 0; }
+.cal-003 .clubs-form__reset { font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+
+/* ---------- Cabecera del listado ---------- */
+.cal-003 .clubs-results { margin-top: 48px; }
+.cal-003 .clubs-results__head { align-items: flex-end; padding-bottom: 14px; border-bottom: 3px solid var(--ink); }
+.cal-003 #pruebas-titulo { font-size: clamp(36px, 4.2vw, 60px); }
+.cal-003 .calf-season { margin-top: 0; }
+.cal-003 .calf-season .doc { border-bottom: 1px solid var(--line); }
+
+/* ---------- Cada mes: nombre fijo a la izquierda + rejilla de fichas ---------- */
+.cal-003 .camp-month {
+  display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 32px;
+  margin-top: 0; padding: 36px 0; border-bottom: 1px solid var(--line);
+}
+.cal-003 .camp-month + .camp-month { margin-top: 0; }
+.cal-003 .camp-month__title {
+  position: sticky; top: calc(var(--cab) + var(--rail) + 24px); align-self: start;
+  display: grid; gap: 10px; margin: 0; padding: 0; border: 0;
+  font-stretch: 62%; font-weight: 900; font-size: 54px; line-height: .86; letter-spacing: 0; text-transform: uppercase; color: var(--ink);
+}
+.cal-003 .camp-month__title .org-count {
+  justify-self: start; padding: 4px 8px; border-radius: 0; background: var(--ink); color: #fff;
+  font-stretch: 100%; font-size: 12px; font-weight: 800; letter-spacing: .06em; line-height: 1;
+}
+.cal-003 .camp-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+.cal-003 .camp-items > li { display: flex; }
+
+/* Ficha de prueba: barra de color por categoría, fecha grande, título y sede */
+.cal-003 .camp-item {
+  --cat: var(--gray, #8A8A85);
+  position: relative; flex: 1; display: flex; flex-direction: column; gap: 0; padding: 0;
+  border: 2px solid var(--ink); border-top: 10px solid var(--cat); background: #fff;
+  transition: transform .2s var(--ease), box-shadow .2s var(--ease);
+}
+.cal-003 .camp-item:has(.camp-tag--absoluto) { --cat: var(--ink); }
+.cal-003 .camp-item:has(.camp-tag--menores) { --cat: var(--red); }
+.cal-003 .camp-item:has(.camp-tag--veteranos) { --cat: var(--blue); }
+.cal-003 .camp-item:has(.calf-tag--silla) { --cat: #FFB800; }
+.cal-003 .camp-item:hover, .cal-003 .camp-item:focus-within { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--cat); }
+.cal-003 .camp-item__date {
+  display: flex; align-items: baseline; gap: 10px; padding: 16px 18px 12px; border-bottom: 1px solid var(--line);
+}
+.cal-003 .camp-item .event__days { font-stretch: 62%; font-weight: 900; font-size: 48px; line-height: .85; color: var(--ink); letter-spacing: -.01em; }
+.cal-003 .camp-item .event__month { font-size: 11.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
+.cal-003 .calf-date-tbd { font-stretch: 75%; font-size: 20px; line-height: 1; font-weight: 800; color: var(--text-2); }
+.cal-003 .camp-item__body { display: flex; flex-direction: column; gap: 8px; flex: 1; padding: 14px 18px 18px; }
+.cal-003 .camp-item__tags .org-tag { border-radius: 0; font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.cal-003 .camp-item__title { margin: 0; font-stretch: 78%; font-weight: 800; font-size: 21px; line-height: 1.05; text-transform: uppercase; letter-spacing: 0; }
+/* El enlace del título cubre toda la ficha */
+.cal-003 .camp-item__title a::after { content: ""; position: absolute; inset: -10px -2px -2px; }
+.cal-003 .camp-item__title a:hover { text-decoration: none; color: var(--red); }
+.cal-003 .camp-item__title a:focus-visible { outline: none; }
+.cal-003 .camp-item__title a:focus-visible::after { outline: 3px solid var(--red); outline-offset: 2px; }
+.cal-003 .camp-item__place { margin-top: auto; padding-top: 6px; font-size: 13px; color: var(--text-2); }
+.cal-003 .camp-item__place::before { content: "● "; color: var(--cat); }
+
+/* ---------- Leyenda de colores por categoría ---------- */
+.cal-leyenda { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 14px 0 0; padding: 0; list-style: none; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--text-2); }
+.cal-leyenda li { display: inline-flex; align-items: center; gap: 8px; }
+.cal-leyenda li::before { content: ""; width: 14px; height: 14px; background: var(--c); }
+.clubs-results:has(#calf-lista[hidden]) .cal-leyenda { display: none; }   /* sin pruebas, sin leyenda */
+
+/* ---------- Calendarios en PDF: tarjetas ---------- */
+.cal-003 .calf-section { margin-top: 56px; padding-top: 0; border-top: 0; }
+.cal-003 .calf-section .org-group__title { padding-bottom: 14px; border-bottom: 3px solid var(--ink); }
+.cal-003 #calf-docs, .cal-003 .calf-section .org-more .doc-list {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin-top: 16px; border-top: 0;
+}
+.cal-003 #calf-docs .doc, .cal-003 .calf-section .org-more .doc {
+  position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: 6px 14px;
+  padding: 16px; border: 2px solid var(--ink); background: #fff;
+}
+.cal-003 #calf-docs .doc__download, .cal-003 .calf-section .org-more .doc__download { grid-column: 1 / -1; justify-self: start; }
+.cal-003 .doc__icon { border-radius: 0; }
+
+/* ---------- Patrocinadores: franja al final, a todo el ancho ---------- */
+.cal-003 .page-sponsors {
+  grid-area: sponsors; margin-top: 64px; padding: 36px 0 48px; border-top: 3px solid var(--ink);
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px clamp(20px, 3vw, 48px);
+}
+.cal-003 .page-sponsors__title { grid-column: 1 / -1; padding: 0; border: 0; font-stretch: 68%; font-weight: 800; font-size: 30px; color: var(--ink); }
+.cal-003 .page-sponsors .patro-nivel { grid-column: 1 / -1; }
+.cal-003 .page-sponsors .patro-nivel--secundarios { grid-column: 1 / span 8; }
+.cal-003 .page-sponsors .patro-nivel--homologados { grid-column: 9 / span 4; }
+.cal-003 .page-sponsors .patro-nivel--principales .patro-nivel__list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cal-003 .page-sponsors .patro-nivel--secundarios .patro-nivel__list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cal-003 .page-sponsors .patro-nivel--homologados .patro-nivel__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cal-003 .page-sponsors .patro-tile { aspect-ratio: 2 / 1; }
+.cal-003 .page-sponsors .patro-nivel--principales .patro-tile { aspect-ratio: 5 / 2; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1279px) {
+  .cal-003 .camp-form { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .cal-003 .clubs-form__actions { grid-column: 1 / -1; }
+  .cal-003 .camp-month { grid-template-columns: 160px minmax(0, 1fr); gap: 24px; }
+  .cal-003 .camp-month__title { font-size: 44px; }
+  .cal-003 .page-sponsors .patro-nivel--secundarios, .cal-003 .page-sponsors .patro-nivel--homologados { grid-column: 1 / -1; }
+}
+@media (max-width: 860px) {
+  /* El mes pasa arriba, como cabecera fija de su bloque */
+  .cal-003 .camp-month { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 28px 0; }
+  .cal-003 .camp-month__title {
+    top: calc(var(--cab) + var(--rail)); z-index: 4; display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 0; background: #fff; font-size: 34px; box-shadow: 0 1px 0 var(--line);
+  }
+  .cal-003 .camp-items { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+  .cal-003 .calf-licit { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .cal-003 .page-toc__list a { font-size: 13px; padding: 0 12px; }
+  .cal-003 .camp-form { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .cal-003 .camp-form .clubs-form__field:nth-child(3) { grid-column: 1 / -1; }
+  .cal-003 .clubs-form__actions { flex-wrap: wrap; height: auto; }
+  .cal-003 .camp-items { grid-template-columns: minmax(0, 1fr); }
+  .cal-003 .camp-item .event__days { font-size: 40px; }
+  .cal-003 .camp-item__title { font-size: 19px; }
+
+  .cal-003 .page-sponsors .patro-nivel--principales .patro-nivel__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cal-003 .page-sponsors .patro-nivel--secundarios .patro-nivel__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cal-003 .camp-item { transition: none; }
+  .cal-003 .camp-item:hover, .cal-003 .camp-item:focus-within { transform: none; }
+}

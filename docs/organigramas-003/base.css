@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap');
+:root { --ink: #0A0A0A; --red: #E4002B; --blue: #0038E0; --paper: #F2F2EF; --gray: #5F5F5A; --line: #D9D9D5; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; }
+body { position: relative; font-family: "Archivo", "Arial Narrow", Arial, sans-serif; background: #fff; color: var(--ink); }
+ul { list-style: none; }
+
+/* Fondo: franja diagonal azul pista muy suave y filete rojo a la izquierda */
+.diag { position: absolute; top: 0; right: 0; bottom: 0; width: 520px; background: var(--blue);
+  clip-path: polygon(62% 0, 100% 0, 100% 100%, 22% 100%); opacity: .07; }
+.filete { position: absolute; left: 0; top: 0; bottom: 0; width: 18px; background: var(--red); }
+
+/* Cabecera */
+.cab { position: absolute; left: 96px; right: 96px; top: 64px; display: flex; justify-content: space-between;
+  align-items: flex-end; gap: 40px; padding-bottom: 26px; border-bottom: 5px solid var(--ink); }
+.kicker { display: flex; align-items: center; gap: 14px; font-size: 19px; font-weight: 800; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--red); }
+.kicker::before { content: ""; width: 44px; height: 7px; background: var(--red); }
+h1 { margin-top: 14px; font-stretch: 64%; font-weight: 900; font-size: 112px; line-height: .84; text-transform: uppercase; letter-spacing: -.005em; }
+.sub { margin-top: 14px; font-size: 24px; font-weight: 600; color: var(--gray); }
+.logo { height: 104px; width: auto; flex: none; mix-blend-mode: multiply; }
+
+/* Pie */
+.pie { position: absolute; left: 96px; right: 96px; bottom: 36px; display: flex; justify-content: space-between;
+  align-items: center; padding-top: 16px; border-top: 1px solid var(--line);
+  font-size: 17px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--gray); }
+.pie b { color: var(--ink); }
+
+/* Tarjetas */
+.card { background: #fff; border: 3px solid var(--ink); padding: 16px 22px; display: flex; flex-direction: column; justify-content: center; gap: 6px; }
+.rol { font-size: 15px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: var(--red); line-height: 1.25; }
+.nom { font-stretch: 74%; font-weight: 800; font-size: 30px; line-height: 1; text-transform: uppercase; }
+.card--ink { background: var(--ink); color: #fff; }
+.card--ink .rol { color: #FF8A9E; }
+.card--red { background: var(--red); border-color: var(--red); color: #fff; }
+.card--red .rol { color: #fff; opacity: .85; }
+.card--blue { background: var(--blue); border-color: var(--blue); color: #fff; }
+.card--blue .rol { color: #fff; opacity: .85; }
+.card--paper { background: var(--paper); }
+.card--dash { border-style: dashed; }
+.lista { display: grid; gap: 7px; margin-top: 4px; }
+.lista li { font-stretch: 78%; font-weight: 700; font-size: 25px; line-height: 1.05; text-transform: uppercase; display: flex; gap: 12px; align-items: baseline; }
+.lista li::before { content: ""; width: 10px; height: 10px; background: var(--red); flex: none; transform: translateY(-3px); }
+.card--ink .lista li::before, .card--red .lista li::before, .card--blue .lista li::before { background: #fff; }
+.num { font-stretch: 62%; font-weight: 900; font-size: 64px; line-height: .8; color: transparent; -webkit-text-stroke: 2px currentColor; }

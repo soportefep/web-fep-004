@@ -1,0 +1,720 @@
+{
+    "torneo":  {
+                   "id":  23263,
+                   "titulo":  "XXXVIII CAMPEONATO ABSOLUTO DE ESPAÑA",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2023-06-25",
+                   "fechaFin":  "2023-07-02",
+                   "lugar":  "Torrent"
+               },
+    "genero":  "F",
+    "categoria":  "ABSOLUTO",
+    "nivel":  31,
+    "cuadro":  "Final",
+    "publicado":  true,
+    "notas":  null,
+    "formato":  "eliminatoria",
+    "plantilla":  "CuadroPrevia32-8",
+    "participantes":  [
+                          {
+                              "avance":  5,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "A. POZUELO DOMINGUEZ - A. DOMINGUEZ GRACIA",
+                              "jugadores":  [
+                                                "A. POZUELO DOMINGUEZ",
+                                                "A. DOMINGUEZ GRACIA"
+                                            ],
+                              "cabezaSerie":  2
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  2,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "M. SANCLEMENTE MORAL - I. ALTES GORDO",
+                              "jugadores":  [
+                                                "M. SANCLEMENTE MORAL",
+                                                "I. ALTES GORDO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  4,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "D. TOLEDO JOVANI - L. FERNANDEZ LOPEZ",
+                              "jugadores":  [
+                                                "D. TOLEDO JOVANI",
+                                                "L. FERNANDEZ LOPEZ"
+                                            ],
+                              "cabezaSerie":  7
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  6,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "I. SANCHEZ CASTILLO - M. ALCANTUD HERNANDEZ",
+                              "jugadores":  [
+                                                "I. SANCHEZ CASTILLO",
+                                                "M. ALCANTUD HERNANDEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "A. TEJEDOR GARCIA-RAYO - Y. GALLEGO MARTINEZ",
+                              "jugadores":  [
+                                                "A. TEJEDOR GARCIA-RAYO",
+                                                "Y. GALLEGO MARTINEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  9,
+                              "tipo":  "pareja",
+                              "nombre":  "V. ATENCIA BASILIO - A. PEREZ SELLES",
+                              "jugadores":  [
+                                                "V. ATENCIA BASILIO",
+                                                "A. PEREZ SELLES"
+                                            ],
+                              "cabezaSerie":  4
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  10,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  11,
+                              "tipo":  "pareja",
+                              "nombre":  "M. ARROYO HEREDIA - S. PEREZ DUROU",
+                              "jugadores":  [
+                                                "M. ARROYO HEREDIA",
+                                                "S. PEREZ DUROU"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  12,
+                              "tipo":  "pareja",
+                              "nombre":  "A. TORRALBA LADUNCA - A. GALLARDO SALVADO",
+                              "jugadores":  [
+                                                "A. TORRALBA LADUNCA",
+                                                "A. GALLARDO SALVADO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  13,
+                              "tipo":  "pareja",
+                              "nombre":  "N. CESPEDES GARCIA-FORTE - A. RUIZ ALBERT",
+                              "jugadores":  [
+                                                "N. CESPEDES GARCIA-FORTE",
+                                                "A. RUIZ ALBERT"
+                                            ],
+                              "cabezaSerie":  5
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  14,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  15,
+                              "tipo":  "pareja",
+                              "nombre":  "R. ALMENDROS GARCIA - C. MOCETE TALAMANTES",
+                              "jugadores":  [
+                                                "R. ALMENDROS GARCIA",
+                                                "C. MOCETE TALAMANTES"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  16,
+                              "tipo":  "pareja",
+                              "nombre":  "S. OLIVERAS GONZALEZ - L. ROSA VADILLO",
+                              "jugadores":  [
+                                                "S. OLIVERAS GONZALEZ",
+                                                "L. ROSA VADILLO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  17,
+                              "tipo":  "pareja",
+                              "nombre":  "M. SEMPER PONT - A. NAVARRO ALMONACIL",
+                              "jugadores":  [
+                                                "M. SEMPER PONT",
+                                                "A. NAVARRO ALMONACIL"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  18,
+                              "tipo":  "pareja",
+                              "nombre":  "C. DEL COSO IGLESIAS - M. GARCIA SANCHEZ",
+                              "jugadores":  [
+                                                "C. DEL COSO IGLESIAS",
+                                                "M. GARCIA SANCHEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  19,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  20,
+                              "tipo":  "pareja",
+                              "nombre":  "N. SANZ GARCIA - J. DIAZ DE LA IGLESIA",
+                              "jugadores":  [
+                                                "N. SANZ GARCIA",
+                                                "J. DIAZ DE LA IGLESIA"
+                                            ],
+                              "cabezaSerie":  6
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  21,
+                              "tipo":  "pareja",
+                              "nombre":  "N. OLLERO RAMIREZ - L. COSSIO CAPILLA",
+                              "jugadores":  [
+                                                "N. OLLERO RAMIREZ",
+                                                "L. COSSIO CAPILLA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  22,
+                              "tipo":  "pareja",
+                              "nombre":  "M. MARTINEZ YABO - A. FUSTER MICO",
+                              "jugadores":  [
+                                                "M. MARTINEZ YABO",
+                                                "A. FUSTER MICO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  23,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  24,
+                              "tipo":  "pareja",
+                              "nombre":  "C. LUCENDO MILLAN - L. PERALTA EXPOSITO",
+                              "jugadores":  [
+                                                "C. LUCENDO MILLAN",
+                                                "L. PERALTA EXPOSITO"
+                                            ],
+                              "cabezaSerie":  3
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  25,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  26,
+                              "tipo":  "pareja",
+                              "nombre":  "A. XIFRE CREHUET - N. MORAGA GEIRA",
+                              "jugadores":  [
+                                                "A. XIFRE CREHUET",
+                                                "N. MORAGA GEIRA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  27,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  28,
+                              "tipo":  "pareja",
+                              "nombre":  "B. ALBUQUERQUE MELO - C. FITO FERNANDEZ",
+                              "jugadores":  [
+                                                "B. ALBUQUERQUE MELO",
+                                                "C. FITO FERNANDEZ"
+                                            ],
+                              "cabezaSerie":  8
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  29,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  30,
+                              "tipo":  "pareja",
+                              "nombre":  "L. MUÑOZ ESTEBAN - C. FERNANDEZ GONZALEZ",
+                              "jugadores":  [
+                                                "L. MUÑOZ ESTEBAN",
+                                                "C. FERNANDEZ GONZALEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  31,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  32,
+                              "tipo":  "pareja",
+                              "nombre":  "J. ADRADOS BUADES - A. ADRADOS BUADES",
+                              "jugadores":  [
+                                                "J. ADRADOS BUADES",
+                                                "A. ADRADOS BUADES"
+                                            ],
+                              "cabezaSerie":  1
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "A. POZUELO DOMINGUEZ - A. DOMINGUEZ GRACIA",
+                              "jugadores":  [
+                                                "A. POZUELO DOMINGUEZ",
+                                                "A. DOMINGUEZ GRACIA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "M. SANCLEMENTE MORAL - I. ALTES GORDO",
+                              "jugadores":  [
+                                                "M. SANCLEMENTE MORAL",
+                                                "I. ALTES GORDO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "D. TOLEDO JOVANI - L. FERNANDEZ LOPEZ",
+                              "jugadores":  [
+                                                "D. TOLEDO JOVANI",
+                                                "L. FERNANDEZ LOPEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "I. SANCHEZ CASTILLO - M. ALCANTUD HERNANDEZ",
+                              "jugadores":  [
+                                                "I. SANCHEZ CASTILLO",
+                                                "M. ALCANTUD HERNANDEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "V. ATENCIA BASILIO - A. PEREZ SELLES",
+                              "jugadores":  [
+                                                "V. ATENCIA BASILIO",
+                                                "A. PEREZ SELLES"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "A. TORRALBA LADUNCA - A. GALLARDO SALVADO",
+                              "jugadores":  [
+                                                "A. TORRALBA LADUNCA",
+                                                "A. GALLARDO SALVADO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "N. CESPEDES GARCIA-FORTE - A. RUIZ ALBERT",
+                              "jugadores":  [
+                                                "N. CESPEDES GARCIA-FORTE",
+                                                "A. RUIZ ALBERT"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "S. OLIVERAS GONZALEZ - L. ROSA VADILLO",
+                              "jugadores":  [
+                                                "S. OLIVERAS GONZALEZ",
+                                                "L. ROSA VADILLO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  9,
+                              "tipo":  "pareja",
+                              "nombre":  "C. DEL COSO IGLESIAS - M. GARCIA SANCHEZ",
+                              "jugadores":  [
+                                                "C. DEL COSO IGLESIAS",
+                                                "M. GARCIA SANCHEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  10,
+                              "tipo":  "pareja",
+                              "nombre":  "N. SANZ GARCIA - J. DIAZ DE LA IGLESIA",
+                              "jugadores":  [
+                                                "N. SANZ GARCIA",
+                                                "J. DIAZ DE LA IGLESIA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  11,
+                              "tipo":  "pareja",
+                              "nombre":  "N. OLLERO RAMIREZ - L. COSSIO CAPILLA",
+                              "jugadores":  [
+                                                "N. OLLERO RAMIREZ",
+                                                "L. COSSIO CAPILLA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  12,
+                              "tipo":  "pareja",
+                              "nombre":  "C. LUCENDO MILLAN - L. PERALTA EXPOSITO",
+                              "jugadores":  [
+                                                "C. LUCENDO MILLAN",
+                                                "L. PERALTA EXPOSITO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  13,
+                              "tipo":  "pareja",
+                              "nombre":  "A. XIFRE CREHUET - N. MORAGA GEIRA",
+                              "jugadores":  [
+                                                "A. XIFRE CREHUET",
+                                                "N. MORAGA GEIRA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  14,
+                              "tipo":  "pareja",
+                              "nombre":  "B. ALBUQUERQUE MELO - C. FITO FERNANDEZ",
+                              "jugadores":  [
+                                                "B. ALBUQUERQUE MELO",
+                                                "C. FITO FERNANDEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  15,
+                              "tipo":  "pareja",
+                              "nombre":  "L. MUÑOZ ESTEBAN - C. FERNANDEZ GONZALEZ",
+                              "jugadores":  [
+                                                "L. MUÑOZ ESTEBAN",
+                                                "C. FERNANDEZ GONZALEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  16,
+                              "tipo":  "pareja",
+                              "nombre":  "J. ADRADOS BUADES - A. ADRADOS BUADES",
+                              "jugadores":  [
+                                                "J. ADRADOS BUADES",
+                                                "A. ADRADOS BUADES"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "A. POZUELO DOMINGUEZ - A. DOMINGUEZ GRACIA",
+                              "jugadores":  [
+                                                "A. POZUELO DOMINGUEZ",
+                                                "A. DOMINGUEZ GRACIA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "D. TOLEDO JOVANI - L. FERNANDEZ LOPEZ",
+                              "jugadores":  [
+                                                "D. TOLEDO JOVANI",
+                                                "L. FERNANDEZ LOPEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "V. ATENCIA BASILIO - A. PEREZ SELLES",
+                              "jugadores":  [
+                                                "V. ATENCIA BASILIO",
+                                                "A. PEREZ SELLES"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "S. OLIVERAS GONZALEZ - L. ROSA VADILLO",
+                              "jugadores":  [
+                                                "S. OLIVERAS GONZALEZ",
+                                                "L. ROSA VADILLO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "N. SANZ GARCIA - J. DIAZ DE LA IGLESIA",
+                              "jugadores":  [
+                                                "N. SANZ GARCIA",
+                                                "J. DIAZ DE LA IGLESIA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "C. LUCENDO MILLAN - L. PERALTA EXPOSITO",
+                              "jugadores":  [
+                                                "C. LUCENDO MILLAN",
+                                                "L. PERALTA EXPOSITO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "A. XIFRE CREHUET - N. MORAGA GEIRA",
+                              "jugadores":  [
+                                                "A. XIFRE CREHUET",
+                                                "N. MORAGA GEIRA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "L. MUÑOZ ESTEBAN - C. FERNANDEZ GONZALEZ",
+                              "jugadores":  [
+                                                "L. MUÑOZ ESTEBAN",
+                                                "C. FERNANDEZ GONZALEZ"
+                                            ]
+                          }
+                      ],
+    "partidos":  [
+                     {
+                         "avance":  5,
+                         "posicion":  4,
+                         "resultado":  "2/6-7/5-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  6,
+                         "resultado":  "6/0-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  8,
+                         "resultado":  "6/2-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  9,
+                         "resultado":  "6/0-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  11,
+                         "resultado":  "6/1-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  1,
+                         "resultado":  "6/0-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  2,
+                         "resultado":  "6/3-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  3,
+                         "resultado":  "6/4-1/6-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  4,
+                         "resultado":  "6/2-3/6-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  5,
+                         "resultado":  "7/5-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  6,
+                         "resultado":  "6/4-4/6-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  7,
+                         "resultado":  "W.O.",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  8,
+                         "resultado":  "7/6-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     }
+                 ],
+    "cabezasSerie":  [
+                         {
+                             "cabezaSerie":  1,
+                             "nombre":  "J. ADRADOS BUADES/A. ADRADOS BUADES",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  2,
+                             "nombre":  "A. POZUELO DOMINGUEZ/A. DOMINGUEZ GRACIA",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  3,
+                             "nombre":  "C. LUCENDO MILLAN/L. PERALTA EXPOSITO",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  4,
+                             "nombre":  "V. ATENCIA BASILIO/A. PEREZ SELLES",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  5,
+                             "nombre":  "N. CESPEDES GARCIA-FORTE/A. RUIZ ALBERT",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  6,
+                             "nombre":  "N. SANZ GARCIA/J. DIAZ DE LA IGLESIA",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  7,
+                             "nombre":  "D. TOLEDO JOVANI/L. FERNANDEZ LOPEZ",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  8,
+                             "nombre":  "B. ALBUQUERQUE MELO/C. FITO FERNANDEZ",
+                             "puntos":  null
+                         }
+                     ],
+    "clasificacion":  [
+
+                      ],
+    "otrosCuadros":  [
+                         {
+                             "genero":  "M",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ABSOLUTO",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         }
+                     ]
+}

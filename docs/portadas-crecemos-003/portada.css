@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap');
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1200px; height: 800px; overflow: hidden; }
+body { position: relative; font-family: "Archivo", "Arial Narrow", Arial, sans-serif; color: #fff; background: var(--fondo); isolation: isolate; }
+.ink { --fondo: #0A0A0A; --acento: #E4002B; }
+.red { --fondo: #E4002B; --acento: #0A0A0A; }
+.blue { --fondo: #0038E0; --acento: #E4002B; }
+
+/* Pista de pádel en planta, de fondo (líneas blancas muy suaves) */
+.pista { position: absolute; z-index: -1; left: -140px; bottom: -260px; width: 820px; height: 1240px; transform: rotate(-90deg); transform-origin: center;
+  border: 4px solid rgba(255, 255, 255, .14); }
+.pista::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 4px; background: rgba(255, 255, 255, .14); }
+.pista::after { content: ""; position: absolute; left: 50%; top: 18%; bottom: 18%; width: 4px; background: rgba(255, 255, 255, .14);
+  box-shadow: 0 0 0 0 transparent; }
+.servicio { position: absolute; left: 0; right: 0; height: 4px; background: rgba(255, 255, 255, .14); }
+.servicio--a { top: 18%; } .servicio--b { bottom: 18%; }
+
+.filete { position: absolute; left: 0; top: 0; bottom: 0; width: 22px; background: var(--acento); }
+.kicker { position: absolute; left: 80px; top: 70px; display: flex; align-items: center; gap: 16px;
+  font-size: 22px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: rgba(255, 255, 255, .8); }
+.kicker::before { content: ""; width: 48px; height: 8px; background: #fff; }
+.num { position: absolute; left: 76px; top: 120px; font-stretch: 62%; font-weight: 900; font-size: 190px; line-height: .8;
+  color: transparent; -webkit-text-stroke: 3px rgba(255, 255, 255, .55); }
+h1 { position: absolute; left: 80px; right: 80px; bottom: 70px; font-stretch: 64%; font-weight: 900; font-size: 128px; line-height: .86; text-transform: uppercase; }
+
+/* Placa blanca con el logo oficial del programa */
+.placa { position: absolute; right: 70px; top: 70px; width: 480px; height: 330px; padding: 30px; background: #fff;
+  display: grid; place-items: center; box-shadow: 14px 14px 0 var(--acento); }
+.placa img { position: absolute; left: 30px; top: 30px; width: calc(100% - 60px); height: calc(100% - 60px); object-fit: contain; mix-blend-mode: multiply; }

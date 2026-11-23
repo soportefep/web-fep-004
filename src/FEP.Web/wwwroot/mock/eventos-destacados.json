@@ -1,0 +1,82 @@
+[
+  {
+    "tipo": "evento",
+    "titulo": "CTO ESPAÑA EQUIPOS JUNIOR E INFANTIL",
+    "texto": "06 NOV - 8 NOV - ZARAGOZA - REGAL PADEL CLUB",
+    "imagen": "Cartel Cto Esp Eq Junior e Infantil.JPG",
+    "imagenUrl": "assets/img/fep/eventos/cartel-cto-esp-eq-junior-e-infantil.jpg",
+    "enlace": "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=30148",
+    "ventana": "_parent",
+    "orden": 1
+  },
+  {
+    "tipo": "evento",
+    "titulo": "II OPEN NACIONAL PSR CIUDAD DE MALAGA",
+    "texto": "6 NOV - 8 NOV - Málaga - POLIDEPORTIVO MUNICIPAL CIUDAD JARDIN",
+    "imagen": "PSR Ciudad de mALAGA.png",
+    "imagenUrl": "assets/img/fep/eventos/psr-ciudad-de-malaga.png",
+    "enlace": "https://www.padelfederacion.es/Camp_Silla.asp?IdTorneo=30180",
+    "ventana": "_parent",
+    "orden": 2
+  },
+  {
+    "tipo": "evento",
+    "titulo": "VI COPA DE ESPAÑA DE LIGAS AUTONÓMICAS - HEAD",
+    "texto": "Sexta Edición de la COPA de Liga Autonómicas",
+    "imagen": "Cartel VI COPA DE ESP LIGAS AUT- HEAD.png",
+    "imagenUrl": "assets/img/fep/eventos/cartel-vi-copa-de-esp-ligas-aut-head.png",
+    "enlace": "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=28676",
+    "ventana": "_parent",
+    "orden": 3
+  },
+  {
+    "tipo": "evento",
+    "titulo": "CTO ESPAÑA EQUIPOS 3ª VETERANOS +40 VETERANAS+35",
+    "texto": "20 NOV - 22 NOV - BARCELONA - PADEL BARCELONA EL PRAT",
+    "imagen": "Cto Esp Eq 3 Vet 40 35.png",
+    "imagenUrl": "assets/img/fep/eventos/cto-esp-eq-3-vet-40-35.png",
+    "enlace": "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=30153",
+    "ventana": "_parent",
+    "orden": 4
+  },
+  {
+    "tipo": "evento",
+    "titulo": "MASTER FINAL MENORES BABOLAT",
+    "texto": "20 - 22 NOV BADAJOZ - C.D. PADELMERIDA",
+    "imagen": "FEP - Cartel MASTER FINAL MENORES.png",
+    "imagenUrl": "assets/img/fep/eventos/fep-cartel-master-final-menores.png",
+    "enlace": "http://circuitomenores.padelfederacion.es/Campeonato?IdTorneo=31292",
+    "ventana": "_parent",
+    "orden": 5
+  },
+  {
+    "tipo": "evento",
+    "titulo": "I COPA DE ESPAÑA DE LIGAS AUTONÓMICAS PLATA - HEAD",
+    "texto": "20 - 22 NOVIEMBRE MADRID - CLUB DEPORTIVO SOMONTES",
+    "imagen": "Cartel I Copa Esp de Ligas Aut Plata- HEAD.jpg",
+    "imagenUrl": "assets/img/fep/eventos/cartel-i-copa-esp-de-ligas-aut-plata-head.jpg",
+    "enlace": "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=28677",
+    "ventana": "_parent",
+    "orden": 6
+  },
+  {
+    "tipo": "evento",
+    "titulo": "I COPA ESPAÑA LIGAS AUTONOMICAS VETERANOS",
+    "texto": "27 - 29 NOV - ZARAGOZA - REGAL PADEL CLUB",
+    "imagen": "Cartel Copa Esp Ligas Aut  Vet Zgz  2026.jpg",
+    "imagenUrl": "assets/img/fep/eventos/cartel-copa-esp-ligas-aut-vet-zgz-2026.jpg",
+    "enlace": "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=28854",
+    "ventana": "_parent",
+    "orden": 7
+  },
+  {
+    "tipo": "evento",
+    "titulo": "X OPEN NACIONAL PSR FEKOOR BIZKAIA",
+    "texto": "27 - 29 NOV - ADAPTADO SILLA - BILBAO - FEKOOR / CLUB PADEL BIZKAIA ZAMUDIO",
+    "imagen": "Cartel X Open Nacional PSR Fekoor Bizkaia 2026.jpg",
+    "imagenUrl": "assets/img/fep/eventos/cartel-x-open-nacional-psr-fekoor-bizkaia-2026.jpg",
+    "enlace": "https://www.padelfederacion.es/Camp_Silla.asp?IdTorneo=31277",
+    "ventana": "_parent",
+    "orden": 8
+  }
+]

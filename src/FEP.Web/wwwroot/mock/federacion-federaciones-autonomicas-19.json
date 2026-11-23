@@ -1,0 +1,115 @@
+{
+    "id":  19,
+    "nombre":  "FEDERACION DE LA RIOJA",
+    "nacional":  false,
+    "imagen":  "images/19.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-19.jpg",
+    "presidente":  null,
+    "direccion":  "Marques de la Ensenada 45, 3ºC",
+    "codigoPostal":  "26003",
+    "localidad":  "Logroño",
+    "telefonos":  [
+                      "614252883"
+                  ],
+    "email":  "secretariafrpadel@gmail.com",
+    "web":  null,
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  0,
+                      "puesto":  null,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  0,
+                      "arbitros":  0,
+                      "clubes":  2,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  140,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  132,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  147,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  135,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  8,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  5,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  32,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  4,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  30,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  173,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  41,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  36,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  221,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  8,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  0,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  0,
+                                     "femenino":  0,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  0,
+                                     "sub23":  0,
+                                     "senior":  0,
+                                     "veteranos":  0,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

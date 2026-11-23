@@ -1,0 +1,56 @@
+{
+    "id":  7,
+    "titulo":  "Homologaciones",
+    "actualizado":  null,
+    "opcionInicial":  30,
+    "opciones":  [
+                     {
+                         "id":  30,
+                         "titulo":  "Relación de Empresas y Materiales Homologados",
+                         "tipo":  "normal",
+                         "orden":  1
+                     },
+                     {
+                         "id":  24,
+                         "titulo":  "Sello FEP",
+                         "tipo":  "normal",
+                         "orden":  2
+                     },
+                     {
+                         "id":  19,
+                         "titulo":  "Introducción",
+                         "tipo":  "normal",
+                         "orden":  3
+                     },
+                     {
+                         "id":  26,
+                         "titulo":  "Preguntas frecuentes",
+                         "tipo":  "normal",
+                         "orden":  4
+                     },
+                     {
+                         "id":  20,
+                         "titulo":  "Materiales",
+                         "tipo":  "normal",
+                         "orden":  5
+                     },
+                     {
+                         "id":  25,
+                         "titulo":  "Pistas",
+                         "tipo":  "normal",
+                         "orden":  6
+                     },
+                     {
+                         "id":  23,
+                         "titulo":  "Empresas constructoras",
+                         "tipo":  "normal",
+                         "orden":  7
+                     },
+                     {
+                         "id":  31,
+                         "titulo":  "Tarifas",
+                         "tipo":  "normal",
+                         "orden":  8
+                     }
+                 ]
+}

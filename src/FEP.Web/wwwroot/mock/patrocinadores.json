@@ -1,0 +1,13 @@
+[
+  { "logo": "iberdrola.jpg", "logoUrl": "assets/img/fep/patrocinadores/iberdrola.jpg", "enlace": "https://www.iberdrola.com/compromiso-social/deporte-femenino", "orden": 1 },
+  { "logo": "PadelProShop.jpg", "logoUrl": "assets/img/fep/patrocinadores/padelproshop.jpg", "enlace": "https://padelproshop.com/", "orden": 2 },
+  { "logo": "Galis.jpg", "logoUrl": "assets/img/fep/patrocinadores/galis.jpg", "enlace": "https://padelgalis.com/", "orden": 3 },
+  { "logo": "Bullpadel.jpg", "logoUrl": "assets/img/fep/patrocinadores/bullpadel.jpg", "enlace": "https://www.bullpadel.com/es/", "orden": 4 },
+  { "logo": "Joma.jpg", "logoUrl": "assets/img/fep/patrocinadores/joma.jpg", "enlace": "https://www.joma-sport.com/", "orden": 5 },
+  { "logo": "siux.jpg", "logoUrl": "assets/img/fep/patrocinadores/siux.jpg", "enlace": "https://www.siuxpadel.com/", "orden": 6 },
+  { "logo": "cupra.jpg", "logoUrl": "assets/img/fep/patrocinadores/cupra.jpg", "enlace": "https://www.cupra.com/es-es/", "orden": 7 },
+  { "logo": "head2.jpg", "logoUrl": "assets/img/fep/patrocinadores/head2.jpg", "enlace": "https://www.head.com/es_ES/shop-padel", "orden": 8 },
+  { "logo": "Rafa.jpg", "logoUrl": "assets/img/fep/patrocinadores/rafa.jpg", "enlace": "https://www.rafanadalacademy.com/", "orden": 9 },
+  { "logo": "BVMPRS.jpg", "logoUrl": "assets/img/fep/patrocinadores/bvmprs.jpg", "enlace": "https://www.bumpersbrand.com/en", "orden": 10 },
+  { "logo": "tacticbo.jpg", "logoUrl": "assets/img/fep/patrocinadores/tacticbo.jpg", "enlace": "https://tacticbo.com/en/", "orden": 11 }
+]

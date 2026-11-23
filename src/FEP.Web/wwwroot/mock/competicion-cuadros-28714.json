@@ -1,0 +1,159 @@
+{
+    "torneo":  {
+                   "id":  28714,
+                   "titulo":  "CAMPEONATO DE ESPAÑA DE VETERANOS 2026",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2026-06-26",
+                   "fechaFin":  "2026-06-28",
+                   "lugar":  "San Pedro de Alcántara"
+               },
+    "cuadros":  [
+                    {
+                        "genero":  "M",
+                        "categoria":  "Cat35",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "Cat40",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "Cat45",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "Cat45",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "Cat50",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "Cat50",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "Cat55",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "Cat55",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "Cat60",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "Cat60",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "Cat35",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "Cat35",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "Cat40",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "Cat40",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "Cat45",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "Cat45",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "Cat50",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "Cat50",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "Cat55",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "X",
+                        "categoria":  "Cat40",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "X",
+                        "categoria":  "Cat55",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    }
+                ]
+}

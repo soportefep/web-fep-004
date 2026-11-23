@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>CTAP FEP</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .zona { position: absolute; left: 96px; right: 96px; top: 330px; bottom: 120px; display: grid; grid-template-columns: 520px minmax(0, 1fr); gap: 80px; align-items: center; }
+  .intro { align-self: stretch; display: flex; flex-direction: column; justify-content: center; gap: 22px; padding-right: 20px; border-right: 3px solid var(--ink); }
+  .intro .sigla { font-stretch: 62%; font-weight: 900; font-size: 260px; line-height: .78; color: transparent; -webkit-text-stroke: 4px var(--ink); }
+  .intro p { font-size: 27px; font-weight: 600; line-height: 1.35; color: var(--gray); max-width: 22ch; }
+  .intro p b { color: var(--ink); }
+  .arbol { display: grid; gap: 0; }
+  .pres { width: 640px; min-height: 170px; justify-self: center; }
+  .pres .nom { font-size: 46px; }
+  .pres .rol { font-size: 17px; }
+  /* Conector: tronco desde la presidencia y barra horizontal hacia los vocales */
+  .tronco { justify-self: center; width: 3px; height: 54px; background: var(--ink); }
+  .vocales { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; padding-top: 44px; }
+  .vocales::before { content: ""; position: absolute; top: 0; left: calc((100% - 66px) / 8 - 1.5px); right: calc((100% - 66px) / 8 - 1.5px); height: 3px; background: var(--ink); }
+  .vocal { position: relative; min-height: 172px; border-top: 8px solid var(--red); justify-content: flex-start; padding-top: 22px; }
+  .vocal::before { content: ""; position: absolute; left: calc(50% - 1.5px); top: -55px; width: 3px; height: 47px; background: var(--ink); }
+  .vocal .num { font-size: 52px; color: var(--ink); opacity: .25; margin-bottom: 8px; }
+  .vocal .nom { font-size: 29px; }
+</style></head>
+<body>
+  <div class="diag"></div><div class="filete"></div>
+  <header class="cab">
+    <div>
+      <p class="kicker">Federación Española de Pádel · Órganos de gobierno</p>
+      <h1>Comité Técnico de Árbitros</h1>
+    </div>
+    <img class="logo" src="logo.png" alt="">
+  </header>
+
+  <div class="zona">
+    <div class="intro">
+      <span class="sigla">CTAP</span>
+      <p><b>Gestiona, forma y designa</b> a los jueces-árbitro de las competiciones nacionales.</p>
+    </div>
+    <div class="arbol">
+      <div class="card card--ink pres"><p class="rol">Presidenta</p><p class="nom">Victoria Barcina Hidalgo</p></div>
+      <span class="tronco"></span>
+      <ul class="vocales">
+        <li class="card vocal"><span class="num">01</span><p class="rol">Vocal</p><p class="nom">Miguel Angel Herranz Loreiro</p></li>
+        <li class="card vocal"><span class="num">02</span><p class="rol">Vocal</p><p class="nom">José Vicente Talaván Gutiérrez</p></li>
+        <li class="card vocal"><span class="num">03</span><p class="rol">Vocal</p><p class="nom">Manuel Sanchez Martinez</p></li>
+        <li class="card vocal"><span class="num">04</span><p class="rol">Vocal</p><p class="nom">Alfredo Cerrato Giralda</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="pie"><span><b>FEP</b> · padelfederacion.es</span><span>Comité Técnico de Árbitros de Pádel (CTAP)</span></footer>
+</body></html>

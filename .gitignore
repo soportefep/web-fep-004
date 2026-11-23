@@ -1,0 +1,76 @@
+# --- .NET / Visual Studio -------------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+publish/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.rsuser
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+.idea/
+*.swp
+
+# Resultados de tests y cobertura
+[Tt]est[Rr]esult*/
+*.trx
+coverage*.json
+coverage*.xml
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+
+# --- Secretos: NUNCA al repositorio -----------------------------------------
+# La cadena de conexión va en `dotnet user-secrets` o en variables de entorno.
+appsettings.*.local.json
+appsettings.Local.json
+secrets.json
+*.pfx
+*.p12
+.env
+.env.*
+
+# --- Restos del sistema antiguo ---------------------------------------------
+# El ASP clásico (X:\TICS\WEB) no se copia aquí: se lee desde su ubicación original.
+*.asp
+*.inc
+*.aspok
+*.bak
+*.tmp
+
+# --- SO -----------------------------------------------------------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# --- Datos personales / internos: NUNCA al repositorio (es público) ---------
+# Mocks con licencias y datos de jugadores (incluidos menores)
+src/FEP.Web/wwwroot/mock/competicion-rankings-*.json
+src/FEP.Web/wwwroot/mock/competicion-jugadores-*.json
+src/FEP.Web/wwwroot/mock/competicion-campeonatos-silla-*.json
+src/FEP.Web/wwwroot/mock/mocks.js
+# Datos internos de la migración
+docs/**/*.csv
+docs/**/*.xlsx
+# Antiguo ASP y configuración local de Claude
+pages_to_dev/
+.claude/
