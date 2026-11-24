@@ -128,14 +128,41 @@ const PATRONES = [
   { re: /^(?<x>.+) \(se abre en una pestaña nueva\)$/, clave: '{x} (se abre en una pestaña nueva)', traducir: ['x'] },
   { re: /^(?<n>\d+) secciones$/, clave: '{n} secciones' },
   { re: /^Abrir el submenú de (?<x>.+)$/, clave: 'Abrir el submenú de {x}', traducir: ['x'] },
+  // Solo la coletilla (texto oculto para lectores de pantalla detrás de un enlace externo)
+  { re: /^\(se abre en una pestaña nueva\)$/, clave: '{x} (se abre en una pestaña nueva)', soloResto: true },
+  { re: /^(?<x>.+) \(próximamente\)$/, clave: '{x} (próximamente)', traducir: ['x'] },
+  // Portada
+  { re: /^(?<a>\d+) de (?<b>\d+)$/, clave: '{a} de {b}' },
+  { re: /^Ver más citas \((?<n>\d+)\)$/, clave: 'Ver más citas ({n})' },
+  { re: /^(?<n>\d+) convocatorias abiertas$/, clave: '{n} convocatorias abiertas' },
+  { re: /^Próximo cierre: (?<x>.+)$/, clave: 'Próximo cierre: {x}', fecha: ['x'] },
+  { re: /^Inscripción hasta el (?<x>.+)$/, clave: 'Inscripción hasta el {x}', fecha: ['x'] },
 ];
+// Fechas que la página escribe en español ("20 de noviembre de 2026", "20 de noviembre") → formato del idioma actual
+const MESES_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+function fechaLocal(texto) {
+  const m = /^(\d{1,2}) de ([a-z]+)(?: de (\d{4}))?$/i.exec(texto.trim());
+  const mes = m ? MESES_ES.indexOf(m[2].toLowerCase()) : -1;
+  if (mes < 0) return texto;
+  const conAnio = !!m[3];
+  const f = new Date(conAnio ? +m[3] : 2000, mes, +m[1]);
+  try {
+    return new Intl.DateTimeFormat(actual === 'en' ? 'en-GB' : actual, { day: 'numeric', month: 'long', ...(conAnio ? { year: 'numeric' } : {}) }).format(f);
+  } catch { return texto; }
+}
 function buscar(core) {
   if (!dic) return null;
   if (Object.prototype.hasOwnProperty.call(dic, core)) return dic[core];
   for (const p of PATRONES) {
     const m = p.re.exec(core);
     const plantilla = m && dic[p.clave];
-    if (plantilla) return plantilla.replace(/\{(\w+)\}/g, (_, k) => (p.traducir?.includes(k) ? (buscar(m.groups[k]) ?? m.groups[k]) : m.groups[k]));
+    if (!plantilla) continue;
+    if (p.soloResto) return plantilla.replace('{x}', '').trim();
+    return plantilla.replace(/\{(\w+)\}/g, (_, k) => {
+      const v = m.groups[k];
+      if (p.fecha?.includes(k)) return fechaLocal(v);
+      return p.traducir?.includes(k) ? (buscar(v) ?? v) : v;
+    });
   }
   return null;
 }
@@ -145,7 +172,12 @@ function traducir(texto) {
   if (!core) return null;
   const r = buscar(core);
   if (r == null) return null;
-  return texto.match(/^\s*/)[0] + r + texto.match(/\s*$/)[0];
+  // En chino y japonés no se separan las palabras con espacios: se quitan los de los extremos
+  // cuando la traducción empieza o acaba en uno de esos caracteres ("ひとつの<em>コミュニティ。</em>").
+  const cjk = /[　-鿿＀-￯]/;
+  const antes = cjk.test(r[0]) ? '' : texto.match(/^\s*/)[0];
+  const despues = cjk.test(r[r.length - 1]) ? '' : texto.match(/\s*$/)[0];
+  return antes + r + despues;
 }
 
 const ATRIBUTOS = ['aria-label', 'title', 'placeholder', 'alt'];

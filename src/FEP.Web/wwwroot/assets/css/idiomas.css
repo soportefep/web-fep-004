@@ -51,6 +51,17 @@
    así la puntuación no salta al principio ("UN DEPORTE." y no ".UN DEPORTE"). */
 .idioma-rtl :is(p, h1, h2, h3, h4, h5, li, dt, dd, td, th, figcaption, label, blockquote) { unicode-bidi: plaintext; }
 
+/* Japonés y chino: sin espacios entre palabras. En los titulares, cortar la línea entre frases y no
+   a mitad de palabra ("スポーツ" y no "ス / ポーツ"); auto-phrase solo lo entiende Chrome con japonés,
+   el resto de navegadores lo ignoran y cortan como siempre. */
+:is(html:lang(ja), html:lang(zh)) :is(h1, h2, h3, .ed-display) { word-break: auto-phrase; line-break: strict; }
+/* Portada: cada carácter ocupa un cuadrado entero, así que el titular gigante se reduce para que
+   "コミュニティ。" (7 caracteres) quepa en una línea, y se le da algo más de interlineado. */
+:is(html:lang(ja), html:lang(zh)) .ed-hero__title { font-size: clamp(32px, 5vw, 80px); line-height: 1.1; }
+@supports (font-size: 1cqi) {
+  :is(html:lang(ja), html:lang(zh)) .ed-hero__title { font-size: clamp(32px, 13cqi, 80px); }
+}
+
 @media (max-width: 640px) {
   .idioma-aviso { justify-content: flex-start; font-size: 13px; }
   .idiomas { position: fixed; top: 44px; inset-inline: 12px; width: auto; }
