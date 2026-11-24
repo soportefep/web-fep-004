@@ -71,22 +71,24 @@ const ICONOS = {
   fichas: '<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 0 5.5 2.4 5.5 5.8"/>',
   clubes: '<path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12h7"/>',
   certificados: '<rect x="3" y="4" width="18" height="13"/><path d="M7 8h10M7 11h6"/><circle cx="16" cy="16" r="2.5"/><path d="M14.5 18l-1 3 2.5-1 2.5 1-1-3"/>',
-  torneos: '<circle cx="12" cy="12" r="9"/><path d="M5.5 5.5c3 2.5 3 10.5 0 13M18.5 5.5c-3 2.5-3 10.5 0 13"/>',
-  ranking: '<path d="M4 20V13h5v7M9.5 20V7h5v13M15 20v-9h5v9M3 20h18"/>',
+  torneos: '<circle cx="12" cy="12" r="9"/><path d="M4.6 7.5c3.2 1.4 5.4 4.6 5.4 8.4 0 1.8-.5 3.4-1.3 4.8M19.4 16.5c-3.2-1.4-5.4-4.6-5.4-8.4 0-1.8.5-3.4 1.3-4.8"/>',
+  ranking: '<rect x="9" y="8" width="6" height="13" rx="1"/><rect x="3" y="13" width="6" height="8" rx="1"/><rect x="15" y="11" width="6" height="10" rx="1"/><path d="m12 2 1 2 2 .3-1.5 1.4.4 2.1L12 6.8l-1.9 1 .4-2.1L9 4.3l2-.3z"/>',
   calendario: '<rect x="3" y="5" width="18" height="16"/><path d="M3 10h18M8 3v4M16 3v4"/>',
-  sanciones: '<rect x="7" y="3" width="10" height="14" transform="rotate(12 12 10)"/><path d="M5 21h14"/>',
+  sanciones: '<rect x="7" y="3" width="10" height="15" rx="1.5" transform="rotate(10 12 10.5)"/><path d="M5 21h14"/>',
   comunicaciones: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4M9 21h6"/>',
   portal: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/>',
-  notas: '<path d="M4 4h16v11l-5 5H4z"/><path d="M15 20v-5h5M8 9h8M8 12h5"/>',
+  notas: '<path d="M4 4h16v11l-5 5H4z"/><path d="M15 20v-5h5"/><circle cx="12" cy="4" r="1.6"/>',
   banco: '<path d="M17 6.5A6.5 6.5 0 1 0 17 17.5M4 10h9M4 14h9"/>',
   informes: '<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 17v-3M12 17v-6M15 17v-4"/>',
-  voto: '<rect x="3" y="6" width="18" height="13"/><path d="M3 7l9 6 9-6"/>',
-  eventos: '<path d="M4 6l2 2 3-3M4 12l2 2 3-3M4 18l2 2 3-3M12 7h8M12 13h8M12 19h8"/>',
+  voto: '<rect x="3" y="5" width="18" height="13" rx="2"/><path d="m3 7 9 6 9-6"/><circle cx="17.5" cy="17.5" r="3"/><path d="m21.5 21.5-1.8-1.8"/>',
+  eventos: '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="m7 9 2 2 3-3M7 15l2 2 3-3M14 9h3M14 15h3"/>',
   laboral: '<rect x="3" y="5" width="18" height="16"/><path d="M3 10h18M8 3v4M16 3v4M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/>',
-  horario: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/>',
+  horario: '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/>',
   configuracion: '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>',
   servidor: '<rect x="4" y="3" width="16" height="7"/><rect x="4" y="14" width="16" height="7"/><path d="M8 6.5h.01M8 17.5h.01M12 6.5h5M12 17.5h5"/>',
   candado: '<rect x="5" y="11" width="14" height="10"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+  ajustes: '<path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/>',
+  buscar: '<circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/>',
 };
 const icono = (nombre, clase = 'sfep-ico') =>
   el('span', { class: clase, 'aria-hidden': 'true', html: `<svg viewBox="0 0 24 24">${ICONOS[nombre] ?? ''}</svg>` });
@@ -307,21 +309,14 @@ function bloqueFavoritos() {
   const favs = favoritosValidos();
   if (!favs.length) return [];
   return [el('section', { class: 'sfep-atajos', 'aria-labelledby': 'sfep-favs-t' },
-    el('h2', { class: 'sfep-area__titulo', id: 'sfep-favs-t', text: '★ Mis accesos favoritos' }),
-    el('ul', { class: 'sfep-atajos__lista' }, ...favs.map((id) => el('li', {},
+    el('h2', { class: 'sfep-area__titulo', id: 'sfep-favs-t' }, el('span', { class: 'sfep-atajos__estrella', 'aria-hidden': 'true', text: '★' }), 'Mis favoritos'),
+    el('ul', { class: 'sfep-atajos__lista' }, ...favs.map((id) => el('li', { 'data-area': areaDe(id).id },
       el('a', { class: 'sfep-atajo', href: `#m/${id}` }, icono(MODULOS[id].icono, 'sfep-atajo__ico'), el('span', { text: MODULOS[id].nombre }))))))];
 }
-/** Secciones elegidas por el usuario (debajo de las cards) o una invitación a personalizar. */
+/** Secciones elegidas por el usuario (debajo del Menú Gestión). Para personalizar está la tarjeta "Personalizar". */
 function bloqueSecciones() {
   const secs = seccionesValidas();
-  if (secs.length) return [el('div', { class: 'sfep-puesto-grid' }, ...secs.map(widgetPanel))];
-  if (favoritosValidos().length) return [];
-  return [el('div', { class: 'sfep-invita' },
-    el('p', { class: 'sfep-invita__titulo', text: 'Haz tuyo este inicio' }),
-    el('p', { text: catalogo().length
-      ? 'Marca con ☆ los módulos que más uses y añade las secciones que quieras tener a mano: remesas, campeonatos, firmas, envíos…'
-      : 'Marca con ☆ los módulos que más uses para tenerlos aquí como accesos directos.' }),
-    el('button', { type: 'button', class: 'sfep-btn', onclick: (e) => abrirPersonalizar(e.currentTarget) }, 'Personalizar inicio'))];
+  return secs.length ? [el('div', { class: 'sfep-puesto-grid' }, ...secs.map(widgetPanel))] : [];
 }
 function pintarBloquePersonal() {
   $('#sfep-favs')?.replaceChildren(...bloqueFavoritos());
@@ -461,6 +456,8 @@ function vistaInicio() {
         el('p', { class: 'sfep-nota__texto', text: n.texto }),
         el('button', { type: 'button', class: 'sfep-btn sfep-btn--sec sfep-btn--sm', onclick: () => {
           notasLeidas.add(n.id); pintarNotas(); actualizarCampana(); toast('Nota marcada como leída.');
+          const b = $('[data-pend="notas"]'); const quedan = notasPendientes().length;
+          if (b) { if (quedan) b.firstChild.textContent = String(quedan); else b.remove(); }
           $('#sfep-notas-t').focus();
         } }, 'Marcar como leída'));
     }) : [el('li', { class: 'sfep-vacio', text: 'No tienes notas sin leer.' })]));
@@ -471,49 +468,79 @@ function vistaInicio() {
       acceso(usuario, 'notas') === 'si' ? el('a', { class: 'sfep-panel__link', href: '#m/notas' }, 'Notas internas →') : null),
     listaNotas);
 
-  // Todos los módulos por áreas, con buscador y ☆ para favoritos
-  const buscador = el('input', { type: 'search', id: 'sfep-buscar', placeholder: 'Buscar un módulo…', autocomplete: 'off' });
+  // Menú Gestión: todos los módulos como iconos, en el mismo orden que el SFEP de siempre (Index.asp),
+  // coloreados por área, con buscador (barra superior), filtro por área y ☆ para favoritos.
+  const accesoDe = new Map(visibles.flatMap((a) => a.items));
+  const ids = ORDEN_MENU.filter((id) => accesoDe.has(id));
+  const buscador = el('input', { type: 'search', id: 'sfep-buscar', placeholder: 'Buscar un módulo…', autocomplete: 'off', 'aria-keyshortcuts': 'Control+K' });
   const sinRes = el('p', { class: 'sfep-vacio', hidden: true, text: 'Ningún módulo coincide con la búsqueda.' });
-  // Una sola cuadrícula de cards; cada card lleva el nombre de su área
-  const grupos = [el('div', { class: 'sfep-area' },
-    el('ul', { class: 'sfep-tiles' }, ...visibles.flatMap((a) => a.items.map(([id, x]) => [a, id, x])).map(([a, id, x]) => {
-      const m = MODULOS[id];
-      const cuerpo = [icono(m.icono, 'sfep-tile__ico'), el('span', { class: 'sfep-tile__area', text: a.nombre }), el('span', { class: 'sfep-tile__nombre', text: m.nombre }), el('span', { class: 'sfep-tile__desc', text: x === 'si' ? m.desc : 'Sin acceso para tu usuario' })];
-      const li = el('li', { class: 'sfep-tiles__item' }, x === 'si' ? el('a', { class: 'sfep-tile', href: `#m/${id}` }, ...cuerpo) : el('div', { class: 'sfep-tile is-bloqueado' }, ...cuerpo, icono('candado', 'sfep-tile__candado')),
-        x === 'si' ? botonFavorito(id, 'sfep-estrella--tile') : null);
-      li.dataset.buscar = normaliza(`${m.nombre} ${m.desc} ${a.nombre}`);
-      return li;
-    })))];
-  buscador.addEventListener('input', () => {
+  const pendientes = { notas: notasPendientes().length };
+  const lista = el('ul', { class: 'sfep-tiles', 'aria-label': 'Módulos de gestión' }, ...ids.map((id) => {
+    const m = MODULOS[id]; const a = areaDe(id); const x = accesoDe.get(id);
+    const n = x === 'si' ? pendientes[id] : 0;
+    const cuerpo = [icono(m.icono, 'sfep-tile__ico'), el('span', { class: 'sfep-tile__nombre', text: m.nombre }),
+      el('span', { class: 'sfep-tile__desc', text: x === 'si' ? (DESC_CORTA[id] ?? m.desc) : 'Sin acceso para tu usuario' }),
+      el('span', { class: 'sfep-tile__area', text: a.nombre }),
+      n ? el('span', { class: 'sfep-tile__n', 'data-pend': id, text: String(n) }, el('span', { class: 'sr-only', text: ' pendientes' })) : null];
+    const li = el('li', { class: 'sfep-tiles__item', 'data-area': a.id },
+      x === 'si' ? el('a', { class: 'sfep-tile', href: `#m/${id}` }, ...cuerpo) : el('div', { class: 'sfep-tile is-bloqueado' }, ...cuerpo, icono('candado', 'sfep-tile__candado')),
+      x === 'si' ? botonFavorito(id, 'sfep-estrella--tile') : null);
+    li.dataset.buscar = normaliza(`${m.nombre} ${m.desc} ${a.nombre}`);
+    return li;
+  }), el('li', { class: 'sfep-tiles__item sfep-tiles__item--perso' },
+    el('button', { type: 'button', class: 'sfep-tile sfep-tile--perso', id: 'sfep-personalizar', onclick: (e) => abrirPersonalizar(e.currentTarget) },
+      icono('ajustes', 'sfep-tile__ico'), el('span', { class: 'sfep-tile__nombre', text: 'Personalizar' }), el('span', { class: 'sfep-tile__desc', text: 'Favoritos y secciones de tu inicio' }))));
+
+  // Filtro por área (se combina con el buscador)
+  let areaSel = '';
+  const filtrar = () => {
     const q = normaliza(buscador.value.trim());
     let total = 0;
-    for (const g of grupos) {
-      let n = 0;
-      for (const li of $$('.sfep-tiles__item', g)) { const si = !q || li.dataset.buscar.includes(q); li.hidden = !si; if (si) n++; }
-      g.hidden = !n; total += n;
+    for (const li of $$('.sfep-tiles__item[data-area]', lista)) {
+      const si = (!q || li.dataset.buscar.includes(q)) && (!areaSel || li.dataset.area === areaSel);
+      li.hidden = !si; if (si) total++;
     }
+    lista.querySelector('.sfep-tiles__item--perso').hidden = !!(q || areaSel);
     sinRes.hidden = total > 0;
-  });
+  };
+  buscador.addEventListener('input', filtrar);
+  const areasConModulos = AREAS.filter((a) => ids.some((id) => areaDe(id).id === a.id));
+  const chips = [{ id: '', nombre: 'Todos' }, ...areasConModulos].map((a) => el('button', {
+    type: 'button', class: 'sfep-chip', 'data-area': a.id || null, 'aria-pressed': String(a.id === areaSel),
+    onclick: (e) => { areaSel = a.id; for (const c of chips) c.setAttribute('aria-pressed', String(c === e.currentTarget)); filtrar(); },
+  }, a.id ? el('i', { class: 'sfep-chip__punto', 'aria-hidden': 'true' }) : null, a.nombre));
+
+  // El buscador va en la barra superior mientras se está en el inicio
+  $('#sfep-top-buscar')?.replaceChildren(el('label', { class: 'sr-only', for: 'sfep-buscar', text: 'Buscar un módulo' }),
+    icono('buscar', 'sfep-ico sfep-top-buscar__ico'), buscador, el('kbd', { class: 'sfep-top-buscar__kbd', 'aria-hidden': 'true', text: 'Ctrl K' }));
 
   return [
     el('div', { class: 'sfep-saludo sfep-saludo--fila' },
       el('div', {},
         el('p', { class: 'sfep-saludo__fecha', text: fmtHoy.format(new Date()) }),
-        el('h1', { class: 'sfep-h1', id: 'sfep-titulo', tabindex: '-1', text: `Hola, ${usuario.nombre}` }),
-        el('p', { class: 'sfep-saludo__perfil', text: `${usuario.perfil} · ${usuario.federacion?.nombre ?? ''}` })),
-      el('button', { type: 'button', class: 'sfep-btn sfep-btn--sec', id: 'sfep-personalizar', onclick: (e) => abrirPersonalizar(e.currentTarget) }, '⚙ Personalizar inicio')),
-    cifras,
+        el('h1', { class: 'sfep-h1', id: 'sfep-titulo', tabindex: '-1', text: 'Menú Gestión' })),
+      el('div', { class: 'sfep-chips', role: 'group', 'aria-label': 'Filtrar por área' }, ...chips)),
     el('div', { class: 'sfep-personal', id: 'sfep-favs' }, ...bloqueFavoritos()),
-    // Inicio = todas las opciones en cards (el menú lateral solo aparece dentro de un módulo)
-    el('section', { class: 'sfep-menu sfep-menu--cards', 'aria-labelledby': 'sfep-menu-t' },
-      el('header', { class: 'sfep-menu__cab' },
-        el('h2', { id: 'sfep-menu-t', text: 'Módulos de gestión' }),
-        el('div', { class: 'sfep-buscar' }, el('label', { class: 'sr-only', for: 'sfep-buscar', text: 'Buscar un módulo' }), buscador)),
-      ...grupos, sinRes),
+    // Inicio = todos los módulos como iconos (el menú lateral solo aparece dentro de un módulo)
+    el('section', { class: 'sfep-menu sfep-menu--iconos', 'aria-labelledby': 'sfep-titulo' }, lista, sinRes),
+    // Debajo del menú: secciones elegidas, cifras, avisos y notas
     el('div', { class: 'sfep-personal', id: 'sfep-secs' }, ...bloqueSecciones()),
+    cifras,
     el('div', { class: 'sfep-dos' }, panelAvisos, panelNotas),
   ];
 }
+
+/** Orden del Menú Gestión del SFEP actual. "Calendario" ocupa el sitio de "Portal web" para quien no tiene portal. */
+const ORDEN_MENU = ['fichas', 'torneos', 'ranking', 'sanciones', 'banco', 'clubes', 'comunicaciones', 'portal', 'calendario',
+  'configuracion', 'informes', 'eventos', 'servidor', 'laboral', 'notas', 'certificados', 'voto', 'horario'];
+const DESC_CORTA = {
+  fichas: 'Licencias, altas y renovaciones', torneos: 'Inscripciones, cuadros y resultados', ranking: 'Cálculo y publicación',
+  sanciones: 'Expedientes disciplinarios', banco: 'Pagos, cobros y remesas', clubes: 'Censo, cuotas e instalaciones',
+  comunicaciones: 'Envíos a federados y clubes', portal: 'Noticias, banners y páginas', calendario: 'Calendario de competiciones',
+  configuracion: 'Usuarios y permisos', informes: 'Listados y estadísticas', eventos: 'Checklist y reservas',
+  servidor: 'Estado y copias de seguridad', laboral: 'Festivos y vacaciones', notas: 'Notas internas',
+  certificados: 'Emisión y registro', voto: 'Censo y solicitudes', horario: 'Fichaje diario',
+};
 
 /** Módulos ya migrados: se registran desde su propio archivo (assets/js/sfep-<módulo>.js) con SFEP.registrar(). */
 const VISTAS = {};
@@ -565,6 +592,7 @@ function mostrar({ enfocar = true } = {}) {
   main.replaceChildren(...(r.tipo === 'modulo' ? vistaModulo(r.id, r.sub, r.params) : vistaInicio()).filter(Boolean));
   // En el inicio no hay menú lateral (todo está en cards); dentro de un módulo, sí.
   document.body.classList.toggle('sfep--inicio', r.tipo !== 'modulo');
+  if (r.tipo === 'modulo') $('#sfep-top-buscar')?.replaceChildren();
   const ruta = r.tipo === 'modulo' ? `m/${r.id}` : 'inicio';
   for (const a of $$('.sfep-nav__link[data-ruta]')) {
     if (a.dataset.ruta === ruta) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
@@ -625,6 +653,13 @@ async function init() {
   $('#sfep-ayuda').addEventListener('click', () => { ayuda.hidden = !ayuda.hidden; if (!ayuda.hidden) $('#sfep-ayuda-cerrar').focus(); });
   $('#sfep-ayuda-cerrar').addEventListener('click', () => { ayuda.hidden = true; $('#sfep-ayuda').focus(); });
   document.addEventListener('keydown', (e) => {
+    // Ctrl+K (o Cmd+K): ir al buscador de módulos del inicio
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k' && usuario) {
+      e.preventDefault();
+      if (rutaActual().tipo === 'modulo') location.hash = '#inicio';
+      setTimeout(() => $('#sfep-buscar')?.focus(), 0);
+      return;
+    }
     if (e.key !== 'Escape') return;
     if (!ayuda.hidden) { ayuda.hidden = true; $('#sfep-ayuda').focus(); }
     else if (document.body.classList.contains('sfep--menu')) { cerrarMenu(); $('#sfep-menu').focus(); }

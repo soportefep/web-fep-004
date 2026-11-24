@@ -1,0 +1,205 @@
+/* =========================================================================
+   Mi Club y Mi Portal — diseño elegido: propuesta 1 "sobria" (propuestas-diseno/propuesta-1-sobria.png).
+   Se carga DESPUÉS de area-privada-dashboard.css y lo reviste (solo body.dash, no afecta a la web):
+   Inter, fondo gris claro, menú lateral y barra superior blancos, tarjetas con borde fino y esquinas
+   redondeadas, sin mayúsculas forzadas. Se mantiene el color de cada panel (--ap) como acento.
+   ========================================================================= */
+body.dash {
+  --ink: #101828; --red: #D50F1C; --paper: #F5F6F8; --line: #E4E7EC; --text-2: #667085; --text-3: #344054;
+  --radio: 12px; --radio-sm: 8px;
+  --sombra: 0 1px 2px rgba(16, 24, 40, .05); --sombra-alta: 0 12px 28px rgba(16, 24, 40, .10);
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font); font-size: 14px; -webkit-font-smoothing: antialiased;
+  background: var(--paper);
+}
+body.dash[data-area="club"] { --ap: #1D4ED8; }
+.dash .ap-003--jugador, body.dash.ap-003--jugador { --ap: #D50F1C; }
+body.dash.ap-003--arbitro { --ap: #F79009; --ap-txt: #fff; }
+/* Fondo claro de acento derivado del color del panel */
+body.dash { --ap-50: color-mix(in srgb, var(--ap) 9%, #fff); }
+
+/* Mayúsculas y letra estrecha de la versión anterior: fuera */
+.dash :is(.dash-acceso__eyebrow, .dash-acceso__titulo, .dash-acceso__areas strong, .dash-acceso__h2, .dash-acceso__demo-titulo,
+  .dash-side__area, .dash-user__tipo, .dash-user__nombre, .dash-nav a, .dash-top__miga, .dash-top__titulo, .dash-top__demo,
+  .dash-kpi__etiqueta, .dash-kpi__valor, .dash-widget__titulo, .dash-mini__fecha, .dash-mini__main strong, .dash-barras__etiqueta,
+  .dash-barras__n, .dash-chips li, .dash-proxima__fecha, .dash-proxima__titulo, .dash-card__titulo, .dash-card__dato,
+  .dash-top__salir, .ap-acceso__form label, .ap-acceso__fila input, .ap-demo__etiqueta, .ap-demo__btn strong, .ap-section__title,
+  .ap-card__title, .ap-card__big, .ap-estado, .ap-fecha, .ap-row__main strong, .ap-row__link, .ap-dl dd, .ap-dl dt, .ap-field label,
+  .ap-table thead th, .ap-num, .ap-ranking strong, .ap-chart__valor, .ap-chart__mes, .ap-mes__nombre, .btn) {
+  font-stretch: 100%; text-transform: none; letter-spacing: 0;
+}
+.dash :focus-visible { outline-color: color-mix(in srgb, var(--ap) 45%, transparent); }
+
+/* Botones de la web dentro del panel */
+.dash .btn { min-height: 38px; height: auto; padding: 0 14px; border: 1px solid var(--line); border-radius: var(--radio-sm); background: #fff; color: var(--text-3); font-size: 13px; font-weight: 600; box-shadow: var(--sombra); }
+.dash .btn:hover { background: #F9FAFB; border-color: #D0D5DD; color: var(--ink); }
+.dash .btn--red, .dash .btn--primary { background: var(--ap); border-color: var(--ap); color: #fff; }
+.dash .btn--red:hover, .dash .btn--primary:hover { background: color-mix(in srgb, var(--ap) 85%, #000); border-color: transparent; color: #fff; }
+.dash .btn--lg { min-height: 46px; }
+
+/* ---------------- Acceso ---------------- */
+.dash-acceso__marca { background: #fff; color: var(--ink); border-right: 1px solid var(--line); }
+.dash-acceso__marca::after { right: -20%; bottom: -30%; width: 90%; height: 70%; transform: none; border-radius: 50%; background: radial-gradient(closest-side, var(--ap-50), transparent); opacity: 1; }
+.dash-acceso__marca .dash-logo img { height: 44px; }
+.dash-acceso__eyebrow { font-size: 13px; font-weight: 500; color: var(--text-2); }
+.dash-acceso__eyebrow::before { width: 18px; height: 2px; }
+.dash-acceso__titulo { font-weight: 700; font-size: clamp(40px, 4.6vw, 60px); line-height: 1.05; letter-spacing: -.03em; }
+.dash-acceso__lead { font-size: 16px; color: var(--text-2); }
+.dash-acceso__areas a { border: 1px solid var(--line); border-radius: var(--radio); background: #fff; color: var(--ink); box-shadow: var(--sombra); }
+.dash-acceso__areas strong { font-weight: 600; font-size: 15px; }
+.dash-acceso__areas span { color: var(--text-2); }
+.dash-acceso__areas a[aria-current="page"] { border-color: var(--ap); background: var(--ap-50); }
+.dash-acceso__areas a:hover { border-color: #D0D5DD; }
+.dash-acceso__caja { border: 1px solid var(--line); border-top: 0; border-radius: 16px; box-shadow: var(--sombra-alta); }
+.dash-acceso__h2 { font-weight: 700; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.2; letter-spacing: -.02em; }
+.dash-acceso__txt { color: var(--text-2); font-size: 14.5px; }
+.ap-acceso__form label { font-size: 13px; font-weight: 600; color: var(--text-3); }
+.ap-acceso__fila input { height: 46px; border: 1px solid #D0D5DD; border-radius: var(--radio-sm); font-weight: 600; font-size: 17px; box-shadow: var(--sombra); }
+.ap-acceso__fila input:focus-visible { outline: 3px solid var(--ap-50); border-color: var(--ap); }
+.dash .ap-error { border-left: 0; border-radius: var(--radio-sm); background: #FEF3F2; color: #B42318; }
+.dash-acceso__demo { border-top: 1px dashed #D0D5DD; }
+.dash .ap-demo__etiqueta { border-radius: 999px; padding: 2px 10px; background: #FFFAEB; color: #B54708; font-size: 12px; font-weight: 600; }
+.dash-acceso__demo-titulo { font-weight: 600; font-size: 16px; }
+.dash-acceso__demo .ap-demo__btn { align-items: center; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radio); box-shadow: var(--sombra); }
+.dash-acceso__demo .ap-demo__btn strong { font-weight: 600; font-size: 17px; font-variant-numeric: tabular-nums; }
+.dash-acceso__demo .ap-demo__btn:hover, .dash-acceso__demo .ap-demo__btn:focus-visible { background: var(--ap-50); color: var(--ink); border-color: var(--ap); }
+.dash-acceso__demo .ap-demo__btn:hover span, .dash-acceso__demo .ap-demo__btn:focus-visible span { color: var(--text-2); }
+.dash-volver { font-weight: 600; color: var(--text-2); text-decoration: none; }
+
+/* ---------------- Menú lateral blanco (dentro de una sección) ---------------- */
+.dash-side { background: #fff; color: var(--ink); border-right: 1px solid var(--line); }
+.dash-side__cab .dash-logo img { height: 34px; }
+.dash-side__area { border-radius: 999px; padding: 3px 10px; background: var(--ap-50); color: var(--ap); font-size: 12px; font-weight: 600; }
+.dash-user { margin: 0 12px 12px; border: 1px solid var(--line); border-radius: var(--radio); background: #F9FAFB; }
+.dash-user__avatar, .dash-top__avatar { border-radius: 50%; background: var(--ap); color: #fff; font-weight: 600; font-size: 14px; }
+.dash-user__tipo, .ap-003--club .dash-user__tipo, .ap-003--arbitro .dash-user__tipo { font-size: 12px; font-weight: 600; color: var(--ap); }
+.dash-user__nombre { font-weight: 600; font-size: 14px; }
+.dash-user__id { color: var(--text-2); }
+.dash-nav { padding: 8px 12px; }
+.dash-nav a { padding: 9px 12px; border-left: 0; border-radius: var(--radio-sm); color: var(--text-3); font-size: 14px; font-weight: 500; }
+.dash-nav a:hover { background: #F2F4F7; color: var(--ink); }
+.dash-nav a[aria-current="page"] { background: var(--ap-50); color: var(--ap); font-weight: 600; }
+.dash-nav__insignia, .ap-003--jugador .dash-nav__insignia { border-radius: 999px; background: var(--red); color: #fff; font-size: 11px; font-weight: 700; }
+.dash-side__pie { border-top: 1px solid var(--line); }
+.dash-side__link { color: var(--text-2); font-weight: 500; }
+.dash-side__link:hover { color: var(--ink); }
+
+/* ---------------- Barra superior ---------------- */
+.dash-top { min-height: 64px; border-bottom: 1px solid var(--line); }
+.dash-top__miga { font-size: 12.5px; font-weight: 500; }
+.dash-top__titulo { font-weight: 700; font-size: clamp(20px, 1.8vw, 24px); line-height: 1.25; letter-spacing: -.02em; }
+.dash-top__demo { border-radius: 999px; padding: 3px 10px; background: #FFFAEB; color: #B54708; font-size: 12px; font-weight: 600; }
+.dash-top__avatar { width: 36px; height: 36px; font-size: 13px; }
+.dash--inicio .dash-top__logo { border-right: 1px solid var(--line); }
+.dash--inicio .dash-top__logo img { height: 32px; }
+.dash--inicio .dash-top__salir { height: 38px; border: 1px solid var(--line); border-radius: var(--radio-sm); color: var(--text-3); font-size: 13px; font-weight: 600; box-shadow: var(--sombra); }
+.dash--inicio .dash-top__salir:hover { background: #F9FAFB; color: var(--ink); }
+@media (max-width: 999px) {
+  .dash-top__menu { border-radius: var(--radio-sm); background: #F2F4F7; }
+  .dash-top__menu span { height: 2px; background: var(--ink); }
+}
+
+/* ---------------- Contenido ---------------- */
+.dash .ap-section__title { padding-bottom: 0; margin-bottom: 14px; border-bottom: 0; font-weight: 600; font-size: 17px; line-height: 1.3; }
+.dash .ap-section__title::before { content: none; }
+.dash .ap-intro { color: var(--text-2); }
+.dash .ap-section > .ap-rows, .dash .ap-section > .ap-table-wrap, .dash .ap-section > .ap-dl, .dash .ap-section > .ap-meses,
+.dash .ap-section > .ap-form, .dash .ap-section > .ap-ranking, .dash .ap-section > .ap-chart {
+  border: 1px solid var(--line); border-radius: var(--radio); box-shadow: var(--sombra);
+}
+.dash .ap-section > .ap-meses { padding: 14px; background: #fff; }
+
+/* Cifras */
+.dash-kpis { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.dash-kpi, .dash-kpi:first-child { gap: 4px; background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radio); box-shadow: var(--sombra); }
+.dash-kpi__etiqueta, .dash-kpi:first-child .dash-kpi__etiqueta { font-size: 13px; font-weight: 500; color: var(--text-2); opacity: 1; }
+.dash-kpi__valor { font-weight: 700; font-size: 30px; line-height: 1.15; letter-spacing: -.02em; }
+.dash-kpi__nota, .dash-kpi:first-child .dash-kpi__nota { font-size: 12px; color: var(--text-2); opacity: 1; }
+.dash-kpi:first-child .ap-sube { color: #067647; }
+.dash-kpi:first-child .ap-baja { color: var(--red); }
+.dash .ap-sube { color: #067647; font-weight: 600; }
+.dash .ap-baja { font-weight: 600; }
+
+/* Widgets */
+.dash-grid { gap: 16px; }
+.dash-widget { gap: 0; padding: 0; border: 1px solid var(--line); border-radius: var(--radio); box-shadow: var(--sombra); overflow: hidden; }
+.dash-widget > :not(.dash-widget__cab) { margin: 14px 18px; }
+.dash-widget__cab { align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+.dash-widget__titulo { font-weight: 600; font-size: 15px; }
+.dash-widget__link { font-size: 12.5px; font-weight: 600; color: var(--ap); text-decoration: none; }
+.dash-widget__link:hover { color: var(--ap); text-decoration: underline; }
+.dash .ap-dl { border: 1px solid var(--line); border-radius: var(--radio-sm); overflow: hidden; }
+.dash .ap-dl dt { font-size: 12px; font-weight: 500; }
+.dash .ap-dl dd { font-weight: 500; font-size: 14px; }
+.dash-widget .ap-dl dd { font-size: 14px; }
+.dash .ap-avisos li { border-left: 0; border-radius: var(--radio-sm); background: #F9FAFB; font-size: 13.5px; }
+.dash .ap-avisos time { font-weight: 600; color: var(--ap); }
+
+.dash-mini li { padding: 10px 0; border-bottom-color: #F2F4F7; }
+.dash-mini__fecha { font-size: 12px; font-weight: 500; color: var(--text-2); }
+.dash-mini__main strong { font-weight: 600; font-size: 14px; }
+.dash-barras__etiqueta { font-size: 13px; font-weight: 500; }
+.dash-barras__pista { height: 8px; border-radius: 999px; overflow: hidden; background: #F2F4F7; }
+.dash-barras__relleno { border-radius: 999px; background: var(--text-3); }
+.dash-barras__relleno--ok { background: var(--ap); }
+.dash-barras__relleno--off { background: #D0D5DD; }
+.dash-barras__n { font-weight: 700; font-size: 15px; }
+.dash-chips li { border-radius: var(--radio-sm); font-weight: 600; font-size: 13px; }
+.dash-chips .is-si { background: var(--ap-50); color: var(--ap); }
+.dash-chips .is-no { background: #F2F4F7; color: #98A2B3; }
+.dash-proxima__fecha { font-weight: 700; font-size: 24px; letter-spacing: -.02em; }
+.dash-proxima__titulo { font-weight: 600; font-size: 15px; }
+a.dash-proxima__titulo { text-decoration: none; color: var(--ap); }
+a.dash-proxima__titulo:hover { text-decoration: underline; }
+
+/* Estados */
+.dash .ap-estado { padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; background: #F2F4F7; color: var(--text-3); }
+.dash :is(.ap-estado--pendiente, .ap-estado--plazo-abierto, .ap-estado--solicitado) { background: #FEF3F2; color: #B42318; }
+.dash :is(.ap-estado--inscrito, .ap-estado--confirmada, .ap-estado--activa, .ap-estado--aprobado, .ap-estado--vigente) { background: #ECFDF3; color: #067647; }
+.dash :is(.ap-estado--caducada, .ap-estado--rechazada) { background: #F2F4F7; color: var(--text-2); box-shadow: none; }
+
+/* Filas, tablas, formularios y documentos */
+.dash .ap-rows { border-top: 0; }
+.dash .ap-row { padding: 14px 4px; border-bottom-color: #F2F4F7; }
+.dash .ap-row:last-child { border-bottom: 0; }
+.dash .ap-fecha { font-weight: 600; font-size: 13.5px; color: var(--text-2); }
+.dash .ap-row__main strong, .dash .ap-row__link { font-weight: 600; font-size: 14.5px; line-height: 1.35; }
+.dash .ap-row__link { color: var(--ink); text-decoration: none; }
+.dash .ap-row__link:hover { color: var(--ap); text-decoration: underline; }
+.dash .ap-field label { font-size: 12.5px; font-weight: 500; }
+.dash .ap-field input, .dash .ap-field select { height: 38px; border: 1px solid #D0D5DD; border-radius: var(--radio-sm); box-shadow: var(--sombra); }
+.dash .ap-table thead th { background: #F9FAFB; color: var(--text-2); border-bottom: 1px solid var(--line); font-size: 12px; font-weight: 600; }
+.dash .ap-table tbody th { font-weight: 600; }
+.dash .ap-table tbody tr:nth-child(even) > * { background: none; }
+.dash .ap-table tbody tr:hover > * { background: #F9FAFB; }
+.dash .ap-num { font-weight: 600; font-size: 14px; }
+.dash .ap-ranking strong { font-weight: 700; font-size: 40px; letter-spacing: -.03em; }
+.dash .ap-chart__barras { border-bottom: 1px solid var(--line); }
+.dash .ap-chart__barra { border-radius: 6px 6px 0 0; }
+.dash .ap-chart__barras li:last-child .ap-chart__barra { background: color-mix(in srgb, var(--ap) 55%, #fff); }
+.dash .ap-chart__valor { font-weight: 600; font-size: 13px; }
+.dash .ap-chart__mes { font-weight: 500; font-size: 12px; }
+.dash .ap-mes { border: 1px solid var(--line); border-radius: var(--radio-sm); }
+.dash .ap-mes__nombre { font-weight: 600; font-size: 14px; }
+.dash .ap-mes[aria-pressed="true"] { background: var(--ap-50); color: var(--ap); border-color: var(--ap); }
+.dash .ap-doc { border: 1px solid var(--line); border-radius: var(--radio); box-shadow: var(--sombra); }
+.dash .ap-doc__icon { border-radius: 10px; background: var(--ap-50); color: var(--ap); font-weight: 700; }
+.dash .ap-doc__title { font-weight: 600; }
+.dash .ap-aviso { border-left: 0; border-radius: var(--radio-sm); font-weight: 500; }
+
+/* ---------------- Inicio en cards ---------------- */
+.dash-cards__lista { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.dash-card { gap: 6px; min-height: 0; padding: 18px; border: 1px solid var(--line); border-top: 1px solid var(--line); border-radius: var(--radio); box-shadow: var(--sombra); }
+.dash-card:hover { border-color: #D0D5DD; box-shadow: var(--sombra-alta); }
+.dash-card__titulo { font-weight: 600; font-size: 15px; line-height: 1.35; }
+.dash-card__insignia, .ap-003--jugador .dash-card__insignia { border-radius: 999px; padding: 1px 8px; background: var(--red); font-size: 11.5px; font-weight: 700; }
+.dash-card__desc { font-size: 13px; line-height: 1.45; color: var(--text-2); }
+.dash-card__pie { padding-top: 10px; border-top-color: #F2F4F7; }
+.dash-card__dato { font-weight: 600; font-size: 13px; color: var(--text-3); }
+.dash-card__ir, .ap-003--arbitro .dash-card__ir { font-size: 18px; font-weight: 600; color: var(--ap); }
+
+@media (max-width: 640px) {
+  .dash-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .dash-kpi { padding: 14px; }
+  .dash-kpi__valor { font-size: 24px; }
+}

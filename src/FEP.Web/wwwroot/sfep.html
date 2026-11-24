@@ -14,12 +14,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/sfep.css">
+  <!-- Diseño elegido (propuesta 1, "sobria"): Inter, fondo claro, tarjetas blancas redondeadas -->
+  <link rel="stylesheet" href="assets/css/sfep-tema.css">
   <!-- Página aislada de la web: no carga comun.js (ni cabecera, ni pie, ni asistente) -->
   <script defer src="mock/mocks.js"></script>
   <script defer src="assets/js/api.js"></script>
   <script defer src="assets/js/sfep.js"></script>
+  <!-- Exportar a Excel (.xlsx generado en el navegador, sin librerías externas) -->
+  <script defer src="assets/js/sfep-excel.js"></script>
   <!-- Módulos migrados (se registran en SFEP) -->
   <script defer src="assets/js/sfep-fichas.js"></script>
 </head>
@@ -50,6 +54,8 @@
       </button>
       <a class="sfep-marca" href="#inicio" aria-label="SFEP – inicio"><span class="sfep-marca__s">S</span><span class="sfep-marca__fep">FEP</span></a>
       <span class="sfep-top__entorno">Prototipo · datos de prueba</span>
+      <!-- Buscador de módulos: lo rellena sfep.js en el inicio -->
+      <div class="sfep-top-buscar" id="sfep-top-buscar"></div>
       <div class="sfep-top__usuario" id="sfep-usuario"></div>
       <nav class="sfep-top__acciones" aria-label="Acciones">
         <a class="sfep-icono" href="#avisos" id="sfep-campana" title="Notas sin leer">

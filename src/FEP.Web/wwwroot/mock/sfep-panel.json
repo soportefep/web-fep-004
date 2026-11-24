@@ -11,16 +11,6 @@
                         "valor":  "37",
                         "etiqueta":  "Torneos en curso",
                         "modulo":  "torneos"
-                    },
-                    {
-                        "valor":  "6",
-                        "etiqueta":  "Sanciones vigentes",
-                        "modulo":  "sanciones"
-                    },
-                    {
-                        "valor":  "3",
-                        "etiqueta":  "Remesas por enviar",
-                        "modulo":  "banco"
                     }
                 ],
     "widgets":  [

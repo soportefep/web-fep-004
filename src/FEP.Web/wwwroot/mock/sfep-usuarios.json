@@ -33,7 +33,6 @@
       "resumen": [
         { "valor": "3.904", "etiqueta": "Fichas activas", "modulo": "fichas" },
         { "valor": "5", "etiqueta": "Torneos en curso", "modulo": "torneos" },
-        { "valor": "1", "etiqueta": "Sanciones vigentes", "modulo": "sanciones" },
         { "valor": "62", "etiqueta": "Clubes", "modulo": "clubes" }
       ],
       "avisos": [],

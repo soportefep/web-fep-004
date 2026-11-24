@@ -775,6 +775,7 @@ async function pintarFederaciones() {
 const cargarLista = (ruta) => get(ruta).then(comoLista).catch((e) => { console.warn(`[FEP] ${ruta}:`, e.message); return null; });
 
 function initComun() {
+  cargarIdiomas();
   const anio = $('#anio');
   if (anio) anio.textContent = String(new Date().getFullYear());
   initCabecera();
@@ -816,6 +817,17 @@ function initVolverArriba() {
     if (!pendiente) { pendiente = true; requestAnimationFrame(actualizar); }
   }, { passive: true });
   actualizar();
+}
+
+/**
+ * Idiomas de la web (assets/js/i18n.js): selector con banderas en la barra superior, idioma automático según el
+ * país de conexión o el navegador, y traducción de los textos fijos de la interfaz (diccionarios en assets/i18n/).
+ */
+function cargarIdiomas() {
+  if (window.FEP_I18N || $('script[src*="assets/js/i18n.js"]')) return;
+  const comun = document.querySelector('script[src*="assets/js/comun.js"]');
+  const base = comun ? new URL('../', comun.src).href : new URL('assets/', document.baseURI).href;
+  document.head.append(el('script', { src: `${base}js/i18n.js` }));
 }
 
 /** Burbuja del asistente virtual en todas las páginas (assets/js/asistente.js + assets/css/asistente.css). */
