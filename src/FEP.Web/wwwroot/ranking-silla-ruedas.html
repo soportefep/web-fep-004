@@ -28,82 +28,73 @@
   <script defer src="assets/js/comun.js"></script>
   <script defer src="assets/js/toc-003.js"></script>
   <script defer src="assets/js/ranking.js"></script>
+  <!-- Barra superior, cabecera, pie y FEPi con el diseño de la portada nueva (body.ua) -->
+  <link rel="stylesheet" href="assets/css/interior-unapagina.css">
+  <script defer src="assets/js/cabecera-unapagina.js"></script>
 </head>
-<body>
+<body class="ua" data-seccion="competicion">
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <!-- ============ BARRA SUPERIOR ============ -->
+  <!-- ============ BARRA SUPERIOR (la de la portada: assets/js/cabecera-unapagina.js) ============ -->
   <div class="topbar">
     <div class="container topbar__inner">
-      <nav class="fed-strip" id="fed-strip" aria-label="Federaciones autonómicas">
-        <ul class="fed-strip__list" id="fed-strip-lista"></ul>
-      </nav>
-      <ul class="topbar__links">
-        <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
-        <li><a class="topbar__extranet" href="https://www.padelfederacion.es/ControlAcceso.asp" title="Acceso a la gestión interna">Extranet</a></li>
-        <li><button type="button" class="topbar__lang" aria-label="Idioma: español" aria-disabled="true">ES <span aria-hidden="true">⌄</span></button></li>
-      </ul>
+      <!-- Desplegable directo a la web de cada federación autonómica -->
+      <div class="desplegable" id="feds-menu">
+        <button type="button" class="topbar__btn" id="feds-boton" aria-expanded="false" aria-controls="feds-panel">
+          <img class="bandera" src="assets/img/fep/federaciones/bandera-0.jpg" alt="" width="21" height="15">
+          <span>Federaciones autonómicas</span><span aria-hidden="true">⌄</span>
+        </button>
+        <div class="desplegable__panel feds-panel" id="feds-panel" hidden>
+          <p class="desplegable__titulo">Ir a la web de tu federación</p>
+          <ul class="feds-panel__lista" id="feds-panel-lista"></ul>
+        </div>
+      </div>
+
+      <div class="topbar__der">
+        <ul class="topbar__links">
+          <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+          <li><a class="topbar__extranet" href="sfep.html" title="Extranet: gestión interna de la FEP (SFEP)">Extranet</a></li>
+        </ul>
+        <!-- Idiomas: oficiales y cooficiales de España + principales internacionales -->
+        <div class="idiomas" role="group" aria-label="Idioma">
+          <ul class="idiomas__grupo" id="idiomas-es" aria-label="Lenguas de España"></ul>
+          <ul class="idiomas__grupo" id="idiomas-int" aria-label="Otros idiomas"></ul>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- ============ CABECERA ============ -->
+  <!-- ============ CABECERA (la de la portada: sin hamburguesa; el menú lleva a las secciones de la portada) ============ -->
   <header class="header" id="cabecera">
     <div class="container header__inner">
       <a class="header__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
         <img src="assets/img/logo.png" alt="Federación Española de Pádel" width="210" height="70">
       </a>
-
-      <button type="button" class="header__burger" id="menu-abrir" aria-controls="menu-principal" aria-expanded="false">
-        <span class="sr-only">Abrir menú</span>
-        <span class="header__burger-bar" aria-hidden="true"></span>
-      </button>
-
-      <div class="nav-panel" id="menu-principal" aria-label="Menú principal">
-        <div class="nav-panel__head">
-          <img src="assets/img/logo.png" alt="" width="150" height="50">
-          <button type="button" class="nav-panel__close" id="menu-cerrar"><span class="sr-only">Cerrar menú</span><span aria-hidden="true">✕</span></button>
-        </div>
-        <nav aria-label="Principal">
-          <!-- Menú principal (5 secciones). comun.js (MENU_FEP) pinta los desplegables y accesos móviles -->
-          <ul class="nav" id="nav-principal">
-            <li class="nav__item" data-menu-key="competicion"><a class="nav__link" href="calendariofep.html">Competición</a></li>
-            <li class="nav__item" data-menu-key="licencias"><a class="nav__link" href="https://www.padelfederacion.es/Licencias_Buscar">Licencias</a></li>
-            <li class="nav__item" data-menu-key="formacion"><a class="nav__link" href="https://www.padelfederacion.es/Formacion_Calendario">Formación</a></li>
-            <li class="nav__item" data-menu-key="actualidad"><a class="nav__link" href="https://www.padelfederacion.es/Noticias">Actualidad</a></li>
-            <li class="nav__item" data-menu-key="federacion"><a class="nav__link" href="organos-de-gobierno.html">La Federación</a></li>
-          </ul>
-        </nav>
-        <ul class="nav-panel__extra">
-          <li><a href="ley-de-transparencia.html">Transparencia</a></li>
+      <nav class="nav" aria-label="Secciones de la web">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html#competicion" data-seccion="competicion">Competición</a></li>
+          <li><a class="nav__link" href="index.html#licencias" data-seccion="licencias">Licencias</a></li>
+          <li><a class="nav__link" href="index.html#federacion" data-seccion="federacion">Federación</a></li>
+          <li><a class="nav__link" href="index.html#formacion" data-seccion="formacion">Formación</a></li>
+          <li><a class="nav__link" href="index.html#documentos" data-seccion="documentos">Documentos</a></li>
+          <li><a class="nav__link" href="index.html#actualidad" data-seccion="actualidad">Actualidad</a></li>
         </ul>
-      </div>
-
+      </nav>
       <div class="header__actions">
-        <button type="button" class="header__search-btn" id="buscar-abrir" aria-controls="buscador" aria-expanded="false">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          <span class="sr-only">Buscar</span>
-        </button>
-        <a class="btn btn--outline btn--sm acceso" id="mi-club" href="#" aria-label="Mi Club (próximamente)">
-          Mi Club
+        <a class="icon-btn" href="index.html#buscador" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        </a>
+        <a class="btn btn--outline btn--sm acceso" id="mi-club" href="mi-club.html" aria-label="Mi Club (acceso para clubes)" title="Mi Club: acceso para clubes">
+          <span class="acceso__txt">Mi Club</span>
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12M9 21v-6h6v6M3 21h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a class="btn btn--red btn--sm acceso" id="mi-portal" href="#" aria-label="Mi Portal (próximamente)">
-          Mi Portal
+        <a class="btn btn--red btn--sm acceso" id="mi-portal" href="mi-portal.html" aria-label="Mi Portal (jugadores, técnicos y árbitros)" title="Mi Portal: jugadores, técnicos y árbitros">
+          <span class="acceso__txt">Mi Portal</span>
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </a>
       </div>
     </div>
-
-    <!-- Buscador: envía temporalmente al buscador de la web actual -->
-    <div class="search" id="buscador" hidden>
-      <form class="container search__form" action="https://www.padelfederacion.es/busqueda.asp" method="post" role="search">
-        <label for="texto-busqueda" class="sr-only">Texto a buscar</label>
-        <input id="texto-busqueda" name="textobusqueda" type="search" placeholder="Buscar en la web de la FEP…" required>
-        <button type="submit" class="btn btn--red btn--sm">Buscar</button>
-      </form>
-    </div>
   </header>
-  <div class="nav-backdrop" id="menu-fondo" hidden></div>
 
   <!-- Página migrada desde Ranking_Silla_Ruedas.asp (consultaba SFEP_RankingFinal con TipoRanking = 15). El contenido
        llega de GET /api/v1/competicion/rankings/silla-ruedas (respaldo: mock/competicion-rankings-silla-ruedas.json).
