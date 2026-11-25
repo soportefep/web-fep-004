@@ -1,0 +1,649 @@
+{
+    "torneo":  {
+                   "id":  28909,
+                   "titulo":  "XXXIX CAMPEONATO DE ESPAÑA DE MENORES - Trofeo BABOLAT",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2026-08-24",
+                   "fechaFin":  "2026-08-30",
+                   "lugar":  "Massanassa"
+               },
+    "genero":  "M",
+    "categoria":  "CADETE",
+    "nivel":  21,
+    "cuadro":  "Final",
+    "publicado":  true,
+    "notas":  null,
+    "formato":  "eliminatoria",
+    "plantilla":  "CuadroPrevia16-8",
+    "participantes":  [
+                          {
+                              "avance":  4,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "D. PEÑA LEIVA - C. GUERRERO MAILLARD",
+                              "jugadores":  [
+                                                "D. PEÑA LEIVA",
+                                                "C. GUERRERO MAILLARD"
+                                            ],
+                              "cabezaSerie":  2
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "A. CORTES TORRES - L. PULIDO PEREZ",
+                              "jugadores":  [
+                                                "A. CORTES TORRES",
+                                                "L. PULIDO PEREZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "A. CARNICERO MONGE - J. CALLEJA PERISET",
+                              "jugadores":  [
+                                                "A. CARNICERO MONGE",
+                                                "J. CALLEJA PERISET"
+                                            ],
+                              "cabezaSerie":  7
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "A. VISIEDO GOMEZ - D. PAEZ ANTOLINEZ",
+                              "jugadores":  [
+                                                "A. VISIEDO GOMEZ",
+                                                "D. PAEZ ANTOLINEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "M. MARFA ANDRES - M. ESTRUCH MORENO",
+                              "jugadores":  [
+                                                "M. MARFA ANDRES",
+                                                "M. ESTRUCH MORENO"
+                                            ],
+                              "cabezaSerie":  4
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "J. ROSA JIMENEZ - A. ABAD DIAZ",
+                              "jugadores":  [
+                                                "J. ROSA JIMENEZ",
+                                                "A. ABAD DIAZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "J. CARO GIL - J. MARTIN GARCIA",
+                              "jugadores":  [
+                                                "J. CARO GIL",
+                                                "J. MARTIN GARCIA"
+                                            ],
+                              "cabezaSerie":  6
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "D. CARDENAS ALBERDI - H. RODRIGUEZ NAVARRO",
+                              "jugadores":  [
+                                                "D. CARDENAS ALBERDI",
+                                                "H. RODRIGUEZ NAVARRO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  9,
+                              "tipo":  "pareja",
+                              "nombre":  "I. FUERTES LEONARDO - A. GUERRERO ALVAREZ",
+                              "jugadores":  [
+                                                "I. FUERTES LEONARDO",
+                                                "A. GUERRERO ALVAREZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  10,
+                              "tipo":  "pareja",
+                              "nombre":  "J. GOMEZ NUÑEZ - A. FORTES NAVARRO",
+                              "jugadores":  [
+                                                "J. GOMEZ NUÑEZ",
+                                                "A. FORTES NAVARRO"
+                                            ],
+                              "cabezaSerie":  8
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  11,
+                              "tipo":  "pareja",
+                              "nombre":  "B. IRAIZOZ OLAIZ - M. JONUZI .",
+                              "jugadores":  [
+                                                "B. IRAIZOZ OLAIZ",
+                                                "M. JONUZI ."
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  12,
+                              "tipo":  "pareja",
+                              "nombre":  "C. BARTOLOME BLASCO - S. COELLO GONZALEZ",
+                              "jugadores":  [
+                                                "C. BARTOLOME BLASCO",
+                                                "S. COELLO GONZALEZ"
+                                            ],
+                              "cabezaSerie":  3
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  13,
+                              "tipo":  "pareja",
+                              "nombre":  "H. MARTINEZ FERNANDEZ - A. MANASSERA ARNANZ",
+                              "jugadores":  [
+                                                "H. MARTINEZ FERNANDEZ",
+                                                "A. MANASSERA ARNANZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  14,
+                              "tipo":  "pareja",
+                              "nombre":  "P. CAYUELA GIL - J. MARTINEZ HERNANDEZ",
+                              "jugadores":  [
+                                                "P. CAYUELA GIL",
+                                                "J. MARTINEZ HERNANDEZ"
+                                            ],
+                              "cabezaSerie":  5
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  15,
+                              "tipo":  "pareja",
+                              "nombre":  "A. BARRIL RAMOS - J. GALAN DIANEZ",
+                              "jugadores":  [
+                                                "A. BARRIL RAMOS",
+                                                "J. GALAN DIANEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  16,
+                              "tipo":  "pareja",
+                              "nombre":  "D. ANDRINO CAÑAS - D. ANDRINO CAÑAS",
+                              "jugadores":  [
+                                                "D. ANDRINO CAÑAS",
+                                                "D. ANDRINO CAÑAS"
+                                            ],
+                              "cabezaSerie":  1
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "A. CORTES TORRES - L. PULIDO PEREZ",
+                              "jugadores":  [
+                                                "A. CORTES TORRES",
+                                                "L. PULIDO PEREZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "A. VISIEDO GOMEZ - D. PAEZ ANTOLINEZ",
+                              "jugadores":  [
+                                                "A. VISIEDO GOMEZ",
+                                                "D. PAEZ ANTOLINEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "M. MARFA ANDRES - M. ESTRUCH MORENO",
+                              "jugadores":  [
+                                                "M. MARFA ANDRES",
+                                                "M. ESTRUCH MORENO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "D. CARDENAS ALBERDI - H. RODRIGUEZ NAVARRO",
+                              "jugadores":  [
+                                                "D. CARDENAS ALBERDI",
+                                                "H. RODRIGUEZ NAVARRO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "I. FUERTES LEONARDO - A. GUERRERO ALVAREZ",
+                              "jugadores":  [
+                                                "I. FUERTES LEONARDO",
+                                                "A. GUERRERO ALVAREZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "B. IRAIZOZ OLAIZ - M. JONUZI .",
+                              "jugadores":  [
+                                                "B. IRAIZOZ OLAIZ",
+                                                "M. JONUZI ."
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "H. MARTINEZ FERNANDEZ - A. MANASSERA ARNANZ",
+                              "jugadores":  [
+                                                "H. MARTINEZ FERNANDEZ",
+                                                "A. MANASSERA ARNANZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "A. BARRIL RAMOS - J. GALAN DIANEZ",
+                              "jugadores":  [
+                                                "A. BARRIL RAMOS",
+                                                "J. GALAN DIANEZ"
+                                            ]
+                          }
+                      ],
+    "partidos":  [
+                     {
+                         "avance":  4,
+                         "posicion":  1,
+                         "resultado":  "7/5-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  2,
+                         "resultado":  "6/4-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  3,
+                         "resultado":  "6/4-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  4,
+                         "resultado":  "6/1-5/7-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  5,
+                         "resultado":  "6/0-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  6,
+                         "resultado":  "0/6-6/4-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  7,
+                         "resultado":  "6/4-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  8,
+                         "resultado":  "6/2-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     }
+                 ],
+    "cabezasSerie":  [
+                         {
+                             "cabezaSerie":  1,
+                             "nombre":  "D. ANDRINO CAÑAS/D. ANDRINO CAÑAS",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  2,
+                             "nombre":  "D. PEÑA LEIVA/C. GUERRERO MAILLARD",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  3,
+                             "nombre":  "C. BARTOLOME BLASCO/S. COELLO GONZALEZ",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  4,
+                             "nombre":  "M. MARFA ANDRES/M. ESTRUCH MORENO",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  5,
+                             "nombre":  "P. CAYUELA GIL/J. MARTINEZ HERNANDEZ",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  6,
+                             "nombre":  "J. CARO GIL/J. MARTIN GARCIA",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  7,
+                             "nombre":  "A. CARNICERO MONGE/J. CALLEJA PERISET",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  8,
+                             "nombre":  "J. GOMEZ NUÑEZ/A. FORTES NAVARRO",
+                             "puntos":  null
+                         }
+                     ],
+    "clasificacion":  [
+
+                      ],
+    "otrosCuadros":  [
+                         {
+                             "genero":  "M",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ALEVIN",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ALEVIN",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ALEVIN",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ALEVIN",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ALEVIN",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "INFANTIL",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "INFANTIL",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "INFANTIL",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "INFANTIL",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "INFANTIL",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "CADETE",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "CADETE",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "CADETE",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "CADETE",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "JUNIOR",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "JUNIOR",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "JUNIOR",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "JUNIOR",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "JUNIOR",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ALEVIN",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ALEVIN",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ALEVIN",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ALEVIN",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ALEVIN",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "INFANTIL",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "INFANTIL",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "INFANTIL",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "INFANTIL",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "INFANTIL",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "CADETE",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "CADETE",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "CADETE",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "CADETE",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "CADETE",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "JUNIOR",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "JUNIOR",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "JUNIOR",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "JUNIOR",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "JUNIOR",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         }
+                     ]
+}

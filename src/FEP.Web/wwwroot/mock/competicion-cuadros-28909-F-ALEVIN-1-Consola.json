@@ -1,0 +1,1048 @@
+{
+    "torneo":  {
+                   "id":  28909,
+                   "titulo":  "XXXIX CAMPEONATO DE ESPAÑA DE MENORES - Trofeo BABOLAT",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2026-08-24",
+                   "fechaFin":  "2026-08-30",
+                   "lugar":  "Massanassa"
+               },
+    "genero":  "F",
+    "categoria":  "ALEVIN",
+    "nivel":  1,
+    "cuadro":  "Consola",
+    "publicado":  true,
+    "notas":  null,
+    "formato":  "eliminatoria",
+    "plantilla":  "Cuadro32",
+    "participantes":  [
+                          {
+                              "avance":  5,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "P. JUEZ GARCIA - I. SERRANO HERRERA",
+                              "jugadores":  [
+                                                "P. JUEZ GARCIA",
+                                                "I. SERRANO HERRERA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  2,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "J. VALLADARES ROMERO - C. GARRIDO RUIZ",
+                              "jugadores":  [
+                                                "J. VALLADARES ROMERO",
+                                                "C. GARRIDO RUIZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  4,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "C. FERRER FUSTER - P. PORTILLO CALLE",
+                              "jugadores":  [
+                                                "C. FERRER FUSTER",
+                                                "P. PORTILLO CALLE"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  6,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "O. LOPEZ CONESA - B. MARTINEZ MARTINEZ",
+                              "jugadores":  [
+                                                "O. LOPEZ CONESA",
+                                                "B. MARTINEZ MARTINEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "S. GARCIA MEDINA - V. CASANOVA CARRATALA",
+                              "jugadores":  [
+                                                "S. GARCIA MEDINA",
+                                                "V. CASANOVA CARRATALA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  9,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MIGUEL GARCIA - C. DEL OLMO ROSSIÑOL",
+                              "jugadores":  [
+                                                "A. MIGUEL GARCIA",
+                                                "C. DEL OLMO ROSSIÑOL"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  10,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  11,
+                              "tipo":  "pareja",
+                              "nombre":  "C. PEREZ RAMIREZ - M. ROMERO DE AVILA PARRA",
+                              "jugadores":  [
+                                                "C. PEREZ RAMIREZ",
+                                                "M. ROMERO DE AVILA PARRA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  12,
+                              "tipo":  "pareja",
+                              "nombre":  "N. GASCON GONZALEZ - D. RAMOS GINESTAL",
+                              "jugadores":  [
+                                                "N. GASCON GONZALEZ",
+                                                "D. RAMOS GINESTAL"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  13,
+                              "tipo":  "pareja",
+                              "nombre":  "P. SANCHEZ REY - C. SANCHEZ RUIZ",
+                              "jugadores":  [
+                                                "P. SANCHEZ REY",
+                                                "C. SANCHEZ RUIZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  14,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  15,
+                              "tipo":  "pareja",
+                              "nombre":  "F. RIBEIRO GUIMARAES - D. FERREIRA GALLEGO",
+                              "jugadores":  [
+                                                "F. RIBEIRO GUIMARAES",
+                                                "D. FERREIRA GALLEGO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  16,
+                              "tipo":  "pareja",
+                              "nombre":  "M. TARRAGA HIGUERAS - L. MALDONADO PRADOS",
+                              "jugadores":  [
+                                                "M. TARRAGA HIGUERAS",
+                                                "L. MALDONADO PRADOS"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  17,
+                              "tipo":  "pareja",
+                              "nombre":  "E. CHAMIZO FERNANDEZ - A. GIMENEZ OCHOA",
+                              "jugadores":  [
+                                                "E. CHAMIZO FERNANDEZ",
+                                                "A. GIMENEZ OCHOA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  18,
+                              "tipo":  "pareja",
+                              "nombre":  "D. LOZANO GONZALEZ - V. GARCIA ARNANZ",
+                              "jugadores":  [
+                                                "D. LOZANO GONZALEZ",
+                                                "V. GARCIA ARNANZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  19,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  20,
+                              "tipo":  "pareja",
+                              "nombre":  "P. BLECUA ESCOT - M. MONTES DIAZ",
+                              "jugadores":  [
+                                                "P. BLECUA ESCOT",
+                                                "M. MONTES DIAZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  21,
+                              "tipo":  "pareja",
+                              "nombre":  "V. MEDINA JODAR - N. ROJAS ANGUITA",
+                              "jugadores":  [
+                                                "V. MEDINA JODAR",
+                                                "N. ROJAS ANGUITA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  22,
+                              "tipo":  "pareja",
+                              "nombre":  "N. CESTERO PEREZ - C. NADAL RIVERA",
+                              "jugadores":  [
+                                                "N. CESTERO PEREZ",
+                                                "C. NADAL RIVERA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  23,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  24,
+                              "tipo":  "pareja",
+                              "nombre":  "I. CASTRO PEREZ - M. CAMILO ESCUDERO",
+                              "jugadores":  [
+                                                "I. CASTRO PEREZ",
+                                                "M. CAMILO ESCUDERO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  25,
+                              "tipo":  "pareja",
+                              "nombre":  "L. NICOLETTI ALTIMARI PEREZ - L. ABRUÑA BATALLA",
+                              "jugadores":  [
+                                                "L. NICOLETTI ALTIMARI PEREZ",
+                                                "L. ABRUÑA BATALLA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  26,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MARTI BARRULL - A. VIANA MARTINEZ",
+                              "jugadores":  [
+                                                "A. MARTI BARRULL",
+                                                "A. VIANA MARTINEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  27,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  28,
+                              "tipo":  "pareja",
+                              "nombre":  "L. INIESTA SANCHEZ - M. AZORIN GUIJON",
+                              "jugadores":  [
+                                                "L. INIESTA SANCHEZ",
+                                                "M. AZORIN GUIJON"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  29,
+                              "tipo":  "pareja",
+                              "nombre":  "C. SALVADOR MIERA - S. GARCIA ARRUTI",
+                              "jugadores":  [
+                                                "C. SALVADOR MIERA",
+                                                "S. GARCIA ARRUTI"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  30,
+                              "tipo":  "pareja",
+                              "nombre":  "B. SANTOS CARPINTERO - I. SANTOS CARPINTERO",
+                              "jugadores":  [
+                                                "B. SANTOS CARPINTERO",
+                                                "I. SANTOS CARPINTERO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  31,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  32,
+                              "tipo":  "pareja",
+                              "nombre":  "N. SAUTU SAINZ - E. SAEZ DE CASTILLO IBERNIA",
+                              "jugadores":  [
+                                                "N. SAUTU SAINZ",
+                                                "E. SAEZ DE CASTILLO IBERNIA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "P. JUEZ GARCIA - I. SERRANO HERRERA",
+                              "jugadores":  [
+                                                "P. JUEZ GARCIA",
+                                                "I. SERRANO HERRERA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "J. VALLADARES ROMERO - C. GARRIDO RUIZ",
+                              "jugadores":  [
+                                                "J. VALLADARES ROMERO",
+                                                "C. GARRIDO RUIZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "C. FERRER FUSTER - P. PORTILLO CALLE",
+                              "jugadores":  [
+                                                "C. FERRER FUSTER",
+                                                "P. PORTILLO CALLE"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "S. GARCIA MEDINA - V. CASANOVA CARRATALA",
+                              "jugadores":  [
+                                                "S. GARCIA MEDINA",
+                                                "V. CASANOVA CARRATALA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MIGUEL GARCIA - C. DEL OLMO ROSSIÑOL",
+                              "jugadores":  [
+                                                "A. MIGUEL GARCIA",
+                                                "C. DEL OLMO ROSSIÑOL"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "C. PEREZ RAMIREZ - M. ROMERO DE AVILA PARRA",
+                              "jugadores":  [
+                                                "C. PEREZ RAMIREZ",
+                                                "M. ROMERO DE AVILA PARRA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "P. SANCHEZ REY - C. SANCHEZ RUIZ",
+                              "jugadores":  [
+                                                "P. SANCHEZ REY",
+                                                "C. SANCHEZ RUIZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "F. RIBEIRO GUIMARAES - D. FERREIRA GALLEGO",
+                              "jugadores":  [
+                                                "F. RIBEIRO GUIMARAES",
+                                                "D. FERREIRA GALLEGO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  9,
+                              "tipo":  "pareja",
+                              "nombre":  "D. LOZANO GONZALEZ - V. GARCIA ARNANZ",
+                              "jugadores":  [
+                                                "D. LOZANO GONZALEZ",
+                                                "V. GARCIA ARNANZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  10,
+                              "tipo":  "pareja",
+                              "nombre":  "P. BLECUA ESCOT - M. MONTES DIAZ",
+                              "jugadores":  [
+                                                "P. BLECUA ESCOT",
+                                                "M. MONTES DIAZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  11,
+                              "tipo":  "pareja",
+                              "nombre":  "N. CESTERO PEREZ - C. NADAL RIVERA",
+                              "jugadores":  [
+                                                "N. CESTERO PEREZ",
+                                                "C. NADAL RIVERA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  12,
+                              "tipo":  "pareja",
+                              "nombre":  "I. CASTRO PEREZ - M. CAMILO ESCUDERO",
+                              "jugadores":  [
+                                                "I. CASTRO PEREZ",
+                                                "M. CAMILO ESCUDERO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  13,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MARTI BARRULL - A. VIANA MARTINEZ",
+                              "jugadores":  [
+                                                "A. MARTI BARRULL",
+                                                "A. VIANA MARTINEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  14,
+                              "tipo":  "pareja",
+                              "nombre":  "L. INIESTA SANCHEZ - M. AZORIN GUIJON",
+                              "jugadores":  [
+                                                "L. INIESTA SANCHEZ",
+                                                "M. AZORIN GUIJON"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  15,
+                              "tipo":  "pareja",
+                              "nombre":  "C. SALVADOR MIERA - S. GARCIA ARRUTI",
+                              "jugadores":  [
+                                                "C. SALVADOR MIERA",
+                                                "S. GARCIA ARRUTI"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  16,
+                              "tipo":  "pareja",
+                              "nombre":  "N. SAUTU SAINZ - E. SAEZ DE CASTILLO IBERNIA",
+                              "jugadores":  [
+                                                "N. SAUTU SAINZ",
+                                                "E. SAEZ DE CASTILLO IBERNIA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "P. JUEZ GARCIA - I. SERRANO HERRERA",
+                              "jugadores":  [
+                                                "P. JUEZ GARCIA",
+                                                "I. SERRANO HERRERA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "S. GARCIA MEDINA - V. CASANOVA CARRATALA",
+                              "jugadores":  [
+                                                "S. GARCIA MEDINA",
+                                                "V. CASANOVA CARRATALA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MIGUEL GARCIA - C. DEL OLMO ROSSIÑOL",
+                              "jugadores":  [
+                                                "A. MIGUEL GARCIA",
+                                                "C. DEL OLMO ROSSIÑOL"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "F. RIBEIRO GUIMARAES - D. FERREIRA GALLEGO",
+                              "jugadores":  [
+                                                "F. RIBEIRO GUIMARAES",
+                                                "D. FERREIRA GALLEGO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "P. BLECUA ESCOT - M. MONTES DIAZ",
+                              "jugadores":  [
+                                                "P. BLECUA ESCOT",
+                                                "M. MONTES DIAZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "I. CASTRO PEREZ - M. CAMILO ESCUDERO",
+                              "jugadores":  [
+                                                "I. CASTRO PEREZ",
+                                                "M. CAMILO ESCUDERO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "L. INIESTA SANCHEZ - M. AZORIN GUIJON",
+                              "jugadores":  [
+                                                "L. INIESTA SANCHEZ",
+                                                "M. AZORIN GUIJON"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "C. SALVADOR MIERA - S. GARCIA ARRUTI",
+                              "jugadores":  [
+                                                "C. SALVADOR MIERA",
+                                                "S. GARCIA ARRUTI"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "P. JUEZ GARCIA - I. SERRANO HERRERA",
+                              "jugadores":  [
+                                                "P. JUEZ GARCIA",
+                                                "I. SERRANO HERRERA"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MIGUEL GARCIA - C. DEL OLMO ROSSIÑOL",
+                              "jugadores":  [
+                                                "A. MIGUEL GARCIA",
+                                                "C. DEL OLMO ROSSIÑOL"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "I. CASTRO PEREZ - M. CAMILO ESCUDERO",
+                              "jugadores":  [
+                                                "I. CASTRO PEREZ",
+                                                "M. CAMILO ESCUDERO"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "L. INIESTA SANCHEZ - M. AZORIN GUIJON",
+                              "jugadores":  [
+                                                "L. INIESTA SANCHEZ",
+                                                "M. AZORIN GUIJON"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "P. JUEZ GARCIA - I. SERRANO HERRERA",
+                              "jugadores":  [
+                                                "P. JUEZ GARCIA",
+                                                "I. SERRANO HERRERA"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "L. INIESTA SANCHEZ - M. AZORIN GUIJON",
+                              "jugadores":  [
+                                                "L. INIESTA SANCHEZ",
+                                                "M. AZORIN GUIJON"
+                                            ]
+                          }
+                      ],
+    "partidos":  [
+                     {
+                         "avance":  5,
+                         "posicion":  4,
+                         "resultado":  "2/4-5/4-10/5",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  6,
+                         "resultado":  "5/3-4/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  8,
+                         "resultado":  "4/0-4/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  9,
+                         "resultado":  "3/5-4/1-12/10",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  11,
+                         "resultado":  "5/3-4/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  13,
+                         "resultado":  "2/4-4/0-10/8",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  15,
+                         "resultado":  "4/1-4/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  1,
+                         "resultado":  "5/3-4/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  2,
+                         "resultado":  "4/2-2/4-10/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  3,
+                         "resultado":  "2/4-4/2-10/8",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  4,
+                         "resultado":  "5/3-4/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  5,
+                         "resultado":  "4/1-4/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  6,
+                         "resultado":  "4/2-4/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  7,
+                         "resultado":  "4/0-4/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  8,
+                         "resultado":  "4/0-4/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  1,
+                         "resultado":  "4/0-4/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  2,
+                         "resultado":  "0/4-5/3-10/7",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  3,
+                         "resultado":  "5/4-1/4-10/7",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  4,
+                         "resultado":  "4/1-4/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  1,
+                         "resultado":  "6/2-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  2,
+                         "resultado":  "6/0-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  1,
+                         "posicion":  1,
+                         "resultado":  null,
+                         "horario":  {
+                                         "dia":  null,
+                                         "lugar":  null,
+                                         "obs":  "BAMVOLEA-Domingo 30 Agosto - 09:00"
+                                     },
+                         "enfrentamiento":  false
+                     }
+                 ],
+    "cabezasSerie":  [
+
+                     ],
+    "clasificacion":  [
+
+                      ],
+    "otrosCuadros":  [
+                         {
+                             "genero":  "M",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ALEVIN",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ALEVIN",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ALEVIN",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ALEVIN",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "ALEVIN",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "INFANTIL",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "INFANTIL",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "INFANTIL",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "INFANTIL",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "INFANTIL",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "CADETE",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "CADETE",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "CADETE",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "CADETE",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "JUNIOR",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "JUNIOR",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "JUNIOR",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "JUNIOR",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "JUNIOR",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "BENJAMIN",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ALEVIN",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ALEVIN",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ALEVIN",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ALEVIN",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "ALEVIN",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "INFANTIL",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "INFANTIL",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "INFANTIL",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "INFANTIL",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "INFANTIL",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "CADETE",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "CADETE",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "CADETE",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "CADETE",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "CADETE",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "JUNIOR",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "JUNIOR",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "JUNIOR",
+                             "nivel":  21,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "JUNIOR",
+                             "nivel":  31,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "JUNIOR",
+                             "nivel":  31,
+                             "cuadro":  "Consola"
+                         }
+                     ]
+}

@@ -1,0 +1,495 @@
+{
+    "id":  28909,
+    "anio":  2026,
+    "titulo":  "XXXIX CAMPEONATO DE ESPAÑA DE MENORES - Trofeo BABOLAT",
+    "categoria":  "menores",
+    "seleccion":  false,
+    "fechaInicio":  "2026-08-24",
+    "fechaFin":  "2026-08-30",
+    "ciudad":  "Massanassa",
+    "sedes":  [
+                  {
+                      "nombre":  "SUMA PADEL ALFAFAR",
+                      "web":  null,
+                      "latitud":  null,
+                      "longitud":  null
+                  },
+                  {
+                      "nombre":  "BAMVOLEA SPORTCITY MASSANASSA",
+                      "web":  null,
+                      "latitud":  null,
+                      "longitud":  null
+                  }
+              ],
+    "cuotas":  [
+
+               ],
+    "generos":  [
+                    {
+                        "genero":  "masculino",
+                        "categorias":  [
+                                           "BENJAMIN",
+                                           "ALEVIN",
+                                           "INFANTIL",
+                                           "CADETE",
+                                           "JUNIOR"
+                                       ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categorias":  [
+                                           "BENJAMIN",
+                                           "ALEVIN",
+                                           "INFANTIL",
+                                           "CADETE",
+                                           "JUNIOR"
+                                       ]
+                    }
+                ],
+    "notaPrensaHtml":  null,
+    "marcadores":  [
+
+                   ],
+    "cuadrosPublicados":  true,
+    "cuadros":  [
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "BENJAMIN",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=1\u0026Cat=BENJAMIN\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=1\u0026Cat=BENJAMIN\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=21\u0026Cat=BENJAMIN\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=31\u0026Cat=BENJAMIN\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro Consolación Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=31\u0026Cat=BENJAMIN\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "ALEVIN",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=1\u0026Cat=ALEVIN\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=1\u0026Cat=ALEVIN\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=21\u0026Cat=ALEVIN\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=31\u0026Cat=ALEVIN\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro Consolación Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=31\u0026Cat=ALEVIN\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "INFANTIL",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=1\u0026Cat=INFANTIL\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=1\u0026Cat=INFANTIL\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=21\u0026Cat=INFANTIL\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=31\u0026Cat=INFANTIL\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro Consolación Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=31\u0026Cat=INFANTIL\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "CADETE",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=1\u0026Cat=CADETE\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=1\u0026Cat=CADETE\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=21\u0026Cat=CADETE\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=31\u0026Cat=CADETE\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro Consolación Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=31\u0026Cat=CADETE\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "JUNIOR",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=1\u0026Cat=JUNIOR\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=1\u0026Cat=JUNIOR\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=21\u0026Cat=JUNIOR\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=31\u0026Cat=JUNIOR\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro Consolación Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=M\u0026Nivel=31\u0026Cat=JUNIOR\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "BENJAMIN",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=1\u0026Cat=BENJAMIN\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=1\u0026Cat=BENJAMIN\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "ALEVIN",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=1\u0026Cat=ALEVIN\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=1\u0026Cat=ALEVIN\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=21\u0026Cat=ALEVIN\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=31\u0026Cat=ALEVIN\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro Consolación Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=31\u0026Cat=ALEVIN\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "INFANTIL",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=1\u0026Cat=INFANTIL\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=1\u0026Cat=INFANTIL\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=21\u0026Cat=INFANTIL\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=31\u0026Cat=INFANTIL\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro Consolación Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=31\u0026Cat=INFANTIL\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "CADETE",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=1\u0026Cat=CADETE\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=1\u0026Cat=CADETE\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=21\u0026Cat=CADETE\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=31\u0026Cat=CADETE\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro Consolación Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=31\u0026Cat=CADETE\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "JUNIOR",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=1\u0026Cat=JUNIOR\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=1\u0026Cat=JUNIOR\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=21\u0026Cat=JUNIOR\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=31\u0026Cat=JUNIOR\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro Consolación Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=28909\u0026Genero=F\u0026Nivel=31\u0026Cat=JUNIOR\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    }
+                ],
+    "cuadroHonor":  [
+
+                    ],
+    "notificacionesHtml":  "\u003cbr\u003e\r\n                                  \u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\tFECHAS: 24 al 30 de agosto de 2026\u003c/p\u003e\r\n\u003cp\u003e\r\n\tSEDE: SPORTCITY MASSANASSA, Massanassa (Valencia)\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003eSISTEMA DE COMPETICI\u0026Oacute;N:\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\tEl Campeonato de Espa\u0026ntilde;a de Menores, reservado para las categor\u0026iacute;as benjam\u0026iacute;n, alev\u0026iacute;n, infantil, cadete y junior, se disputa como una competici\u0026oacute;n de cuadro abierto con las siguientes particularidades:\u003c/p\u003e\r\n\u003col\u003e\r\n\t\u003cli\u003e\r\n\t\tEl cuadro final ser\u0026aacute; de 32 parejas y lo componen las 24 parejas con mejor ranking m\u0026aacute;s 8 provenientes de la fase previa.\u003c/li\u003e\r\n\t\u003cli\u003e\r\n\t\tLas parejas 25 a 32 (seg\u0026uacute;n el mismo criterio que el punto 1) disputan la fase previa. Estas ocho parejas ser\u0026aacute;n cabezas de serie y se colocar\u0026aacute;n de la siguiente forma: la una y la dos fijas, tres y cuatro sorteadas entre s\u0026iacute;; 5, 6, 7 y 8, tambi\u0026eacute;n sorteadas entre s\u0026iacute;.\u003c/li\u003e\r\n\t\u003cli\u003e\r\n\t\tLas 8 parejas cuartofinalistas de la fase previa se clasifican para cuadro final.\u003c/li\u003e\r\n\t\u003cli\u003e\r\n\t\tEl resto de parejas se incorporan al cuadro de pre previa.\u003c/li\u003e\r\n\t\u003cli\u003e\r\n\t\tLas ocho parejas cuartofinalistas de la fase pre-previa se incorporan a la fase previa, sorteando sus posiciones en las posiciones libres de dicho cuadro. Se disputar\u0026aacute; el tercer y cuarto puesto del cuadro final.\u003c/li\u003e\r\n\u003c/ol\u003e\r\n\u003cp\u003e\r\n\tLa prueba de consolaci\u0026oacute;n del cuadro final la disputar\u0026aacute;n, adem\u0026aacute;s de las parejas de dicho cuadro, aquellas que perdieran en 1\u0026ordf; ronda de la fase previa.\u003c/p\u003e\r\n\u003cp\u003e\r\n\tLos cuadros de esta consolaci\u0026oacute;n de fase final se confeccionar\u0026aacute;n de la siguiente forma:\u003c/p\u003e\r\n\u003cul\u003e\r\n\t\u003cli\u003e\r\n\t\tLos 8 perdedores de 1\u0026ordf; ronda de cuadro final de las eliminatorias que incluyen a los 8 primeros cabezas de serie aparecen en formato espejo en la ronda de octavos de final.\u003c/li\u003e\r\n\t\u003cli\u003e\r\n\t\tLos 8 restantes perdedores de 1\u0026ordf; ronda de cuadro final se enfrentan en formato espejo, en la ronda de dieciseisavos de final contra los perdedores de 1\u0026ordf; ronda del cuadro de fase previa.\u003c/li\u003e\r\n\u003c/ul\u003e\r\n\u003cp\u003e\r\n\tSe disputar\u0026aacute; tambi\u0026eacute;n la prueba de consolaci\u0026oacute;n de la fase pre previa, que se confeccionar\u0026aacute; con el formato espejo. Las parejas que teniendo derecho deseen jugarla, deber\u0026aacute;n comunic\u0026aacute;rselo al juez \u0026aacute;rbitro Principal en el plazo m\u0026aacute;ximo de treinta minutos a partir del final de su encuentro.\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cu\u003eDeportistas sin nacionalidad espa\u0026ntilde;ola.\u003c/u\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\tEl Reglamento T\u0026eacute;cnico General indica que\u0026nbsp;\u003cem\u003e\u0026quot;Es requisito indispensable ser espa\u0026ntilde;ol o, en caso de no serlo, ser residente legal en Espa\u0026ntilde;a para poder participar en los campeonatos de Espa\u0026ntilde;a.\u0026quot;\u003c/em\u003e\u0026nbsp;Cualquier jugador/a que no ostente la nacionalidad espa\u0026ntilde;ola, deber\u0026aacute; dirigirse a la FEP para comprobar que est\u0026aacute; registrada su documentaci\u0026oacute;n correspondiente (copia del NIE en vigor o documentaci\u0026oacute;n como Ciudadano Comunitario Residente Permanente en nuestro pa\u0026iacute;s).\u003c/p\u003e\r\n\u003cp\u003e\r\n\tEl sistema de inscripci\u0026oacute;n podr\u0026aacute; informar sobre la imposibilidad de hacer el tr\u0026aacute;mite si no se ha cumplido previamente con este requisito.\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cbr /\u003e\r\n\t\u003cu\u003ePRESENCIA DE ENTRENADOR/COACH.\u003c/u\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\tLos/las jugadores/as pueden solicitar la asistencia de su entrenador durante la competici\u0026oacute;n al formalizar la inscripci\u0026oacute;n. Para ello, es obligatorio incluir el n\u0026uacute;mero de licencia del t\u0026eacute;cnico. Solo se aceptar\u0026aacute;n solicitudes de entrenadores inscritos en el Registro Nacional de T\u0026eacute;cnicos y con licencia vigente tramitada por su Federaci\u0026oacute;n Auton\u0026oacute;mica.\u003c/p\u003e\r\n\u003cp\u003e\r\n\tNo se aceptar\u0026aacute;n solicitudes una vez cerrado el plazo de inscripci\u0026oacute;n.\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\tToda la informaci\u0026oacute;n de inter\u0026eacute;s para los participantes se publicar\u0026aacute; en la p\u0026aacute;gina web oficial de la competici\u0026oacute;n.\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp style=\"text-align: center;\"\u003e\r\n\t\u003cspan style=\"font-size:14px;\"\u003ePara dudas/incidencias: \u003ca href=\"mailto:competicion@padelfederacion.es\"\u003ecompeticion@padelfederacion.es\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\tHOTELES CONCERTADOS\u003c/p\u003e\r\n\u003cbr\u003e\r\n                                    \r\n\u003cdiv class=\"archivosadjuntos\"\u003e\r\n           \t  \u003ca href=\"http://padelfederacion.es/Paginas/Torneos/2026/Hoteles concertados BCD.pdf\" target=\"_blank\"\u003e\u003cimg src=\"img/iconopdf.jpg\" height=\"35\" align=\"baseline\"\u003e\u003c/a\u003eOFERTA HOTELERA\u003c/div\u003e\r\n\r\n\u003cdiv class=\"archivosadjuntos\"\u003e\r\n           \t  \u003ca href=\"http://padelfederacion.es/Paginas/Torneos/2026/CIRCULAR 09.2026-SG.pdf\" target=\"_blank\"\u003e\u003cimg src=\"img/iconopdf.jpg\" height=\"35\" align=\"baseline\"\u003e\u003c/a\u003eCIRCULAR 09.2026-SG\u003c/div\u003e\r\n\u003cbr\u003e\r\n\r\n                                      \t\u003cdiv class=\"divider\"\u003e\u003c/div\u003e",
+    "adjuntos":  [
+                     {
+                         "titulo":  "Hoteles concertados BCD",
+                         "tipo":  null,
+                         "archivo":  "Hoteles concertados BCD.pdf",
+                         "url":  "http://padelfederacion.es/Paginas/Torneos/2026/Hoteles%20concertados%20BCD.pdf"
+                     },
+                     {
+                         "titulo":  "CIRCULAR 09.2026-SG",
+                         "tipo":  null,
+                         "archivo":  "CIRCULAR 09.2026-SG.pdf",
+                         "url":  "http://padelfederacion.es/Paginas/Torneos/2026/CIRCULAR%2009.2026-SG.pdf"
+                     }
+                 ],
+    "inscritosParejas":  [
+                             {
+                                 "genero":  "masculino",
+                                 "parejas":  446,
+                                 "url":  "http://circuitomenores.padelfederacion.es/Parejas-Inscritas?IdTorneo=28909"
+                             },
+                             {
+                                 "genero":  "femenino",
+                                 "parejas":  279,
+                                 "url":  "http://circuitomenores.padelfederacion.es/Parejas-Inscritas?IdTorneo=28909"
+                             }
+                         ],
+    "entrenadores":  {
+                         "numero":  null,
+                         "url":  "http://circuitomenores.padelfederacion.es/Coach-Inscritos?IdTorneo=28909"
+                     },
+    "inscripcion":  {
+                        "abierta":  false,
+                        "fechaLimite":  null,
+                        "individual":  false,
+                        "informacionHtml":  null,
+                        "condicionesHtml":  null,
+                        "formularioUrl":  "http://circuitomenores.padelfederacion.es/Campeonato?IdTorneo=28909"
+                    },
+    "infoAdicionalHtml":  null,
+    "cartel":  null,
+    "cartelUrl":  null,
+    "noticias":  [
+
+                 ],
+    "urlWebActual":  "http://circuitomenores.padelfederacion.es/Campeonato?IdTorneo=28909",
+    "consultado":  "2026-11-25T16:37:48"
+}

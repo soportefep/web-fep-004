@@ -1,0 +1,334 @@
+{
+    "torneo":  {
+                   "id":  28909,
+                   "titulo":  "XXXIX CAMPEONATO DE ESPAÑA DE MENORES - Trofeo BABOLAT",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2026-08-24",
+                   "fechaFin":  "2026-08-30",
+                   "lugar":  "Massanassa"
+               },
+    "cuadros":  [
+                    {
+                        "genero":  "M",
+                        "categoria":  "BENJAMIN",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "BENJAMIN",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "BENJAMIN",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "BENJAMIN",
+                        "nivel":  31,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "BENJAMIN",
+                        "nivel":  31,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "ALEVIN",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "ALEVIN",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "ALEVIN",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "ALEVIN",
+                        "nivel":  31,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "ALEVIN",
+                        "nivel":  31,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "INFANTIL",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "INFANTIL",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "INFANTIL",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "INFANTIL",
+                        "nivel":  31,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "INFANTIL",
+                        "nivel":  31,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "CADETE",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "CADETE",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "CADETE",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "CADETE",
+                        "nivel":  31,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "JUNIOR",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "JUNIOR",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "JUNIOR",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "JUNIOR",
+                        "nivel":  31,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "M",
+                        "categoria":  "JUNIOR",
+                        "nivel":  31,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "BENJAMIN",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "BENJAMIN",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "ALEVIN",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "ALEVIN",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "ALEVIN",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "ALEVIN",
+                        "nivel":  31,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "ALEVIN",
+                        "nivel":  31,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "INFANTIL",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "INFANTIL",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "INFANTIL",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "INFANTIL",
+                        "nivel":  31,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "INFANTIL",
+                        "nivel":  31,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "CADETE",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "CADETE",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "CADETE",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "CADETE",
+                        "nivel":  31,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "CADETE",
+                        "nivel":  31,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "JUNIOR",
+                        "nivel":  1,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "JUNIOR",
+                        "nivel":  1,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "JUNIOR",
+                        "nivel":  21,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "JUNIOR",
+                        "nivel":  31,
+                        "cuadro":  "Final",
+                        "publicado":  true
+                    },
+                    {
+                        "genero":  "F",
+                        "categoria":  "JUNIOR",
+                        "nivel":  31,
+                        "cuadro":  "Consola",
+                        "publicado":  true
+                    }
+                ]
+}
