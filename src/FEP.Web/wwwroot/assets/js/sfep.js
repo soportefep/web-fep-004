@@ -430,43 +430,11 @@ function vistaInicio() {
     return el('li', {}, r.modulo && acceso(usuario, r.modulo) === 'si' ? el('a', { class: 'sfep-kpi', href: `#${r.ruta ?? `m/${r.modulo}`}` }, ...dentro) : el('div', { class: 'sfep-kpi' }, ...dentro));
   })) : null;
 
-  // Avisos del checklist de eventos
-  const avisos = (usuario.avisos ?? []).slice().sort((a, b) => aFecha(a.fechaTope) - aFecha(b.fechaTope));
-  const panelAvisos = el('section', { class: 'sfep-panel', 'aria-labelledby': 'sfep-avisos-t' },
-    el('header', { class: 'sfep-panel__cab' }, el('h2', { id: 'sfep-avisos-t', text: 'Avisos del checklist' }),
-      acceso(usuario, 'eventos') === 'si' ? el('a', { class: 'sfep-panel__link', href: '#m/eventos' }, 'Eventos →') : null),
-    avisos.length ? el('ul', { class: 'sfep-avisos' }, ...avisos.map((a) => {
-      const f = aFecha(a.fechaTope);
-      const dias = Math.round((f - hoy) / 864e5);
-      const estado = dias < 0 ? ['vencido', `Vencido hace ${-dias} ${-dias === 1 ? 'día' : 'días'}`] : dias === 0 ? ['hoy', 'Vence hoy'] : dias <= 3 ? ['pronto', `Vence en ${dias} ${dias === 1 ? 'día' : 'días'}`] : ['ok', `Vence el ${fmtDia.format(f)}`];
-      return el('li', { class: `sfep-aviso sfep-aviso--${estado[0]}` },
-        el('span', { class: 'sfep-aviso__estado', text: estado[1] }),
-        el('strong', { class: 'sfep-aviso__tarea', text: a.tarea }),
-        el('span', { class: 'sfep-aviso__evento', text: a.evento }));
-    })) : el('p', { class: 'sfep-vacio', text: 'No tienes tareas del checklist pendientes.' }));
+  // Próximos torneos (calendario de competición de la FEP: misma fuente que la web, /api/v1/competicion/calendario)
+  const panelTorneos = panelProximosTorneos(hoy);
 
-  // Notas sin leer
-  const listaNotas = el('ul', { class: 'sfep-notas' });
-  const pintarNotas = () => {
-    const pend = notasPendientes();
-    listaNotas.replaceChildren(...(pend.length ? pend.map((n) => {
-      const f = aFecha(n.fecha);
-      return el('li', { class: 'sfep-nota' },
-        el('p', { class: 'sfep-nota__meta' }, el('time', { datetime: n.fecha, text: f ? `${fmtDia.format(f)} · ${fmtHora.format(f)}` : '' }), ` · ${n.autor}`),
-        el('p', { class: 'sfep-nota__texto', text: n.texto }),
-        el('button', { type: 'button', class: 'sfep-btn sfep-btn--sec sfep-btn--sm', onclick: () => {
-          notasLeidas.add(n.id); pintarNotas(); actualizarCampana(); toast('Nota marcada como leída.');
-          const b = $('[data-pend="notas"]'); const quedan = notasPendientes().length;
-          if (b) { if (quedan) b.firstChild.textContent = String(quedan); else b.remove(); }
-          $('#sfep-notas-t').focus();
-        } }, 'Marcar como leída'));
-    }) : [el('li', { class: 'sfep-vacio', text: 'No tienes notas sin leer.' })]));
-  };
-  pintarNotas();
-  const panelNotas = el('section', { class: 'sfep-panel', id: 'sfep-panel-notas', 'aria-labelledby': 'sfep-notas-t' },
-    el('header', { class: 'sfep-panel__cab' }, el('h2', { id: 'sfep-notas-t', tabindex: '-1', text: 'Notas sin leer' }),
-      acceso(usuario, 'notas') === 'si' ? el('a', { class: 'sfep-panel__link', href: '#m/notas' }, 'Notas internas →') : null),
-    listaNotas);
+  // Horario laboral: fichaje del día (entrada y salida) y horas de hoy y de la semana
+  const panelHorario = panelHorarioLaboral();
 
   // Menú Gestión: todos los módulos como iconos, en el mismo orden que el SFEP de siempre (Index.asp),
   // coloreados por área, con buscador (barra superior), filtro por área y ☆ para favoritos.
@@ -523,11 +491,134 @@ function vistaInicio() {
     el('div', { class: 'sfep-personal', id: 'sfep-favs' }, ...bloqueFavoritos()),
     // Inicio = todos los módulos como iconos (el menú lateral solo aparece dentro de un módulo)
     el('section', { class: 'sfep-menu sfep-menu--iconos', 'aria-labelledby': 'sfep-titulo' }, lista, sinRes),
-    // Debajo del menú: secciones elegidas, cifras, avisos y notas
+    // Debajo del menú: secciones elegidas, cifras, próximos torneos y horario laboral
     el('div', { class: 'sfep-personal', id: 'sfep-secs' }, ...bloqueSecciones()),
     cifras,
-    el('div', { class: 'sfep-dos' }, panelAvisos, panelNotas),
+    el('div', { class: 'sfep-dos' }, panelTorneos, panelHorario),
   ];
+}
+
+/* ---------------------------------------------------------------------------
+   Inicio · Próximos torneos
+   --------------------------------------------------------------------------- */
+const MAX_TORNEOS = 5;
+
+function panelProximosTorneos(hoy) {
+  const lista = el('ul', { class: 'sfep-torneos' }, el('li', { class: 'sfep-vacio', text: 'Cargando calendario…' }));
+  const enlace = acceso(usuario, 'torneos') === 'si'
+    ? el('a', { class: 'sfep-panel__link', href: '#m/torneos' }, 'Torneos →')
+    : el('a', { class: 'sfep-panel__link', href: 'calendariofep.html' }, 'Calendario →');
+  const panel = el('section', { class: 'sfep-panel', 'aria-labelledby': 'sfep-torneos-t' },
+    el('header', { class: 'sfep-panel__cab' }, el('h2', { id: 'sfep-torneos-t', text: 'Próximos torneos' }), enlace),
+    lista);
+
+  window.FEPApi.get('/api/v1/competicion/calendario').then((datos) => {
+    const items = (datos?.items ?? window.FEPApi.comoLista(datos))
+      .filter((t) => t.fechaInicio && !t.fechaPorConfirmar && aFecha(t.fechaFin || t.fechaInicio) >= hoy)
+      .sort((a, b) => aFecha(a.fechaInicio) - aFecha(b.fechaInicio))
+      .slice(0, MAX_TORNEOS);
+    if (!items.length) { lista.replaceChildren(el('li', { class: 'sfep-vacio', text: 'No hay torneos con fecha confirmada.' })); return; }
+    lista.replaceChildren(...items.map((t) => {
+      const ini = aFecha(t.fechaInicio);
+      const fin = aFecha(t.fechaFin || t.fechaInicio);
+      const dias = Math.round((ini - hoy) / 864e5);
+      const cuando = dias <= 0 ? 'En juego' : dias === 1 ? 'Mañana' : `En ${dias} días`;
+      const rango = +ini === +fin ? fmtDia.format(ini) : `${fmtDia.format(ini)} – ${fmtDia.format(fin)}`;
+      return el('li', { class: `sfep-torneo${dias <= 0 ? ' is-en-juego' : dias <= 7 ? ' is-pronto' : ''}` },
+        el('span', { class: 'sfep-torneo__fecha' }, el('time', { datetime: t.fechaInicio, text: rango }), el('span', { class: 'sfep-torneo__cuando', text: cuando })),
+        el('strong', { class: 'sfep-torneo__titulo', text: t.titulo }),
+        el('span', { class: 'sfep-torneo__meta', text: [t.categoria, t.sede].filter(Boolean).join(' · ') }));
+    }));
+  }).catch((e) => {
+    console.warn('[SFEP] calendario', e);
+    lista.replaceChildren(el('li', { class: 'sfep-vacio', text: 'No se ha podido cargar el calendario.' }));
+  });
+  return panel;
+}
+
+/* ---------------------------------------------------------------------------
+   Inicio · Horario laboral (fichaje del día)
+   PROTOTIPO: los fichajes se guardan en este navegador (localStorage), por usuario.
+   En producción irán al módulo Control horario (registro de jornada) de la API.
+   --------------------------------------------------------------------------- */
+const CLAVE_FICHAJES = 'sfep-fichajes';
+const fmtDiaSemana = new Intl.DateTimeFormat('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+
+function panelHorarioLaboral() {
+  const conAcceso = acceso(usuario, 'horario') === 'si';
+  const panel = el('section', { class: 'sfep-panel sfep-horario', 'aria-labelledby': 'sfep-horario-t' },
+    el('header', { class: 'sfep-panel__cab' }, el('h2', { id: 'sfep-horario-t', text: 'Horario laboral' }),
+      conAcceso ? el('a', { class: 'sfep-panel__link', href: '#m/horario' }, 'Control horario →') : null));
+  if (!conAcceso) {
+    panel.append(el('p', { class: 'sfep-vacio', text: 'Tu usuario no tiene registro de jornada en SFEP.' }));
+    return panel;
+  }
+
+  const clave = `${CLAVE_FICHAJES}:${usuario.id}`;
+  const leerF = () => { try { return JSON.parse(localStorage.getItem(clave) || '[]'); } catch { return []; } };
+  const guardarF = (v) => { try { localStorage.setItem(clave, JSON.stringify(v)); return true; } catch { return false; } };
+  // Día local (no UTC), para que un fichaje cerca de medianoche cuente en su día
+  const diaDe = (d) => `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+  const lunes = (d) => { const x = new Date(d); x.setHours(0, 0, 0, 0); x.setDate(x.getDate() - ((x.getDay() + 6) % 7)); return x; };
+  const durTexto = (ms) => { const m = Math.max(0, Math.round(ms / 6e4)); return `${Math.floor(m / 60)} h ${String(m % 60).padStart(2, '0')} min`; };
+  /** Tramos {entrada, salida|null}; un tramo sin salida está abierto (fichado y trabajando). */
+  const horas = (tramos, desde, hasta = new Date()) => tramos.reduce((t, x) => {
+    const e = new Date(x.entrada); const s = x.salida ? new Date(x.salida) : hasta;
+    const a = Math.max(+e, +desde); const b = Math.min(+s, +hasta);
+    return t + Math.max(0, b - a);
+  }, 0);
+
+  const hoyTxt = el('p', { class: 'sfep-horario__hoy' });
+  const estado = el('p', { class: 'sfep-horario__estado', role: 'status' });
+  const tramosHoy = el('ul', { class: 'sfep-horario__tramos', 'aria-label': 'Fichajes de hoy' });
+  const totalHoy = el('strong', { class: 'sfep-horario__n' });
+  const totalSemana = el('strong', { class: 'sfep-horario__n' });
+  const boton = el('button', { type: 'button', class: 'sfep-btn sfep-btn--rojo sfep-horario__fichar' });
+
+  const pintar = () => {
+    const ahora = new Date();
+    const tramos = leerF();
+    const abierto = tramos.find((x) => !x.salida);
+    const deHoy = tramos.filter((x) => diaDe(new Date(x.entrada)) === diaDe(ahora));
+    const inicioHoy = new Date(ahora); inicioHoy.setHours(0, 0, 0, 0);
+    hoyTxt.textContent = fmtDiaSemana.format(ahora);
+    estado.textContent = abierto ? `Trabajando desde las ${fmtHora.format(new Date(abierto.entrada))}` : 'Fuera de la jornada';
+    estado.classList.toggle('is-dentro', !!abierto);
+    boton.textContent = abierto ? 'Fichar salida' : 'Fichar entrada';
+    totalHoy.textContent = durTexto(horas(tramos, inicioHoy, ahora));
+    totalSemana.textContent = durTexto(horas(tramos, lunes(ahora), ahora));
+    tramosHoy.replaceChildren(...(deHoy.length ? deHoy.map((x) => el('li', {},
+      el('span', { text: `Entrada ${fmtHora.format(new Date(x.entrada))}` }),
+      el('span', { text: x.salida ? `Salida ${fmtHora.format(new Date(x.salida))}` : 'En curso' }))) : [el('li', { class: 'sfep-vacio', text: 'Todavía no has fichado hoy.' })]));
+  };
+
+  boton.addEventListener('click', () => {
+    const tramos = leerF();
+    const abierto = tramos.find((x) => !x.salida);
+    const ahora = new Date().toISOString();
+    if (abierto) abierto.salida = ahora; else tramos.push({ entrada: ahora, salida: null });
+    // Se guardan como mucho los últimos 60 días
+    const limite = Date.now() - 60 * 864e5;
+    toast(guardarF(tramos.filter((x) => +new Date(x.entrada) >= limite))
+      ? (abierto ? 'Salida registrada.' : 'Entrada registrada.')
+      : 'No se ha podido guardar el fichaje en este navegador.', { demo: false });
+    pintar();
+    boton.focus();
+  });
+
+  pintar();
+  // Mientras está abierto el inicio, el contador avanza solo (cada minuto)
+  const reloj = setInterval(() => { if (!panel.isConnected) clearInterval(reloj); else pintar(); }, 60000);
+
+  panel.append(el('div', { class: 'sfep-horario__cuerpo' },
+    el('div', { class: 'sfep-horario__cab' }, hoyTxt, estado),
+    el('dl', { class: 'sfep-horario__cifras' },
+      el('div', {}, el('dt', { text: 'Hoy' }), el('dd', {}, totalHoy)),
+      el('div', {}, el('dt', { text: 'Esta semana' }), el('dd', {}, totalSemana))),
+    boton,
+    tramosHoy,
+    el('p', { class: 'sfep-horario__nota', text: 'Prototipo: los fichajes se guardan solo en este navegador.' })));
+  return panel;
 }
 
 /** Orden del Menú Gestión del SFEP actual. "Calendario" ocupa el sitio de "Portal web" para quien no tiene portal. */
@@ -601,9 +692,8 @@ function mostrar({ enfocar = true } = {}) {
   document.title = `${m ? `${m.nombre} · ` : ''}SFEP · Gestión interna FEP`;
   cerrarMenu();
   if (r.tipo === 'avisos') {
-    const p = $('#sfep-panel-notas');
-    p?.scrollIntoView({ block: 'start' });
-    $('#sfep-notas-t')?.focus({ preventScroll: true });
+    // El inicio ya no tiene panel de notas: las notas sin leer están en el módulo Notas internas
+    location.hash = acceso(usuario, 'notas') === 'si' ? '#m/notas' : '#inicio';
   } else {
     window.scrollTo(0, 0);
     if (enfocar) $('#sfep-titulo')?.focus({ preventScroll: true });

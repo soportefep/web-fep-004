@@ -129,13 +129,17 @@ button, input, select { font: inherit; color: inherit; }
 
 @media (max-width: 1023px) {
   .topbar__inner { flex-wrap: wrap; padding-top: 6px; padding-bottom: 6px; gap: 6px 12px; }
-  .topbar__links { display: none; }
+  /* En pantallas estrechas se oculta "Contacto" (está en el pie) pero la Extranet sigue a la vista */
+  .topbar__links li:not(:has(.topbar__extranet)) { display: none; }
   .topbar__der { margin-left: auto; overflow-x: auto; scrollbar-width: none; }
 }
 @media (max-width: 640px) {
   .topbar__btn span:not([aria-hidden]) { font-size: 0; }
   .topbar__btn span:not([aria-hidden])::after { content: "Federaciones"; font-size: 11px; }
-  .topbar__der { flex-basis: 100%; margin-left: 0; }
+  /* Primera fila: Federaciones a la izquierda y Extranet a la derecha; segunda fila: idiomas */
+  .topbar__der { display: contents; }
+  .topbar__links { margin-left: auto; }
+  .idiomas { flex-basis: 100%; }
   .idiomas { width: 100%; justify-content: space-between; gap: 6px; }
   .idiomas__grupo { gap: 0; }
   .idiomas__grupo + .idiomas__grupo { padding-left: 6px; }

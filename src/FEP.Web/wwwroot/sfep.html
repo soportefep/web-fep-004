@@ -14,10 +14,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/sfep.css">
   <!-- Diseño elegido (propuesta 1, "sobria"): Inter, fondo claro, tarjetas blancas redondeadas -->
   <link rel="stylesheet" href="assets/css/sfep-tema.css">
+  <!-- Pantalla de acceso común (Mi Portal, Mi Club y Extranet), con el estilo de la portada -->
+  <link rel="stylesheet" href="assets/css/acceso-unapagina.css">
+  <!-- Panel de gestión (después de entrar) con el estilo de la portada -->
+  <link rel="stylesheet" href="assets/css/sfep-panel-unapagina.css">
+  <!-- Bloc de notas personal al principio del inicio -->
+  <link rel="stylesheet" href="assets/css/bloc-notas.css">
   <!-- Página aislada de la web: no carga comun.js (ni cabecera, ni pie, ni asistente) -->
   <script defer src="mock/mocks.js"></script>
   <script defer src="assets/js/api.js"></script>
@@ -26,6 +32,8 @@
   <script defer src="assets/js/sfep-excel.js"></script>
   <!-- Módulos migrados (se registran en SFEP) -->
   <script defer src="assets/js/sfep-fichas.js"></script>
+  <!-- Bloc de notas personal al principio del inicio -->
+  <script defer src="assets/js/bloc-notas.js"></script>
 </head>
 <!-- ============ SFEP · EXTRANET DE GESTIÓN INTERNA ============
      PROTOTIPO con datos de prueba (mock/sfep-usuarios.json, usuarios ficticios), SIN CONEXIÓN A BASE DE DATOS.
@@ -34,16 +42,44 @@
   <a class="sfep-skip" href="#sfep-contenido">Saltar al contenido</a>
 
   <!-- ============ ACCESO ============ -->
-  <div class="sfep-acceso" id="sfep-acceso">
-    <div class="sfep-acceso__caja">
-      <p class="sfep-marca sfep-marca--grande" aria-label="SFEP"><span class="sfep-marca__s">S</span><span class="sfep-marca__fep">FEP</span></p>
-      <h1 class="sfep-acceso__titulo">Gestión interna de la Federación Española de Pádel</h1>
-      <p class="sfep-acceso__txt">Prototipo: elige el tipo de usuario (personal de la FEP o federación autonómica). En producción se entrará con el usuario y la contraseña de SFEP.</p>
-      <ul class="sfep-acceso__lista" id="sfep-usuarios" aria-label="Tipos de usuario"></ul>
-      <p class="sfep-acceso__error" id="sfep-error" role="alert" hidden></p>
-      <p class="sfep-acceso__nota">Usuarios ficticios y datos de prueba. Sin conexión a la base de datos.</p>
-      <a class="sfep-acceso__volver" href="index.html">← Volver a la web de la FEP</a>
-    </div>
+  <!-- Diseño común con Mi Portal y Mi Club: assets/css/acceso-unapagina.css -->
+  <div class="acc" id="sfep-acceso">
+    <section class="acc__escena" aria-labelledby="sfep-acceso-titulo">
+      <img class="acc__foto" src="assets/img/acceso-pista.svg" alt="" aria-hidden="true">
+      <div class="acc__cab">
+        <a class="acc__logo" href="index.html" aria-label="Federación Española de Pádel – volver a la web">
+          <img src="assets/img/logo-pie-negativo.png" alt="Federación Española de Pádel" width="150" height="50">
+        </a>
+        <a class="acc__volver" href="index.html">← Volver a la web</a>
+      </div>
+      <div class="acc__texto">
+        <p class="acc__eyebrow">Extranet · SFEP</p>
+        <h1 class="acc__titulo" id="sfep-acceso-titulo">Gestión<br><span>interna</span></h1>
+        <p class="acc__lead">Licencias, competiciones, árbitros y avisos de la Federación Española de Pádel y de las federaciones autonómicas, en un mismo sitio.</p>
+        <nav class="acc__areas" aria-label="Áreas privadas">
+          <a class="acc__area" href="mi-portal.html"><strong>Mi Portal</strong><span>Jugadores y árbitros</span></a>
+          <a class="acc__area" href="mi-club.html"><strong>Mi Club</strong><span>Clubes</span></a>
+          <a class="acc__area" href="sfep.html" aria-current="page"><strong>Extranet</strong><span>Gestión interna</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <main class="acc__panel">
+      <div class="acc__caja">
+        <p class="acc__paso">Iniciar sesión</p>
+        <h2 class="acc__h2">Entra en SFEP</h2>
+        <p class="acc__txt">En producción se entrará con el usuario y la contraseña de SFEP. En este prototipo, elige un tipo de usuario: personal de la FEP o federación autonómica.</p>
+        <p class="acc__sep" id="sfep-usuarios-titulo">Usuarios de prueba</p>
+        <ul class="acc__demos" id="sfep-usuarios" aria-labelledby="sfep-usuarios-titulo"></ul>
+        <p class="acc__error" id="sfep-error" role="alert" hidden></p>
+        <p class="acc__nota"><strong>Prototipo:</strong> usuarios ficticios y datos de prueba, sin conexión a la base de datos.</p>
+
+        <div class="acc__ayuda-pie">
+          <span>¿Necesitas acceso?</span>
+          <a href="https://www.padelfederacion.es/Contacto.asp">Escribe a la FEP</a>
+        </div>
+      </div>
+    </main>
   </div>
 
   <!-- ============ APLICACIÓN ============ -->

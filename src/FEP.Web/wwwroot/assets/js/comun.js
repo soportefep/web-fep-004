@@ -268,9 +268,13 @@ const fmtCorto = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long
    =========================================================================== */
 function initCabecera() {
   const header = $('#cabecera');
+  if (!header) return;
   const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+
+  // Páginas con la cabecera de la portada nueva (body.ua): sin buscador desplegable ni menú lateral
+  if (!$('#buscar-abrir') || !$('#menu-principal')) return;
 
   // Buscador
   const btnBuscar = $('#buscar-abrir');
@@ -775,7 +779,9 @@ async function pintarFederaciones() {
 const cargarLista = (ruta) => get(ruta).then(comoLista).catch((e) => { console.warn(`[FEP] ${ruta}:`, e.message); return null; });
 
 function initComun() {
-  cargarIdiomas();
+  // PoC con el diseño de la portada nueva (body.ua): cabecera, pie e idiomas de la portada, no los de esta capa
+  const ua = document.body.classList.contains('ua');
+  if (!ua) cargarIdiomas();
   const anio = $('#anio');
   if (anio) anio.textContent = String(new Date().getFullYear());
   initCabecera();
@@ -786,8 +792,8 @@ function initComun() {
   cargarLista('/api/v1/redes-sociales').then((r) => pintarRedes(r));
   pintarPatrocinadoresLateral();
   pintarFederaciones();
-  initVolverArriba();
-  cargarAsistente();
+  if (!ua) initVolverArriba();
+  cargarAsistente(ua);
 }
 
 /**
@@ -831,10 +837,11 @@ function cargarIdiomas() {
 }
 
 /** Burbuja del asistente virtual en todas las páginas (assets/js/asistente.js + assets/css/asistente.css). */
-function cargarAsistente() {
+function cargarAsistente(ua = false) {
   const comun = document.querySelector('script[src*="assets/js/comun.js"]');
   const base = comun ? new URL('../', comun.src).href : new URL('assets/', document.baseURI).href;
-  document.head.append(el('link', { rel: 'stylesheet', href: `${base}css/asistente.css` }));
+  // En las páginas con el diseño de la portada nueva, FEPi lleva el mismo estilo que en la portada
+  document.head.append(el('link', { rel: 'stylesheet', href: `${base}css/${ua ? 'asistente-unapagina' : 'asistente'}.css` }));
   document.body.append(el('script', { src: `${base}js/asistente.js`, defer: true }));
 }
 

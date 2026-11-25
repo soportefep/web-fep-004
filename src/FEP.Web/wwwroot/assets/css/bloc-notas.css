@@ -1,0 +1,67 @@
+/* =========================================================================
+   Bloc de notas personal (assets/js/bloc-notas.js) al principio del inicio
+   de Mi Portal, Mi Club y SFEP. Estilo de la portada: negro, rojo FEP, Archivo
+   condensado, esquinas rectas; la hoja lleva renglones y margen rojo de libreta.
+   ========================================================================= */
+.bloc {
+  --b-ink: #0A0A0A; --b-red: #E4002B; --b-line: #D9D9D5; --b-t2: #5F5F5A; --b-renglon: #E6E6E0;
+  margin: 0 0 16px; background: #fff; border: 1px solid var(--b-line); border-top: 4px solid var(--b-ink);
+  font-family: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--b-ink);
+  transition: border-color .2s;
+}
+.bloc:focus-within { border-top-color: var(--b-red); }
+.bloc__cab { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; padding: 18px 20px 14px; border-bottom: 1px solid var(--b-line); }
+.bloc__eyebrow {
+  display: flex; align-items: center; gap: 8px; margin: 0 0 6px;
+  font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--b-red);
+}
+.bloc__eyebrow::before { content: ""; width: 18px; height: 3px; background: var(--b-red); }
+.bloc__titulo { margin: 0; font-stretch: 68%; font-weight: 800; font-size: clamp(28px, 2.6vw, 38px); line-height: .9; text-transform: uppercase; }
+.bloc__titulo label { cursor: text; }
+.bloc__estado { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 12px; font-weight: 700; color: var(--b-t2); }
+.bloc__estado::before { content: ""; width: 8px; height: 8px; background: #2BB673; }
+.bloc__estado.is-guardando::before { background: #E08A00; }
+
+/* Hoja de libreta: renglones que se desplazan con el texto y margen rojo a la izquierda */
+.bloc__hoja { position: relative; }
+.bloc__hoja::before { content: ""; position: absolute; top: 0; bottom: 0; left: 44px; width: 2px; background: var(--b-red); opacity: .55; pointer-events: none; z-index: 1; }
+.bloc__texto {
+  display: block; width: 100%; min-height: 168px; max-height: 480px; margin: 0; padding: 6px 20px 8px 60px; border: 0; resize: vertical;
+  font: 500 16px/32px "Archivo", system-ui, sans-serif; color: var(--b-ink);
+  background: repeating-linear-gradient(180deg, #fff 0 31px, var(--b-renglon) 31px 32px);
+  background-attachment: local; background-position: 0 6px;
+}
+.bloc__texto::placeholder { color: #A8A8A2; }
+.bloc__texto:focus { outline: none; }
+.bloc__texto:focus-visible { box-shadow: inset 0 0 0 2px var(--b-red); }
+
+.bloc__pie { display: flex; align-items: center; gap: 12px 20px; flex-wrap: wrap; padding: 10px 20px; border-top: 1px solid var(--b-line); font-size: 12px; color: var(--b-t2); }
+.bloc__nota { margin-right: auto; }
+.bloc__cuenta { font-weight: 700; font-variant-numeric: tabular-nums; }
+.bloc__borrar {
+  min-height: 32px; padding: 0 12px; border: 2px solid var(--b-ink); border-radius: 0; background: #fff; color: var(--b-ink); cursor: pointer;
+  font: 800 10.5px "Archivo", system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase;
+}
+.bloc__borrar:hover { background: var(--b-red); border-color: var(--b-red); color: #fff; }
+.bloc__borrar:focus-visible { outline: 3px solid var(--b-red); outline-offset: 2px; }
+
+/* Mi Portal / Mi Club: el menú de tarjetas va al final, con su propio título */
+#vista-resumen > .dash-cards { margin-top: 28px; }
+#vista-resumen > .dash-cards::before {
+  content: "Tus apartados"; display: flex; align-items: center; gap: 10px; margin: 0 0 12px;
+  font-family: "Archivo", system-ui, sans-serif; font-stretch: 70%; font-weight: 800; font-size: 24px; line-height: 1; text-transform: uppercase; color: #0A0A0A;
+}
+
+/* SFEP: cabecera del menú de módulos (al final), con los filtros por área */
+.bloc-menucab { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px 20px; flex-wrap: wrap; margin: 32px 0 14px; }
+.bloc-menucab__titulo {
+  margin: 0; font-family: "Archivo", system-ui, sans-serif; font-stretch: 68%; font-weight: 800; font-size: clamp(28px, 2.6vw, 38px); line-height: .9; text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .bloc__cab, .bloc__pie { padding-left: 14px; padding-right: 14px; }
+  .bloc__hoja::before { left: 30px; }
+  .bloc__texto { padding-left: 42px; padding-right: 12px; font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { .bloc { transition: none; } }
+@media print { .bloc__pie, .bloc__borrar { display: none; } }

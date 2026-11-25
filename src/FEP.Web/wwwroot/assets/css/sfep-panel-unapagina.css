@@ -1,0 +1,201 @@
+/* =========================================================================
+   SFEP · Panel de gestión (después de entrar) con el estilo de la portada
+   Se carga DESPUÉS de sfep.css y sfep-tema.css y los reviste (solo body.sfep):
+   negro, rojo FEP, Archivo condensado en mayúsculas, esquinas rectas, filetes
+   gruesos y sombra dura al pasar el ratón. Los colores por área (--c) se mantienen,
+   pero en planos lisos (sin degradados ni brillos). No cambia la lógica de sfep.js.
+   ========================================================================= */
+
+body.sfep {
+  --ink: #0A0A0A; --ink-2: #1C1C1C; --red: #E4002B; --red-dark: #B80022; --red-50: #FFE8EC;
+  --paper: #F2F2EF; --side: #0A0A0A; --line: #D9D9D5; --t2: #5F5F5A; --t3: #33332F; --ok: #067647;
+  --on-dark: #CFCFCA; --on-dark-2: #9A9A94;
+  --font: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --radio: 0; --radio-sm: 0; --sombra: none; --sombra-alta: none;
+  font-family: var(--font); background: var(--paper); letter-spacing: -.005em;
+}
+.sfep :focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
+
+/* Titulares condensados en mayúsculas (la tema "sobria" los había quitado) */
+body.sfep :is(.sfep-h1, .sfep-panel__cab h2, .sfep-menu__cab h2, .sfep-ficha__cab h2, .sfep-ayuda h2, .sfep-invita__titulo, .sfep-kpi__valor) {
+  font-stretch: 68%; font-weight: 800; text-transform: uppercase; letter-spacing: -.005em;
+}
+body.sfep :is(.sfep-saludo__fecha, .sfep-kpi__etiqueta, .sfep-nav__area, .sfep-migas, .sfep-tabla thead th, .sfep-area__titulo,
+  .sfep-panel__grupo, .sfep-top__entorno, .sfep-top__fed, .sfep-campo label, .sfep-rapida label, .sfep-dl dt, .sfep-casillas legend) {
+  font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+}
+
+/* ---------------- Barra superior: blanca con filete negro, como la cabecera de la portada ---------------- */
+body.sfep .sfep-top { background: #fff; color: var(--ink); border-bottom: 3px solid var(--ink); }
+body.sfep .sfep-marca { border-radius: 0; font-stretch: 75%; font-weight: 900; font-size: 18px; letter-spacing: .02em; }
+body.sfep .sfep-top__entorno { padding: 4px 8px; border: 2px solid var(--ink); border-radius: 0; background: transparent; color: var(--ink); font-size: 10px; }
+body.sfep .sfep-top__nombre { font-stretch: 78%; font-weight: 800; text-transform: uppercase; }
+body.sfep .sfep-top__fed { color: var(--t2); font-size: 10px; }
+body.sfep .sfep-top-buscar input {
+  height: 42px; border: 2px solid var(--ink); border-radius: 0; background: #fff; font-weight: 600;
+}
+body.sfep .sfep-top-buscar input:focus { border-color: var(--red); outline: none; box-shadow: 4px 4px 0 var(--red); }
+body.sfep .sfep-top-buscar__kbd { border-radius: 0; border: 1px solid var(--ink); font-weight: 800; }
+body.sfep .sfep-icono { border-radius: 0; }
+body.sfep .sfep-icono:hover { background: var(--ink); color: #fff; }
+body.sfep .sfep-icono__n { border-radius: 0; background: var(--red); font-weight: 800; }
+
+/* ---------------- Menú lateral (dentro de un módulo): negro ---------------- */
+body.sfep .sfep-side { background: var(--ink); color: #fff; border-right: 0; border-left: 6px solid var(--red); }
+body.sfep .sfep-nav__area { color: var(--red); }
+body.sfep .sfep-nav__link { border-radius: 0; border-left: 3px solid transparent; color: var(--on-dark); font-size: 14px; font-weight: 600; }
+body.sfep a.sfep-nav__link:hover { background: rgba(255, 255, 255, .07); color: #fff; }
+body.sfep .sfep-nav__link[aria-current="page"] { background: #fff; color: var(--ink); border-left-color: var(--red); font-weight: 800; }
+body.sfep .sfep-nav__link.is-bloqueado { color: #5F5F5A; }
+
+/* ---------------- Cabecera de página ---------------- */
+body.sfep .sfep-saludo__fecha { margin-bottom: 8px; color: var(--red); }
+body.sfep .sfep-h1 { font-size: clamp(36px, 3.6vw, 56px); line-height: .9; }
+body.sfep .sfep-migas { color: var(--t2); }
+body.sfep .sfep-migas a { color: var(--red); }
+
+/* Filtro por área: etiquetas rectas */
+body.sfep .sfep-chip {
+  border: 2px solid var(--ink); border-radius: 0; background: #fff; color: var(--ink);
+  font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+}
+body.sfep .sfep-chip:hover { background: var(--ink); color: #fff; }
+body.sfep .sfep-chip[aria-pressed="true"] { background: var(--red); border-color: var(--red); color: #fff; }
+body.sfep .sfep-chip__punto { border-radius: 0; }
+
+/* Favoritos */
+body.sfep .sfep-atajos { border-radius: 0; border: 1px solid var(--line); border-left: 4px solid var(--ink); background: #fff; }
+body.sfep .sfep-atajo { border-radius: 0; font-weight: 700; }
+body.sfep .sfep-atajo__ico { border-radius: 0; }
+
+/* ---------------- Rejilla de módulos ---------------- */
+body.sfep .sfep-menu--iconos .sfep-tiles { gap: 12px; }
+body.sfep .sfep-menu--iconos .sfep-tile {
+  align-items: flex-start; text-align: left; padding: 20px 18px 18px; border: 1px solid var(--line); border-top: 4px solid var(--ink);
+  border-radius: 0; box-shadow: none; transition: transform .2s cubic-bezier(.2, .8, .2, 1), box-shadow .2s, border-color .2s;
+}
+body.sfep .sfep-menu--iconos a.sfep-tile:hover {
+  border-top-color: var(--c, var(--red)); transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--c, var(--red));
+}
+/* Icono: cuadrado liso con el color del área (sin degradado, sombra ni brillo) */
+body.sfep .sfep-menu--iconos .sfep-tile__ico,
+body.sfep .sfep-menu--iconos a.sfep-tile:hover .sfep-tile__ico {
+  width: 52px; height: 52px; margin: 0 0 14px; border-radius: 0; background: var(--c, var(--ink)); box-shadow: none;
+}
+body.sfep .sfep-menu--iconos .sfep-tile__ico::after { content: none; }
+/* sfep.css centra cada pieza (align-self: center): aquí todo va alineado a la izquierda */
+body.sfep .sfep-menu--iconos .sfep-tile > :is(.sfep-tile__ico, .sfep-tile__nombre, .sfep-tile__desc) { align-self: flex-start; }
+body.sfep .sfep-menu--iconos .sfep-tile__ico svg { width: 24px; height: 24px; }
+body.sfep .sfep-menu--iconos .sfep-tile__nombre { font-stretch: 72%; font-weight: 800; font-size: 20px; line-height: 1; text-transform: uppercase; }
+body.sfep .sfep-menu--iconos .sfep-tile__desc { margin-top: 4px; font-size: 12.5px; color: var(--t2); }
+body.sfep .sfep-tile__n { border-radius: 0; background: var(--red); font-weight: 800; }
+body.sfep .sfep-menu--iconos .sfep-estrella--tile { top: 10px; left: auto; right: 10px; }
+body.sfep .sfep-menu--iconos .sfep-tile.is-bloqueado { background: #FAFAF8; }
+body.sfep .sfep-menu--iconos .sfep-tile.is-bloqueado .sfep-tile__ico { background: #C9C9C4; }
+body.sfep .sfep-menu--iconos .sfep-tile__candado { border-radius: 0; }
+body.sfep .sfep-tile--perso { border: 2px dashed var(--ink) !important; border-top-width: 4px !important; }
+body.sfep .sfep-menu--cards .sfep-tile { border-radius: 0; border-top: 4px solid var(--ink); box-shadow: none; }
+body.sfep .sfep-menu--cards .sfep-tile__ico { border-radius: 0; }
+/* Tarjetas de cada módulo (Consulta, Altas, Bandeja de entrada…) e icono de la cabecera del módulo */
+body.sfep .sfep-tile { border-radius: 0; border-top: 3px solid var(--ink); box-shadow: none; }
+body.sfep a.sfep-tile:hover { border-top-color: var(--red); transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--red); }
+body.sfep .sfep-tile__ico { border-radius: 0; background: var(--ink); color: #fff; }
+body.sfep a.sfep-tile:hover .sfep-tile__ico { background: var(--red); }
+body.sfep .sfep-tile__nombre { font-weight: 800; }
+body.sfep .sfep-modcab__ico { border-radius: 0; background: var(--red); color: #fff; box-shadow: none; }
+body.sfep .sfep-pendiente__chip, body.sfep .sfep-tile__chip { border-radius: 0; background: var(--ink); color: #fff; }
+
+/* ---------------- Cifras ---------------- */
+body.sfep .sfep-kpi { border: 1px solid var(--line); border-top: 4px solid var(--ink); border-radius: 0; box-shadow: none; background: #fff; }
+body.sfep .sfep-kpis li:first-child .sfep-kpi { background: var(--ink); color: #fff; border-color: var(--ink); border-top-color: var(--red); }
+body.sfep .sfep-kpis li:first-child .sfep-kpi__etiqueta { color: var(--on-dark-2); }
+body.sfep .sfep-kpi__etiqueta { color: var(--t2); }
+body.sfep .sfep-kpi__valor { font-stretch: 62%; font-weight: 900; font-size: clamp(40px, 3.4vw, 54px); line-height: .9; font-variant-numeric: tabular-nums; }
+
+/* ---------------- Paneles (avisos, notas, fichas…) ---------------- */
+body.sfep .sfep-panel { border: 1px solid var(--line); border-top: 3px solid var(--ink); border-radius: 0; box-shadow: none; }
+body.sfep .sfep-panel__cab { border-bottom: 1px solid var(--line); }
+body.sfep .sfep-panel__cab h2 { display: flex; align-items: center; gap: 10px; font-size: 20px; line-height: 1; }
+body.sfep .sfep-panel__cab h2::before { content: ""; width: 16px; height: 3px; background: var(--red); flex: none; }
+body.sfep .sfep-panel__link, body.sfep .sfep-enlace { font-weight: 800; color: var(--red); }
+body.sfep .sfep-aviso, body.sfep .sfep-nota { border-radius: 0; }
+body.sfep .sfep-aviso--vencido { border-left: 4px solid var(--red); }
+body.sfep .sfep-aviso--hoy { border-left: 4px solid #E08A00; }
+body.sfep :is(.sfep-estado, .sfep-etiqueta, .sfep-tono, .sfep-pendiente__chip, .sfep-lic) {
+  border-radius: 0; font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+}
+body.sfep .sfep-ficha { border-radius: 0; border-top: 3px solid var(--ink); box-shadow: none; }
+body.sfep .sfep-ficha__cab h2 { font-size: clamp(26px, 2.4vw, 34px); line-height: .95; }
+
+/* ---------------- Inicio · Próximos torneos ---------------- */
+body.sfep .sfep-torneos { list-style: none; margin: 0; padding: 0; }
+body.sfep .sfep-torneo {
+  display: grid; grid-template-columns: 136px minmax(0, 1fr); gap: 2px 16px; padding: 14px 18px;
+  border-bottom: 1px solid var(--line); border-left: 4px solid transparent;
+}
+body.sfep .sfep-torneo:last-child { border-bottom: 0; }
+body.sfep .sfep-torneo.is-pronto { border-left-color: #E08A00; }
+body.sfep .sfep-torneo.is-en-juego { border-left-color: var(--red); background: var(--red-50); }
+body.sfep .sfep-torneo__fecha { grid-row: 1 / span 2; display: grid; align-content: start; gap: 2px; }
+body.sfep .sfep-torneo__fecha time { font-stretch: 70%; font-weight: 900; font-size: 18px; line-height: 1; text-transform: uppercase; color: var(--red); }
+body.sfep .sfep-torneo__cuando { font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--t2); }
+body.sfep .sfep-torneo__titulo { font-stretch: 80%; font-weight: 800; font-size: 15px; line-height: 1.2; text-transform: uppercase; }
+body.sfep .sfep-torneo__meta { font-size: 12.5px; color: var(--t2); }
+
+/* ---------------- Inicio · Horario laboral ---------------- */
+body.sfep .sfep-horario__cuerpo { display: grid; gap: 14px; padding: 16px 18px 18px; }
+body.sfep .sfep-horario__cab { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+body.sfep .sfep-horario__hoy { margin: 0; font-stretch: 75%; font-weight: 800; font-size: 18px; text-transform: uppercase; }
+body.sfep .sfep-horario__hoy::first-letter { text-transform: uppercase; }
+body.sfep .sfep-horario__estado {
+  display: inline-flex; align-items: center; gap: 8px; margin: 0; padding: 4px 10px; background: var(--paper);
+  font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--t2);
+}
+body.sfep .sfep-horario__estado::before { content: ""; width: 8px; height: 8px; background: var(--on-dark-2); }
+body.sfep .sfep-horario__estado.is-dentro { background: var(--ink); color: #fff; }
+body.sfep .sfep-horario__estado.is-dentro::before { background: #2BD576; }
+body.sfep .sfep-horario__cifras { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0; }
+body.sfep .sfep-horario__cifras > div { padding: 12px 14px; border: 1px solid var(--line); border-top: 3px solid var(--ink); }
+body.sfep .sfep-horario__cifras dt { font-size: 10.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--t2); }
+body.sfep .sfep-horario__cifras dd { margin: 4px 0 0; }
+body.sfep .sfep-horario__n { font-stretch: 62%; font-weight: 900; font-size: 34px; line-height: 1; font-variant-numeric: tabular-nums; }
+body.sfep .sfep-horario__fichar { width: 100%; min-height: 50px; font-size: 13px; }
+body.sfep .sfep-horario__tramos { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+body.sfep .sfep-horario__tramos li:not(.sfep-vacio) {
+  display: flex; justify-content: space-between; gap: 12px; padding: 8px 12px; background: var(--paper);
+  font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+body.sfep .sfep-horario__nota { margin: 0; font-size: 11.5px; color: var(--t2); }
+
+/* ---------------- Tablas ---------------- */
+body.sfep .sfep-tabla thead th { background: var(--ink); color: #fff; border-bottom: 0; font-size: 10.5px; }
+body.sfep .sfep-tabla tbody tr:hover > * { background: var(--paper); }
+body.sfep .sfep-tabla-scroll { border-radius: 0; border-top: 3px solid var(--ink); box-shadow: none; }
+
+/* ---------------- Formularios y botones ---------------- */
+body.sfep :is(.sfep-campo input, .sfep-campo select, .sfep-campo textarea, .sfep-rapida input, .sfep-buscar input, .sfep-filtros select, .sfep-filtros input) {
+  border: 2px solid var(--ink); border-radius: 0; box-shadow: none;
+}
+body.sfep :is(.sfep-campo input, .sfep-campo select, .sfep-campo textarea, .sfep-rapida input, .sfep-buscar input):focus { border-color: var(--red); outline: none; }
+body.sfep .sfep-btn {
+  min-height: 40px; padding: 0 16px; border: 2px solid var(--ink); border-radius: 0; background: #fff; color: var(--ink); box-shadow: none;
+  font-size: 11.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+}
+body.sfep .sfep-btn:hover { background: var(--ink); color: #fff; }
+body.sfep .sfep-btn--rojo { background: var(--red); border-color: var(--red); color: #fff; }
+body.sfep .sfep-btn--rojo:hover { background: var(--ink); border-color: var(--ink); }
+body.sfep .sfep-btn--peligro { border-color: var(--red); color: var(--red); }
+body.sfep .sfep-btn--peligro:hover { background: var(--red); color: #fff; }
+
+/* Ayuda y avisos flotantes */
+body.sfep .sfep-ayuda { border-radius: 0; border-top: 4px solid var(--red); box-shadow: 8px 8px 0 var(--ink); }
+body.sfep .sfep-toast { border-radius: 0; border-left: 4px solid var(--red); }
+
+@media (max-width: 860px) {
+  body.sfep .sfep-h1 { font-size: 34px; }
+  body.sfep .sfep-menu--iconos .sfep-tile__nombre { font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.sfep .sfep-menu--iconos .sfep-tile { transition: none; }
+  body.sfep .sfep-menu--iconos a.sfep-tile:hover { transform: none; }
+}

@@ -1,0 +1,144 @@
+/* =========================================================================
+   FEP · PoC de páginas interiores (competiciones, torneo, ranking) con el diseño
+   de la portada nueva. Solo afecta a body.ua; se carga DESPUÉS de fep.css,
+   tema-003.css y la hoja propia de cada página, y reviste:
+   - barra superior (federaciones + idiomas), cabecera y menú: iguales que en la portada
+     (copiados de home-unapagina.css y acotados a body.ua);
+   - cabecera de página (.page-hero): sin la franja diagonal azul; en su lugar, la
+     ilustración de la pista que se funde en negro (la misma de los inicios de sesión);
+   - pie sin el rótulo gigante, como el de la portada; "volver arriba" encima de FEPi.
+   El contenido de cada página (filtros, listas, rankings…) mantiene su diseño y su lógica.
+   ========================================================================= */
+
+body.ua {
+  --ink: #0A0A0A; --ink-2: #1C1C1C; --red: #E4002B; --red-dark: #B80022; --paper: #F2F2EF;
+  --line: #D9D9D5; --on-dark: #CFCFCA; --on-dark-2: #9A9A94;
+  --ua-header-h: 84px;
+}
+body.ua { scroll-padding-top: calc(var(--ua-header-h) + 8px); }
+
+/* ---------------- Barra superior ---------------- */
+body.ua .topbar { position: relative; z-index: 60; background: var(--ink); color: var(--on-dark); font-size: 12px; }
+body.ua .topbar__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 36px; }
+body.ua .topbar__der { display: flex; align-items: center; gap: 18px; min-width: 0; }
+body.ua .topbar__links { display: flex; align-items: center; gap: 18px; list-style: none; margin: 0; padding: 0; }
+body.ua .topbar__links a { color: var(--on-dark); text-decoration: none; }
+body.ua .topbar__links a:hover { color: #fff; }
+body.ua .topbar__extranet { border: 1px solid rgba(255, 255, 255, .5); padding: 3px 10px; font-weight: 700; color: #fff !important; }
+body.ua .topbar__extranet:hover { background: var(--red); border-color: var(--red); }
+body.ua .bandera { display: block; flex: none; width: 21px; height: 15px; object-fit: cover; box-shadow: 0 0 0 1px rgba(255, 255, 255, .25); }
+body.ua .bandera svg { display: block; width: 100%; height: 100%; }
+body.ua .topbar__btn {
+  display: inline-flex; align-items: center; gap: 8px; height: 28px; padding: 0 10px; cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, .25); background: transparent; color: #fff;
+  font: inherit; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+}
+body.ua .topbar__btn:hover, body.ua .topbar__btn[aria-expanded="true"] { border-color: #fff; background: rgba(255, 255, 255, .1); }
+body.ua .desplegable { position: relative; }
+body.ua .desplegable__panel {
+  position: absolute; top: calc(100% + 6px); left: 0; z-index: 120; width: min(560px, calc(100vw - 24px));
+  padding: 16px; background: #fff; color: var(--ink); border-top: 6px solid var(--red);
+  box-shadow: 0 0 0 1px var(--ink), 0 24px 48px rgba(0, 0, 0, .35);
+}
+body.ua .desplegable__panel[hidden] { display: none; }
+body.ua .desplegable__titulo { margin: 0 0 10px; font-stretch: 75%; font-weight: 800; font-size: 16px; text-transform: uppercase; }
+body.ua .feds-panel__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 8px; }
+body.ua .feds-panel__lista a { display: flex; align-items: center; gap: 10px; padding: 7px 8px; font-size: 13px; font-weight: 600; color: var(--ink); text-decoration: none; }
+body.ua .feds-panel__lista a:hover, body.ua .feds-panel__lista a:focus-visible { background: var(--red); color: #fff; outline: none; }
+body.ua .feds-panel__lista a small { margin-left: auto; font-size: 11px; opacity: .6; }
+body.ua .feds-panel__lista .bandera { box-shadow: 0 0 0 1px rgba(0, 0, 0, .18); }
+body.ua .idiomas { position: static; display: flex; align-items: center; gap: 10px; width: auto; padding: 0; background: none; box-shadow: none; }
+body.ua .idiomas__grupo { display: flex; gap: 3px; list-style: none; margin: 0; padding: 0; }
+body.ua .idiomas__grupo + .idiomas__grupo { padding-left: 10px; border-left: 1px solid rgba(255, 255, 255, .25); }
+body.ua .idioma {
+  display: grid; place-items: center; width: 29px; height: 24px; padding: 0; cursor: pointer;
+  border: 1px solid transparent; background: transparent; opacity: .55; transition: opacity .2s, border-color .2s;
+}
+body.ua .idioma:hover, body.ua .idioma:focus-visible { opacity: 1; }
+body.ua .idioma[aria-pressed="true"] { opacity: 1; border-color: #fff; }
+
+/* ---------------- Cabecera (sin hamburguesa) ---------------- */
+body.ua .header { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 3px solid var(--ink); }
+body.ua .header__inner { display: flex; align-items: center; gap: 24px; height: var(--ua-header-h); }
+body.ua .header__logo { position: relative; padding-left: 20px; flex: none; }
+body.ua .header__logo::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 8px; height: auto; transform: none; background: var(--red); }
+body.ua .header__logo img { height: 58px; width: auto; }
+body.ua .header .nav { flex: 1; min-width: 0; display: block; }
+body.ua .header .nav__list { display: flex; justify-content: flex-end; list-style: none; margin: 0; padding: 0; }
+body.ua .header .nav__link {
+  display: flex; align-items: center; height: var(--ua-header-h); padding: 0 14px; white-space: nowrap; color: var(--ink); text-decoration: none;
+  font-stretch: 75%; font-size: 17px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em;
+  transition: color .2s, box-shadow .2s;
+}
+body.ua .header .nav__link:hover { color: var(--red); }
+body.ua .header .nav__link.is-current { box-shadow: inset 0 -6px 0 var(--red); }
+body.ua .header__actions { display: flex; align-items: center; gap: 8px; flex: none; }
+body.ua .icon-btn { display: grid; place-items: center; width: 44px; height: 44px; border: 2px solid var(--ink); color: var(--ink); }
+body.ua .icon-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
+body.ua .icon-btn:hover { background: var(--ink); color: #fff; }
+body.ua .acceso { display: inline-flex; align-items: center; gap: 8px; height: 44px; }
+
+@media (max-width: 1279px) {
+  body.ua .header .nav__link { padding: 0 10px; font-size: 15px; }
+  body.ua .acceso { width: 44px; padding: 0; justify-content: center; }
+  body.ua .acceso__txt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+}
+/* Tablet y móvil: el menú baja a una fila propia que se desliza en horizontal (sin hamburguesa) */
+@media (max-width: 1023px) {
+  body.ua { --ua-header-h: 64px; scroll-padding-top: calc(var(--ua-header-h) + 52px); }
+  body.ua .topbar__inner { flex-wrap: wrap; padding-top: 6px; padding-bottom: 6px; gap: 6px 12px; }
+  body.ua .topbar__links li:not(:has(.topbar__extranet)) { display: none; }
+  body.ua .topbar__der { margin-left: auto; overflow-x: auto; scrollbar-width: none; }
+  body.ua .header__inner { flex-wrap: wrap; height: auto; gap: 0 12px; }
+  body.ua .header__logo { order: 1; padding-left: 12px; height: var(--ua-header-h); display: flex; align-items: center; }
+  body.ua .header__logo::before { width: 5px; }
+  body.ua .header__logo img { height: 42px; }
+  body.ua .header__actions { order: 2; margin-left: auto; }
+  body.ua .header .nav { order: 3; flex-basis: 100%; margin: 0 calc(var(--gutter, 16px) * -1); border-top: 1px solid var(--line); }
+  body.ua .header .nav__list { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; padding: 0 var(--gutter, 16px); }
+  body.ua .header .nav__list::-webkit-scrollbar { display: none; }
+  body.ua .header .nav__link { height: 48px; font-size: 15px; }
+  body.ua .header .nav__link.is-current { box-shadow: inset 0 -4px 0 var(--red); color: var(--red); }
+}
+@media (max-width: 640px) {
+  body.ua .topbar__btn span:not([aria-hidden]) { font-size: 0; }
+  body.ua .topbar__btn span:not([aria-hidden])::after { content: "Federaciones"; font-size: 11px; }
+  body.ua .topbar__der { display: contents; }
+  body.ua .topbar__links { margin-left: auto; }
+  body.ua .idiomas { flex-basis: 100%; justify-content: space-between; gap: 6px; }
+  body.ua .idiomas__grupo { gap: 0; }
+  body.ua .idiomas__grupo + .idiomas__grupo { padding-left: 6px; }
+  body.ua .idioma { width: 25px; height: 22px; }
+  body.ua .idioma .bandera { width: 19px; height: 13px; }
+  body.ua .desplegable__panel { position: fixed; top: 44px; left: 12px; right: 12px; width: auto; max-height: 70vh; overflow-y: auto; }
+  body.ua .feds-panel__lista { grid-template-columns: 1fr; }
+}
+@media (max-width: 400px) {
+  body.ua .header__logo img { height: 34px; }
+  body.ua .icon-btn, body.ua .acceso { width: 38px; height: 38px; }
+}
+
+/* ---------------- Cabecera de página: ilustración de pista fundida en negro ---------------- */
+body.ua .page-hero { background: var(--ink); border-bottom: 10px solid var(--red); }
+body.ua .page-hero::after {
+  width: 52%; clip-path: none; opacity: 1;
+  background: url("../img/acceso-pista.svg") center / cover no-repeat;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, .55) 30%, #000 70%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, .55) 30%, #000 70%);
+}
+@media (min-width: 861px) { body.ua .page-hero > .container { padding-right: calc(40% + 24px); } }
+@media (max-width: 860px) {
+  body.ua .page-hero::after { width: 70%; opacity: .45; }
+}
+
+/* ---------------- Pie: como el de la portada (sin el rótulo gigante) ---------------- */
+body.ua .footer { padding-top: 56px; }
+body.ua .footer::before { content: none; }
+
+/* ---------------- Volver arriba: cuadrado rojo, encima del botón de FEPi ---------------- */
+body.ua .ua-arriba {
+  position: fixed; right: 24px; bottom: 104px; z-index: 40; width: 44px; height: 44px; display: grid; place-items: center;
+  border-radius: 0; background: var(--red); color: #fff; font-weight: 800; text-decoration: none;
+  opacity: 0; pointer-events: none; transition: opacity .2s;
+}
+body.ua .ua-arriba.is-visible { opacity: 1; pointer-events: auto; }

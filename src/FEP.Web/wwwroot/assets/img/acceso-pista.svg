@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+  <!-- Ilustración para la pantalla de acceso (Mi Portal, Mi Club y Extranet): pista de pádel vista desde arriba.
+       Sin fotografías. Medidas a escala: pista 20 × 10 m, líneas de saque a 6,95 m de la red. -->
+  <defs>
+    <radialGradient id="brillo" cx="72%" cy="28%" r="60%">
+      <stop offset="0" stop-color="#E4002B" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#E4002B" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="puntos" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" fill-opacity=".08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#0A0A0A"/>
+  <rect width="1000" height="1000" fill="url(#puntos)"/>
+  <rect width="1000" height="1000" fill="url(#brillo)"/>
+
+  <!-- Pista girada para dar dinamismo -->
+  <g transform="translate(640 470) rotate(-18)" fill="none" stroke-linecap="square">
+    <!-- Cristales / paredes (doble trazo) -->
+    <rect x="-262" y="-512" width="524" height="1024" stroke="#fff" stroke-opacity=".12" stroke-width="10"/>
+    <!-- Perímetro de la pista (10 × 20 m → 500 × 1000) -->
+    <rect x="-250" y="-500" width="500" height="1000" stroke="#fff" stroke-opacity=".55" stroke-width="5"/>
+    <!-- Líneas de saque (a 6,95 m de la red → 347 px) -->
+    <line x1="-250" y1="-347" x2="250" y2="-347" stroke="#fff" stroke-opacity=".55" stroke-width="5"/>
+    <line x1="-250" y1="347" x2="250" y2="347" stroke="#fff" stroke-opacity=".55" stroke-width="5"/>
+    <!-- Línea central de saque -->
+    <line x1="0" y1="-347" x2="0" y2="347" stroke="#fff" stroke-opacity=".55" stroke-width="5"/>
+    <!-- Red -->
+    <line x1="-290" y1="0" x2="290" y2="0" stroke="#E4002B" stroke-width="9"/>
+    <circle cx="-290" cy="0" r="9" fill="#E4002B"/>
+    <circle cx="290" cy="0" r="9" fill="#E4002B"/>
+    <!-- Pelota y su trayectoria -->
+    <path d="M-150 420 Q 40 120 120 -260" stroke="#fff" stroke-opacity=".35" stroke-width="3" stroke-dasharray="2 14"/>
+    <circle cx="120" cy="-260" r="16" fill="#D7F23A"/>
+    <path d="M106 -268 q14 8 28 0" stroke="#0A0A0A" stroke-opacity=".35" stroke-width="2.5"/>
+  </g>
+</svg>

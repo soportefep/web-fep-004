@@ -1,0 +1,181 @@
+/* =========================================================================
+   FEP · Panel de Mi Portal y Mi Club (después de entrar), con el estilo de la portada
+   Se carga DESPUÉS de area-privada-dashboard.css y area-privada-tema.css y los reviste
+   (solo body.dash). No cambia la lógica: area-privada-003.js sigue pintando lo mismo.
+   Lenguaje: negro, rojo FEP, Archivo condensado en mayúsculas, esquinas rectas,
+   filetes gruesos y sombra dura roja al pasar el ratón.
+   El color de cada perfil (--ap) se mantiene como acento: rojo jugador, ámbar árbitro, azul club.
+   ========================================================================= */
+
+body.dash {
+  --ink: #0A0A0A; --ink-2: #1C1C1C; --red: #E4002B; --red-dark: #B80022; --red-soft: #FFE8EC;
+  --paper: #F2F2EF; --line: #D9D9D5; --text-2: #5F5F5A; --text-3: #33332F; --on-dark: #CFCFCA; --on-dark-2: #9A9A94;
+  --radio: 0; --radio-sm: 0; --sombra: none; --sombra-alta: none;
+  --font: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --ap: var(--red);
+  font-family: var(--font); background: var(--paper); color: var(--ink); letter-spacing: -.005em;
+}
+body.dash[data-area="club"] { --ap: #0038E0; }
+body.dash.ap-003--jugador { --ap: var(--red); }
+body.dash.ap-003--arbitro { --ap: #E08A00; }
+body.dash { --ap-50: color-mix(in srgb, var(--ap) 10%, #fff); }
+.dash :focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
+
+/* Titulares condensados en mayúsculas (la tema anterior los había quitado) */
+.dash :is(.dash-top__titulo, .dash-kpi__valor, .dash-card__titulo, .dash-widget__titulo, .ap-section__title,
+  .dash-user__nombre, .dash-proxima__fecha, .dash .ap-ranking strong, .dash-side__area) {
+  font-stretch: 70%; font-weight: 800; text-transform: uppercase; letter-spacing: -.005em;
+}
+
+/* ---------------- Barra superior: blanca con filete negro, como la cabecera de la portada ---------------- */
+.dash-top { min-height: 76px; background: #fff; border-bottom: 3px solid var(--ink); }
+.dash.dash .dash-top__miga { font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--red); }
+.dash-top__titulo { font-size: clamp(28px, 2.8vw, 40px); line-height: .95; }
+.dash.dash .dash-top__demo {
+  border-radius: 0; padding: 5px 10px; background: transparent; border: 2px solid var(--ink); color: var(--ink);
+  font-size: 10.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+}
+.dash-top__avatar { border-radius: 0; background: var(--ap); color: #fff; font-weight: 800; width: 40px; height: 40px; }
+.dash--inicio .dash-top__logo { position: relative; padding-left: 14px; border-right: 2px solid var(--line); }
+.dash--inicio .dash-top__logo::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--red); }
+.dash--inicio .dash-top__logo img { height: 40px; }
+.dash--inicio .dash-top__salir, .dash .dash-top__salir {
+  height: 40px; padding: 0 16px; border: 2px solid var(--ink); border-radius: 0; background: #fff; color: var(--ink); box-shadow: none;
+  font-size: 11.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+}
+.dash--inicio .dash-top__salir:hover { background: var(--ink); color: #fff; }
+@media (max-width: 999px) {
+  .dash-top__menu { border-radius: 0; background: var(--ink); }
+  .dash-top__menu span { background: #fff; }
+}
+
+/* ---------------- Menú lateral: negro ---------------- */
+.dash-side { background: var(--ink); color: #fff; border-right: 0; border-left: 6px solid var(--red); }
+.dash-side__area { border-radius: 0; padding: 3px 8px; background: var(--ap); color: #fff; font-size: 12px; }
+.dash-user { margin: 4px 14px 14px; border: 1px solid rgba(255, 255, 255, .16); border-radius: 0; background: var(--ink-2); }
+.dash-user__avatar { border-radius: 0; background: var(--ap); color: #fff; font-weight: 800; }
+.dash.dash .dash-user__tipo { font-size: 10.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--ap); }
+body.dash.ap-003--jugador .dash-user__tipo { color: #FF5C77; }
+.dash-user__nombre { color: #fff; font-size: 17px; line-height: 1.05; }
+.dash-user__id { color: var(--on-dark-2); font-size: 12px; }
+.dash-nav { padding: 6px 14px; }
+.dash.dash .dash-nav a {
+  padding: 11px 12px; border-radius: 0; border-left: 3px solid transparent; color: var(--on-dark);
+  font-stretch: 78%; font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em;
+}
+.dash-nav a:hover { background: rgba(255, 255, 255, .06); color: #fff; }
+.dash-nav a[aria-current="page"] { background: #fff; color: var(--ink); border-left-color: var(--ap); }
+.dash-nav__insignia { border-radius: 0; background: var(--red); color: #fff; font-weight: 800; }
+.dash-side__pie { border-top: 1px solid rgba(255, 255, 255, .14); }
+.dash-side__link { color: var(--on-dark-2); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.dash-side__link:hover { color: #fff; }
+
+/* ---------------- Contenido ---------------- */
+.dash.dash .ap-section__title {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: clamp(22px, 2vw, 28px); line-height: 1;
+}
+.dash.dash .ap-section__title::before { content: ""; display: block; width: 22px; height: 3px; background: var(--red); }
+.dash.dash .ap-intro { color: var(--text-2); font-size: 15px; }
+.dash.dash .ap-section > :is(.ap-rows, .ap-table-wrap, .ap-dl, .ap-meses, .ap-form, .ap-ranking, .ap-chart) {
+  border: 1px solid var(--line); border-top: 3px solid var(--ink); border-radius: 0; box-shadow: none; background: #fff;
+}
+
+/* Cifras clave: la primera en negro, el resto en blanco; números grandes condensados */
+.dash-kpis { gap: 12px; }
+.dash-kpi, .dash-kpi:first-child {
+  gap: 6px; padding: 18px 20px; border: 1px solid var(--line); border-top: 4px solid var(--ink); border-radius: 0; box-shadow: none;
+  background: #fff; color: var(--ink);
+}
+.dash-kpi:first-child { background: var(--ink); color: #fff; border-color: var(--ink); border-top-color: var(--ap); }
+.dash.dash .dash-kpi__etiqueta, .dash.dash .dash-kpi:first-child .dash-kpi__etiqueta {
+  font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--text-2);
+}
+.dash.dash .dash-kpi:first-child .dash-kpi__etiqueta, .dash.dash .dash-kpi:first-child .dash-kpi__nota { color: var(--on-dark-2); }
+.dash-kpi__valor { font-stretch: 62%; font-weight: 900; font-size: clamp(40px, 3.6vw, 56px); line-height: .9; font-variant-numeric: tabular-nums; }
+.dash-kpi:first-child .ap-sube { color: #2BD576; }
+.dash.dash .ap-sube { color: #067647; font-weight: 800; }
+
+/* Tarjetas de acceso del inicio: como las de la portada (filete negro arriba, flecha en cuadro) */
+.dash-cards__lista { gap: 12px; }
+.dash-card {
+  position: relative; gap: 6px; padding: 20px; border: 1px solid var(--line); border-top: 4px solid var(--ink); border-radius: 0; box-shadow: none;
+  background: #fff; transition: border-color .2s, transform .2s cubic-bezier(.2, .8, .2, 1), box-shadow .2s cubic-bezier(.2, .8, .2, 1);
+}
+.dash-card:hover { border-top-color: var(--ap); transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--ap); }
+.dash-card__titulo { font-size: 22px; line-height: 1; }
+.dash-card__insignia { border-radius: 0; padding: 2px 8px; background: var(--red); font-weight: 800; }
+.dash-card__desc { font-size: 13.5px; color: var(--text-2); }
+.dash-card__pie { padding-top: 12px; border-top: 1px solid var(--line); }
+.dash.dash .dash-card__dato { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+.dash-card__ir {
+  display: grid; place-items: center; width: 30px; height: 30px; border: 2px solid var(--ink); color: var(--ink);
+  font-size: 14px; font-weight: 800; transition: background .2s, color .2s, border-color .2s;
+}
+.dash-card:hover .dash-card__ir { background: var(--ap); border-color: var(--ap); color: #fff; }
+
+/* Bloques (Avisos, Próximas inscripciones…) */
+.dash-grid { gap: 12px; }
+.dash-widget { border: 1px solid var(--line); border-top: 3px solid var(--ink); border-radius: 0; box-shadow: none; }
+.dash-widget__cab { padding: 14px 18px; border-bottom: 1px solid var(--line); }
+.dash-widget__titulo { display: flex; align-items: center; gap: 10px; font-size: 20px; line-height: 1; }
+.dash-widget__titulo::before { content: ""; width: 16px; height: 3px; background: var(--red); }
+.dash.dash .dash-widget__link { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--red); }
+.dash-widget__link:hover { text-decoration: none; color: var(--ink); }
+.dash.dash .ap-avisos li { border-radius: 0; border-left: 4px solid var(--red); background: var(--paper); }
+.dash.dash .ap-avisos time { font-stretch: 75%; font-weight: 800; text-transform: uppercase; color: var(--red); }
+.dash-mini li { border-bottom-color: var(--line); }
+.dash.dash .dash-mini__fecha { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--red); }
+.dash.dash .dash-mini__main strong { font-weight: 800; }
+.dash-barras__pista { border-radius: 0; background: var(--paper); }
+.dash-barras__relleno { border-radius: 0; background: var(--ink); }
+.dash-barras__relleno--ok { background: var(--ap); }
+.dash.dash .dash-barras__n { font-stretch: 70%; font-weight: 900; font-size: 20px; }
+.dash.dash .dash-chips li { border-radius: 0; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.dash-chips .is-si { background: var(--ink); color: #fff; }
+.dash-chips .is-no { background: var(--paper); color: var(--on-dark-2); }
+.dash-proxima__fecha { font-size: 36px; color: var(--red); }
+a.dash-proxima__titulo { color: var(--ink); font-weight: 800; }
+
+/* Estados: etiquetas rectas en mayúsculas */
+.dash.dash .ap-estado {
+  border-radius: 0; padding: 3px 8px; font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+  background: var(--paper); color: var(--text-3);
+}
+.dash.dash :is(.ap-estado--pendiente, .ap-estado--plazo-abierto, .ap-estado--solicitado) { background: var(--red); color: #fff; }
+.dash.dash :is(.ap-estado--inscrito, .ap-estado--confirmada, .ap-estado--activa, .ap-estado--aprobado, .ap-estado--vigente) { background: var(--ink); color: #fff; }
+
+/* Filas y tablas */
+.dash.dash .ap-row { padding: 16px 14px; border-bottom-color: var(--line); }
+.dash.dash .ap-row:hover { background: var(--paper); }
+.dash.dash .ap-fecha { font-stretch: 75%; font-weight: 800; font-size: 15px; text-transform: uppercase; color: var(--red); }
+.dash.dash .ap-row__main strong, .dash .ap-row__link { font-weight: 800; font-size: 15px; }
+.dash.dash .ap-row__link:hover { color: var(--red); text-decoration: none; }
+.dash.dash .ap-table thead th { background: var(--ink); color: #fff; border-bottom: 0; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.dash.dash .ap-table tbody tr:hover > * { background: var(--paper); }
+.dash.dash .ap-num { font-stretch: 75%; font-weight: 800; font-size: 16px; }
+.dash.dash .ap-ranking strong { font-stretch: 62%; font-weight: 900; font-size: 72px; line-height: .9; color: var(--ink); }
+.dash.dash .ap-chart__barra { border-radius: 0; background: var(--ink); }
+.dash.dash .ap-chart__barras li:last-child .ap-chart__barra { background: var(--ap); }
+.dash.dash .ap-mes { border-radius: 0; border: 2px solid var(--line); }
+.dash.dash .ap-mes[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.dash.dash .ap-field input, .dash .ap-field select { border: 2px solid var(--ink); border-radius: 0; box-shadow: none; }
+.dash.dash .ap-field input:focus, .dash .ap-field select:focus { border-color: var(--red); outline: none; }
+.dash.dash .ap-doc { border: 1px solid var(--line); border-top: 3px solid var(--ink); border-radius: 0; box-shadow: none; }
+.dash.dash .ap-doc:hover { border-top-color: var(--red); }
+.dash.dash .ap-doc__icon { border-radius: 0; background: var(--ink); color: #fff; font-weight: 800; }
+.dash.dash .ap-aviso { border-radius: 0; border-left: 4px solid var(--red); }
+
+/* Botones */
+.dash.dash .btn {
+  min-height: 40px; padding: 0 16px; border: 2px solid var(--ink); border-radius: 0; background: #fff; color: var(--ink); box-shadow: none;
+  font-size: 11.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+}
+.dash.dash .btn:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+.dash.dash .btn--red, .dash .btn--primary { background: var(--red); border-color: var(--red); color: #fff; }
+.dash.dash .btn--red:hover, .dash .btn--primary:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
+
+@media (max-width: 640px) {
+  .dash-kpi__valor { font-size: 38px; }
+  .dash-top__titulo { font-size: 26px; }
+}
+@media (prefers-reduced-motion: reduce) { .dash-card { transition: none; } .dash-card:hover { transform: none; } }
