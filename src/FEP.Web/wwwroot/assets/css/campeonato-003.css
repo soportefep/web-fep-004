@@ -1,0 +1,122 @@
+/* =========================================================================
+   FEP · Prototipo 003 — Fichas de campeonato (parejas, equipos y silla de ruedas)
+   Para campeonato-parejas.html, campeonato-equipos.html y campeonato-silla.html (main.camp-003).
+   Va después de calendario-003-mensual.css, que aporta el esqueleto común con los calendarios
+   (main.cal-003: índice negro fijo a la izquierda y patrocinadores en franja al final).
+   No cambia el JavaScript: restiliza lo que pintan campeonato-equipos.js y campeonato-silla.js.
+   - Color de tipo: parejas rojo, equipos azul pista, silla amarillo (cabecera, acentos, datos).
+   - Secciones numeradas 01, 02, 03… como en la home.
+   ========================================================================= */
+
+.camp-003 { --tipo: var(--red); --tipo-txt: #fff; }
+.camp-003--equipos { --tipo: var(--blue); }
+.camp-003--silla { --tipo: #FFB800; --tipo-txt: var(--ink); }
+
+/* ---------- Cabecera: diagonal y filete con el color del tipo ---------- */
+.camp-003 .page-hero { border-bottom-color: var(--tipo); }
+.camp-003 .page-hero::after { background: var(--tipo); opacity: 1; }
+.camp-003 .page-hero .eyebrow--line::before { background: var(--tipo); }
+.camp-003 .page-hero__stats li { border-left-color: var(--tipo); }
+.camp-003 .page-hero__stats strong { font-size: 40px; }
+.camp-003 .cpe-hero__tags .org-tag { border-radius: 0; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; font-size: 11px; }
+.camp-003 .cpe-hero__actions .btn--red { background: var(--tipo); color: var(--tipo-txt); }
+.camp-003 .cpe-hero__actions .btn--red:hover { filter: brightness(1.1); }
+
+/* ---------- Secciones numeradas ---------- */
+.camp-003 .page-content { counter-reset: seccion; }
+.camp-003 .cpe-section { scroll-margin-top: calc(var(--cab) + 20px); }
+.camp-003 .cpe-section:not([hidden]) { counter-increment: seccion; }
+.camp-003 .cpe-section:not([hidden]) ~ .cpe-section:not([hidden]) { margin-top: 64px; padding-top: 0; border-top: 0; }
+.camp-003 .cpe-section__title {
+  display: flex; align-items: flex-end; gap: 16px; padding-bottom: 14px; border-bottom: 3px solid var(--ink);
+  font-size: clamp(30px, 3vw, 44px);
+}
+.camp-003 .cpe-section__title::before {
+  content: counter(seccion, decimal-leading-zero); flex: none;
+  font-stretch: 62%; font-weight: 900; font-size: 1.6em; line-height: .78; color: transparent; -webkit-text-stroke: 2px var(--ink);
+}
+.camp-003 .cpe-section__title .org-count { align-self: center; border-radius: 0; background: var(--tipo); color: var(--tipo-txt); font-weight: 800; }
+.camp-003 .cpe-subtitle { font-stretch: 78%; font-weight: 800; text-transform: uppercase; font-size: 17px; }
+
+/* Avisos */
+.camp-003 .cpe-alert { border-radius: 0; border: 0; border-left: 8px solid var(--tipo); background: var(--paper); }
+.camp-003 .cpe-alert strong { color: var(--ink); }
+
+/* ---------- Cuadros: bloques contundentes ---------- */
+.camp-003 .cpe-draws-group__title { font-stretch: 78%; font-weight: 800; font-size: 20px; text-transform: uppercase; }
+.camp-003 .cpe-draws { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.camp-003 .cpe-draw {
+  min-height: 92px; padding: 16px 18px; border: 2px solid var(--ink); border-radius: 0; border-top: 8px solid var(--tipo);
+  background: #fff; transition: background-color .2s, color .2s, transform .2s var(--ease), box-shadow .2s var(--ease);
+}
+.camp-003 .cpe-draw__type { color: var(--text-2); font-weight: 800; letter-spacing: .12em; }
+.camp-003 .cpe-draw__title { font-stretch: 78%; font-weight: 800; font-size: 19px; line-height: 1.05; text-transform: uppercase; }
+.camp-003 .cpe-draw__arrow { color: var(--ink); font-size: 20px; }
+.camp-003 .cpe-draw:hover { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--tipo); border-color: var(--ink); }
+
+/* ---------- En directo y vídeos ---------- */
+.camp-003 .cpe-live iframe { border-radius: 0; border: 2px solid var(--ink); }
+
+/* ---------- Tablas: inscritos y cuadro de honor ---------- */
+.camp-003 .cpe-entries { max-width: none; }
+.camp-003 .org-table { border-collapse: collapse; }
+.camp-003 .org-table th { background: var(--ink); color: #fff; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; border: 0; }
+.camp-003 .org-table td { border-bottom: 1px solid var(--line); }
+.camp-003 .org-table tbody tr:nth-child(even) td { background: var(--paper); }
+.camp-003 .cpe-entries a { font-weight: 800; color: var(--ink); text-decoration: underline; text-decoration-color: var(--tipo); text-decoration-thickness: 3px; text-underline-offset: 4px; }
+.camp-003 .cps-honor__puesto { font-stretch: 62%; font-weight: 900; font-size: 26px; }
+/* Cuadro de honor: cada pareja son dos filas (la 2.ª lleva .cps-honor__pareja). Se separan por parejas, sin
+   alternar fondo fila a fila, y la pareja campeona (las dos primeras filas) va con el color del tipo. */
+.camp-003 .cps-honor tbody tr td { background: #fff !important; }
+.camp-003 .cps-honor tbody tr:not(.cps-honor__pareja):not(:first-child) td { border-top: 2px solid var(--ink); }
+.camp-003 .cps-honor tbody tr:first-child td, .camp-003 .cps-honor tbody tr:first-child + .cps-honor__pareja td { background: var(--tipo) !important; color: var(--tipo-txt); }
+.camp-003 .cps-honor tbody tr:first-child :is(.org-contact, .org-table__detail, a), .camp-003 .cps-honor tbody tr:first-child + .cps-honor__pareja :is(.org-contact, .org-table__detail, a) { color: inherit; }
+
+/* ---------- Inscripción: pasos ---------- */
+.camp-003 .cpe-steps { max-width: none; }
+.camp-003 .cpe-step { border: 2px solid var(--ink); border-radius: 0; }
+.camp-003 .cpe-step::before { border-radius: 0; background: var(--tipo); color: var(--tipo-txt); }
+.camp-003 .cpe-step__link { font-stretch: 80%; font-weight: 800; font-size: 18px; text-transform: uppercase; }
+
+/* ---------- Información general: mosaico de datos ---------- */
+.camp-003 .fedf-contact { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0; margin-top: 20px; border: 2px solid var(--ink); }
+.camp-003 .fedf-contact__item { padding: 20px 22px; border: 0; border-radius: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; }
+.camp-003 .fedf-contact dt { font-size: 11px; font-weight: 800; letter-spacing: .14em; color: var(--text-2); }
+.camp-003 .fedf-contact dt::before { content: ""; display: block; width: 28px; height: 6px; margin-bottom: 10px; background: var(--tipo); }
+.camp-003 .fedf-contact dd { font-stretch: 80%; font-weight: 800; font-size: 20px; line-height: 1.2; text-transform: uppercase; }
+.camp-003 .fedf-contact dd a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--tipo); text-decoration-thickness: 3px; }
+
+/* ---------- Notificaciones y documentos ---------- */
+.camp-003 .cpe-section .doc { border-bottom-color: var(--line); }
+.camp-003 .cpe-section .doc__icon { border-radius: 0; background: var(--tipo); color: var(--tipo-txt); }
+.camp-003 .cpe-section .doc__title { font-weight: 800; }
+
+/* ---------- Cartel ---------- */
+.camp-003 .cpe-poster { max-width: 520px; }
+.camp-003 .cpe-poster img { border: 2px solid var(--ink); box-shadow: 14px 14px 0 var(--tipo); }
+
+/* ---------- Noticias relacionadas ---------- */
+.camp-003 .cpe-news__item { border: 2px solid var(--ink); border-radius: 0; }
+.camp-003 .cpe-news__item:hover { box-shadow: 6px 6px 0 var(--tipo); }
+
+/* Índice: el elemento activo con el color del tipo */
+.camp-003 .page-toc__list a.is-active { background: var(--tipo); color: var(--tipo-txt); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .camp-003 .cpe-section__title { font-size: 28px; }
+  .camp-003 .cpe-live { grid-template-columns: minmax(0, 1fr); }
+  .camp-003 .cpe-poster img { box-shadow: 8px 8px 0 var(--tipo); }
+}
+@media (max-width: 640px) {
+  .camp-003 .page-hero__stats strong { font-size: 30px; }
+  .camp-003 .fedf-contact { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .camp-003 .cpe-draw { transition: none; }
+  .camp-003 .cpe-draw:hover { transform: none; }
+}
+/* Nota final ("Más competición…") con el color del tipo */
+.camp-003 .page-note { border-left-color: var(--tipo); }
+/* Botón "Ver la clasificación completa (N puestos más)": en mayúsculas no cabía en una línea en móvil */
+.camp-003 .cps-honor__mas { max-width: 100%; height: auto; min-height: 36px; padding: 8px 14px; white-space: normal; text-align: left; line-height: 1.3; }

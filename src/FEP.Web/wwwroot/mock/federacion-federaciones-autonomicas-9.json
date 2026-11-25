@@ -1,0 +1,116 @@
+{
+    "id":  9,
+    "nombre":  "FEDERACION MELILLENSE DE PADEL",
+    "nacional":  false,
+    "imagen":  "images/9.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-9.jpg",
+    "presidente":  "ENRIQUE DÍAZ-OTERO LÓPEZ",
+    "direccion":  "PASEO DE LAS CONCHAS, 17",
+    "codigoPostal":  "52006",
+    "localidad":  "MELILLA",
+    "telefonos":  [
+                      "952695897",
+                      "670053754"
+                  ],
+    "email":  "info@padelmelilla.com",
+    "web":  "https://www.padelmelilla.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  812,
+                      "puesto":  16,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  10,
+                      "arbitros":  3,
+                      "clubes":  0,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  748,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  736,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  709,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  645,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  571,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  698,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  711,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  781,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  717,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  748,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  754,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  776,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  811,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  832,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  812,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  517,
+                                     "femenino":  295,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  237,
+                                     "sub23":  52,
+                                     "senior":  300,
+                                     "veteranos":  223,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

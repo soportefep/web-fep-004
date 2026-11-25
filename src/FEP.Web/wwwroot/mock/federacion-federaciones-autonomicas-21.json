@@ -1,0 +1,115 @@
+{
+    "id":  21,
+    "nombre":  "FEDERACION DE PADEL DE CASTILLA Y LEON",
+    "nacional":  false,
+    "imagen":  "images/21.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-21.jpg",
+    "presidente":  "VICTORIA BARCINA",
+    "direccion":  "C/ Azucarera, CDM Las Norias de Santa Victoria,",
+    "codigoPostal":  "47008",
+    "localidad":  "Valladolid",
+    "telefonos":  [
+                      "654 872 344"
+                  ],
+    "email":  "federacion@padelcyl.es",
+    "web":  "https://www.padelcyl.es",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  2804,
+                      "puesto":  12,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  56,
+                      "arbitros":  17,
+                      "clubes":  55,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  1733,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  1966,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  2302,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  2773,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  2697,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  2723,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  2678,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  2652,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  2242,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  3479,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  3102,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  2919,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  2916,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  2848,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  2804,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  1874,
+                                     "femenino":  930,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  353,
+                                     "sub23":  218,
+                                     "senior":  1037,
+                                     "veteranos":  1196,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

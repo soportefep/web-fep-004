@@ -1,0 +1,116 @@
+{
+    "id":  22,
+    "nombre":  "FEDERACION DE PADEL CASTILLA-LA MANCHA",
+    "nacional":  false,
+    "imagen":  "images/22.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-22.jpg",
+    "presidente":  "PAULA LETÓN MUÑOZ",
+    "direccion":  "C/ VICTORIA KENT Nº 13",
+    "codigoPostal":  "19005",
+    "localidad":  "Guadalajara",
+    "telefonos":  [
+                      "654216003",
+                      "603811363"
+                  ],
+    "email":  "federacion@fpclm.com",
+    "web":  "https://fpclm.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  607,
+                      "puesto":  17,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  30,
+                      "arbitros":  0,
+                      "clubes":  20,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  284,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  209,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  346,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  336,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  312,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  257,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  270,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  290,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  247,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  868,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  246,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  295,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  419,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  554,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  607,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  489,
+                                     "femenino":  118,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  160,
+                                     "sub23":  68,
+                                     "senior":  242,
+                                     "veteranos":  137,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

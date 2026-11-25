@@ -1,0 +1,366 @@
+{
+    "torneo":  {
+                   "id":  28714,
+                   "titulo":  "CAMPEONATO DE ESPAÑA DE VETERANOS 2026",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2026-06-26",
+                   "fechaFin":  "2026-06-28",
+                   "lugar":  "San Pedro de Alcántara"
+               },
+    "genero":  "M",
+    "categoria":  "Cat55",
+    "nivel":  1,
+    "cuadro":  "Consola",
+    "publicado":  true,
+    "notas":  null,
+    "formato":  "eliminatoria",
+    "plantilla":  "Cuadro8",
+    "participantes":  [
+                          {
+                              "avance":  3,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "I. ANDRINUA CORTABARRIA - J. MENDIONDO RUIZ",
+                              "jugadores":  [
+                                                "I. ANDRINUA CORTABARRIA",
+                                                "J. MENDIONDO RUIZ"
+                                            ],
+                              "cabezaSerie":  2
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "F. BARRIO CAMPO - R. LAZARO ABAD",
+                              "jugadores":  [
+                                                "F. BARRIO CAMPO",
+                                                "R. LAZARO ABAD"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "F. MIÑON SUSO - E. ORTIZ DE URBINA DIAZ",
+                              "jugadores":  [
+                                                "F. MIÑON SUSO",
+                                                "E. ORTIZ DE URBINA DIAZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "A. OLIVE LLADO - A. ROZAS PLANA",
+                              "jugadores":  [
+                                                "A. OLIVE LLADO",
+                                                "A. ROZAS PLANA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "M. MARTIN VALDIVIA - A. BRAVO ROSADO",
+                              "jugadores":  [
+                                                "M. MARTIN VALDIVIA",
+                                                "A. BRAVO ROSADO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "J. MARTINEZ TUBIO - J. GOMEZ TORRES",
+                              "jugadores":  [
+                                                "J. MARTINEZ TUBIO",
+                                                "J. GOMEZ TORRES"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "J. BOLDOBA SANZ - J. GOMEZ BRAVO",
+                              "jugadores":  [
+                                                "J. BOLDOBA SANZ",
+                                                "J. GOMEZ BRAVO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "A. HERNANDEZ MARTINEZ - J. MELERO PEREZ",
+                              "jugadores":  [
+                                                "A. HERNANDEZ MARTINEZ",
+                                                "J. MELERO PEREZ"
+                                            ],
+                              "cabezaSerie":  1
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "F. BARRIO CAMPO - R. LAZARO ABAD",
+                              "jugadores":  [
+                                                "F. BARRIO CAMPO",
+                                                "R. LAZARO ABAD"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "A. OLIVE LLADO - A. ROZAS PLANA",
+                              "jugadores":  [
+                                                "A. OLIVE LLADO",
+                                                "A. ROZAS PLANA"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "M. MARTIN VALDIVIA - A. BRAVO ROSADO",
+                              "jugadores":  [
+                                                "M. MARTIN VALDIVIA",
+                                                "A. BRAVO ROSADO"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "A. HERNANDEZ MARTINEZ - J. MELERO PEREZ",
+                              "jugadores":  [
+                                                "A. HERNANDEZ MARTINEZ",
+                                                "J. MELERO PEREZ"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "F. BARRIO CAMPO - R. LAZARO ABAD",
+                              "jugadores":  [
+                                                "F. BARRIO CAMPO",
+                                                "R. LAZARO ABAD"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "A. HERNANDEZ MARTINEZ - J. MELERO PEREZ",
+                              "jugadores":  [
+                                                "A. HERNANDEZ MARTINEZ",
+                                                "J. MELERO PEREZ"
+                                            ]
+                          },
+                          {
+                              "avance":  0,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "A. HERNANDEZ MARTINEZ - J. MELERO PEREZ",
+                              "jugadores":  [
+                                                "A. HERNANDEZ MARTINEZ",
+                                                "J. MELERO PEREZ"
+                                            ]
+                          }
+                      ],
+    "partidos":  [
+                     {
+                         "avance":  3,
+                         "posicion":  1,
+                         "resultado":  "6/3-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  2,
+                         "resultado":  "6/0-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  3,
+                         "resultado":  "6/2-3/6-10/8",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  4,
+                         "resultado":  "6/2-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  1,
+                         "resultado":  "6/4-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  2,
+                         "resultado":  "6/2-2/6-10/7",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  1,
+                         "posicion":  1,
+                         "resultado":  "6/4-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     }
+                 ],
+    "cabezasSerie":  [
+                         {
+                             "cabezaSerie":  1,
+                             "nombre":  "A. HERNANDEZ MARTINEZ/J. MELERO PEREZ",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  2,
+                             "nombre":  "I. ANDRINUA CORTABARRIA/J. MENDIONDO RUIZ",
+                             "puntos":  null
+                         }
+                     ],
+    "clasificacion":  [
+
+                      ],
+    "otrosCuadros":  [
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat60",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat60",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "X",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "X",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         }
+                     ]
+}

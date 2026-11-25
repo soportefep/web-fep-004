@@ -1,0 +1,95 @@
+/* =========================================================================
+   FEP · Prototipo 003 — Portada de rankings (rankings.html, main.rnk-003)
+   Va después de calendario-003-mensual.css (esqueleto común: índice negro fijo a la izquierda y
+   patrocinadores al final). No cambia rankings.js: restiliza lo que pinta.
+   - Cada ranking es un bloque grande de color, numerado 01–05, con la imagen oficial al lado.
+   - El Ranking Único (absoluto) va destacado a todo el ancho.
+   - Colores: absoluto negro, menores rojo, veteranos azul, silla amarillo, equipos blanco con borde.
+   ========================================================================= */
+
+.rnk-003 #rankings > .organo__head { display: flex; align-items: flex-end; gap: 16px; padding-bottom: 14px; margin-bottom: 24px; border-bottom: 3px solid var(--ink); }
+.rnk-003 .organo__num { display: none; }   /* la numeración va en cada ranking */
+.rnk-003 .organo__title { font-size: clamp(36px, 4vw, 56px); }
+.rnk-003 .organo__meta { margin-left: auto; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--text-2); }
+
+.rnk-003 .rnk-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; counter-reset: ranking; }
+.rnk-003 .rnk-grid__item { counter-increment: ranking; display: flex; scroll-margin-top: calc(var(--cab) + 20px); }
+.rnk-003 .rnk-grid__item:first-child { grid-column: 1 / -1; }
+
+/* Color de cada ranking */
+.rnk-003 .rnk-grid__item { --c: var(--ink); --t: #fff; --acento: var(--red); }
+.rnk-003 #ranking-menores { --c: var(--red); --t: #fff; --acento: var(--ink); }
+.rnk-003 #ranking-veteranos { --c: var(--blue); --t: #fff; --acento: #fff; }
+.rnk-003 #ranking-silla-ruedas { --c: #FFB800; --t: var(--ink); --acento: var(--ink); }
+.rnk-003 #ranking-equipos-absolutos { --c: #fff; --t: var(--ink); --acento: var(--red); }
+
+.rnk-003 .rnk-card {
+  position: relative; flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) 44%; grid-template-areas: "cuerpo media";
+  min-height: 250px; border: 2px solid var(--ink); border-radius: 0; overflow: hidden; box-shadow: none;
+  background: var(--c); color: var(--t); transition: transform .2s var(--ease), box-shadow .2s var(--ease);
+}
+.rnk-003 .rnk-grid__item:first-child .rnk-card { grid-template-columns: minmax(0, 1fr) 46%; min-height: 320px; }
+.rnk-003 .rnk-card:hover, .rnk-003 .rnk-card:focus-visible { transform: translate(-4px, -4px); box-shadow: 8px 8px 0 var(--ink); }
+.rnk-003 #ranking-absoluto .rnk-card:hover, .rnk-003 #ranking-absoluto .rnk-card:focus-visible { box-shadow: 8px 8px 0 var(--red); }
+.rnk-003 .rnk-card:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+
+/* Imagen oficial del ranking, a un lado */
+.rnk-003 .rnk-card__media { grid-area: media; position: relative; min-height: 100%; background: #000; border-left: 2px solid var(--ink); }
+.rnk-003 .rnk-card__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: right center; border-radius: 0; }
+.rnk-003 .rnk-card__chip {
+  position: absolute; z-index: 1; top: 14px; left: 14px; padding: 5px 10px; border-radius: 0;
+  background: var(--c); color: var(--t); border: 2px solid var(--ink);
+  font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+}
+
+/* Cuerpo: número, título y flecha */
+.rnk-003 .rnk-card__body {
+  grid-area: cuerpo; position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 20px;
+  padding: 24px 26px; background: none; color: inherit;
+}
+.rnk-003 .rnk-card__body::before {
+  content: counter(ranking, decimal-leading-zero); position: static; width: auto; height: auto; border-radius: 0; background: none;   /* anula la rayita roja de fep.css */
+  font-stretch: 62%; font-weight: 900; font-size: 72px; line-height: .8; color: transparent; -webkit-text-stroke: 2px var(--t); opacity: .6;
+}
+.rnk-003 .rnk-card__title {
+  margin-top: auto; font-stretch: 66%; font-weight: 900; font-size: clamp(26px, 2.3vw, 36px); line-height: .92; overflow-wrap: normal; word-break: normal;
+  text-transform: uppercase; letter-spacing: 0; color: inherit;
+}
+.rnk-003 .rnk-grid__item:first-child .rnk-card__title { font-size: clamp(44px, 4.6vw, 72px); }
+.rnk-003 .rnk-card__sub { margin-top: 8px; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: inherit; opacity: .75; }
+.rnk-003 .rnk-card__go {
+  position: absolute; right: 18px; bottom: 18px; width: 46px; height: 46px; display: grid; place-items: center;
+  border: 2px solid currentColor; border-radius: 0; background: none; color: inherit; font-size: 20px;
+  transition: background-color .2s, color .2s, transform .2s var(--ease);
+}
+.rnk-003 .rnk-card:hover .rnk-card__go { background: var(--acento); border-color: var(--acento); color: var(--c); transform: translateX(3px); }
+/* El título no debe chocar con la flecha */
+.rnk-003 .rnk-card__body > div { padding-right: 56px; }
+
+/* Índice: el elemento activo en rojo como en el resto de páginas */
+.rnk-003 .page-toc__list a { font-stretch: 80%; text-transform: uppercase; letter-spacing: .03em; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1279px) {
+  .rnk-003 .rnk-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .rnk-003 .rnk-card, .rnk-003 .rnk-grid__item:first-child .rnk-card {
+    grid-template-columns: minmax(0, 1fr); grid-template-areas: "media" "cuerpo"; min-height: 0;
+  }
+  .rnk-003 .rnk-card__media { min-height: 0; aspect-ratio: 228 / 120; border-left: 0; border-bottom: 2px solid var(--ink); }
+  .rnk-003 .rnk-card__body { padding: 18px 18px 20px; }
+  .rnk-003 .rnk-card__body::before { font-size: 52px; }
+  .rnk-003 .rnk-grid__item:first-child .rnk-card__title, .rnk-003 .rnk-card__title { font-size: 34px; }
+  .rnk-003 .organo__meta { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rnk-003 .rnk-card, .rnk-003 .rnk-card__go { transition: none; }
+  .rnk-003 .rnk-card:hover, .rnk-003 .rnk-card:focus-visible { transform: none; }
+}
+/* En móvil fep.css oculta el subtítulo y achica la flecha: aquí se mantienen */
+@media (max-width: 640px) {
+  .rnk-003 .rnk-card__sub { display: block; }
+  .rnk-003 .rnk-card__go { width: 42px; height: 42px; font-size: 18px; }
+  .rnk-003 .rnk-card__body::before { left: auto; }
+}

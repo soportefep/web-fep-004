@@ -1,0 +1,34 @@
+{
+  "actualizado": "2026-11-13",
+  "titulo": "Programa Impulso",
+  "introduccion": [
+    "El Programa Impulso de la Federación Española de Pádel, en marcha desde 2014, apoya a los deportistas seleccionables que están en la última categoría de menores o empiezan su etapa absoluta.",
+    "En 2026 el programa promueve su participación en pruebas FIP de categoría Bronze, Silver, Gold y Platinum del calendario CUPRA FIP Tour: se seleccionan hasta 8 pruebas organizadas por federaciones autonómicas u organizadores reconocidos, y en cada una la FEP reparte 10 ayudas de 250 € entre jugadoras y jugadores junior y sub-21.",
+    "Las bases completas (convocatoria, criterios de selección de las pruebas y condiciones de las ayudas) y el calendario tentativo están en los documentos de esta página."
+  ],
+  "imagen": "Noticias/Impulso2017.jpg",
+  "imagenUrl": null,
+  "imagenAlt": "Logotipo del Programa Impulso de la Federación Española de Pádel",
+  "documentos": [
+    {
+      "clave": "informacion-2026",
+      "titulo": "Información Circuito Impulso 2026",
+      "descripcion": "Bases del programa: objetivo, convocatoria a las federaciones autonómicas y organizadores, selección de las 8 pruebas y ayudas de tecnificación.",
+      "temporada": 2026,
+      "fecha": "2026-01-15",
+      "tipo": "pdf",
+      "archivo": "docs/Programa-Impulso-2026 15-01-26.pdf",
+      "url": null
+    },
+    {
+      "clave": "calendario-2026",
+      "titulo": "Calendario tentativo Circuito Impulso 2026",
+      "descripcion": "Pruebas propuestas por federación autonómica, con sede, categoría FIP y semana de juego.",
+      "temporada": 2026,
+      "fecha": null,
+      "tipo": "pdf",
+      "archivo": "docs/CALENDARIO-IMPULSO-2026.pdf",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "actualizado": "2026-11-16",
+  "temporada": 2027,
+  "fechaLimite": "2026-11-20T14:00:00",
+  "titulo": "Organización de torneos 2027",
+  "introduccion": [
+    "La Federación Española de Pádel abre la convocatoria para que clubes y entidades soliciten organizar las pruebas del calendario oficial 2027: campeonatos de España, circuitos nacionales de menores y de veteranos y pruebas de pádel en silla.",
+    "Antes de presentar la solicitud, consulta el calendario provisional y las condiciones de organización. Cada solicitud corresponde a una prueba."
+  ],
+  "avisoCerrado": "El proceso de licitación de torneos para la temporada 2027 ha finalizado.",
+  "documentos": [
+    {
+      "clave": "calendario-provisional",
+      "titulo": "Calendario provisional 2027",
+      "descripcion": "Pruebas del calendario oficial 2027 con sus fechas previstas."
+    },
+    {
+      "clave": "condiciones",
+      "titulo": "Condiciones de organización de torneos",
+      "descripcion": "Bases de la licitación de las pruebas del calendario 2027: lo que la FEP pide a las sedes y a las entidades organizadoras."
+    }
+  ],
+  "pasos": [
+    {
+      "orden": 1,
+      "titulo": "Datos de la solicitud",
+      "texto": "Elige la prueba, indica la sede (comunidad, provincia, localidad y club) y los datos de la entidad organizadora y de la persona responsable."
+    },
+    {
+      "orden": 2,
+      "titulo": "Autorización firmada",
+      "texto": "Descarga la autorización con los datos de tu propuesta, fírmala en nombre de la entidad y adjúntala."
+    },
+    {
+      "orden": 3,
+      "titulo": "Oferta",
+      "texto": "Detalla lo que ofrece la sede: pistas disponibles, instalaciones y servicios para jugadores, árbitros y público."
+    },
+    {
+      "orden": 4,
+      "titulo": "Fianza",
+      "texto": "Si la prueba tiene fianza, elige cómo pagarla (transferencia bancaria o pasarela de pago). Al terminar recibirás por email el resguardo de la solicitud."
+    }
+  ],
+  "proteccionDatos": [
+    "Le informamos de la existencia de un fichero titularidad del que LA FEDERACION ESPAÑOLA DE PADEL (FEP) es responsable y en el que se guardan los datos personales que Ud. nos proporciona, con la finalidad del mantenimiento y gestión de su relación con la FEP y de la información sobre sus servicios y actividades. Sus datos podrán ser cedidos a las empresas patrocinadoras de la FEP para remitir información sobre sus servicios y actividades.",
+    "Le informamos que algunos de sus datos podrán ser incorporados a la página web de la FEP con relación a su participación en competición o inclusión en las clasificaciones. Usted puede ejercitar sus derechos de acceso, rectificación, cancelación y, en su caso, oposición enviando una solicitud por escrito, acompañada de una fotocopia de su DNI dirigida a la FEDERACION ESPAÑOLA DE PADEL, C/ Francisco Silvela, 36 1º of.9, 28028 MADRID"
+  ],
+  "envio": "Organizacion_P0.asp"
+}

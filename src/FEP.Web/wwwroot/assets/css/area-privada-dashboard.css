@@ -1,0 +1,264 @@
+/* =========================================================================
+   FEP · Prototipo 003 — Mi Club y Mi Portal como dashboard AISLADO de la web
+   (body.dash): pantalla de acceso a dos columnas y, con sesión, menú lateral negro,
+   barra superior y vistas. Va después de area-privada-003.css (componentes ap-*).
+   Color del panel (--ap): club azul · jugador/a rojo · juez-árbitro amarillo.
+   ========================================================================= */
+
+body.dash[data-area="club"] { --ap: var(--blue); }
+body.dash { min-height: 100vh; margin: 0; background: #EDEDEA; color: var(--ink); }
+.dash [hidden] { display: none !important; }
+.dash-logo { display: inline-block; line-height: 0; }
+.dash-logo img { width: auto; height: 48px; }
+.dash-logo:focus-visible { outline: 3px solid var(--ap); outline-offset: 4px; }
+
+/* ---------------------------------------------------------------------------
+   Acceso
+   --------------------------------------------------------------------------- */
+.dash-acceso { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); min-height: 100vh; }
+.dash-acceso__marca {
+  position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; gap: 48px;
+  padding: clamp(28px, 4vw, 56px); background: var(--ink); color: #fff;
+}
+.dash-acceso__marca::after {
+  content: ""; position: absolute; right: -18%; bottom: -10%; width: 70%; height: 46%;
+  background: var(--ap); transform: skewY(-14deg); opacity: .95; pointer-events: none;
+}
+.dash-acceso__marca > * { position: relative; z-index: 1; }
+.dash-acceso__eyebrow { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: rgba(255, 255, 255, .75); }
+.dash-acceso__eyebrow::before { content: ""; width: 30px; height: 3px; background: var(--ap); }
+.dash-acceso__titulo { margin-top: 14px; font-stretch: 62%; font-weight: 900; font-size: clamp(64px, 8vw, 120px); line-height: .86; text-transform: uppercase; }
+.dash-acceso__lead { margin-top: 18px; max-width: 40ch; font-size: 17px; line-height: 1.5; color: rgba(255, 255, 255, .8); }
+.dash-acceso__areas { display: grid; gap: 8px; max-width: 360px; }
+.dash-acceso__areas a {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 12px 16px;
+  border: 2px solid rgba(255, 255, 255, .25); background: rgba(10, 10, 10, .6); color: #fff; text-decoration: none;
+}
+.dash-acceso__areas strong { font-stretch: 70%; font-weight: 900; font-size: 20px; text-transform: uppercase; }
+.dash-acceso__areas span { font-size: 13px; color: rgba(255, 255, 255, .7); }
+.dash-acceso__areas a[aria-current="page"] { border-color: #fff; background: #fff; color: var(--ink); }
+.dash-acceso__areas a[aria-current="page"] span { color: var(--text-2); }
+.dash-acceso__areas a:hover { border-color: #fff; }
+.dash-acceso__areas a:focus-visible { outline: 3px solid var(--ap); outline-offset: 2px; }
+
+.dash-acceso__cuerpo { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px; padding: clamp(24px, 4vw, 64px); }
+.dash-acceso__caja { width: min(560px, 100%); padding: clamp(24px, 3vw, 40px); background: #fff; border-top: 10px solid var(--ap); box-shadow: 0 20px 60px rgba(10, 10, 10, .08); }
+.dash-acceso__h2 { font-stretch: 66%; font-weight: 900; font-size: clamp(30px, 3vw, 40px); line-height: .95; text-transform: uppercase; }
+.dash-acceso__txt { margin-top: 10px; font-size: 15.5px; color: var(--text-3); }
+.dash-acceso__demo { display: grid; gap: 12px; margin-top: 28px; padding-top: 24px; border-top: 2px dashed var(--line); }
+.dash-acceso__demo-titulo { font-stretch: 70%; font-weight: 900; font-size: 20px; text-transform: uppercase; }
+.dash-acceso__demo .ap-demo__btn { border-color: var(--ink); color: var(--ink); }
+.dash-acceso__demo .ap-demo__btn span { color: var(--text-2); }
+.dash-acceso__demo .ap-demo__btn:hover, .dash-acceso__demo .ap-demo__btn:focus-visible { background: var(--ink); color: #fff; border-color: var(--ink); }
+.dash-acceso__demo .ap-demo__btn:hover span, .dash-acceso__demo .ap-demo__btn:focus-visible span { color: rgba(255, 255, 255, .8); }
+.dash-acceso__nota { font-size: 12.5px; line-height: 1.5; color: var(--text-2); }
+.dash-volver { font-size: 14px; font-weight: 700; color: var(--ink); }
+.dash-volver:hover { color: var(--red); }
+
+/* ---------------------------------------------------------------------------
+   Dashboard: menú lateral + zona principal
+   --------------------------------------------------------------------------- */
+.dash-app { display: grid; grid-template-columns: 272px minmax(0, 1fr); min-height: 100vh; }
+.dash-side {
+  position: sticky; top: 0; height: 100vh; overflow-y: auto; display: flex; flex-direction: column;
+  background: var(--ink); color: #fff; border-right: 6px solid var(--ap);
+}
+.dash-side__cab { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 22px 22px 18px; }
+.dash-side__cab .dash-logo img { height: 40px; }
+.dash-side__area { padding: 4px 8px; background: var(--ap); color: var(--ap-txt); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
+
+.dash-user { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 12px; margin: 0 16px 12px; padding: 14px; background: rgba(255, 255, 255, .07); }
+.dash-user__avatar, .dash-top__avatar {
+  display: grid; place-items: center; width: 44px; height: 44px; flex: none;
+  background: var(--ap); color: var(--ap-txt); font-stretch: 75%; font-weight: 900; font-size: 17px;
+}
+.dash-user__datos { display: grid; gap: 2px; min-width: 0; }
+.dash-user__tipo { font-size: 10.5px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--ap); }
+.ap-003--arbitro .dash-user__tipo { color: #FFB800; }
+.dash-user__nombre { font-stretch: 75%; font-weight: 800; font-size: 16px; line-height: 1.15; text-transform: uppercase; overflow-wrap: anywhere; }
+.dash-user__id { font-size: 12px; color: rgba(255, 255, 255, .6); }
+.ap-003--club .dash-user__tipo { color: #7FA0FF; }
+
+.dash-nav { flex: 1; padding: 8px 0; }
+.dash-nav ul { display: grid; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.dash-nav a {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 22px;
+  border-left: 4px solid transparent; color: rgba(255, 255, 255, .72); text-decoration: none;
+  font-size: 14px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+}
+.dash-nav a:hover { color: #fff; background: rgba(255, 255, 255, .06); }
+.dash-nav a[aria-current="page"] { color: #fff; background: rgba(255, 255, 255, .1); border-left-color: var(--ap); }
+.dash-nav a:focus-visible { outline: 3px solid var(--ap); outline-offset: -3px; }
+.dash-nav__insignia { min-width: 22px; padding: 2px 6px; background: var(--red); color: #fff; font-size: 11.5px; font-weight: 800; text-align: center; letter-spacing: 0; }
+.ap-003--jugador .dash-nav__insignia { background: #fff; color: var(--ink); }
+
+.dash-side__pie { display: grid; gap: 4px; padding: 16px 22px 24px; border-top: 1px solid rgba(255, 255, 255, .12); }
+.dash-side__link {
+  padding: 6px 0; border: 0; background: none; color: rgba(255, 255, 255, .7); text-align: left; cursor: pointer;
+  font: inherit; font-size: 13.5px; font-weight: 600; text-decoration: none;
+}
+.dash-side__link:hover { color: #fff; text-decoration: underline; }
+.dash-side__link:focus-visible { outline: 2px solid var(--ap); outline-offset: 2px; }
+
+.dash-main { display: flex; flex-direction: column; min-width: 0; }
+.dash-top {
+  position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 16px;
+  min-height: 76px; padding: 12px clamp(16px, 3vw, 40px); background: #fff; border-bottom: 2px solid var(--ink);
+}
+.dash-top__menu { display: none; }
+.dash-top__titulos { flex: 1; min-width: 0; }
+.dash-top__miga { font-size: 11.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--text-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dash-top__titulo { font-stretch: 66%; font-weight: 900; font-size: clamp(26px, 2.6vw, 36px); line-height: 1; text-transform: uppercase; }
+.dash-top__titulo:focus { outline: none; }
+.dash-top__demo { padding: 5px 10px; background: #FFB800; color: var(--ink); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
+.dash-top__avatar { width: 40px; height: 40px; font-size: 15px; }
+
+.dash-contenido { flex: 1; width: 100%; max-width: 1320px; padding: clamp(16px, 3vw, 40px); }
+.dash-contenido:focus { outline: none; }
+.dash .ap-section { margin: 0; scroll-margin-top: 0; }
+.dash .ap-section > * + * { margin-top: 20px; }
+.dash .ap-section > .ap-rows, .dash .ap-section > .ap-table-wrap, .dash .ap-section > .ap-dl,
+.dash .ap-section > .ap-docs, .dash .ap-section > .ap-meses, .dash .ap-section > .ap-form { background: #fff; }
+.dash .ap-section > .ap-rows { padding: 0 20px; border-top: 0; }
+.dash .ap-section > .ap-form { padding: 24px; }
+.dash .ap-section > .ap-ranking, .dash .ap-section > .ap-chart { padding: 20px 24px; background: #fff; margin-top: 0; }
+.dash .ap-section > .ap-chart { padding-bottom: 16px; }
+.dash .ap-section > .ap-docs { padding: 0; background: none; }
+
+/* Cifras clave */
+.dash-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.dash-kpi { display: flex; flex-direction: column; gap: 6px; padding: 18px 20px; background: #fff; border-top: 6px solid var(--ink); }
+.dash-kpi:first-child { background: var(--ap); color: var(--ap-txt); border-top-color: var(--ap); }
+.dash-kpi__etiqueta { order: -1; font-size: 11.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--text-2); }
+.dash-kpi:first-child .dash-kpi__etiqueta, .dash-kpi:first-child .dash-kpi__nota { color: inherit; opacity: .85; }
+.dash-kpi__valor { font-stretch: 62%; font-weight: 900; font-size: clamp(40px, 4vw, 56px); line-height: .9; }
+.dash-kpi__nota { font-size: 13px; color: var(--text-2); }
+.dash-kpi:first-child .ap-sube, .dash-kpi:first-child .ap-baja { color: inherit; }
+
+/* Widgets */
+.dash-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+.dash-widget { display: flex; flex-direction: column; gap: 14px; min-width: 0; padding: 20px 22px; background: #fff; }
+.dash-widget--ancho { grid-column: 1 / -1; }
+.dash-widget__cab { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 2px solid var(--ink); }
+.dash-widget__titulo { font-stretch: 70%; font-weight: 900; font-size: 20px; line-height: 1.05; text-transform: uppercase; }
+.dash-widget__link { flex: none; font-size: 13px; font-weight: 800; color: var(--ink); text-decoration: underline; text-decoration-color: var(--ap); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+.dash-widget__link:hover { color: var(--red); }
+.dash-widget .ap-dl { grid-template-columns: auto minmax(0, 1fr); border-width: 1px; border-color: var(--line); }
+.dash-widget .ap-dl dd { font-size: 15px; }
+.dash-widget .ap-acciones { margin-top: 0; }
+.dash-widget .ap-avisos { margin-top: 0; }
+.dash-big { line-height: 1; }
+.dash-big .ap-estado { font-size: 13px; padding: 6px 12px; }
+.dash-vacio { padding: 14px 0; font-size: 14px; color: var(--text-2); }
+
+.dash-mini { display: grid; margin: 0; padding: 0; list-style: none; }
+.dash-mini li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 4px 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.dash-mini li:last-child { border-bottom: 0; }
+.dash-mini__fecha { grid-column: 1 / -1; font-size: 11.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--text-2); }
+.dash-mini__main { display: grid; gap: 2px; min-width: 0; }
+.dash-mini__main strong { font-stretch: 80%; font-weight: 800; font-size: 15.5px; line-height: 1.2; text-transform: uppercase; }
+.dash-mini__main span { font-size: 13px; color: var(--text-2); }
+.dash-mini .ap-row__btns { flex-wrap: wrap; }
+
+.dash-barras { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.dash-barras li { display: grid; grid-template-columns: 96px minmax(0, 1fr) 36px; align-items: center; gap: 12px; }
+.dash-barras__etiqueta { font-size: 12.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.dash-barras__pista { height: 14px; background: #EDEDEA; }
+.dash-barras__relleno { display: block; height: 100%; background: var(--ink); }
+.dash-barras__relleno--ok { background: var(--ap); }
+.dash-barras__relleno--aviso { background: var(--red); }
+.dash-barras__relleno--off { background: #A9A9A3; }
+.dash-barras__n { font-stretch: 75%; font-weight: 900; font-size: 20px; text-align: right; }
+
+.dash-chips { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.dash-chips li { padding: 12px 4px; text-align: center; font-stretch: 75%; font-weight: 800; font-size: 14px; text-transform: uppercase; }
+.dash-chips .is-si { background: var(--ap); color: var(--ap-txt); }
+.dash-chips .is-no { background: #EDEDEA; color: var(--text-2); text-decoration: line-through; }
+
+.dash-proxima { display: grid; gap: 8px; justify-items: start; }
+.dash-proxima__fecha { font-stretch: 62%; font-weight: 900; font-size: 34px; line-height: 1; text-transform: uppercase; }
+.dash-proxima__titulo { font-stretch: 80%; font-weight: 800; font-size: 18px; line-height: 1.2; text-transform: uppercase; color: var(--ink); }
+a.dash-proxima__titulo { text-decoration: underline; text-decoration-color: var(--ap); text-decoration-thickness: 3px; text-underline-offset: 4px; }
+.dash-proxima__meta { font-size: 13.5px; color: var(--text-2); }
+
+.ap-chart--compacto { margin-top: 0; }
+.ap-chart--compacto .ap-chart__barras { height: 150px; }
+.ap-chart--compacto figcaption { margin-top: 30px; }
+
+/* ---------------------------------------------------------------------------
+   Inicio en cards: sin menú lateral (aparece al entrar en una sección)
+   --------------------------------------------------------------------------- */
+.dash-top__logo, .dash-top__salir { display: none; }
+.dash--inicio .dash-app { grid-template-columns: minmax(0, 1fr); }
+.dash--inicio .dash-side, .dash--inicio .dash-velo, .dash--inicio .dash-top__menu { display: none !important; }
+.dash--inicio .dash-top__logo { display: block; flex: none; line-height: 0; padding-right: 16px; margin-right: 2px; border-right: 2px solid var(--line); }
+.dash--inicio .dash-top__logo img { width: auto; height: 38px; }
+.dash--inicio .dash-top__salir {
+  display: inline-flex; align-items: center; height: 40px; padding: 0 14px; border: 2px solid var(--ink); background: #fff; color: var(--ink); cursor: pointer;
+  font: inherit; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+}
+.dash--inicio .dash-top__salir:hover { background: var(--ink); color: #fff; }
+.dash-top__salir:focus-visible, .dash-top__logo:focus-visible { outline: 3px solid var(--ap); outline-offset: 2px; }
+.dash--inicio .dash-contenido { max-width: 1360px; margin: 0 auto; }
+
+.dash-cards__lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.dash-card {
+  display: flex; flex-direction: column; gap: 10px; height: 100%; min-height: 178px; padding: 20px 22px 18px;
+  background: #fff; border-top: 6px solid var(--ap); color: var(--ink); text-decoration: none;
+}
+.dash-card:hover { box-shadow: 0 14px 30px rgba(10, 10, 10, .1); }
+.dash-card:hover .dash-card__ir { transform: translateX(4px); }
+.dash-card:focus-visible { outline: 3px solid var(--ap); outline-offset: 3px; }
+.dash-card__cab { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.dash-card__titulo { font-stretch: 66%; font-weight: 900; font-size: 26px; line-height: .95; text-transform: uppercase; }
+.dash-card__insignia, .ap-003--jugador .dash-card__insignia { flex: none; font-size: 12px; padding: 3px 8px; background: var(--red); color: #fff; }
+.dash-card__desc { font-size: 14px; line-height: 1.4; color: var(--text-3); }
+.dash-card__pie { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: auto; padding-top: 12px; border-top: 1px solid var(--line); }
+.dash-card__dato { font-stretch: 80%; font-weight: 800; font-size: 15px; text-transform: uppercase; }
+.dash-card__ir { flex: none; font-size: 22px; font-weight: 800; color: var(--ap); }
+.ap-003--arbitro .dash-card__ir { color: var(--ink); }
+@media (prefers-reduced-motion: no-preference) { .dash-card { transition: box-shadow .15s; } .dash-card__ir { transition: transform .15s; } }
+
+/* ---------------------------------------------------------------------------
+   Responsive
+   --------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+  .dash-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 999px) {
+  .dash-acceso { grid-template-columns: minmax(0, 1fr); }
+  .dash-acceso__marca { gap: 28px; }
+  .dash-acceso__titulo { font-size: clamp(56px, 14vw, 88px); }
+  .dash-acceso__marca::after { height: 34%; }
+
+  .dash-app { grid-template-columns: minmax(0, 1fr); }
+  .dash-side {
+    position: fixed; inset: 0 auto 0 0; z-index: 60; width: min(300px, 86vw); height: 100%;
+    transform: translateX(-105%); visibility: hidden; transition: transform .22s ease, visibility 0s linear .22s;
+  }
+  .dash--menu-abierto .dash-side { transform: none; visibility: visible; transition: transform .22s ease; }
+  .dash-velo { position: fixed; inset: 0; z-index: 50; background: rgba(10, 10, 10, .55); }
+  .dash--menu-abierto { overflow: hidden; }
+  .dash-top__menu {
+    display: grid; align-content: center; gap: 5px; width: 44px; height: 44px; padding: 0 10px; flex: none;
+    border: 0; background: var(--ink); cursor: pointer;
+  }
+  .dash-top__menu span { display: block; height: 3px; background: #fff; }
+  .dash-top__menu:focus-visible { outline: 3px solid var(--ap); outline-offset: 2px; }
+  .dash-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .dash-top { gap: 10px; min-height: 64px; }
+  .dash-top__demo, .dash-top__avatar { display: none; }
+  .dash--inicio .dash-top__logo img { height: 30px; }
+  .dash--inicio .dash-top__logo { padding-right: 10px; }
+  .dash-cards__lista { grid-template-columns: minmax(0, 1fr); }
+  .dash-card { min-height: 0; }
+  .dash-kpi { padding: 14px; }
+  .dash-chips { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .dash-barras li { grid-template-columns: 84px minmax(0, 1fr) 30px; }
+  .dash-mini li { grid-template-columns: minmax(0, 1fr); }
+  .dash .ap-section > .ap-rows { padding: 0 14px; }
+  .dash .ap-section > .ap-table-wrap { padding: 0 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .dash-side { transition: none !important; } }

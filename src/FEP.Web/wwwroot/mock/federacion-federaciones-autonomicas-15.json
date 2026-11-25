@@ -1,0 +1,115 @@
+{
+    "id":  15,
+    "nombre":  "FEDERACION DE PADEL DE LA REGIÓN DE MURCIA",
+    "nacional":  false,
+    "imagen":  "images/15.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-15.jpg",
+    "presidente":  "ROBERTO LORENTE RUIZ",
+    "direccion":  "AVDA. EUROPA, 20",
+    "codigoPostal":  "30007",
+    "localidad":  "MURCIA",
+    "telefonos":  [
+                      "648245080"
+                  ],
+    "email":  "info@federacionpadelmurcia.com",
+    "web":  "https://www.federacionpadelmurcia.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  2237,
+                      "puesto":  13,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  33,
+                      "arbitros":  6,
+                      "clubes":  36,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  965,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  903,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  1175,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  1222,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  1064,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  1332,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  905,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  772,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  599,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  1665,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  2108,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  2293,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  2198,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  2057,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  2237,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  1431,
+                                     "femenino":  806,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  321,
+                                     "sub23":  130,
+                                     "senior":  933,
+                                     "veteranos":  853,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

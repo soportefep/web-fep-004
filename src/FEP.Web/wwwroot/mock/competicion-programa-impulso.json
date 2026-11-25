@@ -1,0 +1,515 @@
+{
+    "actualizado":  "2026-11-13",
+    "titulo":  "Programa Impulso",
+    "introduccion":  [
+                         "El Programa Impulso de la Federación Española de Pádel, en marcha desde 2014, apoya a los deportistas seleccionables que están en la última categoría de menores o empiezan su etapa absoluta.",
+                         "En 2026 el programa promueve su participación en pruebas FIP de categoría Bronze, Silver, Gold y Platinum del calendario CUPRA FIP Tour: se seleccionan hasta 8 pruebas organizadas por federaciones autonómicas u organizadores reconocidos, y en cada una la FEP reparte 10 ayudas de 250 € entre jugadoras y jugadores junior y sub-21.",
+                         "Las bases completas (convocatoria, criterios de selección de las pruebas y condiciones de las ayudas) y el calendario tentativo están en los documentos de esta página."
+                     ],
+    "imagen":  "Noticias/Impulso2017.jpg",
+    "imagenUrl":  "assets/img/fep/programa-impulso/impulso-2017.jpg",
+    "imagenAlt":  "Logotipo del Programa Impulso de la Federación Española de Pádel",
+    "documentos":  [
+                       {
+                           "clave":  "informacion-2026",
+                           "titulo":  "Información Circuito Impulso 2026",
+                           "descripcion":  "Bases del programa: objetivo, convocatoria a las federaciones autonómicas y organizadores, selección de las 8 pruebas y ayudas de tecnificación.",
+                           "temporada":  2026,
+                           "fecha":  "2026-01-15",
+                           "tipo":  "pdf",
+                           "archivo":  "docs/Programa-Impulso-2026 15-01-26.pdf",
+                           "url":  "https://www.padelfederacion.es/refs/docs/Programa-Impulso-2026%2015-01-26.pdf"
+                       },
+                       {
+                           "clave":  "calendario-2026",
+                           "titulo":  "Calendario tentativo Circuito Impulso 2026",
+                           "descripcion":  "Pruebas propuestas por federación autonómica, con sede, categoría FIP y semana de juego.",
+                           "temporada":  2026,
+                           "fecha":  null,
+                           "tipo":  "pdf",
+                           "archivo":  "docs/CALENDARIO-IMPULSO-2026.pdf",
+                           "url":  "https://www.padelfederacion.es/refs/docs/CALENDARIO-IMPULSO-2026.pdf"
+                       }
+                   ],
+    "anio":  2026,
+    "anios":  [
+                  2026,
+                  2023,
+                  2022,
+                  2021,
+                  2020,
+                  2019,
+                  2018,
+                  2017
+              ],
+    "items":  [
+                  {
+                      "id":  0,
+                      "anio":  2026,
+                      "titulo":  "FIP SILVER ALCALÁ DE GUADAIRA",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2026-07-06",
+                      "fechaFin":  "2026-07-12",
+                      "ciudad":  "ALCALA DE GUADAIRA",
+                      "clubes":  [
+                                     "CLUB DE TENIS OROMANA"
+                                 ],
+                      "enlace":  "https://www.padelfederacion.es/Paginas/fapN/Prueba_Cuadros.asp?IdTorneo=28731",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2026,
+                      "titulo":  "FIP BRONZE CASTELLON AUTOMOCION CANO KIA",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2026-05-25",
+                      "fechaFin":  "2026-05-31",
+                      "ciudad":  "CASTELLÓN",
+                      "clubes":  [
+                                     "LA PLANA SPORT CASTELLON"
+                                 ],
+                      "enlace":  "https://padelcv.com/competicion/torneos/fip-bronze-castellon-automocion-cano-kia/",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2023,
+                      "titulo":  "GRAND SLAM ORO TROFEO FMP. MEMORIAL BORJA CAÑEDO. PROGRAMA IMPULSO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2023-09-24",
+                      "fechaFin":  "2023-10-01",
+                      "ciudad":  "MADRID",
+                      "clubes":  [
+                                     "CLUB FMP"
+                                 ],
+                      "enlace":  "https://www.fmpadel.com/if_torneos.aspx?IdTorneo=23716",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2023,
+                      "titulo":  "SLAM IMPULSO - CT VIC",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2023-09-04",
+                      "fechaFin":  "2023-09-10",
+                      "ciudad":  "VIC",
+                      "clubes":  [
+                                     "CLUB TENNIS VIC"
+                                 ],
+                      "enlace":  "https://fcpadel.cat/competicio/circuits/circuit-absolut/2023/slam-impulso-ct-vic/informacio",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2023,
+                      "titulo":  "TORNEO IMPULSO. PADELZONE 2.0",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2023-07-14",
+                      "fechaFin":  "2023-07-16",
+                      "ciudad":  "SEGOVIA",
+                      "clubes":  [
+                                     "PADELZONE"
+                                 ],
+                      "enlace":  "https://padelfederacion.es/Paginas/CYL/Prueba_Cuadros.asp?IdTorneo=23395",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2022,
+                      "titulo":  "XXIV INTERNACIONALES DE ANDALUCIA ABSOLUTO - IMPULSO FEP - ABS 10000",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2022-07-11",
+                      "fechaFin":  "2022-07-16",
+                      "ciudad":  "Malaga",
+                      "clubes":  [
+                                     "FAP - PISTAS MUNICIPALES FRANCIS CEBALLOS ALHAURIN DE LA TORRE"
+                                 ],
+                      "enlace":  "https://www.padelfederacion.es/Paginas/fap/Prueba_Cuadros.asp?IdTorneo=21050",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2022,
+                      "titulo":  "TORNEO IMPULSO FEP - BET SOLAR",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2022-04-29",
+                      "fechaFin":  "2022-05-08",
+                      "ciudad":  "LAS PALMAS DE GRAN CANARIA",
+                      "clubes":  [
+                                     "CD EL DRAGO PADEL7"
+                                 ],
+                      "enlace":  "https://padelfederacion.es/Paginas/Canarias/Prueba_Formulario.asp?IdTorneo=20824",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2022,
+                      "titulo":  "L’SLAM-IMPULSO FEP",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2022-02-28",
+                      "fechaFin":  "2022-03-06",
+                      "ciudad":  "Tarragona",
+                      "clubes":  [
+                                     "CLUB ESPORTIU TARRAGONA PADEL INDOOR (TPI)"
+                                 ],
+                      "enlace":  "https://fcpadel.cat/competicions/circuit-catala-2/",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2021,
+                      "titulo":  "GRAND SLAM ORO TROFEO FMP. MEMORIAL BORJA CAÑEDO. PROGRAMA IMPULSO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2021-10-03",
+                      "fechaFin":  "2021-10-10",
+                      "ciudad":  "MADRID",
+                      "clubes":  [
+                                     "CLUB FMP"
+                                 ],
+                      "enlace":  "https://www.fmpadel.com/if_torneos.aspx?IdTorneo=20114",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2021,
+                      "titulo":  "VII OPEN AQUAHOBBY ISLA DE LA PALMA - IMPULSO FEP 2021 (CAT. ORO)",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2021-07-26",
+                      "fechaFin":  "2021-08-01",
+                      "ciudad":  "ISLA DE LA PALMA - LOS LLANOS DE ARIDANE",
+                      "clubes":  [
+
+                                 ],
+                      "enlace":  "https://padelfederacion.es/Paginas/Canarias/Prueba_Formulario.asp?IdTorneo=19822",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2021,
+                      "titulo":  "XXIII INTERNACIONALES DE ANDALUCIA - ABS 6000 - PROGRAMA IMPULSO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2021-07-23",
+                      "fechaFin":  "2021-07-25",
+                      "ciudad":  "SAN FERNANDO",
+                      "clubes":  [
+
+                                 ],
+                      "enlace":  "https://www.padelfederacion.es/Paginas/fap/Prueba_Formulario.asp?IdTorneo=19818",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2021,
+                      "titulo":  "ORO 24* CLUB DE TENIS CASTELLON – IMPULSO FEP",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2021-02-27",
+                      "fechaFin":  "2021-03-07",
+                      "ciudad":  "CASTELLÓN",
+                      "clubes":  [
+                                     "CLUB DE TENIS CASTELLON"
+                                 ],
+                      "enlace":  "https://padelcv.com/competicion/torneos/oro-24-club-de-tenis-castellon-impulso-fep",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2020,
+                      "titulo":  "BET SOLAR - IMPULSO FEP 2020 (Cat. Oro)",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2020-10-20",
+                      "fechaFin":  "2020-10-25",
+                      "ciudad":  "LAS PALMAS DE GRAN CANARIA",
+                      "clubes":  [
+                                     "CD EL DRAGO PADEL7"
+                                 ],
+                      "enlace":  "https://padelfederacion.es/Paginas/Canarias/Prueba_Formulario.asp?IdTorneo=18804",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2020,
+                      "titulo":  "XXII INTERNACIONALES DE ANDALUCIA - ABS 6000 - PROGRAMA IMPULSO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2020-07-22",
+                      "fechaFin":  "2020-07-26",
+                      "ciudad":  "JAEN",
+                      "clubes":  [
+                                     "C.D. PADEL PREMIUM"
+                                 ],
+                      "enlace":  "https://padelfederacion.es/Paginas/fap/Prueba_Formulario.asp?IdTorneo=18646",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2019,
+                      "titulo":  "OPEN AQUAHOBBY - IMPULSO DE LA FEP 2019 - ISLA DE LA PALMA (Cat. ORO)",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2019-09-11",
+                      "fechaFin":  "2019-09-15",
+                      "ciudad":  "ISLA DE LA PALMA",
+                      "clubes":  [
+                                     "CD UNIÓN DEPORTIVA BAGA TAZO 2008"
+                                 ],
+                      "enlace":  "https://padelfederacion.es/Paginas/Canarias/Prueba_Formulario.asp?IdTorneo=16795",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2019,
+                      "titulo":  "GRAND SLAM ORO IMPULSO .II MEMORIAL BORJA CAÑEDO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2019-07-08",
+                      "fechaFin":  "2019-07-14",
+                      "ciudad":  "MADRID",
+                      "clubes":  [
+                                     "CLUB FMP"
+                                 ],
+                      "enlace":  "https://www.fmpadel.com/if_torneos.aspx?IdTorneo=16653",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2019,
+                      "titulo":  "ABS 6000 SAN MIGUEL - PROGRAMA IMPULSO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2019-05-31",
+                      "fechaFin":  "2019-06-09",
+                      "ciudad":  "MALAGA",
+                      "clubes":  [
+                                     "C.D. REAL CLUB EL CANDADO"
+                                 ],
+                      "enlace":  "https://padelfederacion.es/Paginas/fap/Prueba_Formulario.asp?IdTorneo=16076",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2018,
+                      "titulo":  "Torneo Absoluto - Lubricantes SASH (Gran Canaria)-PROGRAMA IMPULSO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2018-11-26",
+                      "fechaFin":  "2018-12-02",
+                      "ciudad":  "LAS PALMAS DE GRAN CANARIA",
+                      "clubes":  [
+                                     "CD  LA CALZADA"
+                                 ],
+                      "enlace":  "https://padelfederacion.es/Paginas/Canarias/Prueba.asp?IdTorneo=14361",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2018,
+                      "titulo":  "CIRCUITO ORO 26* LIFE PADEL ELCHE – PROGRAMA IMPULSO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2018-11-05",
+                      "fechaFin":  "2018-11-11",
+                      "ciudad":  "ELCHE",
+                      "clubes":  [
+                                     "LIFE PADEL EVENTOS DEPORTIVOS S.L.U"
+                                 ],
+                      "enlace":  "https://padelcv.com/torneos/circuito-oro-26-life-padel-elche-programa-impulso-5-11-nov/",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2018,
+                      "titulo":  "ABS 8000 INTERNACIONALES CIUDAD DE CORDOBA - PROGRAMA IMPULSO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2018-08-20",
+                      "fechaFin":  "2018-08-27",
+                      "ciudad":  "CORDOBA",
+                      "clubes":  [
+                                     "C.D. SIERRA MORENA"
+                                 ],
+                      "enlace":  "https://www.padelfederacion.es/Paginas/fap/Pruebas_previo.asp?IdTorneo=14028",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2018,
+                      "titulo":  "GRAND SLAM ORO. MEMORIAL BORJA CAÑEDO.PROGRAMA IMPULSO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2018-07-07",
+                      "fechaFin":  "2018-07-15",
+                      "ciudad":  "MADRID",
+                      "clubes":  [
+                                     "CLUB FMP"
+                                 ],
+                      "enlace":  "https://www.fmpadel.com/if_torneos.aspx?IdTorneo=13976",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2017,
+                      "titulo":  "ABS 5500 PROGRAMA IMPULSO",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2017-12-07",
+                      "fechaFin":  "2017-12-10",
+                      "ciudad":  "GRANADA",
+                      "clubes":  [
+                                     "CLUB PADEL SPORT GRANADA INDOOR"
+                                 ],
+                      "enlace":  "https://www.padelfederacion.es/Paginas/fap/Prueba_Formulario.asp?IdTorneo=12021",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2017,
+                      "titulo":  "PROGRAMA IMPULSO - PRUEBA MURCIA",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2017-09-29",
+                      "fechaFin":  "2017-10-01",
+                      "ciudad":  "MURCIA",
+                      "clubes":  [
+                                     "OLIMPIC CLUB (Club Deportivo Ochotrece)"
+                                 ],
+                      "enlace":  "https://www.federacionpadelmurcia.com/torneos",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2017,
+                      "titulo":  "PROGRAMA IMPULSO - OPEN AUTONÓMICO 26* CLUB DE PADEL 79",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2017-09-11",
+                      "fechaFin":  "2017-09-17",
+                      "ciudad":  "BENICASSIM",
+                      "clubes":  [
+                                     "CLUB DE PADEL 79 BENICASSIM"
+                                 ],
+                      "enlace":  "https://padelcv.com/torneos/open-autonomico-26-club-de-padel-79-11-17septiembre",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  11657,
+                      "anio":  2017,
+                      "titulo":  "IMPULSO SANTANDER - TROFEO PUERELEC ELECTRICIDAD",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2017-07-28",
+                      "fechaFin":  "2017-08-06",
+                      "ciudad":  "santander",
+                      "clubes":  [
+                                     "CLUB DE TENIS MONTEVERDE"
+                                 ],
+                      "enlace":  "https://www.padelfederacion.es/Camp_Parejas.asp?IdTorneo=11657",
+                      "nuevaVentana":  false,
+                      "inscripcion":  null
+                  },
+                  {
+                      "id":  0,
+                      "anio":  2017,
+                      "titulo":  "PROGRAMA IMPULSO - TROFEO ADDIO MARE",
+                      "tipo":  "parejas",
+                      "categoria":  "absoluto",
+                      "seleccion":  false,
+                      "sillaRuedas":  false,
+                      "fechaInicio":  "2017-05-01",
+                      "fechaFin":  "2017-05-07",
+                      "ciudad":  "AGÜIMES",
+                      "clubes":  [
+                                     "CD CASTILLO DE AGÜIMES"
+                                 ],
+                      "enlace":  "https://padelfederacion.es/Paginas/Canarias/Prueba_Formulario.asp?IdTorneo=11284",
+                      "nuevaVentana":  true,
+                      "inscripcion":  null
+                  }
+              ]
+}

@@ -1,0 +1,648 @@
+{
+    "menu":  [
+                 {
+                     "id":  2,
+                     "texto":  "Federación",
+                     "enlace":  "Federacion",
+                     "ventana":  "_self",
+                     "icono":  "fa fa-institution",
+                     "orden":  1,
+                     "hijos":  [
+                                   {
+                                       "id":  21,
+                                       "texto":  "Organización",
+                                       "enlace":  "Organizacion",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  1,
+                                       "hijos":  [
+
+                                                 ]
+                                   },
+                                   {
+                                       "id":  22,
+                                       "texto":  "Federaciones territoriales",
+                                       "enlace":  "Federaciones_Territoriales",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  2,
+                                       "hijos":  [
+
+                                                 ]
+                                   },
+                                   {
+                                       "id":  23,
+                                       "texto":  "Transparencia",
+                                       "enlace":  "Transparencia",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  3,
+                                       "hijos":  [
+
+                                                 ]
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  3,
+                     "texto":  "Competición",
+                     "enlace":  "Competicion",
+                     "ventana":  "_self",
+                     "icono":  "fa fa-trophy",
+                     "orden":  2,
+                     "hijos":  [
+                                   {
+                                       "id":  31,
+                                       "texto":  "Calendario",
+                                       "enlace":  "Calendario",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  1,
+                                       "hijos":  [
+
+                                                 ]
+                                   },
+                                   {
+                                       "id":  32,
+                                       "texto":  "Rankings",
+                                       "enlace":  "Rankings",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  2,
+                                       "hijos":  [
+
+                                                 ]
+                                   },
+                                   {
+                                       "id":  33,
+                                       "texto":  "Campeonatos de España",
+                                       "enlace":  "Campeonatos_Espana",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  3,
+                                       "hijos":  [
+
+                                                 ]
+                                   },
+                                   {
+                                       "id":  34,
+                                       "texto":  "Arbitraje",
+                                       "enlace":  "Arbitraje",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  4,
+                                       "hijos":  [
+
+                                                 ]
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  4,
+                     "texto":  "Licencias",
+                     "enlace":  "Licencias",
+                     "ventana":  "_self",
+                     "icono":  "fa fa-id-card",
+                     "orden":  3,
+                     "hijos":  [
+                                   {
+                                       "id":  41,
+                                       "texto":  "Conoce cómo federarte",
+                                       "enlace":  "Licencias_Alta",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  1,
+                                       "hijos":  [
+
+                                                 ]
+                                   },
+                                   {
+                                       "id":  42,
+                                       "texto":  "Portal del federado",
+                                       "enlace":  "https://www.padelfederacion.es/gESTION/ControlAcceso.asp",
+                                       "ventana":  "_blank",
+                                       "icono":  null,
+                                       "orden":  2,
+                                       "hijos":  [
+
+                                                 ]
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  5,
+                     "texto":  "Documentos",
+                     "enlace":  "Documentos",
+                     "ventana":  "_self",
+                     "icono":  "fa fa-file-text",
+                     "orden":  4,
+                     "hijos":  [
+                                   {
+                                       "id":  51,
+                                       "texto":  "Reglamentos",
+                                       "enlace":  "Reglamentos",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  1,
+                                       "hijos":  [
+
+                                                 ]
+                                   },
+                                   {
+                                       "id":  52,
+                                       "texto":  "Circulares",
+                                       "enlace":  "Circulares",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  2,
+                                       "hijos":  [
+
+                                                 ]
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  6,
+                     "texto":  "Formación",
+                     "enlace":  "Formacion",
+                     "ventana":  "_self",
+                     "icono":  "fa fa-graduation-cap",
+                     "orden":  5,
+                     "hijos":  [
+                                   {
+                                       "id":  61,
+                                       "texto":  "Calendario de cursos",
+                                       "enlace":  "Formacion_Inscripciones.asp",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  1,
+                                       "hijos":  [
+
+                                                 ]
+                                   },
+                                   {
+                                       "id":  62,
+                                       "texto":  "Técnicos",
+                                       "enlace":  "Formacion_Tecnicos",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  2,
+                                       "hijos":  [
+
+                                                 ]
+                                   },
+                                   {
+                                       "id":  63,
+                                       "texto":  "Jueces árbitros",
+                                       "enlace":  "Formacion_Jueces",
+                                       "ventana":  "_self",
+                                       "icono":  null,
+                                       "orden":  3,
+                                       "hijos":  [
+
+                                                 ]
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  7,
+                     "texto":  "Hemeroteca",
+                     "enlace":  "Hemeroteca",
+                     "ventana":  "_self",
+                     "icono":  "fa fa-newspaper-o",
+                     "orden":  6,
+                     "hijos":  [
+
+                               ]
+                 },
+                 {
+                     "id":  8,
+                     "texto":  "Mujer y pádel",
+                     "enlace":  "Mujer-y-Padel",
+                     "ventana":  "_self",
+                     "icono":  "fa fa-female",
+                     "orden":  7,
+                     "hijos":  [
+
+                               ]
+                 },
+                 {
+                     "id":  9,
+                     "texto":  "Contacto",
+                     "enlace":  "Contacto",
+                     "ventana":  "_self",
+                     "icono":  "fa fa-envelope",
+                     "orden":  8,
+                     "hijos":  [
+
+                               ]
+                 }
+             ],
+    "redesSociales":  [
+                          {
+                              "nombre":  "X",
+                              "url":  "https://twitter.com/padelfederacion",
+                              "icono":  "fa fa-x-twitter",
+                              "orden":  1
+                          },
+                          {
+                              "nombre":  "YouTube",
+                              "url":  "http://www.youtube.com/user/FedEspPadel",
+                              "icono":  "fa fa-youtube",
+                              "orden":  2
+                          },
+                          {
+                              "nombre":  "LinkedIn",
+                              "url":  "https://www.linkedin.com/company/federacion-espanola-de-padel",
+                              "icono":  "fa fa-linkedin",
+                              "orden":  3
+                          },
+                          {
+                              "nombre":  "Instagram",
+                              "url":  "https://www.instagram.com/padelfederacion/",
+                              "icono":  "fa fa-instagram",
+                              "orden":  4
+                          }
+                      ],
+    "noticiasDestacadas":  [
+                               {
+                                   "idNoticia":  2983,
+                                   "titulo":  "Barcelona reúne a los mejores equipos de las ligas autonómicas en la VI Copa de España HEAD 2026",
+                                   "imagen":  "2042157828.jpg",
+                                   "imagenUrl":  "assets/img/fep/noticias/2042157828.jpg",
+                                   "enlace":  "https://www.padelfederacion.es/noticia.asp?Idnoticia=2983",
+                                   "ventana":  "_parent",
+                                   "orden":  1
+                               },
+                               {
+                                   "idNoticia":  2980,
+                                   "titulo":  "La FEP rompe todos los registros: 45 millones de visualizaciones durante el FIP WORLD CUP 2026",
+                                   "imagen":  "5083860099.jpg",
+                                   "imagenUrl":  "assets/img/fep/noticias/5083860099.jpg",
+                                   "enlace":  "https://www.padelfederacion.es/noticia.asp?Idnoticia=2980",
+                                   "ventana":  "_parent",
+                                   "orden":  2
+                               },
+                               {
+                                   "idNoticia":  2976,
+                                   "titulo":  "HISTÓRICO DOBLETE EN QATAR",
+                                   "imagen":  "1208982169.jpg",
+                                   "imagenUrl":  "assets/img/fep/noticias/1208982169.jpg",
+                                   "enlace":  "https://www.padelfederacion.es/noticia.asp?Idnoticia=2976",
+                                   "ventana":  "_parent",
+                                   "orden":  3
+                               },
+                               {
+                                   "idNoticia":  2975,
+                                   "titulo":  "¡Estamos en la Final del FIP World Cup 2026!",
+                                   "imagen":  "1265699088.jpg",
+                                   "imagenUrl":  "assets/img/fep/noticias/1265699088.jpg",
+                                   "enlace":  "https://www.padelfederacion.es/noticia.asp?Idnoticia=2975",
+                                   "ventana":  "_parent",
+                                   "orden":  4
+                               },
+                               {
+                                   "idNoticia":  2974,
+                                   "titulo":  "¡España saluda a las semis!",
+                                   "imagen":  "8553205192.jpg",
+                                   "imagenUrl":  "assets/img/fep/noticias/8553205192.jpg",
+                                   "enlace":  "https://www.padelfederacion.es/noticia.asp?Idnoticia=2974",
+                                   "ventana":  "_parent",
+                                   "orden":  5
+                               },
+                               {
+                                   "idNoticia":  2977,
+                                   "titulo":  "El futuro del pádel español brilla en Aragón tras un Campeonato de España Infantil y Junior de récord",
+                                   "imagen":  "7801740348.jpg",
+                                   "imagenUrl":  "assets/img/fep/noticias/7801740348.jpg",
+                                   "enlace":  "https://www.padelfederacion.es/noticia.asp?Idnoticia=2977",
+                                   "ventana":  "_parent",
+                                   "orden":  6
+                               }
+                           ],
+    "eventosDestacados":  [
+                              {
+                                  "tipo":  "evento",
+                                  "titulo":  "CTO ESPAÑA EQUIPOS JUNIOR E INFANTIL",
+                                  "texto":  "06 NOV - 8 NOV - ZARAGOZA - REGAL PADEL CLUB",
+                                  "imagen":  "Cartel Cto Esp Eq Junior e Infantil.JPG",
+                                  "imagenUrl":  "assets/img/fep/eventos/cartel-cto-esp-eq-junior-e-infantil.jpg",
+                                  "enlace":  "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=30148",
+                                  "ventana":  "_parent",
+                                  "orden":  1
+                              },
+                              {
+                                  "tipo":  "evento",
+                                  "titulo":  "II OPEN NACIONAL PSR CIUDAD DE MALAGA",
+                                  "texto":  "6 NOV - 8 NOV - Málaga - POLIDEPORTIVO MUNICIPAL CIUDAD JARDIN",
+                                  "imagen":  "PSR Ciudad de mALAGA.png",
+                                  "imagenUrl":  "assets/img/fep/eventos/psr-ciudad-de-malaga.png",
+                                  "enlace":  "https://www.padelfederacion.es/Camp_Silla.asp?IdTorneo=30180",
+                                  "ventana":  "_parent",
+                                  "orden":  2
+                              },
+                              {
+                                  "tipo":  "evento",
+                                  "titulo":  "VI COPA DE ESPAÑA DE LIGAS AUTONÓMICAS - HEAD",
+                                  "texto":  "Sexta Edición de la COPA de Liga Autonómicas",
+                                  "imagen":  "Cartel VI COPA DE ESP LIGAS AUT- HEAD.png",
+                                  "imagenUrl":  "assets/img/fep/eventos/cartel-vi-copa-de-esp-ligas-aut-head.png",
+                                  "enlace":  "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=28676",
+                                  "ventana":  "_parent",
+                                  "orden":  3
+                              },
+                              {
+                                  "tipo":  "evento",
+                                  "titulo":  "CTO ESPAÑA EQUIPOS 3ª VETERANOS +40 VETERANAS+35",
+                                  "texto":  "20 NOV - 22 NOV - BARCELONA - PADEL BARCELONA EL PRAT",
+                                  "imagen":  "Cto Esp Eq 3 Vet 40 35.png",
+                                  "imagenUrl":  "assets/img/fep/eventos/cto-esp-eq-3-vet-40-35.png",
+                                  "enlace":  "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=30153",
+                                  "ventana":  "_parent",
+                                  "orden":  4
+                              },
+                              {
+                                  "tipo":  "evento",
+                                  "titulo":  "MASTER FINAL MENORES BABOLAT",
+                                  "texto":  "20 - 22 NOV BADAJOZ - C.D. PADELMERIDA",
+                                  "imagen":  "FEP - Cartel MASTER FINAL MENORES.png",
+                                  "imagenUrl":  "assets/img/fep/eventos/fep-cartel-master-final-menores.png",
+                                  "enlace":  "http://circuitomenores.padelfederacion.es/Campeonato?IdTorneo=31292",
+                                  "ventana":  "_parent",
+                                  "orden":  5
+                              },
+                              {
+                                  "tipo":  "evento",
+                                  "titulo":  "I COPA DE ESPAÑA DE LIGAS AUTONÓMICAS PLATA - HEAD",
+                                  "texto":  "20 - 22 NOVIEMBRE MADRID - CLUB DEPORTIVO SOMONTES",
+                                  "imagen":  "Cartel I Copa Esp de Ligas Aut Plata- HEAD.jpg",
+                                  "imagenUrl":  "assets/img/fep/eventos/cartel-i-copa-esp-de-ligas-aut-plata-head.jpg",
+                                  "enlace":  "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=28677",
+                                  "ventana":  "_parent",
+                                  "orden":  6
+                              },
+                              {
+                                  "tipo":  "evento",
+                                  "titulo":  "I COPA ESPAÑA LIGAS AUTONOMICAS VETERANOS",
+                                  "texto":  "27 - 29 NOV - ZARAGOZA - REGAL PADEL CLUB",
+                                  "imagen":  "Cartel Copa Esp Ligas Aut  Vet Zgz  2026.jpg",
+                                  "imagenUrl":  "assets/img/fep/eventos/cartel-copa-esp-ligas-aut-vet-zgz-2026.jpg",
+                                  "enlace":  "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=28854",
+                                  "ventana":  "_parent",
+                                  "orden":  7
+                              },
+                              {
+                                  "tipo":  "evento",
+                                  "titulo":  "X OPEN NACIONAL PSR FEKOOR BIZKAIA",
+                                  "texto":  "27 - 29 NOV - ADAPTADO SILLA - BILBAO - FEKOOR / CLUB PADEL BIZKAIA ZAMUDIO",
+                                  "imagen":  "Cartel X Open Nacional PSR Fekoor Bizkaia 2026.jpg",
+                                  "imagenUrl":  "assets/img/fep/eventos/cartel-x-open-nacional-psr-fekoor-bizkaia-2026.jpg",
+                                  "enlace":  "https://www.padelfederacion.es/Camp_Silla.asp?IdTorneo=31277",
+                                  "ventana":  "_parent",
+                                  "orden":  8
+                              }
+                          ],
+    "convocatorias":  [
+                          {
+                              "categoria":  "juez",
+                              "tipoCurso":  "Juez",
+                              "titulo":  "Curso de Juez Árbitro de Pádel en Silla",
+                              "fechaInicio":  "2026-11-28",
+                              "fechaFin":  "2026-11-28",
+                              "lugar":  "ON LINE",
+                              "localidad":  "ON LINE",
+                              "fechaLimiteInscripcion":  "2026-11-20T00:00:00"
+                          }
+                      ],
+    "avisos":  [
+
+               ],
+    "bannersDestacados":  [
+                              {
+                                  "tipo":  "destacado",
+                                  "titulo":  "Organización Torneos",
+                                  "texto":  null,
+                                  "imagen":  "OrgTorneos27.jpg",
+                                  "imagenUrl":  "assets/img/fep/destacados/orgtorneos27.jpg",
+                                  "enlace":  "https://www.padelfederacion.es/Organizacion_Torneos",
+                                  "ventana":  "_self",
+                                  "orden":  1
+                              },
+                              {
+                                  "tipo":  "destacado",
+                                  "titulo":  "Portal Atención al Federado/a",
+                                  "texto":  null,
+                                  "imagen":  "POrtalFederado.jpg",
+                                  "imagenUrl":  "assets/img/fep/destacados/portalfederado.jpg",
+                                  "enlace":  "https://www.padelfederacion.es/Portal-del-Federado",
+                                  "ventana":  "_self",
+                                  "orden":  2
+                              },
+                              {
+                                  "tipo":  "destacado",
+                                  "titulo":  "Solicitar Certificados",
+                                  "texto":  null,
+                                  "imagen":  "SolicitudCertificados.jpg",
+                                  "imagenUrl":  "assets/img/fep/destacados/solicitudcertificados.jpg",
+                                  "enlace":  "https://www.padelfederacion.es/Certificados",
+                                  "ventana":  "_self",
+                                  "orden":  3
+                              },
+                              {
+                                  "tipo":  "destacado",
+                                  "titulo":  "Mujer y Deporte",
+                                  "texto":  null,
+                                  "imagen":  "MYp2.jpg",
+                                  "imagenUrl":  "assets/img/fep/destacados/myp2.jpg",
+                                  "enlace":  "https://www.padelfederacion.es/",
+                                  "ventana":  "_self",
+                                  "orden":  4
+                              },
+                              {
+                                  "tipo":  "destacado",
+                                  "titulo":  "Formación FEP",
+                                  "texto":  null,
+                                  "imagen":  "FormacionFEP.jpg",
+                                  "imagenUrl":  "assets/img/fep/destacados/formacionfep.jpg",
+                                  "enlace":  "https://www.padelfederacion.es/Formacion_Acciones.asp",
+                                  "ventana":  "_self",
+                                  "orden":  5
+                              },
+                              {
+                                  "tipo":  "destacado",
+                                  "titulo":  "CIRCUITO MENORES",
+                                  "texto":  null,
+                                  "imagen":  "BotonCircuitomenores.png",
+                                  "imagenUrl":  "assets/img/fep/destacados/botoncircuitomenores.png",
+                                  "enlace":  "https://www.padelfederacion.es/",
+                                  "ventana":  "_self",
+                                  "orden":  6
+                              }
+                          ],
+    "bannersInteres":  [
+                           {
+                               "tipo":  "interes",
+                               "titulo":  "CSD",
+                               "texto":  null,
+                               "imagen":  "CSDbANNERv2.jpg",
+                               "imagenUrl":  "assets/img/fep/enlaces/csdbannerv2.jpg",
+                               "enlace":  "http://www.csd.mec.es/",
+                               "ventana":  "_blank",
+                               "orden":  1
+                           },
+                           {
+                               "tipo":  "interes",
+                               "titulo":  "Comité Olímpico Español",
+                               "texto":  null,
+                               "imagen":  "olimpico.jpg",
+                               "imagenUrl":  "assets/img/fep/enlaces/olimpico.jpg",
+                               "enlace":  "http://www.coe.es/",
+                               "ventana":  "_blank",
+                               "orden":  2
+                           },
+                           {
+                               "tipo":  "interes",
+                               "titulo":  "Fed. Inter. Pádel",
+                               "texto":  null,
+                               "imagen":  "padelfip3.jpg",
+                               "imagenUrl":  "assets/img/fep/enlaces/padelfip3.jpg",
+                               "enlace":  "http://www.padelfip.org/",
+                               "ventana":  "_blank",
+                               "orden":  3
+                           },
+                           {
+                               "tipo":  "interes",
+                               "titulo":  "HOMOLOGACIONES",
+                               "texto":  null,
+                               "imagen":  "Homologaciones.jpg",
+                               "imagenUrl":  "assets/img/fep/enlaces/homologaciones.jpg",
+                               "enlace":  "http://www.padelfederacion.es/Microsite.asp?Id=7\u0026IdOpcion=19",
+                               "ventana":  "_blank",
+                               "orden":  4
+                           },
+                           {
+                               "tipo":  "interes",
+                               "titulo":  "Asoc. Nacional Técnicos de Pádel",
+                               "texto":  null,
+                               "imagen":  "Antep.jpg",
+                               "imagenUrl":  "assets/img/fep/enlaces/antep.jpg",
+                               "enlace":  "https://tecnicosdepadel.com/",
+                               "ventana":  "_blank",
+                               "orden":  5
+                           },
+                           {
+                               "tipo":  "interes",
+                               "titulo":  "Asoc. del Deporte Español",
+                               "texto":  null,
+                               "imagen":  "adesp.jpg",
+                               "imagenUrl":  "assets/img/fep/enlaces/adesp.jpg",
+                               "enlace":  "http://deporteespana.es/",
+                               "ventana":  "_blank",
+                               "orden":  6
+                           },
+                           {
+                               "tipo":  "interes",
+                               "titulo":  "Dopaje",
+                               "texto":  null,
+                               "imagen":  "Celad.jpg",
+                               "imagenUrl":  "assets/img/fep/enlaces/celad.jpg",
+                               "enlace":  "https://www.celad.gob.es/",
+                               "ventana":  "_blank",
+                               "orden":  7
+                           }
+                       ],
+    "patrocinadores":  [
+                           {
+                               "logo":  "iberdrola.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/iberdrola.jpg",
+                               "enlace":  "https://www.iberdrola.com/compromiso-social/deporte-femenino",
+                               "orden":  1
+                           },
+                           {
+                               "logo":  "PadelProShop.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/padelproshop.jpg",
+                               "enlace":  "https://padelproshop.com/",
+                               "orden":  2
+                           },
+                           {
+                               "logo":  "Galis.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/galis.jpg",
+                               "enlace":  "https://padelgalis.com/",
+                               "orden":  3
+                           },
+                           {
+                               "logo":  "Bullpadel.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/bullpadel.jpg",
+                               "enlace":  "https://www.bullpadel.com/es/",
+                               "orden":  4
+                           },
+                           {
+                               "logo":  "Joma.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/joma.jpg",
+                               "enlace":  "https://www.joma-sport.com/",
+                               "orden":  5
+                           },
+                           {
+                               "logo":  "siux.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/siux.jpg",
+                               "enlace":  "https://www.siuxpadel.com/",
+                               "orden":  6
+                           },
+                           {
+                               "logo":  "cupra.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/cupra.jpg",
+                               "enlace":  "https://www.cupra.com/es-es/",
+                               "orden":  7
+                           },
+                           {
+                               "logo":  "head2.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/head2.jpg",
+                               "enlace":  "https://www.head.com/es_ES/shop-padel",
+                               "orden":  8
+                           },
+                           {
+                               "logo":  "Rafa.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/rafa.jpg",
+                               "enlace":  "https://www.rafanadalacademy.com/",
+                               "orden":  9
+                           },
+                           {
+                               "logo":  "BVMPRS.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/bvmprs.jpg",
+                               "enlace":  "https://www.bumpersbrand.com/en",
+                               "orden":  10
+                           },
+                           {
+                               "logo":  "tacticbo.jpg",
+                               "logoUrl":  "assets/img/fep/patrocinadores/tacticbo.jpg",
+                               "enlace":  "https://tacticbo.com/en/",
+                               "orden":  11
+                           }
+                       ],
+    "ultimasFotos":  [
+                         {
+                             "idGaleria":  725,
+                             "archivo":  "CCA-Absoluta-79.jpg",
+                             "imagenUrl":  "assets/img/fep/multimedia/cca-absoluta-79.jpg",
+                             "subtitulo":  "",
+                             "fechaEvento":  "2026-01-01",
+                             "fechaModificacion":  "2026-11-01T00:00:00"
+                         },
+                         {
+                             "idGaleria":  725,
+                             "archivo":  "CCA-Absoluta-80.jpg",
+                             "imagenUrl":  "assets/img/fep/multimedia/cca-absoluta-80.jpg",
+                             "subtitulo":  "",
+                             "fechaEvento":  "2026-01-01",
+                             "fechaModificacion":  "2026-11-01T00:00:00"
+                         },
+                         {
+                             "idGaleria":  725,
+                             "archivo":  "CCA-Absoluta-81.jpg",
+                             "imagenUrl":  "assets/img/fep/multimedia/cca-absoluta-81.jpg",
+                             "subtitulo":  "",
+                             "fechaEvento":  "2026-01-01",
+                             "fechaModificacion":  "2026-11-01T00:00:00"
+                         }
+                     ]
+}

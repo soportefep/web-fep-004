@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>Organigrama FEP</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .n { position: absolute; }
+  .lineas { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  .lineas path { fill: none; stroke: var(--ink); stroke-width: 3; }
+  .lineas .suave { stroke-dasharray: 8 7; }
+  .card .nom { font-size: 29px; }
+  .pres .nom { font-size: 40px; }
+  .pres .rol { font-size: 16px; }
+  .asam .nom, .junta .nom { font-size: 34px; }
+  .junta .extra { font-size: 16px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+  .comision { border-style: dashed; background: var(--paper); }
+  .comision .nom { font-size: 26px; }
+  .acento { border-left: 10px solid var(--red); }
+  .lista li { font-size: 23px; }
+</style></head>
+<body>
+  <div class="diag"></div><div class="filete"></div>
+  <header class="cab">
+    <div>
+      <p class="kicker">Federación Española de Pádel · Equipo FEP</p>
+      <h1>Organigrama</h1>
+    </div>
+    <img class="logo" src="logo.png" alt="">
+  </header>
+
+  <!-- Conectores -->
+  <svg class="lineas" viewBox="0 0 1920 1080" aria-hidden="true">
+    <path d="M960 362 V412" />                      <!-- Asamblea → Presidente -->
+    <path class="suave" d="M960 330 H1300" />       <!-- Asamblea – Comisión Delegada -->
+    <path d="M720 470 H596" />                      <!-- Presidente → Dirección deportiva -->
+    <path d="M1200 470 H1324" />                    <!-- Presidente → Secretaría general -->
+    <path d="M960 532 V586" />                      <!-- Presidente → Junta Directiva -->
+    <path d="M346 518 V592" />                      <!-- Dirección deportiva → Seleccionador absolutos -->
+    <path d="M346 682 V730" />                      <!-- Absolutos → Menores -->
+    <path d="M596 800 H690" />                      <!-- Menores → Equipo técnico -->
+    <path d="M1574 518 V592" />                     <!-- Secretaría general → Equipo administrativo -->
+  </svg>
+
+  <div class="n card card--ink asam" style="left:760px; top:292px; width:400px; height:72px; align-items:center;"><p class="nom">Asamblea General</p></div>
+  <div class="n card comision" style="left:1300px; top:300px; width:360px; height:60px; align-items:center;"><p class="nom">Comisión Delegada</p></div>
+
+  <div class="n card card--red pres" style="left:720px; top:410px; width:480px; height:122px; align-items:center; text-align:center;"><p class="rol">Presidente</p><p class="nom">Javier Rodríguez Piris</p></div>
+
+  <div class="n card acento" style="left:96px; top:424px; width:500px; height:94px;"><p class="rol">Dirección Deportiva Federativa</p><p class="nom">Javier Casadesús García</p></div>
+  <div class="n card acento" style="left:1324px; top:424px; width:500px; height:94px;"><p class="rol">Secretaría General</p><p class="nom">Concha Velasco Martín</p></div>
+
+  <div class="n card card--blue junta" style="left:760px; top:586px; width:400px; height:110px; align-items:center; text-align:center;"><p class="nom">Junta Directiva</p><p class="extra">3 vicepresidencias · 13 vocalías</p></div>
+
+  <div class="n card acento" style="left:96px; top:592px; width:500px; height:90px;"><p class="rol">Seleccionador absolutos</p><p class="nom">Juanjo Gutiérrez Vicario</p></div>
+  <div class="n card acento" style="left:96px; top:730px; width:500px; height:136px;"><p class="rol">Seleccionadores menores</p><p class="nom">Oriol Moyés Munne</p><p class="nom">José Luis Gutiérrez del Álamo</p></div>
+
+  <div class="n card card--paper" style="left:690px; top:742px; width:540px; height:242px;"><p class="rol">Equipo técnico</p>
+    <ul class="lista"><li>Javier Sánchez Espadiña</li><li>Haizea Zamora Garaikoetxea</li><li>Toni Méndez Ferrer</li><li>Gonzalo Gutiérrez García</li><li>Idoia Martín Egaña</li></ul></div>
+
+  <div class="n card card--ink" style="left:1324px; top:592px; width:500px; height:240px;"><p class="rol">Equipo administrativo</p>
+    <ul class="lista"><li>Vanesa Magro Herráiz</li><li>Carmen Fernández-Vegue</li><li>Cristina San Valentín Blanco</li><li>Virginia Romero Herrero</li><li>Íñigo Roa Menoyo</li></ul></div>
+
+  <footer class="pie"><span><b>FEP</b> · padelfederacion.es</span><span>Organigrama de la Federación Española de Pádel</span></footer>
+</body></html>

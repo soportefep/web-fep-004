@@ -1,0 +1,951 @@
+{
+    "torneo":  {
+                   "id":  28714,
+                   "titulo":  "CAMPEONATO DE ESPAÑA DE VETERANOS 2026",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2026-06-26",
+                   "fechaFin":  "2026-06-28",
+                   "lugar":  "San Pedro de Alcántara"
+               },
+    "genero":  "M",
+    "categoria":  "Cat60",
+    "nivel":  1,
+    "cuadro":  "Final",
+    "publicado":  true,
+    "notas":  null,
+    "formato":  "eliminatoria",
+    "plantilla":  "Cuadro32",
+    "participantes":  [
+                          {
+                              "avance":  5,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "M. GOMEZ GIL - J. GIMENEZ JIMENEZ",
+                              "jugadores":  [
+                                                "M. GOMEZ GIL",
+                                                "J. GIMENEZ JIMENEZ"
+                                            ],
+                              "cabezaSerie":  2
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  2,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "M. EZCURRA ZUFIA - M. EZCURRA ZUFIA",
+                              "jugadores":  [
+                                                "M. EZCURRA ZUFIA",
+                                                "M. EZCURRA ZUFIA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "A. GARCIA ROSS - G. ETXENAGUSIA MIRANDA",
+                              "jugadores":  [
+                                                "A. GARCIA ROSS",
+                                                "G. ETXENAGUSIA MIRANDA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "J. LAGUNA ROSA - M. GARCIA BAZAN",
+                              "jugadores":  [
+                                                "J. LAGUNA ROSA",
+                                                "M. GARCIA BAZAN"
+                                            ],
+                              "cabezaSerie":  5
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  6,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "I. GIMENEZ GARAY - A. URRUTIA DE DIEGO",
+                              "jugadores":  [
+                                                "I. GIMENEZ GARAY",
+                                                "A. URRUTIA DE DIEGO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MONCALEAN GONZALEZ - J. MARTI GARCIA-HERRAIZ",
+                              "jugadores":  [
+                                                "A. MONCALEAN GONZALEZ",
+                                                "J. MARTI GARCIA-HERRAIZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  9,
+                              "tipo":  "pareja",
+                              "nombre":  "M. ALBA HUESCAR - J. GARCIA ALGUACIL",
+                              "jugadores":  [
+                                                "M. ALBA HUESCAR",
+                                                "J. GARCIA ALGUACIL"
+                                            ],
+                              "cabezaSerie":  4
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  10,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  11,
+                              "tipo":  "pareja",
+                              "nombre":  "C. ALMAZAN FERNANDEZ - L. MENENDEZ IZQUIERDO",
+                              "jugadores":  [
+                                                "C. ALMAZAN FERNANDEZ",
+                                                "L. MENENDEZ IZQUIERDO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  12,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MUÑOZ GARCIA - J. MUÑOZ GARCIA",
+                              "jugadores":  [
+                                                "A. MUÑOZ GARCIA",
+                                                "J. MUÑOZ GARCIA"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  13,
+                              "tipo":  "pareja",
+                              "nombre":  "B. ALVAREZ RAMOS - C. BARO-SHAKERY RODRIGUEZ",
+                              "jugadores":  [
+                                                "B. ALVAREZ RAMOS",
+                                                "C. BARO-SHAKERY RODRIGUEZ"
+                                            ],
+                              "cabezaSerie":  6
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  14,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  15,
+                              "tipo":  "pareja",
+                              "nombre":  "J. VILLAGORDO ESPINOSA - F. RODRIGUEZ FERNANDEZ",
+                              "jugadores":  [
+                                                "J. VILLAGORDO ESPINOSA",
+                                                "F. RODRIGUEZ FERNANDEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  16,
+                              "tipo":  "pareja",
+                              "nombre":  "S. FELICES CUADRADO - F. MONTOYA GIMENEZ",
+                              "jugadores":  [
+                                                "S. FELICES CUADRADO",
+                                                "F. MONTOYA GIMENEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  17,
+                              "tipo":  "pareja",
+                              "nombre":  "J. VEGA TERRON - J. NADAL CIFRE",
+                              "jugadores":  [
+                                                "J. VEGA TERRON",
+                                                "J. NADAL CIFRE"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  18,
+                              "tipo":  "pareja",
+                              "nombre":  "J. ASENSIO OCHOA - C. REPISO REDONDO",
+                              "jugadores":  [
+                                                "J. ASENSIO OCHOA",
+                                                "C. REPISO REDONDO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  19,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  20,
+                              "tipo":  "pareja",
+                              "nombre":  "J. CONTRERAS RUIZ - J. ALVAREZ VILLALBA",
+                              "jugadores":  [
+                                                "J. CONTRERAS RUIZ",
+                                                "J. ALVAREZ VILLALBA"
+                                            ],
+                              "cabezaSerie":  7
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  21,
+                              "tipo":  "pareja",
+                              "nombre":  "J. LOPEZ MAZUELAS - F. PROSPER CARDOSO",
+                              "jugadores":  [
+                                                "J. LOPEZ MAZUELAS",
+                                                "F. PROSPER CARDOSO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  22,
+                              "tipo":  "pareja",
+                              "nombre":  "C. MUÑOZ CORRAL - J. GALINDO GORDILLO",
+                              "jugadores":  [
+                                                "C. MUÑOZ CORRAL",
+                                                "J. GALINDO GORDILLO"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  23,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  24,
+                              "tipo":  "pareja",
+                              "nombre":  "A. DEL REY MOLINA - F. APARICIO ASENJO",
+                              "jugadores":  [
+                                                "A. DEL REY MOLINA",
+                                                "F. APARICIO ASENJO"
+                                            ],
+                              "cabezaSerie":  3
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  25,
+                              "tipo":  "pareja",
+                              "nombre":  "P. JUAN MARI - J. CARRERAS MOLINS",
+                              "jugadores":  [
+                                                "P. JUAN MARI",
+                                                "J. CARRERAS MOLINS"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  26,
+                              "tipo":  "pareja",
+                              "nombre":  "G. TERRAZAS AGUIRRE - R. URBINA VILLAPUN",
+                              "jugadores":  [
+                                                "G. TERRAZAS AGUIRRE",
+                                                "R. URBINA VILLAPUN"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  27,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  28,
+                              "tipo":  "pareja",
+                              "nombre":  "A. JIMENEZ BARRIOS - J. RODRIGUEZ GARCIA",
+                              "jugadores":  [
+                                                "A. JIMENEZ BARRIOS",
+                                                "J. RODRIGUEZ GARCIA"
+                                            ],
+                              "cabezaSerie":  8
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  29,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  30,
+                              "tipo":  "pareja",
+                              "nombre":  "J. SOTO LADRA - F. MONGE GOMEZ",
+                              "jugadores":  [
+                                                "J. SOTO LADRA",
+                                                "F. MONGE GOMEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  31,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  5,
+                              "posicion":  32,
+                              "tipo":  "pareja",
+                              "nombre":  "C. GRACIA MADRID-SALVADOR - C. ABON SARDON",
+                              "jugadores":  [
+                                                "C. GRACIA MADRID-SALVADOR",
+                                                "C. ABON SARDON"
+                                            ],
+                              "cabezaSerie":  1
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "M. GOMEZ GIL - J. GIMENEZ JIMENEZ",
+                              "jugadores":  [
+                                                "M. GOMEZ GIL",
+                                                "J. GIMENEZ JIMENEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "M. EZCURRA ZUFIA - M. EZCURRA ZUFIA",
+                              "jugadores":  [
+                                                "M. EZCURRA ZUFIA",
+                                                "M. EZCURRA ZUFIA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "J. LAGUNA ROSA - M. GARCIA BAZAN",
+                              "jugadores":  [
+                                                "J. LAGUNA ROSA",
+                                                "M. GARCIA BAZAN"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MONCALEAN GONZALEZ - J. MARTI GARCIA-HERRAIZ",
+                              "jugadores":  [
+                                                "A. MONCALEAN GONZALEZ",
+                                                "J. MARTI GARCIA-HERRAIZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "M. ALBA HUESCAR - J. GARCIA ALGUACIL",
+                              "jugadores":  [
+                                                "M. ALBA HUESCAR",
+                                                "J. GARCIA ALGUACIL"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "C. ALMAZAN FERNANDEZ - L. MENENDEZ IZQUIERDO",
+                              "jugadores":  [
+                                                "C. ALMAZAN FERNANDEZ",
+                                                "L. MENENDEZ IZQUIERDO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "B. ALVAREZ RAMOS - C. BARO-SHAKERY RODRIGUEZ",
+                              "jugadores":  [
+                                                "B. ALVAREZ RAMOS",
+                                                "C. BARO-SHAKERY RODRIGUEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "S. FELICES CUADRADO - F. MONTOYA GIMENEZ",
+                              "jugadores":  [
+                                                "S. FELICES CUADRADO",
+                                                "F. MONTOYA GIMENEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  9,
+                              "tipo":  "pareja",
+                              "nombre":  "J. VEGA TERRON - J. NADAL CIFRE",
+                              "jugadores":  [
+                                                "J. VEGA TERRON",
+                                                "J. NADAL CIFRE"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  10,
+                              "tipo":  "pareja",
+                              "nombre":  "J. CONTRERAS RUIZ - J. ALVAREZ VILLALBA",
+                              "jugadores":  [
+                                                "J. CONTRERAS RUIZ",
+                                                "J. ALVAREZ VILLALBA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  11,
+                              "tipo":  "pareja",
+                              "nombre":  "J. LOPEZ MAZUELAS - F. PROSPER CARDOSO",
+                              "jugadores":  [
+                                                "J. LOPEZ MAZUELAS",
+                                                "F. PROSPER CARDOSO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  12,
+                              "tipo":  "pareja",
+                              "nombre":  "A. DEL REY MOLINA - F. APARICIO ASENJO",
+                              "jugadores":  [
+                                                "A. DEL REY MOLINA",
+                                                "F. APARICIO ASENJO"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  13,
+                              "tipo":  "pareja",
+                              "nombre":  "P. JUAN MARI - J. CARRERAS MOLINS",
+                              "jugadores":  [
+                                                "P. JUAN MARI",
+                                                "J. CARRERAS MOLINS"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  14,
+                              "tipo":  "pareja",
+                              "nombre":  "A. JIMENEZ BARRIOS - J. RODRIGUEZ GARCIA",
+                              "jugadores":  [
+                                                "A. JIMENEZ BARRIOS",
+                                                "J. RODRIGUEZ GARCIA"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  15,
+                              "tipo":  "pareja",
+                              "nombre":  "J. SOTO LADRA - F. MONGE GOMEZ",
+                              "jugadores":  [
+                                                "J. SOTO LADRA",
+                                                "F. MONGE GOMEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  4,
+                              "posicion":  16,
+                              "tipo":  "pareja",
+                              "nombre":  "C. GRACIA MADRID-SALVADOR - C. ABON SARDON",
+                              "jugadores":  [
+                                                "C. GRACIA MADRID-SALVADOR",
+                                                "C. ABON SARDON"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "M. GOMEZ GIL - J. GIMENEZ JIMENEZ",
+                              "jugadores":  [
+                                                "M. GOMEZ GIL",
+                                                "J. GIMENEZ JIMENEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MONCALEAN GONZALEZ - J. MARTI GARCIA-HERRAIZ",
+                              "jugadores":  [
+                                                "A. MONCALEAN GONZALEZ",
+                                                "J. MARTI GARCIA-HERRAIZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "C. ALMAZAN FERNANDEZ - L. MENENDEZ IZQUIERDO",
+                              "jugadores":  [
+                                                "C. ALMAZAN FERNANDEZ",
+                                                "L. MENENDEZ IZQUIERDO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "B. ALVAREZ RAMOS - C. BARO-SHAKERY RODRIGUEZ",
+                              "jugadores":  [
+                                                "B. ALVAREZ RAMOS",
+                                                "C. BARO-SHAKERY RODRIGUEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "J. CONTRERAS RUIZ - J. ALVAREZ VILLALBA",
+                              "jugadores":  [
+                                                "J. CONTRERAS RUIZ",
+                                                "J. ALVAREZ VILLALBA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "A. DEL REY MOLINA - F. APARICIO ASENJO",
+                              "jugadores":  [
+                                                "A. DEL REY MOLINA",
+                                                "F. APARICIO ASENJO"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  7,
+                              "tipo":  "pareja",
+                              "nombre":  "P. JUAN MARI - J. CARRERAS MOLINS",
+                              "jugadores":  [
+                                                "P. JUAN MARI",
+                                                "J. CARRERAS MOLINS"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "C. GRACIA MADRID-SALVADOR - C. ABON SARDON",
+                              "jugadores":  [
+                                                "C. GRACIA MADRID-SALVADOR",
+                                                "C. ABON SARDON"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "A. MONCALEAN GONZALEZ - J. MARTI GARCIA-HERRAIZ",
+                              "jugadores":  [
+                                                "A. MONCALEAN GONZALEZ",
+                                                "J. MARTI GARCIA-HERRAIZ"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "C. ALMAZAN FERNANDEZ - L. MENENDEZ IZQUIERDO",
+                              "jugadores":  [
+                                                "C. ALMAZAN FERNANDEZ",
+                                                "L. MENENDEZ IZQUIERDO"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "A. DEL REY MOLINA - F. APARICIO ASENJO",
+                              "jugadores":  [
+                                                "A. DEL REY MOLINA",
+                                                "F. APARICIO ASENJO"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "P. JUAN MARI - J. CARRERAS MOLINS",
+                              "jugadores":  [
+                                                "P. JUAN MARI",
+                                                "J. CARRERAS MOLINS"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "C. ALMAZAN FERNANDEZ - L. MENENDEZ IZQUIERDO",
+                              "jugadores":  [
+                                                "C. ALMAZAN FERNANDEZ",
+                                                "L. MENENDEZ IZQUIERDO"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "P. JUAN MARI - J. CARRERAS MOLINS",
+                              "jugadores":  [
+                                                "P. JUAN MARI",
+                                                "J. CARRERAS MOLINS"
+                                            ]
+                          },
+                          {
+                              "avance":  0,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "C. ALMAZAN FERNANDEZ - L. MENENDEZ IZQUIERDO",
+                              "jugadores":  [
+                                                "C. ALMAZAN FERNANDEZ",
+                                                "L. MENENDEZ IZQUIERDO"
+                                            ]
+                          }
+                      ],
+    "partidos":  [
+                     {
+                         "avance":  5,
+                         "posicion":  2,
+                         "resultado":  "6/1-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  4,
+                         "resultado":  "6/0-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  6,
+                         "resultado":  "6/0-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  8,
+                         "resultado":  "W.O.",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  9,
+                         "resultado":  "6/2-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  11,
+                         "resultado":  "6/3-7/6",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  5,
+                         "posicion":  13,
+                         "resultado":  "6/1-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  1,
+                         "resultado":  "5/7-6/1-11/9",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  2,
+                         "resultado":  "6/4-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  3,
+                         "resultado":  "6/0-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  4,
+                         "resultado":  "7/5-1/6-10/8",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  5,
+                         "resultado":  "6/3-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  6,
+                         "resultado":  "6/2-2/6-12/10",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  7,
+                         "resultado":  "7/5-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  4,
+                         "posicion":  8,
+                         "resultado":  "6/3-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  1,
+                         "resultado":  "4/6-6/4-10/7",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  2,
+                         "resultado":  "6/2-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  3,
+                         "resultado":  "6/3-7/5",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  4,
+                         "resultado":  "7/6-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  1,
+                         "resultado":  "6/2-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  2,
+                         "resultado":  "6/1-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  1,
+                         "posicion":  1,
+                         "resultado":  "6/4-6/3",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     }
+                 ],
+    "cabezasSerie":  [
+                         {
+                             "cabezaSerie":  1,
+                             "nombre":  "C. GRACIA MADRID-SALVADOR/C. ABON SARDON",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  2,
+                             "nombre":  "M. GOMEZ GIL/J. GIMENEZ JIMENEZ",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  3,
+                             "nombre":  "A. DEL REY MOLINA/F. APARICIO ASENJO",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  4,
+                             "nombre":  "M. ALBA HUESCAR/J. GARCIA ALGUACIL",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  5,
+                             "nombre":  "J. LAGUNA ROSA/M. GARCIA BAZAN",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  6,
+                             "nombre":  "B. ALVAREZ RAMOS/C. BARO-SHAKERY RODRIGUEZ",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  7,
+                             "nombre":  "J. CONTRERAS RUIZ/J. ALVAREZ VILLALBA",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  8,
+                             "nombre":  "A. JIMENEZ BARRIOS/J. RODRIGUEZ GARCIA",
+                             "puntos":  null
+                         }
+                     ],
+    "clasificacion":  [
+
+                      ],
+    "otrosCuadros":  [
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat60",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat60",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "X",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "X",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         }
+                     ]
+}

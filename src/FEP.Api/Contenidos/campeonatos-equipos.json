@@ -1,0 +1,31 @@
+{
+  "actualizado": "2026-11-13",
+  "videos": [
+    {
+      "torneo": 28133,
+      "titulo": "Semifinales, sábado por la mañana",
+      "url": "https://www.youtube.com/embed/LC3hm8qtWRQ"
+    },
+    {
+      "torneo": 28133,
+      "titulo": "Semifinales, sábado por la tarde",
+      "url": "https://www.youtube.com/embed/lekU4_qKeP4"
+    },
+    {
+      "torneo": 28133,
+      "titulo": "Finales, domingo por la mañana",
+      "url": "https://www.youtube.com/embed/UzF6hLvfLW4"
+    }
+  ],
+  "sinListadoClubes": [25071, 28676, 28677, 28854],
+  "sinPagoEquipos": [23069],
+  "nombresCuadros": [
+    {
+      "torneo": 10666,
+      "genero": "F",
+      "nivel": 1,
+      "cuadro": "Consola",
+      "titulo": "5.º y 6.º puesto"
+    }
+  ]
+}

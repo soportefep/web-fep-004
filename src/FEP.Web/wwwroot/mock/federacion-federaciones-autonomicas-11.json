@@ -1,0 +1,115 @@
+{
+    "id":  11,
+    "nombre":  "FEDERACION ARAGONESA DE PADEL",
+    "nacional":  false,
+    "imagen":  "images/11.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-11.jpg",
+    "presidente":  "Miguel Ángel Herranz",
+    "direccion":  "EDIFICIO EXPO-AVDA. JOSÉ ATARES, 101",
+    "codigoPostal":  "50018",
+    "localidad":  "ZARAGOZA",
+    "telefonos":  [
+                      "976 52 86 28"
+                  ],
+    "email":  "oficina@arapadel.com",
+    "web":  "https://www.arapadel.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  5150,
+                      "puesto":  10,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  68,
+                      "arbitros":  26,
+                      "clubes":  57,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  1019,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  1296,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  1674,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  1987,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  2523,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  2792,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  2973,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  3199,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  3414,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  3365,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  4155,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  4433,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  4798,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  5083,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  5150,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  3441,
+                                     "femenino":  1709,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  503,
+                                     "sub23":  237,
+                                     "senior":  1688,
+                                     "veteranos":  2722,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

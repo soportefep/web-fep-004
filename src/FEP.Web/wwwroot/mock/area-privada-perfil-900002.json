@@ -1,0 +1,49 @@
+{
+  "datosDePrueba": true,
+  "nota": "DATOS DE PRUEBA del prototipo: juez-árbitro ficticio. La API real (GET /api/v1/area-privada/perfil/{id}) los devolverá solo con la sesión del federado iniciada.",
+  "tipo": "arbitro",
+  "id": "900002",
+  "nombre": "SAM",
+  "apellidos": "EJEMPLO DEMO",
+  "licencia": {
+    "numero": "900002",
+    "tipo": "Juez-árbitro",
+    "nivel": "Juez-árbitro nacional",
+    "temporada": 2026,
+    "estado": "activa",
+    "vigenteHasta": "2026-12-31",
+    "federacion": "Federación Aragonesa de Pádel",
+    "comite": "Comité Técnico de Árbitros de Pádel (CTAP)"
+  },
+  "resumen": { "designaciones": 14, "jornadas": 31, "formacionHoras": 12 },
+  "designaciones": [
+    { "id": "d1", "torneo": "I Copa de Ligas Autonómicas de Veteranos", "enlace": "campeonato-equipos.html?id=28854", "fechaInicio": "2026-11-27", "fechaFin": "2026-11-29", "sede": "ZARAGOZA · REGAL PADEL CLUB", "rol": "Juez-árbitro principal", "estado": "confirmada" },
+    { "id": "d2", "torneo": "XXI Cto. España Selecciones Autonómicas Absoluto", "enlace": "calendariofep.html", "fechaInicio": "2027-01-15", "fechaFin": "2027-01-17", "sede": "Por designar", "rol": "Juez-árbitro adjunto", "estado": "pendiente" },
+    { "id": "d3", "torneo": "XLIII Cto. España Equipos 1.ª", "enlace": "calendariofep.html", "fechaInicio": "2027-02-12", "fechaFin": "2027-02-14", "sede": "En licitación", "rol": "Juez-árbitro adjunto", "estado": "pendiente" }
+  ],
+  "historial": [
+    { "torneo": "Torneo de menores de otoño (ejemplo)", "fecha": "2026-10-18", "rol": "Juez-árbitro principal", "acta": "entregada" },
+    { "torneo": "Open de verano (ejemplo)", "fecha": "2026-07-12", "rol": "Juez-árbitro adjunto", "acta": "entregada" },
+    { "torneo": "Torneo de primavera (ejemplo)", "fecha": "2026-04-26", "rol": "Juez-árbitro principal", "acta": "entregada" }
+  ],
+  "disponibilidad": [
+    { "mes": "2026-12", "disponible": true },
+    { "mes": "2027-01", "disponible": true },
+    { "mes": "2027-02", "disponible": true },
+    { "mes": "2027-03", "disponible": false },
+    { "mes": "2027-04", "disponible": true },
+    { "mes": "2027-05", "disponible": true }
+  ],
+  "formacion": [
+    { "titulo": "Curso de Juez Árbitro de Pádel en Silla", "fecha": "2026-11-28", "modalidad": "Online", "estado": "inscrito", "enlace": "https://www.padelfederacion.es/Formacion_Inscripciones.asp" },
+    { "titulo": "Reciclaje anual de jueces-árbitro (ejemplo)", "fecha": "2027-01-30", "modalidad": "Presencial", "estado": "pendiente" }
+  ],
+  "documentos": [
+    { "titulo": "Reglamentos y normativa de la FEP", "tipo": "Web", "enlace": "https://www.padelfederacion.es/Documentos_Reglamentos.asp" },
+    { "titulo": "Plantilla de acta de torneo", "tipo": "PDF" },
+    { "titulo": "Certificado de juez-árbitro 2026", "tipo": "PDF" }
+  ],
+  "avisos": [
+    { "fecha": "2026-11-21", "texto": "Tienes 2 designaciones pendientes de confirmar." }
+  ]
+}

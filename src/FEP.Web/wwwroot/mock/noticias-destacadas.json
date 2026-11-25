@@ -1,0 +1,55 @@
+[
+  {
+    "idNoticia": 2983,
+    "titulo": "Barcelona reúne a los mejores equipos de las ligas autonómicas en la VI Copa de España HEAD 2026",
+    "imagen": "2042157828.jpg",
+    "imagenUrl": "assets/img/fep/noticias/2042157828.jpg",
+    "enlace": "https://www.padelfederacion.es/noticia.asp?Idnoticia=2983",
+    "ventana": "_parent",
+    "orden": 1
+  },
+  {
+    "idNoticia": 2980,
+    "titulo": "La FEP rompe todos los registros: 45 millones de visualizaciones durante el FIP WORLD CUP 2026",
+    "imagen": "5083860099.jpg",
+    "imagenUrl": "assets/img/fep/noticias/5083860099.jpg",
+    "enlace": "https://www.padelfederacion.es/noticia.asp?Idnoticia=2980",
+    "ventana": "_parent",
+    "orden": 2
+  },
+  {
+    "idNoticia": 2976,
+    "titulo": "HISTÓRICO DOBLETE EN QATAR",
+    "imagen": "1208982169.jpg",
+    "imagenUrl": "assets/img/fep/noticias/1208982169.jpg",
+    "enlace": "https://www.padelfederacion.es/noticia.asp?Idnoticia=2976",
+    "ventana": "_parent",
+    "orden": 3
+  },
+  {
+    "idNoticia": 2975,
+    "titulo": "¡Estamos en la Final del FIP World Cup 2026!",
+    "imagen": "1265699088.jpg",
+    "imagenUrl": "assets/img/fep/noticias/1265699088.jpg",
+    "enlace": "https://www.padelfederacion.es/noticia.asp?Idnoticia=2975",
+    "ventana": "_parent",
+    "orden": 4
+  },
+  {
+    "idNoticia": 2974,
+    "titulo": "¡España saluda a las semis!",
+    "imagen": "8553205192.jpg",
+    "imagenUrl": "assets/img/fep/noticias/8553205192.jpg",
+    "enlace": "https://www.padelfederacion.es/noticia.asp?Idnoticia=2974",
+    "ventana": "_parent",
+    "orden": 5
+  },
+  {
+    "idNoticia": 2977,
+    "titulo": "El futuro del pádel español brilla en Aragón tras un Campeonato de España Infantil y Junior de récord",
+    "imagen": "7801740348.jpg",
+    "imagenUrl": "assets/img/fep/noticias/7801740348.jpg",    "enlace": "https://www.padelfederacion.es/noticia.asp?Idnoticia=2977",
+    "ventana": "_parent",
+    "orden": 6
+  }
+]

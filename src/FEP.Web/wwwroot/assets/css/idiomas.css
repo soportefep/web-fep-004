@@ -1,0 +1,68 @@
+/* =========================================================================
+   FEP · Selector de idioma (barra superior) y aviso de idioma automático. Lo carga assets/js/i18n.js.
+   ========================================================================= */
+.idioma-bandera { display: block; flex: none; width: 21px; height: 15px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .18); }
+
+/* Botón de la barra superior */
+.topbar__links > li:has(.idioma-boton) { position: relative; }
+.topbar .idioma-boton {
+  display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 8px; border: 1px solid rgba(255, 255, 255, .25);
+  background: transparent; color: var(--on-dark, #fff); font: inherit; font-size: 10.5px; font-weight: 700; letter-spacing: .06em; cursor: pointer;
+}
+.topbar .idioma-boton:hover, .topbar .idioma-boton[aria-expanded="true"] { border-color: #fff; background: rgba(255, 255, 255, .1); }
+.idioma-boton .idioma-bandera { width: 18px; height: 13px; }
+
+/* Panel con las banderas */
+.idiomas {
+  position: absolute; top: calc(100% + 8px); inset-inline-end: 0; z-index: 120; width: min(340px, calc(100vw - 24px));
+  padding: 14px; background: #fff; color: #101828; box-shadow: 0 18px 44px rgba(0, 0, 0, .28); letter-spacing: 0;
+  font-size: 13px; text-transform: none;
+}
+.idiomas__titulo { margin: 0 0 10px; font-weight: 800; font-size: 13px; }
+.idiomas__lista { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; margin: 0; padding: 0; list-style: none; }
+.idiomas__op {
+  display: flex; align-items: center; gap: 10px; width: 100%; padding: 8px 10px; border: 1px solid transparent;
+  background: none; color: inherit; font: inherit; font-size: 14px; text-align: start; cursor: pointer;
+}
+.idiomas__op:hover { background: #F2F4F7; }
+.idiomas__op:focus-visible { outline: 3px solid var(--red, #E4002B); outline-offset: 0; }
+.idiomas__op[aria-current="true"] { border-color: #101828; font-weight: 700; }
+.idiomas__op[aria-current="true"]::after { content: "✓"; margin-inline-start: auto; color: var(--red, #E4002B); }
+.idiomas__nota { margin: 10px 0 0; padding-top: 10px; border-top: 1px solid #E4E7EC; font-size: 12px; line-height: 1.45; color: #667085; }
+
+/* Aviso de idioma elegido automáticamente (arriba del todo) */
+.idioma-aviso {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 16px;
+  padding: 10px 16px; background: #FFF6DE; color: #101828; border-bottom: 1px solid #F5D98B; font-size: 14px;
+}
+.idioma-aviso__texto { display: flex; align-items: center; gap: 10px; margin: 0; }
+.idioma-aviso__acciones { display: flex; flex-wrap: wrap; gap: 6px; }
+.idioma-aviso__btn {
+  min-height: 32px; padding: 0 12px; border: 1px solid #101828; background: #fff; color: #101828;
+  font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+}
+.idioma-aviso__btn:hover { background: #101828; color: #fff; }
+.idioma-aviso__btn--ok { background: #101828; color: #fff; }
+.idioma-aviso__btn--ok:hover { background: var(--red, #E4002B); border-color: var(--red, #E4002B); }
+
+/* Árabe (de derecha a izquierda): ajustes que el navegador no hace solo */
+.idioma-rtl .btn__arrow, .idioma-rtl .ed-hero__ctas .btn__arrow { display: inline-block; transform: scaleX(-1); }
+/* Los textos que siguen en español (noticias, resultados…) toman la dirección de su propio contenido:
+   así la puntuación no salta al principio ("UN DEPORTE." y no ".UN DEPORTE"). */
+.idioma-rtl :is(p, h1, h2, h3, h4, h5, li, dt, dd, td, th, figcaption, label, blockquote) { unicode-bidi: plaintext; }
+
+/* Japonés y chino: sin espacios entre palabras. En los titulares, cortar la línea entre frases y no
+   a mitad de palabra ("スポーツ" y no "ス / ポーツ"); auto-phrase solo lo entiende Chrome con japonés,
+   el resto de navegadores lo ignoran y cortan como siempre. */
+:is(html:lang(ja), html:lang(zh)) :is(h1, h2, h3, .ed-display) { word-break: auto-phrase; line-break: strict; }
+/* Portada: cada carácter ocupa un cuadrado entero, así que el titular gigante se reduce para que
+   "コミュニティ。" (7 caracteres) quepa en una línea, y se le da algo más de interlineado. */
+:is(html:lang(ja), html:lang(zh)) .ed-hero__title { font-size: clamp(32px, 5vw, 80px); line-height: 1.1; }
+@supports (font-size: 1cqi) {
+  :is(html:lang(ja), html:lang(zh)) .ed-hero__title { font-size: clamp(32px, 13cqi, 80px); }
+}
+
+@media (max-width: 640px) {
+  .idioma-aviso { justify-content: flex-start; font-size: 13px; }
+  .idiomas { position: fixed; top: 44px; inset-inline: 12px; width: auto; }
+}

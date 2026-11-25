@@ -1,0 +1,367 @@
+{
+    "torneo":  {
+                   "id":  28714,
+                   "titulo":  "CAMPEONATO DE ESPAÑA DE VETERANOS 2026",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2026-06-26",
+                   "fechaFin":  "2026-06-28",
+                   "lugar":  "San Pedro de Alcántara"
+               },
+    "genero":  "F",
+    "categoria":  "Cat50",
+    "nivel":  1,
+    "cuadro":  "Final",
+    "publicado":  true,
+    "notas":  null,
+    "formato":  "eliminatoria",
+    "plantilla":  "Cuadro8",
+    "participantes":  [
+                          {
+                              "avance":  3,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "M. GONCET DE LOS REYES - M. ESMERADO JIMENEZ",
+                              "jugadores":  [
+                                                "M. GONCET DE LOS REYES",
+                                                "M. ESMERADO JIMENEZ"
+                                            ],
+                              "cabezaSerie":  2
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "E. GAYOSO ORPINELL - M. CANO RODRIGUEZ",
+                              "jugadores":  [
+                                                "E. GAYOSO ORPINELL",
+                                                "M. CANO RODRIGUEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "C. LEON SOLANA - A. CASTAÑEDA ORTEGA",
+                              "jugadores":  [
+                                                "C. LEON SOLANA",
+                                                "A. CASTAÑEDA ORTEGA"
+                                            ],
+                              "cabezaSerie":  4
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "B. ALCANTARA DE MULLENHEIM - L. IBORRA BROSETA",
+                              "jugadores":  [
+                                                "B. ALCANTARA DE MULLENHEIM",
+                                                "L. IBORRA BROSETA"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  5,
+                              "tipo":  "pareja",
+                              "nombre":  "L. GOMEZ LOPEZ - E. FERRER LOPEZ",
+                              "jugadores":  [
+                                                "L. GOMEZ LOPEZ",
+                                                "E. FERRER LOPEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  6,
+                              "tipo":  "pareja",
+                              "nombre":  "M. ALCON CHACON - M. VILLAVERDE ROMON",
+                              "jugadores":  [
+                                                "M. ALCON CHACON",
+                                                "M. VILLAVERDE ROMON"
+                                            ],
+                              "cabezaSerie":  3
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  7,
+                              "tipo":  "exento",
+                              "nombre":  "EXENTO"
+                          },
+                          {
+                              "avance":  3,
+                              "posicion":  8,
+                              "tipo":  "pareja",
+                              "nombre":  "P. FOLATELLI MAESTU - C. ROMERO PALOMO",
+                              "jugadores":  [
+                                                "P. FOLATELLI MAESTU",
+                                                "C. ROMERO PALOMO"
+                                            ],
+                              "cabezaSerie":  1
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "E. GAYOSO ORPINELL - M. CANO RODRIGUEZ",
+                              "jugadores":  [
+                                                "E. GAYOSO ORPINELL",
+                                                "M. CANO RODRIGUEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "B. ALCANTARA DE MULLENHEIM - L. IBORRA BROSETA",
+                              "jugadores":  [
+                                                "B. ALCANTARA DE MULLENHEIM",
+                                                "L. IBORRA BROSETA"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "M. ALCON CHACON - M. VILLAVERDE ROMON",
+                              "jugadores":  [
+                                                "M. ALCON CHACON",
+                                                "M. VILLAVERDE ROMON"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "P. FOLATELLI MAESTU - C. ROMERO PALOMO",
+                              "jugadores":  [
+                                                "P. FOLATELLI MAESTU",
+                                                "C. ROMERO PALOMO"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "E. GAYOSO ORPINELL - M. CANO RODRIGUEZ",
+                              "jugadores":  [
+                                                "E. GAYOSO ORPINELL",
+                                                "M. CANO RODRIGUEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "M. ALCON CHACON - M. VILLAVERDE ROMON",
+                              "jugadores":  [
+                                                "M. ALCON CHACON",
+                                                "M. VILLAVERDE ROMON"
+                                            ]
+                          },
+                          {
+                              "avance":  0,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "E. GAYOSO ORPINELL - M. CANO RODRIGUEZ",
+                              "jugadores":  [
+                                                "E. GAYOSO ORPINELL",
+                                                "M. CANO RODRIGUEZ"
+                                            ]
+                          }
+                      ],
+    "partidos":  [
+                     {
+                         "avance":  3,
+                         "posicion":  1,
+                         "resultado":  "6/3-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  2,
+                         "resultado":  "6/0-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  3,
+                         "posicion":  3,
+                         "resultado":  "6/2-7/6",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  1,
+                         "resultado":  "6/4-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  2,
+                         "resultado":  "6/2-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  1,
+                         "posicion":  1,
+                         "resultado":  "7/6-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     }
+                 ],
+    "cabezasSerie":  [
+                         {
+                             "cabezaSerie":  1,
+                             "nombre":  "P. FOLATELLI MAESTU/C. ROMERO PALOMO",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  2,
+                             "nombre":  "M. GONCET DE LOS REYES/M. ESMERADO JIMENEZ",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  3,
+                             "nombre":  "M. ALCON CHACON/M. VILLAVERDE ROMON",
+                             "puntos":  null
+                         },
+                         {
+                             "cabezaSerie":  4,
+                             "nombre":  "C. LEON SOLANA/A. CASTAÑEDA ORTEGA",
+                             "puntos":  null
+                         }
+                     ],
+    "clasificacion":  [
+
+                      ],
+    "otrosCuadros":  [
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat60",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat60",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "X",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "X",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         }
+                     ]
+}

@@ -1,0 +1,274 @@
+/* =========================================================================
+   FEP · Prototipo 003 — Calendario FEP en "vista mensual"
+   Solo para calendariofep.html (main.cal-003). Va después de fep.css y tema-003.css.
+   Junto con assets/js/calendario-mensual-003.js (que dibuja la cuadrícula de cada mes):
+   - Columna izquierda fija: "mapa de la temporada" con los meses en mosaico (el índice de la página).
+   - Derecha: filtros en una línea y, por cada mes, un calendario de lunes a domingo con cada
+     prueba como barra de color a lo largo de sus días.
+   - En móvil (≤ 860 px) la cuadrícula se oculta y se ve la lista de pruebas de siempre.
+   ========================================================================= */
+
+.cal-003 { --cab: 87px; }
+@media (max-width: 1279px) { .cal-003 { --cab: 75px; } }
+@media (max-width: 640px) { .cal-003 { --cab: 67px; } }
+
+/* ---------- Estructura: mapa de temporada | contenido; patrocinadores abajo ---------- */
+.cal-003 .page-layout,
+.cal-003 .page-layout:has(.page-sponsors:not([hidden])) {
+  display: grid; grid-template-columns: 250px minmax(0, 1fr); grid-template-areas: "toc content" "sponsors sponsors";
+  gap: 0 48px; padding-top: 40px; padding-bottom: 0;
+}
+.cal-003 .page-content { grid-area: content; }
+
+/* ---------- Mapa de la temporada (índice) ---------- */
+.cal-003 .page-toc {
+  grid-area: toc; position: sticky; top: calc(var(--cab) + 20px); align-self: start;
+  padding: 20px; background: var(--ink); color: #fff;
+}
+.cal-003 .page-toc__title { display: block; margin-bottom: 14px; font-stretch: 72%; font-weight: 800; font-size: 22px; letter-spacing: .02em; text-transform: uppercase; color: #fff; }
+/* Si el índice lista meses, el título pasa a ser "Mapa de la temporada" (el texto original queda para lectores de pantalla) */
+.cal-003 .page-toc:has(a[href^="#mes-"]) .page-toc__title { font-size: 0; }
+.cal-003 .page-toc:has(a[href^="#mes-"]) .page-toc__title::before { content: "Mapa de la temporada"; font-stretch: 72%; font-weight: 800; font-size: 22px; letter-spacing: .02em; text-transform: uppercase; color: #fff; }
+.cal-003 .page-toc__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; margin: 0; border: 0; }
+.cal-003 .page-toc__list li { grid-column: 1 / -1; }
+.cal-003 .page-toc__list li:has(a[href^="#mes-2"]) { grid-column: auto; }   /* los meses, en mosaico de 2 */
+.cal-003 .page-toc__list a {
+  display: flex; align-items: center; justify-content: space-between; gap: 6px; margin: 0; padding: 8px 10px;
+  border: 0; border-radius: 0; background: rgba(255, 255, 255, .07); color: rgba(255, 255, 255, .8);
+  font-size: 12.5px; font-weight: 700; transition: background-color .2s, color .2s;
+}
+.cal-003 .page-toc__list li:has(a[href^="#mes-2"]) a {
+  flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: 2px; min-height: 58px;
+  font-stretch: 75%; font-size: 14px; font-weight: 800; letter-spacing: .03em; text-transform: uppercase;
+}
+.cal-003 .page-toc__list a:hover { background: rgba(255, 255, 255, .16); color: #fff; }
+.cal-003 .page-toc__list a.is-active { background: var(--red); color: #fff; }
+.cal-003 .page-toc__count {
+  min-width: 0; padding: 0; border-radius: 0; background: none; color: inherit;
+  font-stretch: 62%; font-size: 22px; font-weight: 900; line-height: 1;
+}
+.cal-003 .page-toc__list li:has(a[href^="#mes-2"]) .page-toc__count { order: -1; font-size: 26px; }
+.cal-003 .page-toc :focus-visible { outline: 3px solid #fff; outline-offset: -3px; }
+
+.cal-003 .calf-section, .cal-003 .calf-licit, .cal-003 .clubs-results, .cal-003 #pruebas .camp-month { scroll-margin-top: calc(var(--cab) + 20px); }
+
+/* ---------- Filtros en una línea ---------- */
+.cal-003 .clubs-search { padding: 0 0 20px; border: 0; border-bottom: 3px solid var(--ink); border-radius: 0; background: none; }
+.cal-003 .clubs-search .org-group__title { font-size: 0; }   /* el título sobra a la vista; se mantiene para lectores de pantalla */
+.cal-003 .clubs-search .org-group__title::before { content: "Filtrar"; font-size: 13px; font-stretch: 100%; font-weight: 800; letter-spacing: .14em; color: var(--red); }
+.cal-003 .camp-form { grid-template-columns: 130px 200px minmax(0, 1fr); align-items: end; gap: 12px 14px; margin-top: 10px; }
+.cal-003 .clubs-form label { font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--text-2); }
+.cal-003 .clubs-form select, .cal-003 .clubs-form input { height: 42px; border: 0; border-bottom: 2px solid var(--ink); border-radius: 0; background-color: var(--paper); }
+.cal-003 .clubs-form__actions { grid-column: 1 / -1; }
+.cal-003 .clubs-form .camp-check { font-size: 13px; text-transform: none; letter-spacing: 0; }
+.cal-003 .clubs-form__reset { font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+
+/* ---------- Cabecera del listado y PDF de la temporada ---------- */
+.cal-003 .clubs-results { margin-top: 32px; }
+.cal-003 .clubs-results__head { align-items: flex-end; }
+.cal-003 #pruebas-titulo { font-size: clamp(36px, 4vw, 56px); }
+.cal-003 .calf-season { margin-top: 12px; }
+
+/* Leyenda de colores */
+.cal-leyenda { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 16px 0 0; padding: 0; list-style: none; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--text-2); }
+.cal-leyenda li { display: inline-flex; align-items: center; gap: 8px; }
+.cal-leyenda li::before { content: ""; width: 22px; height: 12px; background: var(--c); }
+.clubs-results:has(#calf-lista[hidden]) .cal-leyenda { display: none; }
+
+/* ---------- Mes: título + cuadrícula ---------- */
+.cal-003 .camp-month { margin-top: 40px; }
+.cal-003 .camp-month + .camp-month { margin-top: 48px; }
+.cal-003 .camp-month__title {
+  display: flex; align-items: baseline; gap: 14px; margin: 0 0 12px; padding: 0; border: 0;
+  font-stretch: 64%; font-weight: 900; font-size: 44px; line-height: .9; letter-spacing: 0; text-transform: uppercase; color: var(--ink);
+}
+.cal-003 .camp-month__title .org-count {
+  padding: 4px 8px; border-radius: 0; background: var(--red); color: #fff;
+  font-stretch: 100%; font-size: 12px; font-weight: 800; line-height: 1;
+}
+
+/* Con cuadrícula, la lista de fichas solo se usa en móvil */
+@media (min-width: 861px) {
+  .cal-003 .camp-month.has-calm > .camp-items { display: none; }
+}
+
+.calm { border: 2px solid var(--ink); background: #fff; }
+.calm-cab { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); background: var(--ink); color: #fff; }
+.calm-cab span { padding: 8px 10px; font-size: 12px; font-weight: 800; letter-spacing: .14em; }
+.calm-cab .is-finde { color: #FF8A9E; }
+
+.calm-semana {
+  display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); grid-auto-rows: min-content; grid-auto-flow: row dense;
+  row-gap: 4px; min-height: 104px; padding-bottom: 10px; border-top: 1px solid var(--line);
+  /* separadores verticales de los días y fin de semana sombreado */
+  background:
+    linear-gradient(90deg, transparent calc(500% / 7), var(--paper) calc(500% / 7)),
+    repeating-linear-gradient(90deg, transparent 0 calc(100% / 7 - 1px), var(--line) calc(100% / 7 - 1px) calc(100% / 7));
+}
+.calm-dia { padding: 6px 10px 2px; }
+.calm-dia__n { font-stretch: 70%; font-weight: 800; font-size: 18px; line-height: 1; color: var(--ink); }
+.calm-dia.is-fuera .calm-dia__n { color: transparent; }
+.calm-dia.is-finde .calm-dia__n { color: var(--red); }
+.calm-dia.is-hoy .calm-dia__n { display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 4px; background: var(--red); color: #fff; }
+
+/* Barras de las pruebas */
+.calm-barra {
+  --c: var(--gray, #8A8A85);
+  position: relative; z-index: 1; display: flex; align-items: center; min-width: 0; height: 28px; margin: 0 4px; padding: 0 10px;
+  background: var(--c); color: #fff; font-size: 12.5px; font-weight: 700; line-height: 1.1;
+  transition: filter .15s, transform .15s var(--ease);
+}
+.calm-barra__txt { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.calm-barra--absoluto { --c: var(--ink); }
+.calm-barra--menores { --c: var(--red); }
+.calm-barra--veteranos { --c: var(--blue); }
+.calm-barra--silla { --c: #FFB800; color: var(--ink); }
+/* La prueba viene de la semana/mes anterior o sigue en la siguiente: borde en punta */
+.calm-barra.is-viene { margin-left: 0; clip-path: polygon(8px 0, 100% 0, 100% 100%, 8px 100%, 0 50%); padding-left: 14px; }
+.calm-barra.is-sigue { margin-right: 0; clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%); padding-right: 14px; }
+.calm-barra.is-viene.is-sigue { clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0 50%); }
+a.calm-barra:hover { filter: brightness(1.15); transform: translateY(-1px); }
+a.calm-barra:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; clip-path: none; }
+.calm-barra--absoluto:focus-visible { outline-color: var(--red); }
+
+/* "Fecha por confirmar": se queda como lista compacta */
+.cal-003 #mes-por-confirmar .camp-items { border-top: 2px solid var(--ink); }
+
+/* ---------- Calendarios en PDF ---------- */
+.cal-003 .calf-section { margin-top: 56px; padding-top: 0; border-top: 0; }
+.cal-003 .calf-section .org-group__title { padding-bottom: 12px; border-bottom: 3px solid var(--ink); }
+
+/* ---------- Patrocinadores: franja final ---------- */
+.cal-003 .page-sponsors {
+  grid-area: sponsors; margin-top: 64px; padding: 36px 0 48px; border-top: 3px solid var(--ink);
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px clamp(20px, 3vw, 48px);
+}
+.cal-003 .page-sponsors__title { grid-column: 1 / -1; padding: 0; border: 0; font-stretch: 68%; font-weight: 800; font-size: 30px; color: var(--ink); }
+.cal-003 .page-sponsors .patro-nivel { grid-column: 1 / -1; }
+.cal-003 .page-sponsors .patro-nivel--secundarios { grid-column: 1 / span 8; }
+.cal-003 .page-sponsors .patro-nivel--homologados { grid-column: 9 / span 4; }
+.cal-003 .page-sponsors .patro-nivel--principales .patro-nivel__list,
+.cal-003 .page-sponsors .patro-nivel--secundarios .patro-nivel__list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cal-003 .page-sponsors .patro-nivel--homologados .patro-nivel__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cal-003 .page-sponsors .patro-tile { aspect-ratio: 2 / 1; }
+.cal-003 .page-sponsors .patro-nivel--principales .patro-tile { aspect-ratio: 5 / 2; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1279px) {
+  .cal-003 .page-layout, .cal-003 .page-layout:has(.page-sponsors:not([hidden])) { grid-template-columns: 210px minmax(0, 1fr); gap: 0 32px; }
+  .cal-003 .camp-form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cal-003 .camp-form .clubs-form__field:nth-child(3) { grid-column: 1 / -1; }
+  .calm-barra { font-size: 11.5px; padding: 0 6px; }
+  .cal-003 .page-sponsors .patro-nivel--secundarios, .cal-003 .page-sponsors .patro-nivel--homologados { grid-column: 1 / -1; }
+}
+@media (max-width: 860px) {
+  /* Una columna: el mapa de la temporada pasa a ser una barra deslizable de meses */
+  .cal-003 .page-layout, .cal-003 .page-layout:has(.page-sponsors:not([hidden])) {
+    grid-template-columns: minmax(0, 1fr); grid-template-areas: "toc" "content" "sponsors"; padding-top: 0;
+  }
+  .cal-003 .page-toc { top: var(--cab); z-index: 20; margin: 0 calc(var(--gutter) * -1) 24px; padding: 0 var(--gutter); }
+  .cal-003 .page-toc__title { display: none; }
+  .cal-003 .page-toc__list { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
+  .cal-003 .page-toc__list::-webkit-scrollbar { display: none; }
+  .cal-003 .page-toc__list li, .cal-003 .page-toc__list li:has(a[href^="#mes-2"]) { flex: none; }
+  .cal-003 .page-toc__list a, .cal-003 .page-toc__list li:has(a[href^="#mes-2"]) a {
+    flex-direction: row; align-items: center; min-height: 48px; padding: 0 12px; background: none; white-space: nowrap;
+    font-size: 13px; text-transform: uppercase;
+  }
+  .cal-003 .page-toc__list li:has(a[href^="#mes-2"]) .page-toc__count, .cal-003 .page-toc__count { order: 0; font-size: 16px; }
+  .calm { display: none; }
+  .cal-003 .camp-month__title { font-size: 34px; }
+}
+@media (max-width: 640px) {
+  .cal-003 .camp-form { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) { .calm-barra { transition: none; } a.calm-barra:hover { transform: none; } }
+
+/* ---------- Otros calendarios (territoriales y autonómicos de menores / veteranos) ---------- */
+/* Autonómicos: campeonato autonómico en rojo; prueba puntuable para el ranking en negro */
+.calm-barra--campeonato { --c: var(--red); }
+.calm-barra--ranking { --c: var(--ink); }
+/* La leyenda solo tiene sentido junto a la cuadrícula (no en móvil ni en la vista "Por federación") */
+.cal-003 section:not(:has(.calm)) > .cal-leyenda { display: none; }
+@media (max-width: 860px) { .cal-003 .cal-leyenda { display: none; } }
+/* Vista "Por federación" de los autonómicos: cabecera de cada federación con el estilo del tema */
+.cal-003 .cal-fed__title { font-stretch: 64%; font-weight: 900; font-size: 40px; line-height: .9; text-transform: uppercase; }
+.cal-003 .cal-fed__head { padding-bottom: 12px; border-bottom: 3px solid var(--ink); }
+/* Selector de vista de los autonómicos con el estilo de pestañas del tema */
+.cal-003 .cal-view .chip { border-radius: 0; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; font-size: 12.5px; }
+.cal-003 .cal-view .chip.is-active { background: var(--ink); border-color: var(--ink); color: #fff; }
+/* Territoriales: cuatro campos (federación, temporada, categoría y texto) en una sola línea */
+.cal-003 #calt-form { grid-template-columns: 190px 120px 190px minmax(0, 1fr); }
+@media (max-width: 1279px) { .cal-003 #calt-form { grid-template-columns: repeat(2, minmax(0, 1fr)); } .cal-003 #calt-form .clubs-form__field:nth-child(3) { grid-column: auto; } }
+/* Campeonatos: el índice lista temporadas (2026, 2025…) en mosaico de 3 */
+.cal-003 .page-toc__list li:has(a[href*="anio="]) { grid-column: auto; }
+.cal-003 .page-toc__list li:has(a[href*="anio="]) a { justify-content: center; min-height: 44px; font-stretch: 72%; font-size: 17px; font-weight: 800; }
+.cal-003 .page-toc__list:has(a[href*="anio="]) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+/* En el mosaico solo se ve el año (el bloque ya se titula "Temporadas"); "Temporada 2026" sigue disponible
+   para lectores de pantalla y el año pintado se marca como decorativo. */
+.cal-003 .page-toc__list a[data-anio] { position: relative; }   /* ancla el texto oculto a su enlace (si no, en la barra deslizable de móvil ensancha la página) */
+.cal-003 .page-toc__list a[data-anio] > span { position: absolute; left: 0; top: 0; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.cal-003 .page-toc__list a[data-anio]::after { content: attr(data-anio); content: attr(data-anio) / ""; }
+
+/* =========================================================================
+   Campeonatos: barra de la vista (tipo de torneo y color por) — campeonatos-tipos-003.js
+   ========================================================================= */
+.camp-vista { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; margin-top: 18px; }
+.camp-vista__grupo { display: flex; flex-wrap: wrap; align-items: center; gap: 0; }
+.camp-vista__label { margin-right: 12px; font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); }
+.camp-vista__btn {
+  height: 38px; padding: 0 14px; margin-left: -2px; border: 2px solid var(--ink); background: #fff; cursor: pointer;
+  font-stretch: 80%; font-weight: 800; font-size: 13.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--ink);
+  transition: background-color .15s, color .15s;
+}
+.camp-vista__btn:first-of-type { margin-left: 0; }
+.camp-vista__btn:hover { background: var(--paper); }
+.camp-vista__btn.is-active { background: var(--ink); color: #fff; }
+.camp-vista__btn[data-tipo="silla"].is-active { background: #FFB800; border-color: var(--ink); color: var(--ink); }
+.camp-vista__btn:focus-visible { outline: 3px solid var(--red); outline-offset: 2px; position: relative; z-index: 1; }
+
+/* Color por tipo de torneo (en vez de por categoría) */
+.cal-003[data-color="tipo"] .calm-barra.calm-tipo--parejas { --c: var(--red); color: #fff; }
+.cal-003[data-color="tipo"] .calm-barra.calm-tipo--equipos { --c: var(--blue); color: #fff; }
+.cal-003[data-color="tipo"] .calm-barra.calm-tipo--selecciones { --c: var(--ink); color: #fff; }
+.cal-003[data-color="tipo"] .calm-barra.calm-tipo--silla { --c: #FFB800; color: var(--ink); }
+.cal-003:not([data-color="tipo"]) .cal-leyenda--tipo,
+.cal-003[data-color="tipo"] .cal-leyenda--categoria { display: none !important; }
+
+/* Solo pádel en silla de ruedas (filtro en la página) */
+.cal-003.camp-solo-silla .calm-barra:not([data-tipo="silla"]) { display: none; }
+.cal-003.camp-solo-silla #camp-lista .camp-items > li:not(:has(.camp-item[data-tipo="silla"])) { display: none; }
+.cal-003.camp-solo-silla #camp-lista .camp-month:not(:has(.camp-item[data-tipo="silla"])) { display: none; }
+.cal-003.camp-solo-silla #camp-lista .camp-month__title .org-count { display: none; }   /* el total del mes no corresponde al filtro */
+
+@media (max-width: 860px) {
+  /* Sin cuadrícula en móvil: el color no aplica, solo el filtro de tipo */
+  .camp-vista__grupo:has([data-color]) { display: none; }
+  .camp-vista__btn { height: 36px; padding: 0 10px; font-size: 12.5px; }
+}
+
+/* =========================================================================
+   Índice que se para al acabar el contenido (toc-003.js mete su contenido en .page-toc__caja)
+   El <nav> ocupa la altura de la zona de contenido; la caja es la que va fija dentro de él,
+   así que deja de bajar al llegar a la franja de patrocinadores.
+   ========================================================================= */
+@media (min-width: 861px) {
+  .cal-003 .page-toc:has(> .page-toc__caja) {
+    position: relative; top: auto; align-self: stretch; padding: 0; background: none;
+  }
+  .cal-003 .page-toc__caja {
+    position: sticky; top: calc(var(--cab) + 20px); padding: 20px; background: var(--ink); color: #fff;
+  }
+}
+@media (max-width: 860px) {
+  /* Móvil: la barra deslizable ocupa la fila del índice y la del contenido (pasa por encima, sin bloquear
+     los clics) y se queda arriba mientras se lee; al llegar a los patrocinadores se va con la página. */
+  .cal-003 .page-toc:has(> .page-toc__caja) {
+    grid-row: 1 / span 2; grid-column: 1; align-self: stretch; position: relative; top: auto; z-index: 20;
+    margin: 0 calc(var(--gutter) * -1); padding: 0; background: none; pointer-events: none;
+  }
+  .cal-003 .page-toc__caja {
+    position: sticky; top: var(--cab); padding: 0 var(--gutter); background: var(--ink); pointer-events: auto;
+  }
+  .cal-003 .page-layout:has(.page-toc__caja) .page-content { grid-row: 2; padding-top: 72px; }
+}

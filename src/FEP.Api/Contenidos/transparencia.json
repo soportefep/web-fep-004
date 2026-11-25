@@ -1,0 +1,320 @@
+{
+  "actualizado": "2026-11-06",
+  "categorias": [
+    {
+      "clave": "institucional",
+      "titulo": "Información institucional",
+      "descripcion": "Funciones de la Federación Española de Pádel, normativa que la regula y estructura organizativa.",
+      "apartados": [
+        {
+          "clave": "funciones",
+          "titulo": "Funciones",
+          "pendiente": false,
+          "actualizacion": "enero de 2026",
+          "parrafos": [
+            "La Federación Española de Pádel (FEP) es una entidad asociativa privada, sin ánimo de lucro, con personalidad jurídica propia y ámbito de actuación en todo el territorio del Estado.",
+            "Fue reconocida por la Comisión Directiva del Consejo Superior de Deportes en su sesión de 24 de enero de 1997, figurando inscrita en el Registro de Federaciones Deportivas Españolas con el número 61.",
+            "La FEP se rige por lo dispuesto en la normativa deportiva vigente, en particular por la Ley 39/2022, de 30 de diciembre, del Deporte, por el Real Decreto 1835/1991, de 20 de diciembre, por sus Estatutos, su Reglamento General y por las demás normas internas que dicte en el ejercicio de sus competencias.",
+            "En el desarrollo de sus funciones propias de gobierno, administración, gestión, organización y reglamentación del pádel, la Federación Española de Pádel ejerce, por delegación, las siguientes funciones públicas de carácter administrativo:"
+          ],
+          "lista": [
+            "Calificar y organizar, en su caso, las actividades y competiciones oficiales de ámbito estatal, entendiendo la organización como la regulación del marco general de las mismas conforme a la normativa federativa.",
+            "Actuar en coordinación con las federaciones deportivas de ámbito autonómico para la promoción y desarrollo general del pádel en todo el territorio nacional.",
+            "Diseñar, elaborar y ejecutar, en colaboración con las federaciones autonómicas cuando proceda, los planes de preparación de los deportistas de alto nivel en sus respectivas modalidades, así como participar en la elaboración de las listas anuales correspondientes.",
+            "Colaborar con la Administración General del Estado y con las Administraciones de las Comunidades Autónomas en la formación de técnicos deportivos y en la prevención, control y represión del uso de sustancias y métodos prohibidos en el deporte.",
+            "Organizar o tutelar las competiciones oficiales de carácter internacional que se celebren en territorio español.",
+            "Ejercer la potestad disciplinaria deportiva, en los términos establecidos en la legislación deportiva vigente y en sus normas estatutarias y reglamentarias.",
+            "Ejercer el control de las subvenciones que se asignen a las asociaciones y entidades deportivas, en las condiciones que establezca el Consejo Superior de Deportes.",
+            "Ejecutar las resoluciones dictadas por el Tribunal Administrativo del Deporte, cuando proceda.",
+            "Desempeñar, respecto de sus asociados, las funciones de tutela, control y supervisión que le reconoce el ordenamiento jurídico deportivo."
+          ]
+        },
+        {
+          "clave": "normativa-aplicable",
+          "titulo": "Normativa aplicable",
+          "pendiente": false,
+          "actualizacion": "enero de 2026",
+          "parrafos": [
+            "La Federación Española de Pádel se rige por la siguiente normativa, de conformidad con la legislación deportiva vigente y con su normativa interna:"
+          ],
+          "lista": [
+            "Ley 39/2022, de 30 de diciembre, del Deporte, por la que se regula el régimen jurídico del deporte en España.",
+            "Ley Orgánica 1/2002, de 22 de marzo, reguladora del Derecho de Asociación.",
+            "Ley Orgánica 11/2021, de 28 de diciembre, de lucha contra el dopaje en el deporte.",
+            "Reglamento (UE) 2016/679 (Reglamento General de Protección de Datos – RGPD).",
+            "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.",
+            "Real Decreto 1835/1991, de 20 de diciembre, sobre Federaciones Deportivas Españolas.",
+            "Real Decreto 1591/1992, de 23 de diciembre, sobre disciplina deportiva.",
+            "Real Decreto 2075/1982, de 9 de julio, sobre actividades y representaciones deportivas internacionales.",
+            "Real Decreto 849/1993, de 4 de junio, por el que se determinan las prestaciones mínimas del seguro deportivo obligatorio.",
+            "Orden ECI/3567/2007, de 4 de diciembre, por la que se regulan los procesos electorales en las federaciones deportivas españolas.",
+            "Estatutos de la Federación Española de Pádel, aprobados conforme a la normativa vigente.",
+            "Reglamentos internos de la Federación Española de Pádel (Reglamento General y Técnico, Reglamento de Disciplina Deportiva, normativa de competiciones y demás disposiciones internas).",
+            "Código de Buen Gobierno de la Federación Española de Pádel."
+          ]
+        },
+        {
+          "clave": "estructura-organizativa",
+          "titulo": "Estructura organizativa",
+          "pendiente": false,
+          "actualizacion": null,
+          "parrafos": [],
+          "lista": [
+            "El Presidente",
+            "La Asamblea General",
+            "La Comisión Delegada",
+            "Equipo administrativo",
+            "Equipo técnico"
+          ],
+          "enlaces": [
+            { "texto": "Composición de los órganos de gobierno", "url": "https://www.padelfederacion.es/Organos_De_Gobierno" },
+            { "texto": "Organigrama del equipo FEP", "url": "https://www.padelfederacion.es/Equipo_FEP" }
+          ],
+          "personas": [
+            { "nombre": "Concha Velasco", "cargo": "Secretaria General", "grupo": "Equipo administrativo", "funciones": ["Despacho de asuntos generales de la FEP, coordinación área competiciones, área de dopaje y área arbitraje. Apoyo al área jurídica. Desarrollo de Reglamentos. Convocatorias licitaciones."], "retribucionAnualBruta": null, "nota": null },
+            { "nombre": "Vanessa Magro", "cargo": "Contabilidad", "grupo": "Equipo administrativo", "funciones": ["Coordinación administración área económica y clientes, justificaciones, compras y pagos. Apoyo a gestión administrativa."], "retribucionAnualBruta": null, "nota": null },
+            { "nombre": "Virginia Romero Herrero", "cargo": "Contabilidad", "grupo": "Equipo administrativo", "funciones": ["Apoyo departamento contabilidad."], "retribucionAnualBruta": null, "nota": null },
+            { "nombre": "Carmen Fernández Vegue", "cargo": "Administración", "grupo": "Equipo administrativo", "funciones": ["Centralita y registro de entrada/salida documentación, tramitación licencias, coordinación de viajes personal, deportistas y técnicos FEP. Apoyo área competiciones. Logística y administración general."], "retribucionAnualBruta": null, "nota": null },
+            { "nombre": "Cristina San Vicente", "cargo": "Formación", "grupo": "Equipo administrativo", "funciones": ["Centralita y registro de entrada/salida documentación, tramitación licencias, coordinación de viajes personal, deportistas y técnicos FEP. Coordinación área arbitraje. Apoyo área competiciones. Logística y administración general. Tramitación solicitudes homologación materiales."], "retribucionAnualBruta": null, "nota": null },
+            { "nombre": "Iñigo Roa", "cargo": "Sistema Gestión informática y web", "grupo": "Equipo administrativo", "funciones": ["Análisis y programación. Diseño páginas web. Soporte al usuario. Desarrollo proyectos."], "retribucionAnualBruta": null, "nota": null },
+            { "nombre": "Javier Casadesús", "cargo": "Director Técnico", "grupo": "Equipo técnico", "funciones": [], "retribucionAnualBruta": null, "nota": null },
+            { "nombre": "Juan José Gutiérrez", "cargo": "Seleccionador Nacional Absoluta", "grupo": "Equipo técnico", "funciones": [], "retribucionAnualBruta": null, "nota": null }
+          ]
+        }
+      ]
+    },
+    {
+      "clave": "contratos-convenios",
+      "titulo": "Contratos y convenios",
+      "descripcion": "Contratos formalizados con entidades públicas y convenios y contratos de patrocinio suscritos por la FEP.",
+      "apartados": [
+        {
+          "clave": "contratos-entidades-publicas",
+          "titulo": "Contratos formalizados con entidades públicas",
+          "pendiente": false,
+          "actualizacion": null,
+          "documentos": [
+            { "titulo": "Contrato suscrito con el CSD", "descripcion": null, "periodo": null, "archivo": "docs/Contrato_Prestamo_Con_CSD.pdf", "url": null }
+          ]
+        },
+        {
+          "clave": "convenios",
+          "titulo": "Convenios suscritos",
+          "pendiente": false,
+          "actualizacion": null,
+          "documentos": [
+            { "titulo": "Convenio de colaboración con THE NET PADEL GLOBAL", "descripcion": null, "periodo": null, "archivo": "docs/CONVENIO-THE-NET-061026.PDF", "url": null },
+            { "titulo": "Convenio con Servicios Académicos Estudiantiles SL", "descripcion": null, "periodo": null, "archivo": "docs/CONTRATO_SAE.PDF", "url": null },
+            { "titulo": "Contrato de modificación nº 1 al contrato de patrocinio entre Babolat VS S.A.S. y la Federación Española de Pádel", "descripcion": null, "periodo": "2022-2023", "archivo": "docs/BABOLAT-CIRCUITO-MENORES-FEP 22-23-061026.pdf", "url": null },
+            { "titulo": "Contrato de patrocinio de Babolat como «title sponsor» del Circuito de Menores de la Federación Española de Pádel", "descripcion": null, "periodo": "2022-2023", "archivo": "docs/BABOLAT-CIRCUITO-MENORES-FEP 22-23-061026.pdf", "url": null },
+            { "titulo": "Contrato de patrocinio publicitario de Bullpadel, patrocinador de la Selección Española", "descripcion": null, "periodo": "2024-2027", "archivo": "docs/Bullpadel-FEP-BP24-27-061026.pdf", "url": null },
+            { "titulo": "Contrato de patrocinio publicitario HEAD, pelota oficial FEP 2025-2026", "descripcion": null, "periodo": "2025-2026", "archivo": "docs/HEAD-FEP-2025-26_ 071026.pdf", "url": null },
+            { "titulo": "Contrato de patrocinio publicitario HEAD, pelota oficial FEP 2027-2028", "descripcion": null, "periodo": "2027-2028", "archivo": "docs/HEAD-Webmail_ 071026.pdf", "url": null },
+            { "titulo": "Contrato SEAT CUPRA", "descripcion": null, "periodo": null, "archivo": "docs/Cupra-FEP-Renovacion_ 071026.pdf", "url": null },
+            { "titulo": "Contrato de patrocinio deportivo entre la Federación Española de Pádel e Iberdrola Clientes, S.A.U.", "descripcion": null, "periodo": "2025-2027", "archivo": "docs/Iberdrola-25-27_ 071026.pdf", "url": null },
+            { "titulo": "Contrato SIUX, pala oficial FEP", "descripcion": null, "periodo": "2026", "archivo": "docs/SIUX-Contrato-Fep-2026_ 071026.pdf", "url": null },
+            { "titulo": "Contrato BCD, agencia oficial de viajes FEP", "descripcion": null, "periodo": null, "archivo": "docs/BCD-BC_ 071026.pdf", "url": null },
+            { "titulo": "Contrato JOMA Sports", "descripcion": null, "periodo": "2026", "archivo": "docs/JOMA-Contrato-Fep-2026_signed.pdf", "url": null },
+            { "titulo": "Contrato BVMPRS Brands Clothes", "descripcion": null, "periodo": "2026-2027", "archivo": "docs/BUMPERS_2026-2027_firmado.pdf", "url": null },
+            { "titulo": "Contrato TacticBo", "descripcion": null, "periodo": "2026", "archivo": "docs/TACTICBO_2026_v2_firmado_TACTICBO.pdf", "url": null }
+          ]
+        }
+      ]
+    },
+    {
+      "clave": "economica",
+      "titulo": "Información económica",
+      "descripcion": "Subvenciones, presupuestos, cuentas anuales y auditorías, retribuciones e indicadores económicos.",
+      "apartados": [
+        {
+          "clave": "subvenciones",
+          "titulo": "Subvenciones y ayudas públicas",
+          "pendiente": false,
+          "actualizacion": null,
+          "parrafos": ["Subvenciones concedidas en 2025:"],
+          "importes": [
+            { "concepto": "Subvención ordinaria y retransmisiones", "importe": 248256.18 },
+            { "concepto": "Ayuda años anteriores subvención CSD deportistas", "importe": 50800.00 },
+            { "concepto": "Subvención Deporte y Mujer", "importe": 21250.00 },
+            { "concepto": "Subvención Pádel Adaptado", "importe": 22430.00 },
+            { "concepto": "Subvención COE", "importe": 3500.00 }
+          ]
+        },
+        {
+          "clave": "presupuestos",
+          "titulo": "Presupuestos",
+          "pendiente": false,
+          "actualizacion": null,
+          "documentos": [
+            { "titulo": "Presupuesto 2026", "descripcion": null, "periodo": "2026", "archivo": "docs/Presupuesto_2026.pdf", "url": null },
+            { "titulo": "Presupuesto 2025", "descripcion": "Nota aclaratoria sobre la prórroga del presupuesto", "periodo": "2025", "archivo": "docs/NOTA_ACLARATORIA_PRORROGA_PRESUPUESTO_2025.pdf", "url": null },
+            { "titulo": "Presupuesto 2024", "descripcion": "Aprobado en la Asamblea General del 16 de diciembre de 2023", "periodo": "2024", "archivo": "docs/Presupuesto-2024-Aprobado-AG-16-Dic-23.pdf", "url": null },
+            { "titulo": "Presupuesto 2023", "descripcion": null, "periodo": "2023", "archivo": "docs/Presupuesto 2023.pdf", "url": null }
+          ]
+        },
+        {
+          "clave": "ingresos-propios",
+          "titulo": "Ingresos propios",
+          "pendiente": false,
+          "actualizacion": null,
+          "importes": [
+            { "concepto": "Ingresos propios. Presupuesto para 2024", "importe": 894729.00 }
+          ]
+        },
+        {
+          "clave": "cuentas-anuales",
+          "titulo": "Cuentas anuales e informes de auditoría",
+          "pendiente": false,
+          "actualizacion": null,
+          "documentos": [
+            { "titulo": "Cuentas anuales 2024 y auditoría", "descripcion": null, "periodo": "2024", "archivo": "docs/RFEP-2024-Informe-de-opinion-CCAA-firmado.pdf", "url": null },
+            { "titulo": "Cuentas anuales 2023 y auditoría", "descripcion": null, "periodo": "2023", "archivo": "docs/FEP-2023-OPINION-CCAA.pdf", "url": null },
+            { "titulo": "Nota informativa sobre la salvedad de las cuentas anuales 2023", "descripcion": null, "periodo": "2023", "archivo": "docs/Nota-informativa-sobre-Salvedad.pdf", "url": null },
+            { "titulo": "Cuentas anuales 2022 y auditoría", "descripcion": null, "periodo": "2022", "archivo": "docs/FEP-2022-OPINION-CCAA.pdf", "url": null },
+            { "titulo": "Cuentas anuales 2021 y auditoría", "descripcion": null, "periodo": "2021", "archivo": "docs/FEP2021Opinion-CCAA.pdf", "url": null },
+            { "titulo": "Cuentas anuales 2020 y auditoría", "descripcion": null, "periodo": "2020", "archivo": "docs/CCAA2020_y_Auditoria.pdf", "url": null },
+            { "titulo": "Auditoría 2019", "descripcion": null, "periodo": "2019", "archivo": "docs/Auditoria_2019v2.pdf", "url": null },
+            { "titulo": "Ajuste auditoría 2019", "descripcion": null, "periodo": "2019", "archivo": "docs/Ajustes_Auditoria_2019.pdf", "url": null },
+            { "titulo": "Cuentas anuales 2018", "descripcion": null, "periodo": "2018", "archivo": "docs/CCAA_2018.pdf", "url": null },
+            { "titulo": "Informe de auditoría de las cuentas anuales 2018", "descripcion": null, "periodo": "2018", "archivo": "docs/Infome_Auditoria_2018.pdf", "url": null },
+            { "titulo": "Situación patrimonial", "descripcion": null, "periodo": null, "archivo": "docs/Situacion_Patrimonial.pdf", "url": null },
+            { "titulo": "Cuentas anuales 2017", "descripcion": null, "periodo": "2017", "archivo": "docs/CUENTAS_ANUALES_2017.pdf", "url": null },
+            { "titulo": "Informe de auditoría de las cuentas anuales 2017", "descripcion": null, "periodo": "2017", "archivo": "docs/Informe_Auditoria_Cuentas_Anuales_2017.pdf", "url": null },
+            { "titulo": "Aprobación del plan de viabilidad 2017-2020", "descripcion": null, "periodo": "2017-2020", "archivo": "docs/Aprobacion_Plan_Viabilidad_2017-2020.pdf", "url": null }
+          ]
+        },
+        {
+          "clave": "retribuciones",
+          "titulo": "Retribuciones de altos cargos",
+          "pendiente": false,
+          "actualizacion": null,
+          "personas": [
+            { "nombre": "Javier Rodríguez Piris", "cargo": "Presidente", "grupo": null, "funciones": [], "retribucionAnualBruta": 51000.00, "nota": "Aprobado en Asamblea General" },
+            {
+              "nombre": "Francisco Sanz Fominaya",
+              "cargo": "Vicepresidente primero y Tesorero",
+              "grupo": null,
+              "funciones": [
+                "Supervisión de la gestión económica y financiera de la Federación.",
+                "Elaboración, seguimiento y control del presupuesto anual.",
+                "Control y supervisión de ingresos, gastos y tesorería.",
+                "Coordinación y dirección del personal de la oficina federativa.",
+                "Supervisión y coordinación del área de Comunicación.",
+                "Supervisión y coordinación del área de Patrocinios y relaciones con colaboradores.",
+                "Apoyo a los órganos de gobierno en la definición y ejecución de la estrategia federativa."
+              ],
+              "retribucionAnualBruta": 30000.00,
+              "nota": null
+            }
+          ]
+        },
+        {
+          "clave": "concurso-acreedores",
+          "titulo": "Concurso de acreedores, preconcurso o similar",
+          "pendiente": false,
+          "actualizacion": null,
+          "parrafos": ["La FEP no se encuentra en concurso de acreedores, preconcurso o similar."]
+        },
+        {
+          "clave": "autonomia-financiera",
+          "titulo": "Indicador de autonomía financiera",
+          "pendiente": true,
+          "actualizacion": null,
+          "parrafos": ["La información relativa al indicador de autonomía financiera de la Federación Española de Pádel se encuentra pendiente de actualización, conforme a los datos económicos del ejercicio en curso."]
+        },
+        {
+          "clave": "indicador-endeudamiento",
+          "titulo": "Indicador de endeudamiento",
+          "pendiente": true,
+          "actualizacion": null,
+          "parrafos": ["La información relativa al indicador de endeudamiento de la Federación Española de Pádel se encuentra pendiente de actualización, conforme a los datos económicos del ejercicio en curso."]
+        },
+        {
+          "clave": "gastos-relevantes",
+          "titulo": "Detalle de los gastos relevantes de la federación",
+          "pendiente": true,
+          "actualizacion": null,
+          "parrafos": ["El detalle de los gastos relevantes de la Federación Española de Pádel se encuentra pendiente de actualización, conforme a la información económica del ejercicio en curso."]
+        },
+        {
+          "clave": "endeudamiento",
+          "titulo": "Endeudamiento de la federación",
+          "pendiente": true,
+          "actualizacion": null,
+          "parrafos": ["La información relativa al endeudamiento de la Federación Española de Pádel se encuentra pendiente de actualización, conforme a los datos económicos del ejercicio en curso."]
+        },
+        {
+          "clave": "documentacion-csd",
+          "titulo": "Envío de documentación financiera al CSD",
+          "pendiente": false,
+          "actualizacion": null,
+          "lista": ["Cuentas anuales 2023 enviadas al CSD en julio de 2024."]
+        }
+      ]
+    },
+    {
+      "clave": "buen-gobierno",
+      "titulo": "Buen gobierno e igualdad",
+      "descripcion": "Códigos de buen gobierno y ética, protocolos, procedimiento de contratación, conciliación e igualdad.",
+      "apartados": [
+        {
+          "clave": "codigo-buen-gobierno",
+          "titulo": "Código de Buen Gobierno",
+          "pendiente": false,
+          "actualizacion": null,
+          "documentos": [
+            { "titulo": "Código de Buen Gobierno de la FEP 2026", "descripcion": null, "periodo": "2026", "archivo": "docs/CODIGO-BUEN-GOBIERNO-2026.pdf", "url": null },
+            { "titulo": "Código Ético de la FEP", "descripcion": "Anexo III: Código de Ética Deportiva (15 de junio de 2015)", "periodo": "2015", "archivo": "docs/ANEXO-III-CODIGO-ETICA-DEPORTIVA-15-junio-2015.pdf", "url": null }
+          ]
+        },
+        {
+          "clave": "normativa-ayudas",
+          "titulo": "Normativa de ayudas a deportistas, técnicos y otros colaboradores",
+          "pendiente": true,
+          "actualizacion": null,
+          "parrafos": [
+            "La normativa reguladora de las ayudas a deportistas, técnicos y otros colaboradores de la Federación Española de Pádel se encuentra pendiente de actualización, correspondiente al ejercicio 2026.",
+            "Dicha normativa será publicada una vez aprobada por el órgano competente, conforme a la normativa vigente.",
+            "En estos momentos no hay ningún archivo para poder consultar."
+          ]
+        },
+        {
+          "clave": "protocolo-acoso",
+          "titulo": "Protocolo para la prevención, detección y actuación frente al acoso y abuso",
+          "pendiente": false,
+          "actualizacion": null,
+          "documentos": [
+            { "titulo": "Protocolo de la Federación Española de Pádel para la prevención, detección y actuación frente al acoso, abuso y violencia", "descripcion": null, "periodo": null, "archivo": "docs/PROTOCOLO-AyA.pdf", "url": null }
+          ]
+        },
+        {
+          "clave": "contratacion-compras",
+          "titulo": "Procedimiento de contratación y compras",
+          "pendiente": false,
+          "actualizacion": null,
+          "documentos": [
+            { "titulo": "Protocolo", "descripcion": "Manual de procedimientos de contratación y compras", "periodo": "2021", "archivo": "docs/Manual-procedimientos-contratacion-compras-2021.pdf", "url": null }
+          ]
+        },
+        {
+          "clave": "conciliacion",
+          "titulo": "Conciliación y corresponsabilidad",
+          "pendiente": false,
+          "actualizacion": null,
+          "documentos": [
+            { "titulo": "Plan de conciliación y corresponsabilidad", "descripcion": null, "periodo": "2025", "archivo": "docs/CONCILIACIoN-Y-CORRESPONSABILIDAD-FEP-19-06-2025.pdf", "url": null }
+          ]
+        },
+        {
+          "clave": "informe-igualdad",
+          "titulo": "Informe anual de igualdad",
+          "pendiente": false,
+          "actualizacion": null,
+          "documentos": [
+            { "titulo": "Informe anual de igualdad de la Federación Española de Pádel 2025", "descripcion": null, "periodo": "2025", "archivo": "docs/Informe-Anual-de-Igualdad-Padel-2025.pdf", "url": null }
+          ]
+        }
+      ]
+    }
+  ]
+}

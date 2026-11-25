@@ -1,0 +1,12 @@
+{
+  "tipo": "jugador",
+  "federacion": null,
+  "busqueda": null,
+  "conFechaNacimiento": false,
+  "total": 2,
+  "limite": 100,
+  "items": [
+    { "licencia": "12762", "apellido1": "MATADOR", "apellido2": "GARCIA DE VINUESA", "nombre": "ALVARO", "estadisticasUrl": "https://www.padelfederacion.es/Estadisticas?id=12762" },
+    { "licencia": "3889", "apellido1": "SANMARTI", "apellido2": "BELETA", "nombre": "ENRIC", "estadisticasUrl": "https://www.padelfederacion.es/Estadisticas?id=3889" }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+    "id":  28854,
+    "anio":  2026,
+    "titulo":  "I COPA DE LIGAS AUTONÓMICAS DE VETERANOS",
+    "categoria":  "veteranos",
+    "seleccion":  false,
+    "sillaRuedas":  false,
+    "fechaInicio":  "2026-11-27",
+    "fechaFin":  "2026-11-29",
+    "ciudad":  "ZARAGOZA",
+    "sedes":  [
+                  {
+                      "nombre":  "REGAL PADEL CLUB",
+                      "web":  "https://www.regalpadelclub.com/",
+                      "latitud":  null,
+                      "longitud":  null
+                  }
+              ],
+    "cuotas":  [
+                   160
+               ],
+    "generos":  [
+                    {
+                        "genero":  "masculino",
+                        "categorias":  [
+
+                                       ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categorias":  [
+
+                                       ]
+                    }
+                ],
+    "notaPrensaHtml":  null,
+    "marcadores":  [
+
+                   ],
+    "videos":  [
+
+               ],
+    "cuadrosPublicados":  true,
+    "cuadros":  [
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "ABSOLUTO",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28854\u0026Genero=M\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28854\u0026Genero=M\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Segunda categoría",
+                                            "nivel":  2,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28854\u0026Genero=M\u0026Nivel=2\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Tercera categoría",
+                                            "nivel":  3,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28854\u0026Genero=M\u0026Nivel=3\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuarta categoría",
+                                            "nivel":  4,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28854\u0026Genero=M\u0026Nivel=4\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "ABSOLUTO",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28854\u0026Genero=F\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28854\u0026Genero=F\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Segunda categoría",
+                                            "nivel":  2,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28854\u0026Genero=F\u0026Nivel=2\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Tercera categoría",
+                                            "nivel":  3,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28854\u0026Genero=F\u0026Nivel=3\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuarta categoría",
+                                            "nivel":  4,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28854\u0026Genero=F\u0026Nivel=4\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    }
+                ],
+    "notificacionesHtml":  "\u003cp\u003e\r\n\t\u003cspan style=\"font-size:14px;\"\u003e\u0026#128260; \u003cstrong\u003eEquipos participantes:\u003c/strong\u003e La lista de equipos participantes se encuentra en constante actualizaci\u0026oacute;n, ya que las ligas de algunas Comunidades Aut\u0026oacute;nomas a\u0026uacute;n no han finalizado. Los equipos se ir\u0026aacute;n incorporando a la plataforma a medida que recibamos las confirmaciones oficiales.\u003c/span\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cspan style=\"font-size:14px;\"\u003e\u0026#9200; \u003cstrong\u003eHorarios:\u003c/strong\u003e En el \u0026aacute;mbito deportivo, recordamos que la competici\u0026oacute;n podr\u0026iacute;a dar comienzo el \u003cstrong\u003eviernes a las 15:00 horas\u003c/strong\u003e. Por tanto, es obligatorio que todos los equipos est\u0026eacute;n completamente disponibles para competir a partir de esa hora.\u003c/span\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e",
+    "adjuntos":  [
+                     {
+                         "titulo":  "OFERTA HOTELERA",
+                         "tipo":  null,
+                         "archivo":  "Oferta hotelera Copa Esp Ligas Autonomicas(1).jpeg",
+                         "url":  "https://www.padelfederacion.es/Paginas/Torneos/2026/Oferta%20hotelera%20Copa%20Esp%20Ligas%20Autonomicas(1).jpeg"
+                     }
+                 ],
+    "inscritosParejas":  [
+
+                         ],
+    "inscripcion":  {
+                        "abierta":  false,
+                        "fechaLimite":  null,
+                        "por":  "federaciones",
+                        "informacionHtml":  null,
+                        "acciones":  [
+
+                                     ],
+                        "equiposInscritosUrl":  "https://www.padelfederacion.es/Camp_Equipos_Modificar.asp?idtorneo=28854",
+                        "fechaLimitePuntuacion":  null
+                    },
+    "infoAdicionalHtml":  null,
+    "cartel":  null,
+    "cartelUrl":  null,
+    "noticias":  [
+
+                 ],
+    "urlWebActual":  "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=28854",
+    "consultado":  "2026-11-13T10:00:00"
+}

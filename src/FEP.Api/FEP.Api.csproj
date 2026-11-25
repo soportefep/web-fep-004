@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>FEP.Api</RootNamespace>
+    <AssemblyName>FEP.Api</AssemblyName>
+    <!-- Comentarios XML: alimentan el documento OpenAPI (/openapi/v1.json). -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <!-- La cadena de conexión se guarda con: dotnet user-secrets set "ConnectionStrings:FEP" "..." -->
+    <UserSecretsId>fep-api-3c1e8a52-6f0b-4d7e-9a51-2b7c0d4e9f10</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Anthropic" Version="13.9.0" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="FEP.Api.Tests" />
+  </ItemGroup>
+
+  <!-- Contenido estructurado de páginas sin tablas en BD (p. ej. órganos de gobierno). -->
+  <ItemGroup>
+    <Content Update="Contenidos\**\*.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

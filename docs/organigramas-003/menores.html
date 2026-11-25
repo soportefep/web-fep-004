@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>Equipo de menores FEP</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .zona { position: absolute; left: 96px; right: 96px; top: 330px; bottom: 120px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: auto auto minmax(0, 1fr); column-gap: 40px; }
+  .sel { min-height: 190px; position: relative; padding-right: 110px; }
+  .sel .nom { font-size: 46px; }
+  .sel .rol { font-size: 17px; }
+  .sel .num { position: absolute; right: 26px; top: 50%; transform: translateY(-50%); font-size: 96px; color: #fff; opacity: .5; }
+  /* Conector: de cada seleccionador baja una línea y se unen sobre el equipo técnico */
+  .union { grid-column: 1 / -1; position: relative; height: 70px; }
+  .union::before { content: ""; position: absolute; left: 25%; right: 25%; top: 34px; height: 3px; background: var(--ink); }
+  .union::after { content: ""; position: absolute; left: 50%; top: 34px; width: 3px; height: 36px; background: var(--ink); }
+  .union i { position: absolute; top: 0; width: 3px; height: 36px; background: var(--ink); }
+  .union i:first-child { left: 25%; } .union i:last-child { left: 75%; }
+  .tecnico { grid-column: 1 / -1; display: grid; grid-template-columns: 360px minmax(0, 1fr); gap: 0; padding: 0; border-top: 8px solid var(--red); }
+  .tecnico__cab { display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 28px 32px; background: var(--paper); border-right: 3px solid var(--ink); }
+  .tecnico__cab .nom { font-size: 52px; }
+  .tecnico__cab span { font-size: 19px; font-weight: 600; color: var(--gray); }
+  .tecnico ul { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .tecnico li { display: flex; flex-direction: column; justify-content: flex-start; padding-top: 64px !important; gap: 10px; padding: 26px 22px; border-right: 1px solid var(--line); }
+  .tecnico li:last-child { border-right: 0; }
+  .tecnico li b { font-stretch: 62%; font-weight: 900; font-size: 50px; line-height: .8; color: var(--red); }
+  .tecnico li span { font-stretch: 76%; font-weight: 800; font-size: 28px; line-height: 1.02; text-transform: uppercase; }
+</style></head>
+<body>
+  <div class="diag"></div><div class="filete"></div>
+  <header class="cab">
+    <div>
+      <p class="kicker">Federación Española de Pádel · Equipo FEP</p>
+      <h1>Equipo de menores</h1>
+    </div>
+    <img class="logo" src="logo.png" alt="">
+  </header>
+
+  <div class="zona">
+    <div class="card card--ink sel"><p class="rol">Seleccionador femenino</p><p class="nom">Oriol Moyés Munne</p><span class="num">F</span></div>
+    <div class="card card--red sel"><p class="rol">Seleccionador masculino</p><p class="nom">José Luis Gutiérrez del Álamo</p><span class="num">M</span></div>
+    <div class="union"><i></i><i></i></div>
+    <div class="card tecnico">
+      <div class="tecnico__cab"><p class="rol">Equipo técnico</p><p class="nom">5 técnicos</p></div>
+      <ul>
+        <li><b>01</b><span>Javier Sánchez Espadiña</span></li>
+        <li><b>02</b><span>Haizea Zamora Garaikoetxea</span></li>
+        <li><b>03</b><span>Toni Méndez Ferrer</span></li>
+        <li><b>04</b><span>Gonzalo Gutiérrez García</span></li>
+        <li><b>05</b><span>Idoia Martín Egaña</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="pie"><span><b>FEP</b> · padelfederacion.es</span><span>Equipo de menores</span></footer>
+</body></html>

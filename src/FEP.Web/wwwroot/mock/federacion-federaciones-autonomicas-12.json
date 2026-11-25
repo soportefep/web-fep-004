@@ -1,0 +1,115 @@
+{
+    "id":  12,
+    "nombre":  "FEDERACION EXTREMEÑA DE PADEL",
+    "nacional":  false,
+    "imagen":  "images/12.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-12.jpg",
+    "presidente":  "JOSE LUIS DOMINGUEZ PINTIADO",
+    "direccion":  "CALLE MANUEL ALFARO,3, BAJO A",
+    "codigoPostal":  "06004",
+    "localidad":  "BADAJOZ",
+    "telefonos":  [
+                      "924239275"
+                  ],
+    "email":  "info@fexpadel.com",
+    "web":  "https://www.fexpadel.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  2155,
+                      "puesto":  15,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  61,
+                      "arbitros":  5,
+                      "clubes":  54,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  1548,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  1744,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  2022,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  2024,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  2067,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  1954,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  1884,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  1602,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  1556,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  1768,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  1715,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  1952,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  1976,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  2035,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  2155,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  1539,
+                                     "femenino":  616,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  420,
+                                     "sub23":  192,
+                                     "senior":  884,
+                                     "veteranos":  659,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

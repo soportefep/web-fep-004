@@ -1,0 +1,116 @@
+{
+    "id":  16,
+    "nombre":  "FEDERACION DE PADEL DE CEUTA",
+    "nacional":  false,
+    "imagen":  "images/16.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-16.jpg",
+    "presidente":  "D. AGUSTIN ATENCIA GIL",
+    "direccion":  "C/ PEPE REMIGIO EDIFICIO FLORENCIA PORTAL 1 7ºB EDIFICIO FLORENCIA",
+    "codigoPostal":  "51001",
+    "localidad":  "CEUTA",
+    "telefonos":  [
+                      "655396429",
+                      "616463188"
+                  ],
+    "email":  "fpadelceuta@gmail.com",
+    "web":  "https://www.fpadelceuta.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  364,
+                      "puesto":  18,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  6,
+                      "arbitros":  0,
+                      "clubes":  1,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  107,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  26,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  90,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  180,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  190,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  214,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  190,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  150,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  132,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  177,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  218,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  161,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  371,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  385,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  364,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  302,
+                                     "femenino":  62,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  114,
+                                     "sub23":  44,
+                                     "senior":  111,
+                                     "veteranos":  95,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

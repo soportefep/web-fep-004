@@ -1,0 +1,202 @@
+{
+    "actualizado":  "2026-11-12",
+    "introduccion":  "Las federaciones autonómicas que forman la Federación Española de Pádel constituyen un motor fundamental en el desarrollo y la promoción del pádel nacional.",
+    "federaciones":  [
+                         {
+                             "id":  6,
+                             "territorio":  "Andalucía",
+                             "nombre":  "Federación Andaluza de Pádel",
+                             "nacional":  false,
+                             "imagen":  "images/6.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-6.jpg",
+                             "web":  "https://www.fap.es"
+                         },
+                         {
+                             "id":  11,
+                             "territorio":  "Aragón",
+                             "nombre":  "Federación Aragonesa de Pádel",
+                             "nacional":  false,
+                             "imagen":  "images/11.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-11.jpg",
+                             "web":  "https://www.arapadel.com"
+                         },
+                         {
+                             "id":  7,
+                             "territorio":  "Principado de Asturias",
+                             "nombre":  "Federación de Pádel del Principado de Asturias",
+                             "nacional":  false,
+                             "imagen":  "images/7.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-7.jpg",
+                             "web":  "https://www.fppastur.com"
+                         },
+                         {
+                             "id":  17,
+                             "territorio":  "Baleares",
+                             "nombre":  "Federación de Pádel de les Illes Balears",
+                             "nacional":  false,
+                             "imagen":  "images/17.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-17.jpg",
+                             "web":  "https://www.fpadelib.es/"
+                         },
+                         {
+                             "id":  18,
+                             "territorio":  "Canarias",
+                             "nombre":  "Federación Canaria de Pádel",
+                             "nacional":  false,
+                             "imagen":  "images/18b.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-18.jpg",
+                             "web":  "https://canariaspadel.es/"
+                         },
+                         {
+                             "id":  13,
+                             "territorio":  "Cantabria",
+                             "nombre":  "Federación Cántabra de Pádel",
+                             "nacional":  false,
+                             "imagen":  "images/13.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-13.jpg",
+                             "web":  "https://www.federacioncantabradepadel.com"
+                         },
+                         {
+                             "id":  22,
+                             "territorio":  "Castilla-La Mancha",
+                             "nombre":  "Federación de Pádel de Castilla-La Mancha",
+                             "nacional":  false,
+                             "imagen":  "images/22.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-22.jpg",
+                             "web":  "https://fpclm.com"
+                         },
+                         {
+                             "id":  21,
+                             "territorio":  "Castilla y León",
+                             "nombre":  "Federación de Pádel de Castilla y León",
+                             "nacional":  false,
+                             "imagen":  "images/21.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-21.jpg",
+                             "web":  "https://www.padelcyl.es"
+                         },
+                         {
+                             "id":  2,
+                             "territorio":  "Cataluña",
+                             "nombre":  "Federació Catalana de Pàdel",
+                             "nacional":  false,
+                             "imagen":  "images/2.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-2.jpg",
+                             "web":  "https://www.fcpadel.cat"
+                         },
+                         {
+                             "id":  16,
+                             "territorio":  "Ceuta",
+                             "nombre":  "Federación de Pádel de Ceuta",
+                             "nacional":  false,
+                             "imagen":  "images/16.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-16.jpg",
+                             "web":  "https://www.fpadelceuta.com"
+                         },
+                         {
+                             "id":  12,
+                             "territorio":  "Extremadura",
+                             "nombre":  "Federación Extremeña de Pádel",
+                             "nacional":  false,
+                             "imagen":  "images/12.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-12.jpg",
+                             "web":  "https://www.fexpadel.com"
+                         },
+                         {
+                             "id":  8,
+                             "territorio":  "Galicia",
+                             "nombre":  "Federación Gallega de Pádel",
+                             "nacional":  false,
+                             "imagen":  "images/8.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-8.jpg",
+                             "web":  "https://www.fgpadel.com"
+                         },
+                         {
+                             "id":  1,
+                             "territorio":  "Comunidad de Madrid",
+                             "nombre":  "Federación Madrileña de Pádel",
+                             "nacional":  false,
+                             "imagen":  "images/1.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-1.jpg",
+                             "web":  "https://www.fmpadel.com"
+                         },
+                         {
+                             "id":  9,
+                             "territorio":  "Melilla",
+                             "nombre":  "Federación Melillense de Pádel",
+                             "nacional":  false,
+                             "imagen":  "images/9.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-9.jpg",
+                             "web":  "https://www.padelmelilla.com"
+                         },
+                         {
+                             "id":  15,
+                             "territorio":  "Región de Murcia",
+                             "nombre":  "Federación de Pádel de la Región de Murcia",
+                             "nacional":  false,
+                             "imagen":  "images/15.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-15.jpg",
+                             "web":  "https://www.federacionpadelmurcia.com"
+                         },
+                         {
+                             "id":  10,
+                             "territorio":  "Navarra",
+                             "nombre":  "Federación Navarra de Pádel",
+                             "nacional":  false,
+                             "imagen":  "images/10.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-10.jpg",
+                             "web":  "https://www.federacionnavarradepadel.com"
+                         },
+                         {
+                             "id":  3,
+                             "territorio":  "País Vasco",
+                             "nombre":  "Federación Vasca de Pádel",
+                             "nacional":  false,
+                             "imagen":  "images/3.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-3.jpg",
+                             "web":  "https://www.fvpadel.com"
+                         },
+                         {
+                             "id":  19,
+                             "territorio":  "La Rioja",
+                             "nombre":  "Federación de La Rioja",
+                             "nacional":  false,
+                             "imagen":  "images/19.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-19.jpg",
+                             "web":  null
+                         },
+                         {
+                             "id":  14,
+                             "territorio":  "Comunidad Valenciana",
+                             "nombre":  "Federación de Pádel de la Comunitat Valenciana",
+                             "nacional":  false,
+                             "imagen":  "images/14.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-14.jpg",
+                             "web":  "https://padelcv.com"
+                         },
+                         {
+                             "id":  0,
+                             "territorio":  "España",
+                             "nombre":  "Federación Española de Pádel",
+                             "nacional":  true,
+                             "imagen":  "images/0.jpg",
+                             "imagenUrl":  "assets/img/fep/federaciones/bandera-0.jpg",
+                             "web":  "https://www.padelfederacion.es"
+                         }
+                     ],
+    "reservaZoom":  {
+                        "titulo":  "Reserva de la herramienta Zoom",
+                        "parrafos":  [
+                                         "La Federación Española dispone de la herramienta Zoom y la comparte con todas las federaciones territoriales que la deseen utilizar para sus necesidades: juntas, charlas, formación…",
+                                         "Publicamos el calendario de uso de la herramienta y su disponibilidad. Si tu federación quiere usarla, manda un email indicando el día y la hora en que la vais a necesitar."
+                                     ],
+                        "email":  "zoom@padelfederacion.es",
+                        "imagen":  "images/zoom.jpg",
+                        "imagenUrl":  "assets/img/fep/federaciones/zoom.jpg",
+                        "imagenAlt":  "Zoom: servicio de videoconferencia",
+                        "calendario":  {
+                                           "titulo":  "Calendario de reservas de Zoom de la FEP (Google Calendar)",
+                                           "url":  "https://calendar.google.com/calendar/embed?height=600\u0026wkst=2\u0026bgcolor=%23ffffff\u0026ctz=Europe%2FMadrid\u0026src=MzQ3aG05b3ZpdGY2aGZsaTJzbTlqbTlndWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ\u0026color=%23D50000\u0026showTitle=1\u0026showDate=1\u0026showPrint=0\u0026showTabs=0\u0026showCalendars=0\u0026showTz=0",
+                                           "zonaHoraria":  "Europe/Madrid"
+                                       }
+                    }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equipo FEP · Federación Española de Pádel</title>
+  <meta name="description" content="Organigrama de la Federación Española de Pádel: Junta Directiva, dirección deportiva, seleccionadores, equipo de menores y equipo administrativo.">
+  <!-- Base de la API nueva. Vacío = mismo origen. Si la API no responde se usan los JSON de /mock. -->
+  <meta name="fep-api-base" content="">
+  <!-- Web actual: destino temporal de los enlaces a páginas aún no migradas -->
+  <meta name="fep-legacy-base" content="https://www.padelfederacion.es/">
+  <meta name="theme-color" content="#111B2B">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fep.css">
+  <link rel="stylesheet" href="assets/css/tema-003.css">
+  <!-- Scripts clásicos con defer (no módulos): así la página también funciona abierta desde disco -->
+  <script defer src="mock/mocks.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/comun.js"></script>
+  <script defer src="assets/js/equipo-fep.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ BARRA SUPERIOR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <nav class="fed-strip" id="fed-strip" aria-label="Federaciones autonómicas">
+        <ul class="fed-strip__list" id="fed-strip-lista"></ul>
+      </nav>
+      <ul class="topbar__links">
+        <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+        <li><a class="topbar__extranet" href="https://www.padelfederacion.es/ControlAcceso.asp" title="Acceso a la gestión interna">Extranet</a></li>
+        <li><button type="button" class="topbar__lang" aria-label="Idioma: español" aria-disabled="true">ES <span aria-hidden="true">⌄</span></button></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ CABECERA ============ -->
+  <header class="header" id="cabecera">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
+        <img src="assets/img/logo.png" alt="Federación Española de Pádel" width="210" height="70">
+      </a>
+
+      <button type="button" class="header__burger" id="menu-abrir" aria-controls="menu-principal" aria-expanded="false">
+        <span class="sr-only">Abrir menú</span>
+        <span class="header__burger-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-panel" id="menu-principal" aria-label="Menú principal">
+        <div class="nav-panel__head">
+          <img src="assets/img/logo.png" alt="" width="150" height="50">
+          <button type="button" class="nav-panel__close" id="menu-cerrar"><span class="sr-only">Cerrar menú</span><span aria-hidden="true">✕</span></button>
+        </div>
+        <nav aria-label="Principal">
+          <!-- Menú principal (5 secciones). comun.js (MENU_FEP) pinta los desplegables y accesos móviles -->
+          <ul class="nav" id="nav-principal">
+            <li class="nav__item" data-menu-key="competicion"><a class="nav__link" href="calendariofep.html">Competición</a></li>
+            <li class="nav__item" data-menu-key="licencias"><a class="nav__link" href="https://www.padelfederacion.es/Licencias_Buscar">Licencias</a></li>
+            <li class="nav__item" data-menu-key="formacion"><a class="nav__link" href="https://www.padelfederacion.es/Formacion_Calendario">Formación</a></li>
+            <li class="nav__item" data-menu-key="actualidad"><a class="nav__link" href="https://www.padelfederacion.es/Noticias">Actualidad</a></li>
+            <li class="nav__item" data-menu-key="federacion"><a class="nav__link" href="organos-de-gobierno.html">La Federación</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-panel__extra">
+          <li><a href="ley-de-transparencia.html">Transparencia</a></li>
+        </ul>
+      </div>
+
+      <div class="header__actions">
+        <button type="button" class="header__search-btn" id="buscar-abrir" aria-controls="buscador" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="sr-only">Buscar</span>
+        </button>
+        <a class="btn btn--outline btn--sm acceso" id="mi-club" href="#" aria-label="Mi Club (próximamente)">
+          Mi Club
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12M9 21v-6h6v6M3 21h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--red btn--sm acceso" id="mi-portal" href="#" aria-label="Mi Portal (próximamente)">
+          Mi Portal
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Buscador: envía temporalmente al buscador de la web actual -->
+    <div class="search" id="buscador" hidden>
+      <form class="container search__form" action="https://www.padelfederacion.es/busqueda.asp" method="post" role="search">
+        <label for="texto-busqueda" class="sr-only">Texto a buscar</label>
+        <input id="texto-busqueda" name="textobusqueda" type="search" placeholder="Buscar en la web de la FEP…" required>
+        <button type="submit" class="btn btn--red btn--sm">Buscar</button>
+      </form>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="menu-fondo" hidden></div>
+
+  <!-- Página migrada desde Equipo_FEP.asp. El contenido llega de
+       GET /api/v1/federacion/equipo (respaldo: mock/federacion-equipo.json). -->
+  <main id="contenido" class="pagina">
+
+    <!-- ============ CABECERA DE PÁGINA ============ -->
+    <section class="page-hero" aria-labelledby="titulo-pagina">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Estás en">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><span>Federación</span></li>
+            <li aria-current="page">Equipo FEP</li>
+          </ol>
+        </nav>
+        <p class="eyebrow eyebrow--line">La federación</p>
+        <h1 class="page-hero__title" id="titulo-pagina">Equipo FEP.</h1>
+        <p class="page-hero__lead">Organigrama de la Federación Española de Pádel: Junta Directiva, dirección deportiva, selecciones, equipo de menores y equipo administrativo.</p>
+        <ul class="page-hero__stats" id="equipo-resumen" aria-label="Resumen"></ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTENIDO ============ -->
+    <div class="container page-layout">
+      <nav class="page-toc" aria-labelledby="toc-titulo">
+        <p class="page-toc__title" id="toc-titulo">En esta página</p>
+        <ul class="page-toc__list" id="equipo-indice"></ul>
+      </nav>
+
+      <div class="page-content" id="equipo-contenido" aria-busy="true">
+        <div class="org-skeleton" aria-hidden="true">
+          <span class="sk sk--title"></span>
+          <span class="sk sk--table"></span>
+          <div class="person-grid"><span class="sk sk--card"></span><span class="sk sk--card"></span><span class="sk sk--card"></span></div>
+        </div>
+        <p class="empty" id="equipo-error" hidden>No se ha podido cargar el equipo de la FEP. Puedes consultarlo en la <a href="https://www.padelfederacion.es/Equipo_FEP">web actual de la FEP</a>.</p>
+
+        <!-- El organigrama incluye la Asamblea General, la Comisión Delegada y la Junta Directiva:
+             se detallan en su propia página. -->
+        <aside class="page-note" aria-labelledby="nota-organos">
+          <h2 class="page-note__title" id="nota-organos">Órganos de gobierno</h2>
+          <p>La Asamblea General, la Comisión Delegada y la Junta Directiva que aparecen en el organigrama tienen su composición y sus actas en <a href="organos-de-gobierno.html">Órganos de gobierno</a>.</p>
+        </aside>
+      </div>
+
+      <!-- ============ PATROCINADORES (columna derecha) ============
+           comun.js (NIVELES_PATRO) pinta aquí tres bloques: principales, patrocinadores y productos homologados. -->
+      <aside class="page-sponsors" id="patrocinadores-lateral" aria-labelledby="patro-lateral-titulo" hidden>
+        <p class="page-sponsors__title" id="patro-lateral-titulo">Patrocinadores FEP</p>
+        <ul class="page-sponsors__list" id="patrocinadores-lista"></ul>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="Federación Española de Pádel – Inicio">
+            <img src="assets/img/logo-pie-negativo.png" alt="Federación Española de Pádel" width="123" height="56">
+          </a>
+          <p>Impulsamos el pádel. Acompañamos a quienes lo hacen posible.</p>
+          <!-- Rellenado con /api/v1/redes-sociales; estos son los del Figma por si la API no responde -->
+          <ul class="footer__social" id="redes-lista">
+            <li><a href="https://www.instagram.com/padelfederacion/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.youtube.com/user/FedEspPadel" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://x.com/padelfederacion" target="_blank" rel="noopener">X <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+        <nav class="footer__col" aria-labelledby="pie-descubre">
+          <h2 id="pie-descubre">Descubre</h2>
+          <ul>
+            <li><a href="organos-de-gobierno.html">Federación</a></li>
+            <li><a href="https://www.padelfederacion.es/Calendario.asp">Competiciones</a></li>
+            <li><a href="rankings.html">Rankings</a></li>
+            <li><a href="https://www.padelfederacion.es/Noticias.asp">Actualidad</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-labelledby="pie-federacion">
+          <h2 id="pie-federacion">Tu federación</h2>
+          <ul>
+            <li><a href="https://www.padelfederacion.es/Licencias_Intro.asp">Licencias</a></li>
+            <li><a href="https://www.padelfederacion.es/Formacion_Calendario.asp">Formación</a></li>
+            <li><a href="https://www.padelfederacion.es/Documentos_Normativas.asp">Documentación</a></li>
+            <li><a href="https://www.padelfederacion.es/Portal-del-Federado">Portal del federado</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-labelledby="pie-ayuda">
+          <h2 id="pie-ayuda">Te ayudamos</h2>
+          <ul>
+            <li><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></li>
+            <li><a href="federaciones.html">Federaciones territoriales</a></li>
+            <li><a href="https://www.padelfederacion.es/SolicitudArbitraje_Intro.asp">Arbitraje</a></li>
+            <li><a href="accesibilidad.html">Accesibilidad</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="anio">2026</span> Federación Española de Pádel</p>
+        <ul>
+          <li><a href="https://www.padelfederacion.es/Aviso_Legal">Aviso legal</a></li>
+          <li><a href="https://www.padelfederacion.es/Politica_Privacidad">Privacidad</a></li>
+          <li><a href="https://www.padelfederacion.es/Politica_Cookies">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

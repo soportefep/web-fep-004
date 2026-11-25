@@ -1,0 +1,440 @@
+{
+    "id":  24,
+    "titulo":  "ELECCIONES 2024",
+    "actualizado":  null,
+    "opcionInicial":  315,
+    "opciones":  [
+                     {
+                         "id":  315,
+                         "titulo":  "Acta Nº 40 Junta Electoral - PROCLAMACIÓN PRESIDENTE",
+                         "tipo":  "normal",
+                         "orden":  1
+                     },
+                     {
+                         "id":  314,
+                         "titulo":  "Acta Nº 39 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  2
+                     },
+                     {
+                         "id":  313,
+                         "titulo":  "CONVOCATORIA ASAMBLEA GENERAL EXTRAORDINARIA 18.12.2025 PARA LA ELECCIÓN A PRESIDENTE",
+                         "tipo":  "normal",
+                         "orden":  3
+                     },
+                     {
+                         "id":  312,
+                         "titulo":  "Acta Nº 38 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  4
+                     },
+                     {
+                         "id":  311,
+                         "titulo":  "Acta Nº 37 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  5
+                     },
+                     {
+                         "id":  310,
+                         "titulo":  "CONVOCATORIA ASAMBLEA GENERAL EXTRAORDINARIA 22.11.2025 PARA LA ELECCIÓN A PRESIDENTE",
+                         "tipo":  "normal",
+                         "orden":  6
+                     },
+                     {
+                         "id":  309,
+                         "titulo":  "Resolución CSD 30.10.2025 - Fecha celebración AG EXT.",
+                         "tipo":  "normal",
+                         "orden":  7
+                     },
+                     {
+                         "id":  308,
+                         "titulo":  "ACTA ASAMBLEA GENERAL EXTRAORDINARIA 27.09.2025",
+                         "tipo":  "normal",
+                         "orden":  8
+                     },
+                     {
+                         "id":  307,
+                         "titulo":  "Acta Nº 36 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  9
+                     },
+                     {
+                         "id":  306,
+                         "titulo":  "Acta Nº 35 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  10
+                     },
+                     {
+                         "id":  304,
+                         "titulo":  "CONVOCATORIA ASAMBLEA GENERAL EXTRAORDINARIA PARA LA ELECCIÓN A PRESIDENTE Y COMISIÓN DELEGADA",
+                         "tipo":  "normal",
+                         "orden":  11
+                     },
+                     {
+                         "id":  305,
+                         "titulo":  "Acta Nº 34 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  12
+                     },
+                     {
+                         "id":  303,
+                         "titulo":  "Acta Nº 33 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  13
+                     },
+                     {
+                         "id":  302,
+                         "titulo":  "Acta Nº 32 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  14
+                     },
+                     {
+                         "id":  301,
+                         "titulo":  "ESCRUTINIO DE LAS VOTACIONES A MIEMBROS DE LA ASAMBLEA GENERAL 21/07/2025",
+                         "tipo":  "normal",
+                         "orden":  15
+                     },
+                     {
+                         "id":  300,
+                         "titulo":  "Acta Nº 31 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  16
+                     },
+                     {
+                         "id":  299,
+                         "titulo":  "INSTRUCCIONES PARA EL EJERCICIO DEL DERECHO AL VOTO  21 DE JULIO DE 2025",
+                         "tipo":  "normal",
+                         "orden":  17
+                     },
+                     {
+                         "id":  297,
+                         "titulo":  "Resolución TAD Exp 187/2025",
+                         "tipo":  "normal",
+                         "orden":  18
+                     },
+                     {
+                         "id":  298,
+                         "titulo":  "Resolución TAD Exp 188/2025",
+                         "tipo":  "normal",
+                         "orden":  19
+                     },
+                     {
+                         "id":  296,
+                         "titulo":  "Acta Nº 30 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  20
+                     },
+                     {
+                         "id":  295,
+                         "titulo":  "Acta 29 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  21
+                     },
+                     {
+                         "id":  294,
+                         "titulo":  "Acta Nº 28 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  22
+                     },
+                     {
+                         "id":  293,
+                         "titulo":  "Acta Nº 27 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  23
+                     },
+                     {
+                         "id":  292,
+                         "titulo":  "Censo especial de voto NO presencial Provisional",
+                         "tipo":  "normal",
+                         "orden":  24
+                     },
+                     {
+                         "id":  291,
+                         "titulo":  "Acta Nº 26 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  25
+                     },
+                     {
+                         "id":  241,
+                         "titulo":  "Calendario Elecciones FEP 2024 (reanudación)",
+                         "tipo":  "normal",
+                         "orden":  26
+                     },
+                     {
+                         "id":  249,
+                         "titulo":  "PROCEDIMIENTO PARA EJERCER EL VOTO POR CORREO",
+                         "tipo":  "normal",
+                         "orden":  27
+                     },
+                     {
+                         "id":  251,
+                         "titulo":  "MODELO SOLICITUD VOTO POR CORREO",
+                         "tipo":  "normal",
+                         "orden":  28
+                     },
+                     {
+                         "id":  243,
+                         "titulo":  "MODELOS OFICIALES DE SOBRES Y PAPELETAS PARA LA VOTACIÓN",
+                         "tipo":  "normal",
+                         "orden":  29
+                     },
+                     {
+                         "id":  258,
+                         "titulo":  "CENSOS DEFINITIVOS (EN VIGOR 2ª VOTACIÓN)",
+                         "tipo":  "normal",
+                         "orden":  30
+                     },
+                     {
+                         "id":  254,
+                         "titulo":  "AUTORIZACIÓN VOTO ESTAMENTO CLUBES",
+                         "tipo":  "normal",
+                         "orden":  31
+                     },
+                     {
+                         "id":  290,
+                         "titulo":  "Acta Nº 25 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  32
+                     },
+                     {
+                         "id":  289,
+                         "titulo":  "Acta Nº 24 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  33
+                     },
+                     {
+                         "id":  288,
+                         "titulo":  "Resolución CSD sobre propuesta de Calendario Electoral elevada por la  Comisión Gestora",
+                         "tipo":  "normal",
+                         "orden":  34
+                     },
+                     {
+                         "id":  287,
+                         "titulo":  "Oficio Presidente CSD y Propuesta de la Com. Gestora FEP",
+                         "tipo":  "normal",
+                         "orden":  35
+                     },
+                     {
+                         "id":  286,
+                         "titulo":  "Resolución CSD sobre solicitud de la Comisión Gestora - Cuotas de Licencias 2025",
+                         "tipo":  "normal",
+                         "orden":  36
+                     },
+                     {
+                         "id":  285,
+                         "titulo":  "Recursos al Acta Nº 22 Junta Electoral y Resolución TAD",
+                         "tipo":  "normal",
+                         "orden":  37
+                     },
+                     {
+                         "id":  284,
+                         "titulo":  "Acta Nº 22 Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  38
+                     },
+                     {
+                         "id":  283,
+                         "titulo":  "RESOLUCIÓN EXPEDIENTE 589/2024 JOSÉ LUIS AMOROTO ORIA",
+                         "tipo":  "normal",
+                         "orden":  39
+                     },
+                     {
+                         "id":  282,
+                         "titulo":  "RESOLUCIÓN EXPEDIENTE 611/2024 OSCAR RUÍZ LÓPEZ",
+                         "tipo":  "normal",
+                         "orden":  40
+                     },
+                     {
+                         "id":  281,
+                         "titulo":  "Solicitud presentada por D. Oscar Ruíz López ante el TAD",
+                         "tipo":  "normal",
+                         "orden":  41
+                     },
+                     {
+                         "id":  277,
+                         "titulo":  "Recursos al Acta Nº 17 Junta Electoral y Resolución TAD",
+                         "tipo":  "normal",
+                         "orden":  42
+                     },
+                     {
+                         "id":  259,
+                         "titulo":  "Recursos presentados ante las Actas nº 13 y nº 14 de la Junta Electoral y resolución TAD",
+                         "tipo":  "normal",
+                         "orden":  43
+                     },
+                     {
+                         "id":  274,
+                         "titulo":  "Recursos al Acta Nº 10 Junta Electoral y resolución TAD",
+                         "tipo":  "normal",
+                         "orden":  44
+                     },
+                     {
+                         "id":  271,
+                         "titulo":  "Presentación Candidaturas a Presidente/a",
+                         "tipo":  "normal",
+                         "orden":  45
+                     },
+                     {
+                         "id":  272,
+                         "titulo":  "Presentación Candidaturas a Comisión Delegada",
+                         "tipo":  "normal",
+                         "orden":  46
+                     },
+                     {
+                         "id":  270,
+                         "titulo":  "ESCRUTINIO DE LAS VOTACIONES A MIEMBROS DE LA ASAMBLEA GENERAL",
+                         "tipo":  "normal",
+                         "orden":  47
+                     },
+                     {
+                         "id":  262,
+                         "titulo":  "Candidaturas Definitivas Asamblea General",
+                         "tipo":  "normal",
+                         "orden":  48
+                     },
+                     {
+                         "id":  261,
+                         "titulo":  "Candidaturas Provisionales Asamblea General",
+                         "tipo":  "normal",
+                         "orden":  49
+                     },
+                     {
+                         "id":  257,
+                         "titulo":  "Anexo I  Definitivo Rgto Electoral",
+                         "tipo":  "normal",
+                         "orden":  50
+                     },
+                     {
+                         "id":  195,
+                         "titulo":  "Reglamento Electoral incluyendo Subsanaciones CSD",
+                         "tipo":  "normal",
+                         "orden":  51
+                     },
+                     {
+                         "id":  244,
+                         "titulo":  "Convocatoria Elecciones FEP 2024",
+                         "tipo":  "normal",
+                         "orden":  52
+                     },
+                     {
+                         "id":  247,
+                         "titulo":  "Acta Constitución Comisión Gestora",
+                         "tipo":  "normal",
+                         "orden":  53
+                     },
+                     {
+                         "id":  280,
+                         "titulo":  "Recusaciones miembros Junta Electoral y Resoluciones TAD",
+                         "tipo":  "normal",
+                         "orden":  54
+                     },
+                     {
+                         "id":  246,
+                         "titulo":  "Composición de la Junta Electoral 2024",
+                         "tipo":  "normal",
+                         "orden":  55
+                     },
+                     {
+                         "id":  245,
+                         "titulo":  "Publicidad de la convocatoria",
+                         "tipo":  "normal",
+                         "orden":  56
+                     },
+                     {
+                         "id":  250,
+                         "titulo":  "ENVÍO AL CSD Y TAD DE LA CONVOCATORIA DE ELECCIONES 2024 Y CALENDARIO ELECTORAL",
+                         "tipo":  "normal",
+                         "orden":  57
+                     },
+                     {
+                         "id":  242,
+                         "titulo":  "Censos PROVISIONALES",
+                         "tipo":  "normal",
+                         "orden":  58
+                     },
+                     {
+                         "id":  252,
+                         "titulo":  "Modelo elección ESTAMENTO",
+                         "tipo":  "normal",
+                         "orden":  59
+                     },
+                     {
+                         "id":  248,
+                         "titulo":  "Distribución inicial del número de miembros de la Asamblea",
+                         "tipo":  "normal",
+                         "orden":  60
+                     },
+                     {
+                         "id":  253,
+                         "titulo":  "Modelo Presentación Candidaturas elección miembros de la Asamblea General",
+                         "tipo":  "normal",
+                         "orden":  61
+                     },
+                     {
+                         "id":  234,
+                         "titulo":  "Publicación Censos Iniciales",
+                         "tipo":  "normal",
+                         "orden":  62
+                     },
+                     {
+                         "id":  215,
+                         "titulo":  "Notificación Comisión Directiva CSD - Aprobación REGLAMENTO ELECTORAL",
+                         "tipo":  "normal",
+                         "orden":  63
+                     },
+                     {
+                         "id":  191,
+                         "titulo":  "Reglamento electoral 2024 aprobado por Com. Delegada 15/04/24",
+                         "tipo":  "normal",
+                         "orden":  64
+                     },
+                     {
+                         "id":  172,
+                         "titulo":  "Borrador Reglamento Electoral 2024",
+                         "tipo":  "normal",
+                         "orden":  65
+                     },
+                     {
+                         "id":  190,
+                         "titulo":  "Convocatoria Comisión Delegada Aprobación Rgto Electoral",
+                         "tipo":  "normal",
+                         "orden":  66
+                     },
+                     {
+                         "id":  192,
+                         "titulo":  "Presentación Rgto Electoral en CSD",
+                         "tipo":  "normal",
+                         "orden":  67
+                     },
+                     {
+                         "id":  193,
+                         "titulo":  "Acuse de recibo CSD a remisión de Rgto Electoral",
+                         "tipo":  "normal",
+                         "orden":  68
+                     },
+                     {
+                         "id":  194,
+                         "titulo":  "Observaciones CSD/TAD al Reglamento Electoral",
+                         "tipo":  "normal",
+                         "orden":  69
+                     },
+                     {
+                         "id":  196,
+                         "titulo":  "Presentación Escrito al CSD tras Subsanación",
+                         "tipo":  "normal",
+                         "orden":  70
+                     },
+                     {
+                         "id":  256,
+                         "titulo":  "Actas Junta Electoral",
+                         "tipo":  "normal",
+                         "orden":  71
+                     },
+                     {
+                         "id":  171,
+                         "titulo":  "Orden EFD/42/2024 de 25 enero - Procesos electorales en las Federaciones Deportivas españolas",
+                         "tipo":  "normal",
+                         "orden":  72
+                     }
+                 ]
+}

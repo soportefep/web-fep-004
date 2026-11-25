@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Federación Española de Pádel · FEP</title>
+  <meta name="description" content="Federación Española de Pádel: calendarios, torneos, rankings, licencias, formación y actualidad en una sola página.">
+  <!-- Base de las páginas de destino (calendarios, rankings…). Vacío = misma web. -->
+  <meta name="fep-destino-base" content="">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/home-unapagina.css">
+  <script defer src="assets/js/home-unapagina.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ BARRA SUPERIOR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <!-- Desplegable directo a la web de cada federación autonómica -->
+      <div class="desplegable" id="feds-menu">
+        <button type="button" class="topbar__btn" id="feds-boton" aria-expanded="false" aria-controls="feds-panel">
+          <img class="bandera" src="assets/img/fep/federaciones/bandera-0.jpg" alt="" width="21" height="15">
+          <span>Federaciones autonómicas</span><span aria-hidden="true">⌄</span>
+        </button>
+        <div class="desplegable__panel feds-panel" id="feds-panel" hidden>
+          <p class="desplegable__titulo">Ir a la web de tu federación</p>
+          <ul class="feds-panel__lista" id="feds-panel-lista"></ul>
+        </div>
+      </div>
+
+      <div class="topbar__der">
+        <ul class="topbar__links">
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="topbar__extranet" href="https://www.padelfederacion.es/ControlAcceso.asp">Extranet</a></li>
+        </ul>
+        <!-- Idiomas: oficiales y cooficiales de España + principales internacionales -->
+        <div class="idiomas" role="group" aria-label="Idioma">
+          <ul class="idiomas__grupo" id="idiomas-es" aria-label="Lenguas de España"></ul>
+          <ul class="idiomas__grupo" id="idiomas-int" aria-label="Otros idiomas"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CABECERA (sin hamburguesa: el menú lleva a secciones de esta página) ============ -->
+  <header class="header" id="cabecera">
+    <div class="container header__inner">
+      <a class="header__logo" href="#inicio" aria-label="Federación Española de Pádel – Inicio">
+        <img src="assets/img/logo.png" alt="Federación Española de Pádel" width="210" height="70">
+      </a>
+      <nav class="nav" aria-label="Secciones de la página">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#competicion">Competición</a></li>
+          <li><a class="nav__link" href="#licencias">Licencias</a></li>
+          <li><a class="nav__link" href="#federacion">Federación</a></li>
+          <li><a class="nav__link" href="#formacion">Formación</a></li>
+          <li><a class="nav__link" href="#documentos">Documentos</a></li>
+          <li><a class="nav__link" href="#actualidad">Actualidad</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a class="icon-btn" href="#buscador" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        </a>
+        <a class="btn btn--outline btn--sm acceso" data-destino="mi-club.html" aria-label="Mi Club">
+          <span class="acceso__txt">Mi Club</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12M9 21v-6h6v6M3 21h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--red btn--sm acceso" data-destino="mi-portal.html" aria-label="Mi Portal">
+          <span class="acceso__txt">Mi Portal</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ PORTADA + BUSCADOR GUIADO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero__grid">
+        <div class="hero__texto">
+          <p class="eyebrow eyebrow--light"><span class="tag-red">FEP</span> Temporada 2026</p>
+          <h1 class="hero__title" id="hero-titulo">Un deporte.<br>Toda una<br><span>comunidad.</span></h1>
+          <p class="hero__lead">Elige qué quieres ver y te llevamos directo, sin pasar por menús.</p>
+
+          <form class="finder" id="buscador" aria-label="Buscador guiado">
+            <p class="finder__frase">Quiero ver</p>
+            <div class="finder__campos">
+              <label class="finder__campo">
+                <span>Qué</span>
+                <select id="f-que">
+                  <option value="calendario">Calendario</option>
+                  <option value="ranking">Ranking</option>
+                  <option value="campeonato">Campeonato</option>
+                  <option value="licencia">Licencia</option>
+                  <option value="club">Clubes</option>
+                </select>
+              </label>
+              <label class="finder__campo" id="c-cat">
+                <span>Categoría</span>
+                <select id="f-cat">
+                  <option value="absoluto">Absoluto</option>
+                  <option value="menores">Menores</option>
+                  <option value="veteranos">Veteranos</option>
+                  <option value="equipos">Equipos</option>
+                  <option value="silla">Silla de ruedas</option>
+                </select>
+              </label>
+              <label class="finder__campo" id="c-amb">
+                <span>Ámbito</span>
+                <select id="f-amb">
+                  <option value="fep">Nacional</option>
+                  <option value="ffaa">Territorial</option>
+                </select>
+              </label>
+              <label class="finder__campo" id="c-fed" hidden>
+                <span>Federación</span>
+                <select id="f-fed"><option value="">Todas</option></select>
+              </label>
+              <button class="btn btn--red finder__ir" type="submit">Ver <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="finder__destino" id="f-destino" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <!-- Carrusel de destacados (mismas fotos y encuadres que web-fep-002).
+             --foco = punto de la foto que se mantiene visible al recortarla. -->
+        <div class="carrusel" aria-roledescription="carrusel" aria-label="Destacados">
+          <div class="carrusel__slides">
+            <figure class="slide is-active" aria-roledescription="diapositiva" aria-label="1 de 2" style="--foco: 50% 35%"
+                    data-titulo="Histórico doblete en Qatar" data-enlace="https://www.padelfederacion.es/noticia.asp?Idnoticia=2976">
+              <img src="assets/img/fep/noticias/1208982169.jpg" alt="La selección española, campeona femenina y masculina del FIP World Cup Qatar 2026, celebra en el podio con los dos trofeos" width="1920" height="1282">
+            </figure>
+            <figure class="slide" aria-roledescription="diapositiva" aria-label="2 de 2" style="--foco: 71% 42%"
+                    data-titulo="El futuro del pádel español brilla en Aragón tras un Campeonato de España Infantil y Junior de récord"
+                    data-enlace="https://www.padelfederacion.es/noticia.asp?Idnoticia=2977">
+              <img src="assets/img/fep/portada/cto-espana-junior-2026.jpg" alt="Trofeo de campeón del Campeonato de España por Equipos Junior, Zaragoza 2026" width="2880" height="1000" loading="lazy" decoding="async">
+            </figure>
+          </div>
+          <div class="carrusel__bar">
+            <p class="carrusel__count" aria-hidden="true"><strong id="slide-n">01</strong> / <span id="slide-total">02</span></p>
+            <a class="carrusel__caption" id="slide-caption" href="#"></a>
+            <div class="carrusel__ctrl">
+              <button type="button" class="sq" id="slide-prev" aria-label="Destacado anterior"><span aria-hidden="true">←</span></button>
+              <button type="button" class="sq" id="slide-pause" aria-pressed="false" aria-label="Pausar carrusel"><span aria-hidden="true" class="pausa"></span></button>
+              <button type="button" class="sq" id="slide-next" aria-label="Destacado siguiente"><span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teletipo de próximas citas (eventos destacados + formación), como en web-fep-002 -->
+      <section class="ticker" id="ticker" aria-label="Próximas citas" hidden>
+        <p class="ticker__label">Próximas citas</p>
+        <div class="ticker__viewport">
+          <ul class="ticker__track" id="ticker-lista"></ul>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============ REELS: justo debajo de la portada, en franja oscura tipo "stories" ============
+         Datos: mock/redes-sociales-instagram-reels.json (mismo formato que la API de web-fep-002). -->
+    <section class="reels" id="reels" aria-labelledby="reels-titulo" hidden>
+      <div class="container">
+        <header class="reels__head">
+          <div class="reels__marca">
+            <span class="reels__avatar" aria-hidden="true"><img src="assets/img/favicon-32x32.png" alt="" width="32" height="32"></span>
+            <div>
+              <h2 class="reels__title" id="reels-titulo">Reels</h2>
+              <a class="reels__perfil" id="reels-perfil" href="https://www.instagram.com/padelfederacion/" target="_blank" rel="noopener">@padelfederacion <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+            </div>
+          </div>
+          <p class="reels__aviso" id="reels-aviso" hidden>Vista previa con datos de prueba</p>
+          <div class="reels__ctrl">
+            <button type="button" class="reels__flecha" id="reels-prev" aria-label="Reels anteriores"><span aria-hidden="true">←</span></button>
+            <button type="button" class="reels__flecha" id="reels-next" aria-label="Reels siguientes"><span aria-hidden="true">→</span></button>
+            <a class="btn btn--red btn--sm reels__seguir" id="reels-seguir" href="https://www.instagram.com/padelfederacion/" target="_blank" rel="noopener">Seguir <span class="sr-only">en Instagram (se abre en una pestaña nueva)</span></a>
+          </div>
+        </header>
+        <div class="reels__carril" role="region" aria-roledescription="carrusel" aria-labelledby="reels-titulo">
+          <ul class="reels__track" id="reels-lista" tabindex="0"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PATROCINADORES PRINCIPALES (como en web-fep-002: antes de la agenda de competición) ============ -->
+    <section class="sponsors sponsors--principales" aria-labelledby="patro-principales-titulo">
+      <div class="container" id="patrocinadores-principales"></div>
+    </section>
+
+    <!-- ============ 01 COMPETICIÓN ============ -->
+    <section class="sec sec--paper" id="competicion" aria-labelledby="t-competicion">
+      <div class="container">
+        <header class="sec__head">
+          <p class="sec__num" aria-hidden="true">01</p>
+          <div>
+            <p class="eyebrow">Competición</p>
+            <h2 class="h2" id="t-competicion">Elige qué quieres seguir</h2>
+          </div>
+          <div class="filtros" role="group" aria-label="Filtrar por categoría">
+            <button type="button" class="chip is-on" data-filtro="todo" aria-pressed="true">Todo</button>
+            <button type="button" class="chip" data-filtro="absoluto" aria-pressed="false">Absoluto</button>
+            <button type="button" class="chip" data-filtro="menores" aria-pressed="false">Menores</button>
+            <button type="button" class="chip" data-filtro="veteranos" aria-pressed="false">Veteranos</button>
+            <button type="button" class="chip" data-filtro="equipos" aria-pressed="false">Equipos</button>
+            <button type="button" class="chip" data-filtro="silla" aria-pressed="false">Silla</button>
+          </div>
+        </header>
+
+        <!-- Índice interno de la sección -->
+        <nav class="subnav" aria-label="Apartados de competición">
+          <a href="#calendarios">Calendarios</a>
+          <a href="#torneos">Torneos y campeonatos</a>
+          <a href="#rankings">Rankings</a>
+          <a href="#en-juego">En juego</a>
+        </nav>
+
+        <!-- Cuenta atrás del próximo torneo de cada categoría (datos: mock/competicion-calendario.json) -->
+        <div class="bloque" id="proximos">
+          <h3 class="bloque__title">Próximo torneo por categoría</h3>
+          <div class="cuentas" id="cuentas" aria-live="off"></div>
+        </div>
+
+        <div class="bloque" id="calendarios">
+          <h3 class="bloque__title">Calendarios</h3>
+          <div class="cards cards--3">
+            <a class="card" data-cat="absoluto menores veteranos" data-destino="calendariofep.html">
+              <span class="card__n">01</span><b>Calendario FEP</b><span>Pruebas nacionales de todas las categorías</span><i aria-hidden="true">↗</i>
+            </a>
+            <a class="card" data-cat="absoluto" data-destino="calendarioft.html">
+              <span class="card__n">02</span><b>Territoriales</b><span>Calendario de cada federación autonómica</span><i aria-hidden="true">↗</i>
+            </a>
+            <a class="card" data-cat="menores" data-destino="calendario-menores-ffaa.html">
+              <span class="card__n">03</span><b>Menores</b><span>Pruebas autonómicas sub-12 a sub-18</span><i aria-hidden="true">↗</i>
+            </a>
+            <a class="card" data-cat="veteranos" data-destino="calendario-veteranos-ffaa.html">
+              <span class="card__n">04</span><b>Veteranos</b><span>Pruebas autonómicas +35 a +65</span><i aria-hidden="true">↗</i>
+            </a>
+            <a class="card" data-cat="equipos absoluto menores veteranos" data-destino="campeonato-equipos.html">
+              <span class="card__n">05</span><b>Equipos</b><span>Campeonatos de España por equipos</span><i aria-hidden="true">↗</i>
+            </a>
+            <a class="card" data-cat="silla" data-destino="campeonato-silla.html">
+              <span class="card__n">06</span><b>Silla de ruedas</b><span>Pádel adaptado</span><i aria-hidden="true">↗</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="bloque" id="torneos">
+            <h3 class="bloque__title">Torneos y campeonatos</h3>
+            <div class="cards cards--2">
+              <a class="card card--compact" data-cat="absoluto menores veteranos" data-destino="campeonatos.html"><b>Campeonatos de España</b><span>Bases, sedes e inscripción</span><i aria-hidden="true">↗</i></a>
+              <a class="card card--compact" data-cat="absoluto" data-destino="campeonato-parejas.html"><b>Por parejas</b><span>Absoluto y categorías</span><i aria-hidden="true">↗</i></a>
+              <a class="card card--compact" data-cat="equipos absoluto menores veteranos" data-destino="campeonato-equipos.html"><b>Por equipos</b><span>Fases y resultados</span><i aria-hidden="true">↗</i></a>
+              <a class="card card--compact" data-cat="absoluto menores veteranos" data-destino="organizacion-torneos.html"><b>Organiza un torneo</b><span>Requisitos y solicitud</span><i aria-hidden="true">↗</i></a>
+            </div>
+          </div>
+
+          <div class="bloque" id="rankings">
+            <h3 class="bloque__title">Rankings</h3>
+            <ol class="rows">
+              <li data-cat="absoluto"><a data-destino="ranking-absoluto.html"><span class="rows__n">01</span>Absoluto<i aria-hidden="true">↗</i></a></li>
+              <li data-cat="menores"><a data-destino="ranking-menores.html"><span class="rows__n">02</span>Menores<i aria-hidden="true">↗</i></a></li>
+              <li data-cat="veteranos"><a data-destino="ranking-veteranos.html"><span class="rows__n">03</span>Veteranos<i aria-hidden="true">↗</i></a></li>
+              <li data-cat="equipos"><a data-destino="ranking-equipos-absolutos.html"><span class="rows__n">04</span>Equipos absolutos<i aria-hidden="true">↗</i></a></li>
+              <li data-cat="silla"><a data-destino="ranking-silla-ruedas.html"><span class="rows__n">05</span>Silla de ruedas<i aria-hidden="true">↗</i></a></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="bloque" id="en-juego">
+          <h3 class="bloque__title">En juego</h3>
+          <div class="eventos">
+            <a class="evento" data-cat="equipos menores" data-destino="campeonato-equipos.html">
+              <img src="assets/img/fep/eventos/cartel-cto-esp-eq-junior-e-infantil.jpg" alt="" loading="lazy">
+              <div><span class="evento__fecha">06–08 nov</span><b>Cto. España equipos júnior e infantil</b><span>Zaragoza · Cuadro y resultados</span></div>
+            </a>
+            <a class="evento" data-cat="equipos veteranos" data-destino="campeonato-equipos.html">
+              <img src="assets/img/fep/eventos/cto-esp-eq-3-vet-40-35.png" alt="" loading="lazy">
+              <div><span class="evento__fecha">20–22 nov</span><b>Cto. España equipos veteranos</b><span>Barcelona · 3.ª cat. +40 y +35</span></div>
+            </a>
+            <a class="evento" data-cat="silla" data-destino="campeonato-silla.html">
+              <img src="assets/img/fep/eventos/psr-ciudad-de-malaga.png" alt="" loading="lazy">
+              <div><span class="evento__fecha">06–08 nov</span><b>Open nacional PSR Ciudad de Málaga</b><span>Pádel en silla de ruedas</span></div>
+            </a>
+            <a class="evento" data-cat="menores" data-destino="campeonatos.html">
+              <img src="assets/img/fep/eventos/fep-cartel-master-final-menores.png" alt="" loading="lazy">
+              <div><span class="evento__fecha">20–22 nov</span><b>Máster final de menores</b><span>Badajoz · C.D. Padelmérida</span></div>
+            </a>
+          </div>
+          <p class="vacio" id="vacio" hidden>No hay nada de esta categoría en este apartado. <button type="button" class="link-red" data-filtro="todo">Ver todo</button></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PATROCINADORES Y PRODUCTOS HOMOLOGADOS (como en web-fep-002: debajo del ranking) ============ -->
+    <section class="sponsors sponsors--resto" aria-label="Patrocinadores y productos homologados">
+      <div class="container sponsors__resto" id="patrocinadores-resto"></div>
+    </section>
+
+    <!-- ============ 02 LICENCIAS ============ -->
+    <section class="sec" id="licencias" aria-labelledby="t-licencias">
+      <div class="container">
+        <header class="sec__head">
+          <p class="sec__num" aria-hidden="true">02</p>
+          <div><p class="eyebrow">Licencias</p><h2 class="h2" id="t-licencias">Tu licencia, sin vueltas</h2></div>
+        </header>
+        <div class="split split--even">
+          <div class="cards cards--1">
+            <a class="card card--compact" data-destino="mi-portal.html"><b>Tramitar o renovar</b><span>Desde tu portal del federado</span><i aria-hidden="true">↗</i></a>
+            <a class="card card--compact" data-destino="buscar-licencia.html"><b>Consultar una licencia</b><span>Busca por nombre o número</span><i aria-hidden="true">↗</i></a>
+            <a class="card card--compact" data-destino="mi-club.html"><b>Licencias de club</b><span>Altas y renovaciones del club</span><i aria-hidden="true">↗</i></a>
+          </div>
+          <form class="panel" id="form-licencia" aria-label="Buscar licencia">
+            <p class="panel__title">Buscar federado</p>
+            <label class="campo"><span>Nombre, apellidos o n.º de licencia</span><input type="search" id="lic-q" placeholder="García López" autocomplete="off"></label>
+            <p class="campo__error" id="lic-error" hidden>Escribe al menos 3 caracteres.</p>
+            <button class="btn btn--ink" type="submit">Buscar <span aria-hidden="true">→</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 FEDERACIÓN ============ -->
+    <section class="sec sec--paper" id="federacion" aria-labelledby="t-federacion">
+      <div class="container">
+        <header class="sec__head">
+          <p class="sec__num" aria-hidden="true">03</p>
+          <div><p class="eyebrow">Federación</p><h2 class="h2" id="t-federacion">Quiénes somos</h2></div>
+        </header>
+        <div class="chips-links">
+          <a class="chip" data-destino="organos-de-gobierno.html">Órganos de gobierno</a>
+          <a class="chip" data-destino="equipo-fep.html">Equipo FEP</a>
+          <a class="chip" data-destino="programa-impulso.html">Programa Impulso</a>
+          <a class="chip" data-destino="ley-de-transparencia.html">Transparencia</a>
+          <a class="chip" data-destino="clubes.html">Clubes</a>
+        </div>
+        <h3 class="bloque__title">Federaciones territoriales</h3>
+        <ul class="feds" id="feds"></ul>
+      </div>
+    </section>
+
+    <!-- ============ 04 FORMACIÓN ============ -->
+    <section class="sec" id="formacion" aria-labelledby="t-formacion">
+      <div class="container">
+        <header class="sec__head">
+          <p class="sec__num" aria-hidden="true">04</p>
+          <div><p class="eyebrow">Formación</p><h2 class="h2" id="t-formacion">Técnicos y árbitros</h2></div>
+        </header>
+        <div class="fotos">
+          <a class="foto" href="https://www.padelfederacion.es/Formacion.asp"><img src="assets/img/fep/formacion/monitor.jpg" alt="" loading="lazy"><b>Monitor y entrenador</b><span>Cursos de nivel 1, 2 y 3</span></a>
+          <a class="foto" href="https://www.padelfederacion.es/Formacion.asp"><img src="assets/img/fep/formacion/arbitro.jpg" alt="" loading="lazy"><b>Arbitraje</b><span>Formación y licencia de árbitro</span></a>
+          <a class="foto" href="https://www.padelfederacion.es/Formacion.asp"><img src="assets/img/fep/formacion/foco.jpg" alt="" loading="lazy"><b>Jornadas y webinars</b><span>Actualización continua</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 DOCUMENTOS ============ -->
+    <section class="sec sec--paper" id="documentos" aria-labelledby="t-documentos">
+      <div class="container">
+        <header class="sec__head">
+          <p class="sec__num" aria-hidden="true">05</p>
+          <div><p class="eyebrow">Documentos</p><h2 class="h2" id="t-documentos">Normativa y circulares</h2></div>
+        </header>
+        <ol class="rows rows--big">
+          <li><a href="https://www.padelfederacion.es/Reglamentos.asp"><span class="rows__n">01</span>Reglamentos<small>Juego, técnico y disciplinario</small><i aria-hidden="true">↗</i></a></li>
+          <li><a href="https://www.padelfederacion.es/Circulares.asp"><span class="rows__n">02</span>Circulares 2026<small>Comunicados oficiales de la temporada</small><i aria-hidden="true">↗</i></a></li>
+          <li><a href="https://www.padelfederacion.es/Estatutos.asp"><span class="rows__n">03</span>Estatutos<small>Norma básica de la federación</small><i aria-hidden="true">↗</i></a></li>
+          <li><a href="https://www.padelfederacion.es/Pistas.asp"><span class="rows__n">04</span>Mantenimiento de pistas<small>Guías técnicas para clubes</small><i aria-hidden="true">↗</i></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 06 ACTUALIDAD ============ -->
+    <section class="sec" id="actualidad" aria-labelledby="t-actualidad">
+      <div class="container">
+        <header class="sec__head">
+          <p class="sec__num" aria-hidden="true">06</p>
+          <div><p class="eyebrow">Actualidad</p><h2 class="h2" id="t-actualidad">Lo que nos mueve</h2></div>
+        </header>
+        <div class="noticias">
+          <a class="noticia" href="#actualidad"><img src="assets/img/fep/noticias/1208982169.jpg" alt="" loading="lazy"><span class="tag-red">Destacado</span><b>Histórico doblete en Qatar</b></a>
+          <a class="noticia" href="#actualidad"><img src="assets/img/fep/noticias/1265699088.jpg" alt="" loading="lazy"><span class="tag-red">Destacado</span><b>¿Estamos en la final de la FIP World Cup 2026?</b></a>
+          <a class="noticia" href="#actualidad"><img src="assets/img/fep/noticias/2042157828.jpg" alt="" loading="lazy"><span class="tag-red">Menores</span><b>El futuro del pádel español brilla en Aragón</b></a>
+          <a class="noticia" href="#actualidad"><img src="assets/img/fep/noticias/3997449576.jpg" alt="" loading="lazy"><span class="tag-red">Federación</span><b>45 millones de visualizaciones en la FIP World Cup</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__grid">
+      <div>
+        <img src="assets/img/logo-pie-negativo.png" alt="Federación Española de Pádel" width="180" height="60" loading="lazy">
+        <p>Página oficial de la Federación Española de Pádel.</p>
+      </div>
+      <div><h2>Competición</h2><a href="#calendarios">Calendarios</a><a href="#torneos">Torneos</a><a href="#rankings">Rankings</a></div>
+      <div><h2>Federado</h2><a href="#licencias">Licencias</a><a href="#formacion">Formación</a><a href="#documentos">Documentos</a></div>
+      <div><h2>Federación</h2><a href="#federacion">Quiénes somos</a><a href="#actualidad">Actualidad</a><a href="https://www.padelfederacion.es/Contacto.asp">Contacto</a></div>
+    </div>
+    <div class="container footer__legal">© 2026 Federación Española de Pádel</div>
+  </footer>
+
+  <a class="volver-arriba" href="#inicio" aria-label="Volver arriba">↑</a>
+</body>
+</html>

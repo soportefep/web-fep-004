@@ -1,0 +1,247 @@
+{
+    "torneo":  {
+                   "id":  28714,
+                   "titulo":  "CAMPEONATO DE ESPAÑA DE VETERANOS 2026",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2026-06-26",
+                   "fechaFin":  "2026-06-28",
+                   "lugar":  "San Pedro de Alcántara"
+               },
+    "genero":  "X",
+    "categoria":  "Cat40",
+    "nivel":  1,
+    "cuadro":  "Final",
+    "publicado":  true,
+    "notas":  null,
+    "formato":  "eliminatoria",
+    "plantilla":  "Cuadro4",
+    "participantes":  [
+                          {
+                              "avance":  2,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "J. SANCHEZ DRESLERS - L. IDIARTE DE OLAZABAL",
+                              "jugadores":  [
+                                                "J. SANCHEZ DRESLERS",
+                                                "L. IDIARTE DE OLAZABAL"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "A. OLIVE LLADO - L. MONNE ESCODA",
+                              "jugadores":  [
+                                                "A. OLIVE LLADO",
+                                                "L. MONNE ESCODA"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "J. MENDIONDO RUIZ - D. ROSIQUE MACARIO",
+                              "jugadores":  [
+                                                "J. MENDIONDO RUIZ",
+                                                "D. ROSIQUE MACARIO"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "E. LASHERAS VARADE - G. CASTAÑON LABATSUZAN",
+                              "jugadores":  [
+                                                "E. LASHERAS VARADE",
+                                                "G. CASTAÑON LABATSUZAN"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "A. OLIVE LLADO - L. MONNE ESCODA",
+                              "jugadores":  [
+                                                "A. OLIVE LLADO",
+                                                "L. MONNE ESCODA"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "E. LASHERAS VARADE - G. CASTAÑON LABATSUZAN",
+                              "jugadores":  [
+                                                "E. LASHERAS VARADE",
+                                                "G. CASTAÑON LABATSUZAN"
+                                            ]
+                          },
+                          {
+                              "avance":  0,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "E. LASHERAS VARADE - G. CASTAÑON LABATSUZAN",
+                              "jugadores":  [
+                                                "E. LASHERAS VARADE",
+                                                "G. CASTAÑON LABATSUZAN"
+                                            ]
+                          }
+                      ],
+    "partidos":  [
+                     {
+                         "avance":  2,
+                         "posicion":  1,
+                         "resultado":  "0/6-6/3-10/8",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  2,
+                         "resultado":  "6/0-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  1,
+                         "posicion":  1,
+                         "resultado":  "6/0-6/0",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     }
+                 ],
+    "cabezasSerie":  [
+
+                     ],
+    "clasificacion":  [
+
+                      ],
+    "otrosCuadros":  [
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat60",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat60",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "X",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "X",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         }
+                     ]
+}

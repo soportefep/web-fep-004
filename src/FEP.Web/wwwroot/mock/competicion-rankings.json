@@ -1,0 +1,52 @@
+[
+  {
+    "clave": "absoluto",
+    "titulo": "Ranking Único FEP",
+    "enlace": "Ranking_Absoluto",
+    "enlaceUrl": "https://www.padelfederacion.es/Ranking_Absoluto",
+    "nuevaVentana": false,
+    "imagen": "images/RnkAbs.jpg",
+    "imagenUrl": "assets/img/fep/rankings/rnkabs.jpg",
+    "orden": 1
+  },
+  {
+    "clave": "menores",
+    "titulo": "Ranking Menores",
+    "enlace": "Ranking_Menores",
+    "enlaceUrl": "https://www.padelfederacion.es/Ranking_Menores",
+    "nuevaVentana": false,
+    "imagen": "images/RnkMenores.jpg",
+    "imagenUrl": "assets/img/fep/rankings/rnkmenores.jpg",
+    "orden": 2
+  },
+  {
+    "clave": "equipos-absolutos",
+    "titulo": "Ranking Equipos Absolutos",
+    "enlace": "Ranking_Equipos_Absolutos",
+    "enlaceUrl": "https://www.padelfederacion.es/Ranking_Equipos_Absolutos",
+    "nuevaVentana": false,
+    "imagen": "images/RnkEquiposAbs.jpg",
+    "imagenUrl": "assets/img/fep/rankings/rnkequiposabs.jpg",
+    "orden": 3
+  },
+  {
+    "clave": "silla-ruedas",
+    "titulo": "Ranking Silla Ruedas",
+    "enlace": "Ranking_Silla_Ruedas",
+    "enlaceUrl": "https://www.padelfederacion.es/Ranking_Silla_Ruedas",
+    "nuevaVentana": false,
+    "imagen": "images/RnkSilla.jpg",
+    "imagenUrl": "assets/img/fep/rankings/rnksilla.jpg",
+    "orden": 4
+  },
+  {
+    "clave": "veteranos",
+    "titulo": "Ranking Veteranos",
+    "enlace": "Ranking_Veteranos",
+    "enlaceUrl": "https://www.padelfederacion.es/Ranking_Veteranos",
+    "nuevaVentana": false,
+    "imagen": "images/RnkVet.jpg",
+    "imagenUrl": "assets/img/fep/rankings/rnkvet.jpg",
+    "orden": 5
+  }
+]

@@ -1,0 +1,115 @@
+{
+    "id":  1,
+    "nombre":  "FEDERACION MADRILEÑA DE PADEL",
+    "nacional":  false,
+    "imagen":  "images/1.jpg",
+    "imagenUrl":  "assets/img/fep/federaciones/bandera-1.jpg",
+    "presidente":  "D. JOSE LUIS AMOROTO ORIA",
+    "direccion":  "PQ. DEPORTIVO PUERTA DE HIERRO- CTRA. EL PARDO KM.1",
+    "codigoPostal":  "28035",
+    "localidad":  "MADRID",
+    "telefonos":  [
+                      "913736287"
+                  ],
+    "email":  "info@fmpadel.com",
+    "web":  "https://www.fmpadel.com",
+    "licencias":  {
+                      "anio":  2026,
+                      "jugadores":  12911,
+                      "puesto":  2,
+                      "federacionesEnRanking":  18,
+                      "tecnicos":  209,
+                      "arbitros":  26,
+                      "clubes":  152,
+                      "evolucion":  [
+                                        {
+                                            "anio":  2012,
+                                            "licencias":  5604,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2013,
+                                            "licencias":  5810,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2014,
+                                            "licencias":  5750,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2015,
+                                            "licencias":  7018,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2016,
+                                            "licencias":  7556,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2017,
+                                            "licencias":  7879,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2018,
+                                            "licencias":  7975,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2019,
+                                            "licencias":  8559,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2020,
+                                            "licencias":  7733,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2021,
+                                            "licencias":  9966,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2022,
+                                            "licencias":  10022,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2023,
+                                            "licencias":  10606,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2024,
+                                            "licencias":  11989,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2025,
+                                            "licencias":  12783,
+                                            "enCurso":  false
+                                        },
+                                        {
+                                            "anio":  2026,
+                                            "licencias":  12911,
+                                            "enCurso":  true
+                                        }
+                                    ],
+                      "genero":  {
+                                     "masculino":  8612,
+                                     "femenino":  4299,
+                                     "sinDato":  0
+                                 },
+                      "edades":  {
+                                     "menores":  1878,
+                                     "sub23":  612,
+                                     "senior":  1495,
+                                     "veteranos":  8926,
+                                     "sinDato":  0
+                                 }
+                  },
+    "consultado":  "2026-11-12T10:00:00"
+}

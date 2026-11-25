@@ -1,0 +1,235 @@
+{
+    "id":  28676,
+    "anio":  2026,
+    "titulo":  "VI COPA DE ESPAÑA DE LIGAS AUTONÓMICAS - HEAD",
+    "categoria":  "absoluto",
+    "seleccion":  false,
+    "sillaRuedas":  false,
+    "fechaInicio":  "2026-11-13",
+    "fechaFin":  "2026-11-15",
+    "ciudad":  "barcelona",
+    "sedes":  [
+                  {
+                      "nombre":  "PADEL BARCELONA-EL PRAT",
+                      "web":  "https://padelbarcelonaprat.com/",
+                      "latitud":  null,
+                      "longitud":  null
+                  }
+              ],
+    "cuotas":  [
+                   160
+               ],
+    "generos":  [
+                    {
+                        "genero":  "masculino",
+                        "categorias":  [
+
+                                       ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categorias":  [
+
+                                       ]
+                    }
+                ],
+    "notaPrensaHtml":  null,
+    "marcadores":  [
+
+                   ],
+    "videos":  [
+
+               ],
+    "cuadrosPublicados":  true,
+    "cuadros":  [
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "ABSOLUTO",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=M\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=M\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Segunda categoría",
+                                            "nivel":  2,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=M\u0026Nivel=2\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación de segunda categoría",
+                                            "nivel":  2,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=M\u0026Nivel=2\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Tercera categoría",
+                                            "nivel":  3,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=M\u0026Nivel=3\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación de tercera categoría",
+                                            "nivel":  3,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=M\u0026Nivel=3\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuarta categoría",
+                                            "nivel":  4,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=M\u0026Nivel=4\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación de cuarta categoría",
+                                            "nivel":  4,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=M\u0026Nivel=4\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Quinta categoría",
+                                            "nivel":  5,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=M\u0026Nivel=5\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación de quinta categoría",
+                                            "nivel":  5,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=M\u0026Nivel=5\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "ABSOLUTO",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=F\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de consolación",
+                                            "nivel":  1,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=F\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Segunda categoría",
+                                            "nivel":  2,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=F\u0026Nivel=2\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación de segunda categoría",
+                                            "nivel":  2,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=F\u0026Nivel=2\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Tercera categoría",
+                                            "nivel":  3,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=F\u0026Nivel=3\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación de tercera categoría",
+                                            "nivel":  3,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=F\u0026Nivel=3\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Cuarta categoría",
+                                            "nivel":  4,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=F\u0026Nivel=4\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación de cuarta categoría",
+                                            "nivel":  4,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=F\u0026Nivel=4\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        },
+                                        {
+                                            "titulo":  "Quinta categoría",
+                                            "nivel":  5,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=F\u0026Nivel=5\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Consolación de quinta categoría",
+                                            "nivel":  5,
+                                            "cuadro":  "Consola",
+                                            "tipo":  "consolacion",
+                                            "url":  "https://www.padelfederacion.es/PrevioEquipos.asp?IdTorneo=28676\u0026Genero=F\u0026Nivel=5\u0026Cat=ABSOLUTO\u0026Cuadro=Consola"
+                                        }
+                                    ]
+                    }
+                ],
+    "notificacionesHtml":  "\u003cp\u003e\r\n\t\u003cspan style=\"font-size: 14px;\"\u003e\u0026#128260; \u003cstrong\u003eEquipos participantes:\u003c/strong\u003e La lista de equipos participantes se encuentra en constante actualizaci\u0026oacute;n, ya que las ligas de algunas Comunidades Aut\u0026oacute;nomas a\u0026uacute;n no han finalizado. Los equipos se ir\u0026aacute;n incorporando a la plataforma a medida que recibamos las confirmaciones oficiales.\u003c/span\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cspan style=\"font-size: 14px;\"\u003e\u0026#9200; \u003cstrong\u003eHorarios:\u003c/strong\u003e En el \u0026aacute;mbito deportivo, recordamos que la competici\u0026oacute;n podr\u0026iacute;a dar comienzo el \u003cstrong\u003eviernes a las 12:00 horas\u003c/strong\u003e. Por tanto, es obligatorio que todos los equipos est\u0026eacute;n completamente disponibles para competir a partir de esa hora.\u003c/span\u003e\u003c/p\u003e",
+    "adjuntos":  [
+                     {
+                         "titulo":  "DOSSIER INFORMATIVO PARTICIPANTES",
+                         "tipo":  "pdf",
+                         "archivo":  "INFORMACIÓN PRELIMINAR CELA 2026.pdf",
+                         "url":  "https://www.padelfederacion.es/Paginas/Torneos/2026/INFORMACI%C3%93N%20PRELIMINAR%20CELA%202026.pdf"
+                     },
+                     {
+                         "titulo":  "HOTELES CONCERTADOS",
+                         "tipo":  "pic",
+                         "archivo":  "CELAHoteles.png",
+                         "url":  "https://www.padelfederacion.es/Paginas/Torneos/2026/CELAHoteles.png"
+                     }
+                 ],
+    "inscritosParejas":  [
+
+                         ],
+    "inscripcion":  {
+                        "abierta":  false,
+                        "fechaLimite":  null,
+                        "por":  "federaciones",
+                        "informacionHtml":  null,
+                        "acciones":  [
+
+                                     ],
+                        "equiposInscritosUrl":  "https://www.padelfederacion.es/Camp_Equipos_Modificar.asp?idtorneo=28676",
+                        "fechaLimitePuntuacion":  null
+                    },
+    "infoAdicionalHtml":  null,
+    "cartel":  "Cartel  VI COPA DE ESPAÑA LIGAS AUTONÓMICAS.png",
+    "cartelUrl":  "https://www.padelfederacion.es/Paginas/Torneos/2026/Cartel%20%20VI%20COPA%20DE%20ESPA%C3%91A%20LIGAS%20AUTON%C3%93MICAS.png",
+    "noticias":  [
+
+                 ],
+    "urlWebActual":  "https://www.padelfederacion.es/Camp_Equipos.asp?IdTorneo=28676",
+    "consultado":  "2026-11-13T10:00:00"
+}

@@ -1,0 +1,247 @@
+{
+    "torneo":  {
+                   "id":  28714,
+                   "titulo":  "CAMPEONATO DE ESPAÑA DE VETERANOS 2026",
+                   "tipo":  "parejas",
+                   "fechaInicio":  "2026-06-26",
+                   "fechaFin":  "2026-06-28",
+                   "lugar":  "San Pedro de Alcántara"
+               },
+    "genero":  "F",
+    "categoria":  "Cat50",
+    "nivel":  1,
+    "cuadro":  "Consola",
+    "publicado":  true,
+    "notas":  null,
+    "formato":  "eliminatoria",
+    "plantilla":  "Cuadro4",
+    "participantes":  [
+                          {
+                              "avance":  2,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "M. GONCET DE LOS REYES - M. ESMERADO JIMENEZ",
+                              "jugadores":  [
+                                                "M. GONCET DE LOS REYES",
+                                                "M. ESMERADO JIMENEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "C. LEON SOLANA - A. CASTAÑEDA ORTEGA",
+                              "jugadores":  [
+                                                "C. LEON SOLANA",
+                                                "A. CASTAÑEDA ORTEGA"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  3,
+                              "tipo":  "pareja",
+                              "nombre":  "L. GOMEZ LOPEZ - E. FERRER LOPEZ",
+                              "jugadores":  [
+                                                "L. GOMEZ LOPEZ",
+                                                "E. FERRER LOPEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  2,
+                              "posicion":  4,
+                              "tipo":  "pareja",
+                              "nombre":  "P. FOLATELLI MAESTU - C. ROMERO PALOMO",
+                              "jugadores":  [
+                                                "P. FOLATELLI MAESTU",
+                                                "C. ROMERO PALOMO"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "C. LEON SOLANA - A. CASTAÑEDA ORTEGA",
+                              "jugadores":  [
+                                                "C. LEON SOLANA",
+                                                "A. CASTAÑEDA ORTEGA"
+                                            ]
+                          },
+                          {
+                              "avance":  1,
+                              "posicion":  2,
+                              "tipo":  "pareja",
+                              "nombre":  "L. GOMEZ LOPEZ - E. FERRER LOPEZ",
+                              "jugadores":  [
+                                                "L. GOMEZ LOPEZ",
+                                                "E. FERRER LOPEZ"
+                                            ]
+                          },
+                          {
+                              "avance":  0,
+                              "posicion":  1,
+                              "tipo":  "pareja",
+                              "nombre":  "L. GOMEZ LOPEZ - E. FERRER LOPEZ",
+                              "jugadores":  [
+                                                "L. GOMEZ LOPEZ",
+                                                "E. FERRER LOPEZ"
+                                            ]
+                          }
+                      ],
+    "partidos":  [
+                     {
+                         "avance":  2,
+                         "posicion":  1,
+                         "resultado":  "6/1-6/4",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  2,
+                         "posicion":  2,
+                         "resultado":  "6/4-6/2",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     },
+                     {
+                         "avance":  1,
+                         "posicion":  1,
+                         "resultado":  "6/2-6/1",
+                         "horario":  null,
+                         "enfrentamiento":  false
+                     }
+                 ],
+    "cabezasSerie":  [
+
+                     ],
+    "clasificacion":  [
+
+                      ],
+    "otrosCuadros":  [
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat60",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "M",
+                             "categoria":  "Cat60",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat35",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat45",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat50",
+                             "nivel":  1,
+                             "cuadro":  "Consola"
+                         },
+                         {
+                             "genero":  "F",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "X",
+                             "categoria":  "Cat40",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         },
+                         {
+                             "genero":  "X",
+                             "categoria":  "Cat55",
+                             "nivel":  1,
+                             "cuadro":  "Final"
+                         }
+                     ]
+}

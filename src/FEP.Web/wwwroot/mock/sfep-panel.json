@@ -1,0 +1,503 @@
+{
+    "datosDePrueba":  true,
+    "nota":  "DATOS DE PRUEBA del prototipo SFEP: panel de inicio común. \"resumen\" son las cifras de la FEP (las federaciones autonómicas usan su propio resumen); \"widgets\" es el catálogo de secciones que cada usuario puede añadir a su inicio (Personalizar). Sin conexión a base de datos. En producción: GET /api/v1/sfep/panel.",
+    "resumen":  [
+                    {
+                        "valor":  "48.215",
+                        "etiqueta":  "Fichas activas",
+                        "modulo":  "fichas"
+                    },
+                    {
+                        "valor":  "37",
+                        "etiqueta":  "Torneos en curso",
+                        "modulo":  "torneos"
+                    }
+                ],
+    "widgets":  [
+                    {
+                        "id":  "remesas-bancarias",
+                        "titulo":  "Remesas bancarias",
+                        "grupo":  "Contabilidad",
+                        "tipo":  "lista",
+                        "modulo":  "banco",
+                        "enlace":  "Ir a Banco",
+                        "items":  [
+                                      {
+                                          "titulo":  "Remesa licencias noviembre · 2.ª quincena",
+                                          "meta":  "412 recibos",
+                                          "importe":  "18.540,00 €",
+                                          "fecha":  "2026-11-25",
+                                          "estado":  "por enviar",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Remesa cuotas de clubes 2027",
+                                          "meta":  "62 recibos",
+                                          "importe":  "9.300,00 €",
+                                          "fecha":  "2026-12-01",
+                                          "estado":  "preparada",
+                                          "tono":  "neutro"
+                                      },
+                                      {
+                                          "titulo":  "Remesa licencias noviembre · 1.ª quincena",
+                                          "meta":  "388 recibos",
+                                          "importe":  "17.460,00 €",
+                                          "fecha":  "2026-11-15",
+                                          "estado":  "cobrada",
+                                          "tono":  "ok"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "cobro-de-licencias-2026-por-forma-de-pago",
+                        "titulo":  "Cobro de licencias 2026 por forma de pago",
+                        "grupo":  "Contabilidad",
+                        "tipo":  "barras",
+                        "soloFep":  true,
+                        "items":  [
+                                      {
+                                          "etiqueta":  "Tarjeta",
+                                          "valor":  61,
+                                          "max":  100,
+                                          "texto":  "61 %"
+                                      },
+                                      {
+                                          "etiqueta":  "Domiciliación",
+                                          "valor":  27,
+                                          "max":  100,
+                                          "texto":  "27 %"
+                                      },
+                                      {
+                                          "etiqueta":  "Transferencia",
+                                          "valor":  12,
+                                          "max":  100,
+                                          "texto":  "12 %"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "pagos-pendientes-de-conciliar",
+                        "titulo":  "Pagos pendientes de conciliar",
+                        "grupo":  "Contabilidad",
+                        "tipo":  "lista",
+                        "modulo":  "banco",
+                        "enlace":  "Conciliar",
+                        "items":  [
+                                      {
+                                          "titulo":  "Transferencia · Club de pádel ejemplo 31-2",
+                                          "meta":  "Cuota de club 2027",
+                                          "importe":  "450,00 €",
+                                          "fecha":  "2026-11-20",
+                                          "estado":  "sin asignar",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Transferencia · Federación autonómica de ejemplo",
+                                          "meta":  "Licencias octubre",
+                                          "importe":  "6.240,00 €",
+                                          "fecha":  "2026-11-18",
+                                          "estado":  "sin asignar",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Devolución de recibo · licencia 900779",
+                                          "meta":  "Domiciliación devuelta",
+                                          "importe":  "−45,00 €",
+                                          "fecha":  "2026-11-17",
+                                          "estado":  "devuelto",
+                                          "tono":  "alerta"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "vencimientos-fiscales-y-de-cierre",
+                        "titulo":  "Vencimientos fiscales y de cierre",
+                        "grupo":  "Contabilidad",
+                        "tipo":  "lista",
+                        "soloFep":  true,
+                        "items":  [
+                                      {
+                                          "titulo":  "Modelo 111 · retenciones 4.º trimestre",
+                                          "fecha":  "2027-01-20",
+                                          "estado":  "pendiente",
+                                          "tono":  "neutro"
+                                      },
+                                      {
+                                          "titulo":  "Modelo 115 · alquileres 4.º trimestre",
+                                          "fecha":  "2027-01-20",
+                                          "estado":  "pendiente",
+                                          "tono":  "neutro"
+                                      },
+                                      {
+                                          "titulo":  "Cierre contable del ejercicio 2026",
+                                          "fecha":  "2027-01-31",
+                                          "estado":  "pendiente",
+                                          "tono":  "neutro"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "proximos-campeonatos-de-espana",
+                        "titulo":  "Próximos campeonatos de España",
+                        "grupo":  "Formación y competición",
+                        "tipo":  "lista",
+                        "modulo":  "torneos",
+                        "enlace":  "Ir a Torneos",
+                        "items":  [
+                                      {
+                                          "titulo":  "I Copa de Ligas Autonómicas de Veteranos",
+                                          "meta":  "Zaragoza · equipos",
+                                          "fecha":  "2026-11-27",
+                                          "fechaFin":  "2026-11-29",
+                                          "estado":  "cuadros publicados",
+                                          "tono":  "ok"
+                                      },
+                                      {
+                                          "titulo":  "XXI Cto. España Selecciones Autonómicas Absoluto",
+                                          "meta":  "Sede por designar · equipos",
+                                          "fecha":  "2027-01-15",
+                                          "fechaFin":  "2027-01-17",
+                                          "estado":  "inscripción abierta",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "XLIII Cto. España Equipos 1.ª",
+                                          "meta":  "En licitación · equipos",
+                                          "fecha":  "2027-02-12",
+                                          "fechaFin":  "2027-02-14",
+                                          "estado":  "en licitación",
+                                          "tono":  "neutro"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "plazas-ocupadas-en-cursos-de-formacion",
+                        "titulo":  "Plazas ocupadas en cursos de formación",
+                        "grupo":  "Formación y competición",
+                        "tipo":  "barras",
+                        "soloFep":  true,
+                        "items":  [
+                                      {
+                                          "etiqueta":  "Juez árbitro en silla",
+                                          "valor":  28,
+                                          "max":  30,
+                                          "texto":  "28/30"
+                                      },
+                                      {
+                                          "etiqueta":  "Monitor nivel 1 (ej.)",
+                                          "valor":  22,
+                                          "max":  25,
+                                          "texto":  "22/25"
+                                      },
+                                      {
+                                          "etiqueta":  "Entrenador nivel 2 (ej.)",
+                                          "valor":  9,
+                                          "max":  20,
+                                          "texto":  "9/20"
+                                      },
+                                      {
+                                          "etiqueta":  "Reciclaje jueces-árbitro",
+                                          "valor":  31,
+                                          "max":  40,
+                                          "texto":  "31/40"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "ranking",
+                        "titulo":  "Ranking",
+                        "grupo":  "Formación y competición",
+                        "tipo":  "lista",
+                        "modulo":  "ranking",
+                        "enlace":  "Ir a Ranking",
+                        "items":  [
+                                      {
+                                          "titulo":  "Carga de puntos · Open de otoño (ejemplo)",
+                                          "meta":  "Resultados recibidos",
+                                          "fecha":  "2026-11-24",
+                                          "estado":  "pendiente",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Revisión de reclamaciones",
+                                          "meta":  "2 reclamaciones",
+                                          "fecha":  "2026-11-27",
+                                          "estado":  "pendiente",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Publicación del ranking absoluto de noviembre",
+                                          "fecha":  "2026-11-30",
+                                          "estado":  "programada",
+                                          "tono":  "neutro"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "sanciones-en-tramite",
+                        "titulo":  "Sanciones en trámite",
+                        "grupo":  "Formación y competición",
+                        "tipo":  "lista",
+                        "modulo":  "sanciones",
+                        "enlace":  "Ir a Sanciones",
+                        "items":  [
+                                      {
+                                          "titulo":  "Expediente 07/2026 · conducta antideportiva",
+                                          "meta":  "Comité de competición",
+                                          "fecha":  "2026-12-02",
+                                          "estado":  "en instrucción",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Expediente 06/2026 · incomparecencia",
+                                          "meta":  "Resolución notificada",
+                                          "fecha":  "2026-11-12",
+                                          "estado":  "resuelto",
+                                          "tono":  "ok"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "preparacion-de-eventos-checklist",
+                        "titulo":  "Preparación de eventos (checklist)",
+                        "grupo":  "Logística y administración general",
+                        "tipo":  "barras",
+                        "modulo":  "eventos",
+                        "enlace":  "Ir a Eventos",
+                        "items":  [
+                                      {
+                                          "etiqueta":  "Copa de Ligas Veteranos",
+                                          "valor":  85,
+                                          "max":  100,
+                                          "texto":  "85 %"
+                                      },
+                                      {
+                                          "etiqueta":  "Cto. Selecciones",
+                                          "valor":  40,
+                                          "max":  100,
+                                          "texto":  "40 %"
+                                      },
+                                      {
+                                          "etiqueta":  "Gala anual (ej.)",
+                                          "valor":  25,
+                                          "max":  100,
+                                          "texto":  "25 %"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "material-y-envios",
+                        "titulo":  "Material y envíos",
+                        "grupo":  "Logística y administración general",
+                        "tipo":  "lista",
+                        "soloFep":  true,
+                        "items":  [
+                                      {
+                                          "titulo":  "Trofeos · Copa de Ligas de Veteranos",
+                                          "meta":  "Destino: Zaragoza",
+                                          "fecha":  "2026-11-25",
+                                          "estado":  "en tránsito",
+                                          "tono":  "neutro"
+                                      },
+                                      {
+                                          "titulo":  "Acreditaciones y photocall",
+                                          "meta":  "Copa de Ligas de Veteranos",
+                                          "fecha":  "2026-11-24",
+                                          "estado":  "por imprimir",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Bolas oficiales · 60 cajas",
+                                          "meta":  "Cto. Selecciones Autonómicas",
+                                          "fecha":  "2026-12-15",
+                                          "estado":  "por pedir",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Lonas FEP y patrocinadores",
+                                          "meta":  "Almacén de la sede",
+                                          "estado":  "en almacén",
+                                          "tono":  "ok"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "equipo-esta-semana",
+                        "titulo":  "Equipo esta semana",
+                        "grupo":  "Logística y administración general",
+                        "tipo":  "lista",
+                        "modulo":  "laboral",
+                        "enlace":  "Calendario laboral",
+                        "items":  [
+                                      {
+                                          "titulo":  "Persona Ejemplo C",
+                                          "meta":  "Vacaciones",
+                                          "fecha":  "2026-11-23",
+                                          "fechaFin":  "2026-11-27",
+                                          "estado":  "ausente",
+                                          "tono":  "neutro"
+                                      },
+                                      {
+                                          "titulo":  "Persona Ejemplo D",
+                                          "meta":  "Curso de formación",
+                                          "fecha":  "2026-11-26",
+                                          "estado":  "ausente",
+                                          "tono":  "neutro"
+                                      },
+                                      {
+                                          "titulo":  "Fichajes de hoy",
+                                          "meta":  "9 de 12 personas han fichado",
+                                          "estado":  "3 pendientes",
+                                          "tono":  "aviso"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "mantenimiento-e-incidencias",
+                        "titulo":  "Mantenimiento e incidencias",
+                        "grupo":  "Logística y administración general",
+                        "tipo":  "lista",
+                        "modulo":  "servidor",
+                        "enlace":  "Servidor FEP",
+                        "items":  [
+                                      {
+                                          "titulo":  "Revisión de la copia de seguridad del servidor",
+                                          "fecha":  "2026-11-28",
+                                          "estado":  "pendiente",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Renovación del dominio y certificados web",
+                                          "fecha":  "2026-12-10",
+                                          "estado":  "pendiente",
+                                          "tono":  "neutro"
+                                      },
+                                      {
+                                          "titulo":  "Contrato de mantenimiento de la fotocopiadora",
+                                          "fecha":  "2027-01-01",
+                                          "estado":  "en revisión",
+                                          "tono":  "neutro"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "organos-de-gobierno",
+                        "titulo":  "Órganos de gobierno",
+                        "grupo":  "Secretaría general",
+                        "tipo":  "lista",
+                        "soloFep":  true,
+                        "items":  [
+                                      {
+                                          "titulo":  "Junta Directiva · sesión ordinaria",
+                                          "meta":  "Orden del día enviado",
+                                          "fecha":  "2026-12-03",
+                                          "estado":  "convocada",
+                                          "tono":  "ok"
+                                      },
+                                      {
+                                          "titulo":  "Asamblea General ordinaria",
+                                          "meta":  "Presupuesto 2027 y calendario",
+                                          "fecha":  "2026-12-19",
+                                          "estado":  "en preparación",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Comisión Delegada",
+                                          "fecha":  "2027-01-14",
+                                          "estado":  "pendiente de convocar",
+                                          "tono":  "neutro"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "pendiente-de-firma",
+                        "titulo":  "Pendiente de firma",
+                        "grupo":  "Secretaría general",
+                        "tipo":  "lista",
+                        "soloFep":  true,
+                        "items":  [
+                                      {
+                                          "titulo":  "Acta de la Junta Directiva del 5 de noviembre",
+                                          "meta":  "Presidencia y Secretaría",
+                                          "fecha":  "2026-11-25",
+                                          "estado":  "por firmar",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Convenio de colaboración (ejemplo)",
+                                          "meta":  "Revisión jurídica hecha",
+                                          "fecha":  "2026-11-28",
+                                          "estado":  "por firmar",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Certificados de federado · 3 solicitudes",
+                                          "meta":  "Solicitados desde Mi Portal",
+                                          "fecha":  "2026-11-24",
+                                          "estado":  "por firmar",
+                                          "tono":  "aviso"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "comunicaciones-recientes",
+                        "titulo":  "Comunicaciones recientes",
+                        "grupo":  "Secretaría general",
+                        "tipo":  "lista",
+                        "modulo":  "comunicaciones",
+                        "enlace":  "Ir a Comunicaciones",
+                        "items":  [
+                                      {
+                                          "titulo":  "Circular 14/2026 · Normativa de competición 2027",
+                                          "meta":  "A federaciones autonómicas y clubes",
+                                          "fecha":  "2026-11-20",
+                                          "estado":  "enviada",
+                                          "tono":  "ok"
+                                      },
+                                      {
+                                          "titulo":  "Circular 13/2026 · Calendario 2027",
+                                          "meta":  "A federaciones autonómicas",
+                                          "fecha":  "2026-11-12",
+                                          "estado":  "enviada",
+                                          "tono":  "ok"
+                                      },
+                                      {
+                                          "titulo":  "Comunicado · Licencias temporada 2027",
+                                          "meta":  "A todos los federados",
+                                          "estado":  "borrador",
+                                          "tono":  "aviso"
+                                      }
+                                  ]
+                    },
+                    {
+                        "id":  "registro-de-entrada",
+                        "titulo":  "Registro de entrada",
+                        "grupo":  "Secretaría general",
+                        "tipo":  "lista",
+                        "soloFep":  true,
+                        "items":  [
+                                      {
+                                          "titulo":  "Recurso al Comité de Apelación (ejemplo)",
+                                          "meta":  "Entrada 2026/0412",
+                                          "fecha":  "2026-11-22",
+                                          "estado":  "a trámite",
+                                          "tono":  "aviso"
+                                      },
+                                      {
+                                          "titulo":  "Solicitud de sede · Cto. España Menores (ejemplo)",
+                                          "meta":  "Entrada 2026/0411",
+                                          "fecha":  "2026-11-21",
+                                          "estado":  "registrada",
+                                          "tono":  "neutro"
+                                      },
+                                      {
+                                          "titulo":  "Escrito del Consejo Superior de Deportes (ejemplo)",
+                                          "meta":  "Entrada 2026/0409",
+                                          "fecha":  "2026-11-20",
+                                          "estado":  "registrada",
+                                          "tono":  "neutro"
+                                      }
+                                  ]
+                    }
+                ]
+}

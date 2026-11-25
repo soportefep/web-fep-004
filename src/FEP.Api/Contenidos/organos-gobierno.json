@@ -1,0 +1,280 @@
+{
+  "actualizado": "2026-11-12",
+  "organos": [
+    {
+      "clave": "junta-directiva",
+      "titulo": "Junta Directiva",
+      "descripcion": null,
+      "imagenUrl": "images/ORGANIGRAMA JUNTA-V2.jpg",
+      "imagenAlt": "Organigrama de la Junta Directiva de la Federación Española de Pádel",
+      "grupos": [
+        {
+          "clave": "presidencia",
+          "titulo": "Presidencia, vicepresidencias y secretaría general",
+          "etiquetaNombre": "Miembro",
+          "etiquetaDetalle": "Cargo",
+          "presentacion": "tarjetas",
+          "miembros": [
+            { "nombre": "Javier Rodríguez Piris", "cargo": "Presidente", "detalle": null, "email": "presidente@padelfederacion.es", "web": null },
+            { "nombre": "Francisco Sanz Fominaya", "cargo": "Vicepresidente 1", "detalle": "Economía y Tesorería", "email": "vicepresidente.economico@padelfederacion.es", "web": null },
+            { "nombre": "José Pérez García", "cargo": "Vicepresidente 2", "detalle": "Deportiva, Promoción y Relaciones Internacionales", "email": "vicepresidente.competicion@padelfederacion.es", "web": null },
+            { "nombre": "Jesús Vázquez Tallón", "cargo": "Vicepresidente 3", "detalle": "Área Social, Relaciones Institucionales y Dinamización Territorial", "email": "vicepresidente.social@padelfederacion.es", "web": null },
+            { "nombre": "Concha Velasco Martín", "cargo": "Secretaria General", "detalle": null, "email": "secretariageneral@padelfederacion.es", "web": null }
+          ]
+        },
+        {
+          "clave": "vocales",
+          "titulo": "Vocales",
+          "etiquetaNombre": "Vocal",
+          "etiquetaDetalle": "Área",
+          "presentacion": "tarjetas",
+          "miembros": [
+            { "nombre": "José Mª Alda Hoyos", "cargo": "Vocal Área Económica", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 1" },
+            { "nombre": "Tania Santos Alves", "cargo": "Vocal de Eventos", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 1" },
+            { "nombre": "Lucia Iborra Broseta", "cargo": "Vocal de Innovación y Proyectos", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 1" },
+            { "nombre": "Francisca Rojas Ponce", "cargo": "Vocal Mujer", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 2" },
+            { "nombre": "Carmen de la Cruz Grao", "cargo": "Vocal de Competición", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 2" },
+            { "nombre": "Diego Muñoz Marín", "cargo": "Vocal de Formación e Investigación", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 2" },
+            { "nombre": "Paula García Rguez.", "cargo": "Vocal de Base y Promoción", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 2" },
+            { "nombre": "Victoria Barcina Hidalgo", "cargo": "Vocal CTAP", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 2" },
+            { "nombre": "Silvia Rial Fuertes", "cargo": "Vocal de Responsabilidad Social Corporativa (RSC)", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 3" },
+            { "nombre": "Marta Porras Cuesta", "cargo": "Vocal de Gobernanza Interna y RRHH", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 3" },
+            { "nombre": "Antonio José López Castro", "cargo": "Vocal Pádel Inclusivo", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 3" },
+            { "nombre": "Lucia Carreño Busta", "cargo": "Vocal de Dinamización Territorial", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 3" },
+            { "nombre": "Patricia Pina Somoano", "cargo": "Vocal de Alianzas Estratégicas", "detalle": null, "email": null, "web": null, "depende": "Vicepresidente 3" }
+          ]
+        }
+      ],
+      "actas": []
+    },
+    {
+      "clave": "asamblea",
+      "titulo": "Asamblea General",
+      "descripcion": null,
+      "imagenUrl": null,
+      "imagenAlt": null,
+      "grupos": [
+        {
+          "clave": "presidente",
+          "titulo": "Presidente de la Federación Española de Pádel",
+          "etiquetaNombre": "Miembro",
+          "etiquetaDetalle": "Email",
+          "presentacion": "lista",
+          "miembros": [
+            { "nombre": "Javier Rodríguez Piris", "cargo": null, "detalle": null, "email": "presidente@padelfederacion.es", "web": null }
+          ]
+        },
+        {
+          "clave": "federaciones",
+          "titulo": "Representantes de federaciones",
+          "etiquetaNombre": "Federación",
+          "etiquetaDetalle": "Contacto web",
+          "presentacion": "lista",
+          "miembros": [
+            { "nombre": "Federación Andaluza de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.fap.es/" },
+            { "nombre": "Federación Aragonesa de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.arapadel.com/" },
+            { "nombre": "Federación Asturiana de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.fppastur.com/" },
+            { "nombre": "Federación Canaria de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.federacioncanariadepadel.net/" },
+            { "nombre": "Federación Cántabra de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.federacioncantabradepadel.com/" },
+            { "nombre": "Federación Catalana de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.fcpadel.com/web/" },
+            { "nombre": "Federación de Pádel de Castilla y León", "cargo": null, "detalle": null, "email": null, "web": "http://www.padelcyl.es/padelcyl/" },
+            { "nombre": "Federación de Pádel de Castilla-La Mancha", "cargo": null, "detalle": null, "email": null, "web": "http://www.padelcastillalamancha.es/" },
+            { "nombre": "Federación de Pádel de Ceuta", "cargo": null, "detalle": null, "email": null, "web": "https://fpadelceuta.com/" },
+            { "nombre": "Federación de Pádel de la Comunidad Valenciana", "cargo": null, "detalle": null, "email": null, "web": "http://padelcv.com/" },
+            { "nombre": "Federación de Pádel de las Illes Balears", "cargo": null, "detalle": null, "email": null, "web": "http://www.fpadelib.es/" },
+            { "nombre": "Federación de Pádel de Murcia", "cargo": null, "detalle": null, "email": null, "web": "http://www.fedpadelmurcia.com/" },
+            { "nombre": "Federación Extremeña de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.fexpadel.com/" },
+            { "nombre": "Federación Gallega de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.fgpadel.com/" },
+            { "nombre": "Federación Madrileña de Pádel", "cargo": null, "detalle": null, "email": "info@fmpadel.com", "web": null },
+            { "nombre": "Federación Melillense de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.padelmelilla.com/" },
+            { "nombre": "Federación Navarra de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.federacionnavarradepadel.com/" },
+            { "nombre": "Federación Vasca de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.fvpadel.com/" },
+            { "nombre": "Federación de la Rioja", "cargo": null, "detalle": null, "email": null, "web": "https://frpadel.com/" }
+          ]
+        },
+        {
+          "clave": "clubes",
+          "titulo": "Por el estamento de clubes",
+          "etiquetaNombre": "Club",
+          "etiquetaDetalle": "Categoría",
+          "presentacion": "lista",
+          "miembros": [
+            { "nombre": "CLUB FIT POINT", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "IBIZA PADEL INDOOR", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB DE TENIS Y PADEL LA CAPELLANIA", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "PADEL INDOOR ARAGÓN", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB PADEL LA VOLEA", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "REAL CLUB DE TENIS BARCELONA", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB RIVAPADEL SPORT", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB TENIS CHAMARTIN", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "EL PERÚ CÁCERES WELLNES", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB CERCLE SABADELLES 1856", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB RÍO GRANDE", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB LA RED XX", "cargo": null, "detalle": "De máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB DEPORTIVO UNIÓN DEPORTIVA BAGA TAZO 2008", "cargo": null, "detalle": "De no máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB LA CALZADA", "cargo": null, "detalle": "De no máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB CD ELEMENTAL TRES OLIVOS - MONTECARMELO", "cargo": null, "detalle": "De no máxima categoría o división", "email": null, "web": null },
+            { "nombre": "PADEL DERIO PADELFUT", "cargo": null, "detalle": "De no máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB GIMMAS ILLES", "cargo": null, "detalle": "De no máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB PADEL LA QUINTA", "cargo": null, "detalle": "De no máxima categoría o división", "email": null, "web": null },
+            { "nombre": "CLUB DE TENNIS BARCINO", "cargo": null, "detalle": "De no máxima categoría o división", "email": null, "web": null }
+          ]
+        },
+        {
+          "clave": "jugadores",
+          "titulo": "Por el estamento de jugadores",
+          "etiquetaNombre": "Jugador/a",
+          "etiquetaDetalle": "Tipo",
+          "presentacion": "lista",
+          "miembros": [
+            { "nombre": "CARRERA MARTINEZ, VICTOR MANUEL", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "BES OSTARIZ, RAFAEL", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "GONZALEZ MORO CRISTINA", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "IDIARTE DE OLAZABAL, LAUREANA MARIA", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "GIL ROMERO, MARIA DIANA", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "HOYOS ALDA, JOSE MARIA", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "MUÑOZ MARIN, DIEGO", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "BAUTISTA ORTIZ, JAIRO JOSE", "cargo": null, "detalle": "De Alto Nivel", "email": null, "web": null },
+            { "nombre": "BOTELLO COHEN, URIEL SAMUEL", "cargo": null, "detalle": "De Alto Nivel", "email": null, "web": null },
+            { "nombre": "MARTINEZ LOBO, MARINA", "cargo": null, "detalle": "De Alto Nivel", "email": null, "web": null }
+          ]
+        },
+        {
+          "clave": "tecnicos",
+          "titulo": "Por el estamento de técnicos",
+          "etiquetaNombre": "Técnico/a",
+          "etiquetaDetalle": "Tipo",
+          "presentacion": "lista",
+          "miembros": [
+            { "nombre": "PEREYRA URDIOZ, JUAN PABLO", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "RIVERO GONZALEZ, JOSE LUIS", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "ZAMORA GARAIKOETXEA, HAIZEA", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "GUTIÉRREZ DEL ÁLAMO CABELLO, JOSE LUIS", "cargo": null, "detalle": "DAN", "email": null, "web": null },
+            { "nombre": "GARCIA DIEZ, DIEGO", "cargo": null, "detalle": "DAN", "email": null, "web": null },
+            { "nombre": "SANTOS ALVES, TANIA", "cargo": null, "detalle": "DAN", "email": null, "web": null }
+          ]
+        },
+        {
+          "clave": "jueces-arbitros",
+          "titulo": "Por el estamento de jueces-árbitros",
+          "etiquetaNombre": "Juez-árbitro",
+          "etiquetaDetalle": "Tipo",
+          "presentacion": "lista",
+          "miembros": [
+            { "nombre": "BARCINA HIDALGO, VICTORIA", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "JIMENEZ BARQUERO, MARIA DE LA PAZ", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "MORO MARTIN, GEMMA", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "TALAVAN GUTIERREZ, JOSE VICENTE", "cargo": null, "detalle": null, "email": null, "web": null }
+          ]
+        }
+      ],
+      "actas": [
+        { "titulo": "Acta de la Asamblea General Extraordinaria del 18 de diciembre de 2025", "fecha": "2025-12-18", "tipo": "Extraordinaria", "url": "docs/ACTA-AG-FEP-18122025.pdf" },
+        { "titulo": "Acta de la Asamblea General Extraordinaria del 27 de septiembre de 2025", "fecha": "2025-09-27", "tipo": "Extraordinaria", "url": "docs/Acta-AG-EXT-27092025.pdf" },
+        { "titulo": "Acta de la Asamblea General Extraordinaria del 22 de abril de 2024", "fecha": "2024-04-22", "tipo": "Extraordinaria", "url": "docs/2024-Acta-Asamblea-General-EXTRA-22042024.pdf" },
+        { "titulo": "Acta de la Asamblea General Extraordinaria del 16 de diciembre de 2023", "fecha": "2023-12-16", "tipo": "Extraordinaria", "url": "docs/2023 Acta Asamblea General EXTRA 16122023.pdf" },
+        { "titulo": "Acta de la Asamblea General Extraordinaria del 21 de octubre de 2023", "fecha": "2023-10-21", "tipo": "Extraordinaria", "url": "docs/2023 Acta Asamblea General EXTRA 21102023.pdf" },
+        { "titulo": "Acta de la Asamblea General Ordinaria del 21 de octubre de 2023", "fecha": "2023-10-21", "tipo": "Ordinaria", "url": "docs/2023 Acta Asamblea General ORD 21102023.pdf" },
+        { "titulo": "Acta de la Asamblea General Ordinaria del 9 de julio de 2022", "fecha": "2022-07-09", "tipo": "Ordinaria", "url": "docs/2022 Acta Asamblea General ORD 09072022.pdf" },
+        { "titulo": "Acta de la Asamblea General Ordinaria del 26 de junio de 2021", "fecha": "2021-06-26", "tipo": "Ordinaria", "url": "docs/Acta_AG_26 Junio_2021.pdf" },
+        { "titulo": "Acta de la Asamblea General Ordinaria del 31 de octubre de 2020", "fecha": "2020-10-31", "tipo": "Ordinaria", "url": "docs/Acta_AG_31_Octubre_2020.pdf" },
+        { "titulo": "Acta de la Asamblea General Ordinaria del 31 de enero de 2020", "fecha": "2020-01-31", "tipo": "Ordinaria", "url": "docs/Acta-Asamblea-Gral-ORD-Fep-311020.pdf" }
+      ]
+    },
+    {
+      "clave": "comision-delegada",
+      "titulo": "Comisión Delegada",
+      "descripcion": null,
+      "imagenUrl": null,
+      "imagenAlt": null,
+      "grupos": [
+        {
+          "clave": "presidente",
+          "titulo": "Presidente de la Federación Española de Pádel",
+          "etiquetaNombre": "Miembro",
+          "etiquetaDetalle": "Email",
+          "presentacion": "lista",
+          "miembros": [
+            { "nombre": "Javier Rodríguez Piris", "cargo": null, "detalle": null, "email": "presidente@padelfederacion.es", "web": null }
+          ]
+        },
+        {
+          "clave": "federaciones",
+          "titulo": "Representantes de federaciones",
+          "etiquetaNombre": "Federación",
+          "etiquetaDetalle": "Contacto web",
+          "presentacion": "lista",
+          "miembros": [
+            { "nombre": "Federación Andaluza de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.fap.es" },
+            { "nombre": "Federación Navarra de Pádel", "cargo": null, "detalle": null, "email": null, "web": "https://federacionnavarradepadel.com/" },
+            { "nombre": "Federación Gallega de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.fgpadel.com" },
+            { "nombre": "Federación de Pádel de las Islas Baleares", "cargo": null, "detalle": null, "email": null, "web": "https://www.fpadelib.es/" },
+            { "nombre": "Federación Vasca de Pádel", "cargo": null, "detalle": null, "email": null, "web": "http://www.fvpadel.com/" }
+          ]
+        },
+        {
+          "clave": "clubes",
+          "titulo": "Por el estamento de clubes",
+          "etiquetaNombre": "Club",
+          "etiquetaDetalle": "Contacto web",
+          "presentacion": "lista",
+          "miembros": [
+            { "nombre": "CD Tres Olivos Montecarmelo", "cargo": null, "detalle": null, "email": null, "web": null },
+            { "nombre": "Club La Calzada", "cargo": null, "detalle": null, "email": null, "web": "https://lacalzada.es/" },
+            { "nombre": "Club Pádel Indoor Aragón", "cargo": null, "detalle": null, "email": null, "web": "https://padelindooraragon.com/" },
+            { "nombre": "Club Pádel Derio", "cargo": null, "detalle": null, "email": null, "web": "http://www.padelderio.com" },
+            { "nombre": "Club Pádel y Tenis la Capellanía", "cargo": null, "detalle": null, "email": null, "web": null }
+          ]
+        },
+        {
+          "clave": "estamentos",
+          "titulo": "Por el estamento de deportistas, técnicos y jueces-árbitros",
+          "etiquetaNombre": "Miembro",
+          "etiquetaDetalle": "Estamento",
+          "presentacion": "lista",
+          "miembros": [
+            { "nombre": "Diego Muñoz Marín", "cargo": null, "detalle": "Deportista", "email": null, "web": null },
+            { "nombre": "José María Hoyos Alda", "cargo": null, "detalle": "Deportista", "email": null, "web": null },
+            { "nombre": "Laureana Marín Idiarte de Olazábal", "cargo": null, "detalle": "Deportista", "email": null, "web": null },
+            { "nombre": "José Luis Rivero González", "cargo": null, "detalle": "Técnico", "email": null, "web": null },
+            { "nombre": "Victoria Barcina Hidalgo", "cargo": null, "detalle": "Árbitro", "email": null, "web": null }
+          ]
+        }
+      ],
+      "actas": []
+    },
+    {
+      "clave": "ctap",
+      "titulo": "Comité Técnico de Árbitros de Pádel (CTAP)",
+      "descripcion": "Gestiona, forma y designa a los jueces-árbitros de las competiciones nacionales.",
+      "imagenUrl": "images/CTAP-FEP.png",
+      "imagenAlt": "Composición del Comité Técnico de Árbitros de Pádel (CTAP)",
+      "grupos": [
+        {
+          "clave": "presidencia",
+          "titulo": "Presidencia",
+          "etiquetaNombre": "Miembro",
+          "etiquetaDetalle": "Cargo",
+          "presentacion": "tarjetas",
+          "miembros": [
+            { "nombre": "Victoria Barcina Hidalgo", "cargo": "Presidenta", "detalle": null, "email": null, "web": null }
+          ]
+        },
+        {
+          "clave": "vocales",
+          "titulo": "Vocales",
+          "etiquetaNombre": "Vocal",
+          "etiquetaDetalle": null,
+          "presentacion": "tarjetas",
+          "miembros": [
+            { "nombre": "Miguel Angel Herranz Loreiro", "cargo": "Vocal", "detalle": null, "email": null, "web": null },
+            { "nombre": "José Vicente Talaván Gutiérrez", "cargo": "Vocal", "detalle": null, "email": null, "web": null },
+            { "nombre": "Manuel Sanchez Martinez", "cargo": "Vocal", "detalle": null, "email": null, "web": null },
+            { "nombre": "Alfredo Cerrato Giralda", "cargo": "Vocal", "detalle": null, "email": null, "web": null }
+          ]
+        }
+      ],
+      "actas": []
+    }
+  ]
+}

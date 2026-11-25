@@ -1,0 +1,141 @@
+{
+    "id":  23263,
+    "anio":  2023,
+    "titulo":  "XXXVIII CAMPEONATO ABSOLUTO DE ESPAÑA",
+    "categoria":  "absoluto",
+    "seleccion":  false,
+    "fechaInicio":  "2023-06-25",
+    "fechaFin":  "2023-07-02",
+    "ciudad":  "Torrent",
+    "sedes":  [
+                  {
+                      "nombre":  "Pabellón Municipal del Vedat",
+                      "web":  null,
+                      "latitud":  null,
+                      "longitud":  null
+                  },
+                  {
+                      "nombre":  "Parc Central",
+                      "web":  null,
+                      "latitud":  null,
+                      "longitud":  null
+                  }
+              ],
+    "cuotas":  [
+                   22
+               ],
+    "generos":  [
+                    {
+                        "genero":  "masculino",
+                        "categorias":  [
+
+                                       ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categorias":  [
+
+                                       ]
+                    }
+                ],
+    "notaPrensaHtml":  null,
+    "marcadores":  [
+
+                   ],
+    "cuadrosPublicados":  true,
+    "cuadros":  [
+                    {
+                        "genero":  "masculino",
+                        "categoria":  "ABSOLUTO",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=23263\u0026Genero=M\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=23263\u0026Genero=M\u0026Nivel=21\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=23263\u0026Genero=M\u0026Nivel=31\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    },
+                    {
+                        "genero":  "femenino",
+                        "categoria":  "ABSOLUTO",
+                        "cuadros":  [
+                                        {
+                                            "titulo":  "Cuadro Final",
+                                            "nivel":  1,
+                                            "cuadro":  "Final",
+                                            "tipo":  "final",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=23263\u0026Genero=F\u0026Nivel=1\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Previa",
+                                            "nivel":  21,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=23263\u0026Genero=F\u0026Nivel=21\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        },
+                                        {
+                                            "titulo":  "Cuadro de Pre-Previa",
+                                            "nivel":  31,
+                                            "cuadro":  "Final",
+                                            "tipo":  "previa",
+                                            "url":  "https://www.padelfederacion.es/Previo.asp?IdTorneo=23263\u0026Genero=F\u0026Nivel=31\u0026Cat=ABSOLUTO\u0026Cuadro=Final"
+                                        }
+                                    ]
+                    }
+                ],
+    "cuadroHonor":  [
+
+                    ],
+    "notificacionesHtml":  "\u003cbr\u003e\r\n                       \u003cp\u003e\r\n\t\u003cspan style=\"font-size:16px;\"\u003e\u003cspan style=\"color:#ff0000;\"\u003e\u003cstrong\u003eCERRADO EL PLAZO DE INSCRIPCI\u0026Oacute;N, CUALQUIER RECLAMACI\u0026Oacute;N DEBE SER REMITIDA A \u003c/strong\u003e\u003c/span\u003e\u003cspan style=\"color:#0000ff;\"\u003e\u003cstrong\u003ecompeticion@padelfederacion.es\u003c/strong\u003e\u003c/span\u003e\u003cspan style=\"color:#ff0000;\"\u003e\u003cstrong\u003e ANTES DEL MARTES 20 DE JUNIO A LAS 12.00 HORAS.\u003c/strong\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003e\u003cem\u003eCuadros\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t-Cuadro Principal Masculino: 20 + 4\u003c/p\u003e\r\n\u003cp\u003e\r\n\t-Cuadro Principal Femenino: 20 + 4\u003c/p\u003e\r\n\u003cp\u003e\r\n\t-Cuadro Previa masculino y femenino: 8 + 8\u003c/p\u003e\r\n\u003cp\u003e\r\n\t-Cuadro Pre-previa masculino y femenino: abierto\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003e\u003cem\u003eDotaci\u0026oacute;n Econ\u0026oacute;mica\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\u003ctable border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:368px;\" width=\"368\"\u003e\r\n\t\u003ctbody\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:189px;height:20px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t\u003cstrong\u003e\u003cem\u003eDotaci\u0026oacute;n en Masculino\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd style=\"width:180px;height:20px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t\u003cstrong\u003e\u003cem\u003eDotaci\u0026oacute;n en Femenino\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:189px;height:20px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t25.000,00 \u0026euro;\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:180px;height:20px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t25.000,00 \u0026euro;\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\u003c/tbody\u003e\r\n\u003c/table\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003ctable border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:444px;\" width=\"444\"\u003e\r\n\t\u003ctbody\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd style=\"width:222px;height:20px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t\u0026nbsp;\u003cstrong\u003e\u003cem\u003ePremios\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd style=\"width:222px;height:20px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t\u0026nbsp;\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd style=\"width:222px;height:41px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tResultado Final\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd style=\"width:222px;height:41px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tPremio \u003cstrong\u003epor Pareja\u003c/strong\u003e\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tCampe\u0026oacute;n/a\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t5.000 \u0026euro;\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tFinal\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t3.500 \u0026euro;\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tSemifinal\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t2.000 \u0026euro;\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tCuartos\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t1.187,5 \u0026euro;\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tOctavos\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t625 \u0026euro;\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t1\u0026ordf; Ronda\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd style=\"width:222px;height:21px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t343,75 \u0026euro;\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\u003c/tbody\u003e\r\n\u003c/table\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003e\u003cem\u003eFacilidades para los participantes del cuadro final\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\tHotel para los participantes del cuadro final femenino y masculino. Deportistas que se encuentren en competici\u0026oacute;n (noche de hotel de su \u0026uacute;ltimo d\u0026iacute;a de competici\u0026oacute;n incluida s\u0026oacute;lo si pierde su \u0026uacute;ltimo partido en jornada de tarde, hasta semifinales).\u003c/p\u003e\r\n\u003cp\u003e\r\n\tSe facilitar\u0026aacute; alojamiento el martes noche para aquellos jugadores/as con partido el mi\u0026eacute;rcoles en turno de ma\u0026ntilde;ana.\u003c/p\u003e\r\n\u003cp\u003e\r\n\tTambi\u0026eacute;n se ofrecer\u0026aacute; la comida y cena a los jugadores/as que permanezcan en competici\u0026oacute;n del cuadro final en el hotel designado.\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cspan style=\"color:#0000ff;\"\u003e\u003cem\u003e\u003cstrong\u003eLos/as\u0026nbsp;jugadores/as que se puedan beneficiar de esta ayuda de alojamiento, deber\u0026aacute;n notificar (mediante email a la direcci\u0026oacute;n competicion@padelfederacion.es) el uso de su plaza de hotel al cierre de la inscripci\u0026oacute;n.\u0026nbsp;\u003c/strong\u003e\u003c/em\u003e\u003c/span\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003e\u003cem\u003eJUGADORES EXTRANJEROS\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\tEs requisito indispensable ser espa\u0026ntilde;ol\u0026nbsp;\u003cstrong\u003eo, en caso de no serlo, ser residente legal en Espa\u0026ntilde;a para poder participar en los Campeonatos de Espa\u0026ntilde;a. La documentaci\u0026oacute;n necesaria para justificar la residencia legal de un jugador/a no espa\u0026ntilde;ol, deber\u0026aacute; ser remitida a la FEP antes del cierre de inscripci\u0026oacute;n de la prueba.\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003e\u003cem\u003eJugadores Junior/Cadete\u0026nbsp;\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\tLos deportistas cadetes y junior pueden participar en el Campeonato de Espa\u0026ntilde;a Absoluto.\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003ctable border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:425px;\" width=\"425\"\u003e\r\n\t\u003ctbody\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:221px;height:24px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t\u0026nbsp;\u003cstrong\u003e\u003cem\u003eD\u0026Iacute;AS DE JUEGO\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t\u0026nbsp;\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tDomingo Ma\u0026ntilde;ana\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t1\u0026ordf; Ronda Pre Previa\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tDomingo Tarde\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t2\u0026ordf; Ronda Pre Previa\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tLunes Ma\u0026ntilde;ana\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tPen\u0026uacute;ltima ronda pre previa\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tLunes Tarde\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t\u0026Uacute;ltima ronda pre previa\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tMartes Ma\u0026ntilde;ana\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t1\u0026ordf; Ronda Previa\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tMartes Tarde\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t2\u0026ordf; Ronda Previa\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tMi\u0026eacute;rcoles\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\t16 avos\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tJueves\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tOctavos\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tViernes\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tCuartos\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tS\u0026aacute;bado\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tSemis\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr\u003e\r\n\t\t\t\u003ctd nowrap=\"nowrap\" style=\"width:208px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tDomingo\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\t\u003ctd colspan=\"2\" nowrap=\"nowrap\" style=\"width:217px;height:19px;\"\u003e\r\n\t\t\t\t\u003cp\u003e\r\n\t\t\t\t\tFinal\u003c/p\u003e\r\n\t\t\t\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\t\u003ctr height=\"0\"\u003e\r\n\t\t\t\u003ctd\u003e\r\n\t\t\t\t\u0026nbsp;\u003c/td\u003e\r\n\t\t\t\u003ctd\u003e\r\n\t\t\t\t\u0026nbsp;\u003c/td\u003e\r\n\t\t\t\u003ctd\u003e\r\n\t\t\t\t\u0026nbsp;\u003c/td\u003e\r\n\t\t\u003c/tr\u003e\r\n\t\u003c/tbody\u003e\r\n\u003c/table\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003e\u003cem\u003eENTRENADOR/COACH\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003eATENCI\u0026Oacute;N \u003c/strong\u003eLos entrenadores/coach que quieran estar presentes en la competici\u0026oacute;n deber\u0026aacute;n figurar como inscritos en el REGISTRO NACIONAL DE T\u0026Eacute;CNICOS DE P\u0026Aacute;DEL (\u003ca href=\"http://padelfederacion.es/Registro_Nacional_Tecnicos\"\u003ever info\u003c/a\u003e) y poseer su licencia de t\u0026eacute;cnico en vigor.\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cspan style=\"color:#0000ff;\"\u003e\u003cstrong\u003eEl plazo de solicitud de acreditaci\u0026oacute;n del entrenador finaliza con el cierre de la inscripci\u0026oacute;n de jugadores.\u003c/strong\u003e\u003c/span\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u003cstrong\u003e\u003cem\u003eFirma OBLIGATORIA consentimientos \u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\tUna vez realizado el sorteo es OBLIGATORIO que cada jugador/a y t\u0026eacute;cnico/a acceda a su \u0026aacute;rea personal y firme los\u0026nbsp;consentimientos sobre imagen y datos.\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026iquest;D\u0026oacute;nde estar\u0026aacute; en enlace? Se acceder\u0026aacute; al \u0026aacute;rea personal de la licencia federativa pinchando en el icono a la derecha del nombre del jugador/a y t\u0026eacute;cnico/a.\u003c/p\u003e\r\n\u003cp\u003e\r\n\tTu correo para dudas: \u003ca href=\"mailto:competicion@padelfederacion.es\"\u003ecompeticion@padelfederacion.es\u003c/a\u003e\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026iexcl;\u0026Aacute;N\u0026Iacute;MATE Y PARTICIPA!\u003c/p\u003e\r\n\u003cp\u003e\r\n\t\u0026nbsp;\u003c/p\u003e\r\n\u003cbr\u003e\r\n                       \r\n                        \u003chr class=\"prl-article-divider\"\u003e",
+    "adjuntos":  [
+
+                 ],
+    "inscritosParejas":  [
+                             {
+                                 "genero":  "masculino",
+                                 "parejas":  79,
+                                 "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=M\u0026id=23263"
+                             },
+                             {
+                                 "genero":  "femenino",
+                                 "parejas":  54,
+                                 "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=F\u0026id=23263"
+                             }
+                         ],
+    "entrenadores":  {
+                         "numero":  32,
+                         "url":  "https://www.padelfederacion.es/Camp_Parejas_Inscritos.asp?tipo=C\u0026id=23263"
+                     },
+    "inscripcion":  {
+                        "abierta":  false,
+                        "fechaLimite":  null,
+                        "individual":  false,
+                        "informacionHtml":  null,
+                        "condicionesHtml":  null,
+                        "formularioUrl":  "https://www.padelfederacion.es/Camp_Parejas.asp?IdTorneo=23263"
+                    },
+    "infoAdicionalHtml":  null,
+    "cartel":  null,
+    "cartelUrl":  null,
+    "noticias":  [
+
+                 ],
+    "urlWebActual":  "https://www.padelfederacion.es/Camp_Parejas.asp?IdTorneo=23263",
+    "consultado":  "2026-11-17T18:35:30"
+}

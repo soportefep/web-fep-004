@@ -1,0 +1,215 @@
+{
+  "clave": "absoluto",
+  "titulo": "Información sobre el cálculo del ranking",
+  "resumen": "Cuentan las mejores 13 puntuaciones de cada jugador en los 12 meses previos a cada publicación. La FEP publica el ranking todos los miércoles.",
+  "secciones": [
+    {
+      "id": "introduccion",
+      "titulo": "Introducción",
+      "bloques": [
+        { "tipo": "parrafo", "texto": "El Ranking Único de la FEP será el método utilizado para la clasificación de todos los jugadores con licencia. Serán puntuables todas las competiciones por parejas ABSOLUTAS que oficialmente se incluyan tanto en el Calendario Nacional FEP como en los Calendarios de las distintas Federaciones Autonómicas, así como todas aquellas pruebas del WPT, Master, OPEN o Challenger, que se disputen en territorio nacional." },
+        { "tipo": "parrafo", "texto": "Para el Ranking Único Absoluto se tendrán en cuenta las mejores 13 puntuaciones de cada jugador, en los 12 meses previos inmediatos a cada publicación del Ranking." },
+        { "tipo": "parrafo", "texto": "Para permitir que una prueba sea admitida como puntuable para su correspondiente Ranking Único, además de cumplir con las demás condiciones mencionadas en esta Normativa, todos sus datos deberán ser completados en el sistema informático FEP (SFEP) antes de transcurridos 30 días de la fecha de la final de la competición." },
+        { "tipo": "parrafo", "texto": "La FEP publicará los Rankings Únicos semanalmente, todos los miércoles." },
+        { "tipo": "parrafo", "texto": "Las pruebas oficiales incluidas en los calendarios de las F. Territoriales que se disputen en clubes de acceso restringido (solo socios) podrán puntuar para el Ranking Único Absoluto, pero teniendo en cuenta que solo se permitirá una prueba por club y por año calendario." }
+      ]
+    },
+    {
+      "id": "sistema-de-puntuacion",
+      "titulo": "Sistema de puntuación",
+      "bloques": [
+        { "tipo": "parrafo", "texto": "Los puntos que adjudicará cada prueba irán en función de la valoración de esa competición, que se hará en base a cuatro criterios:" },
+        {
+          "tipo": "lista",
+          "elementos": [
+            { "destacado": "Ranking de los jugadores participantes", "texto": "aportará hasta el 40% de los puntos a cada prueba." },
+            { "destacado": "Dotación económica", "texto": "aportará hasta el 30% de los puntos a cada prueba." },
+            { "destacado": "Cantidad de parejas participantes en una prueba", "texto": "aportará hasta el 20% de los puntos a cada prueba." },
+            { "destacado": "Número de licencias de la autonomía en la que se organice la prueba", "texto": "aportará hasta el 10% de los puntos a cada prueba." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puntos",
+      "titulo": "Puntos",
+      "bloques": [
+        { "tipo": "parrafo", "texto": "La tabla de puntuación que se aplicará a todas las pruebas, en función de los puntos asignados al ganador según la ponderación de las 4 variables establecidas, tendrá las siguientes características:" },
+        {
+          "tipo": "lista",
+          "elementos": [
+            { "destacado": null, "texto": "La máxima puntuación posible será de 10.000 puntos (ganadores de la prueba con máxima puntuación)." },
+            { "destacado": null, "texto": "Partiendo de la puntuación que se asigne finalmente al ganador, cada ronda otorgará el 75% de los puntos asignados a la ronda siguiente, redondeando al entero más cercano." },
+            { "destacado": null, "texto": "En el caso de torneos por categorías cerradas, el campeón de una categoría otorgará el 75% de los puntos asignados a la menor puntuación de la categoría superior." },
+            { "destacado": null, "texto": "En el caso de torneos abiertos en formato OPEN, se seguirá el mismo criterio que en los torneos por categorías, siendo el orden de las categorías: Primera, Segunda, Previa, Tercera, Pre-previa, Cuarta." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "valoracion-economica",
+      "titulo": "Valoración económica",
+      "bloques": [
+        { "tipo": "parrafo", "texto": "Se entiende por dotación económica a los premios en metálico que reparta la prueba en cuestión." },
+        { "tipo": "parrafo", "texto": "No se considerarán puntuables aquellas pruebas que distribuyan la dotación económica en una relación que exceda la proporción de 2:1 (cuyo reparto en una ronda supere al doble del monto para la ronda previa, a excepción de las rondas sin retribución)." },
+        { "tipo": "parrafo", "texto": "La siguiente tabla establece la aportación que la dotación económica significará en la puntuación que finalmente otorgue una prueba:" },
+        {
+          "tipo": "tabla",
+          "tabla": {
+            "titulo": "Puntos por dotación económica",
+            "columnas": ["Dotación económica", "Puntos que se aportan al puntaje final del ganador de esa prueba"],
+            "filas": [
+              ["39.000 € o más", "4.000"],
+              ["Entre 31.000 € y 38.999 €", "3.400"],
+              ["Entre 23.000 € y 30.999 €", "2.800"],
+              ["Entre 19.000 € y 22.999 €", "2.400"],
+              ["Entre 15.000 € y 18.999 €", "2.000"],
+              ["Entre 11.000 € y 14.999 €", "1.600"],
+              ["Entre 9.000 € y 10.999 €", "1.400"],
+              ["Entre 7.000 € y 8.999 €", "1.200"],
+              ["Entre 5.000 € y 6.999 €", "1.000"],
+              ["Entre 4.000 € y 4.999 €", "800"],
+              ["Entre 3.000 € y 3.999 €", "600"],
+              ["Entre 2.000 € y 2.999 €", "400"],
+              ["Entre 1.000 € y 1.999 €", "200"],
+              ["Menos de 1.000 €", "0"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ranking-de-jugadores",
+      "titulo": "Ranking de jugadores",
+      "bloques": [
+        { "tipo": "parrafo", "texto": "Para valorar cualquier prueba según esta variable, solo se tomarán en cuenta los rankings de los integrantes de las mejores parejas, y siempre considerando que:" },
+        {
+          "tipo": "lista",
+          "elementos": [
+            { "destacado": null, "texto": "Para determinar a estas parejas se tomará el Ranking Único Nacional correspondiente, independientemente de que el sorteo se hubiese hecho, por ejemplo, con un ranking autonómico." },
+            { "destacado": null, "texto": "El número de parejas que será tenido en cuenta para esta variable será el 25% de las que participen en el cuadro principal de la prueba, independientemente de las Cabezas de Serie que se definieran para esa competición." },
+            { "destacado": null, "texto": "Si una de las parejas valoradas perdiese por WO en su primer partido, entonces dejaría de ser tenida en cuenta para esta variable y pasaría entonces a valorar la siguiente pareja (que no hubiese sido tenida en cuenta aún) por orden según el Ranking Único correspondiente." }
+          ]
+        },
+        { "tipo": "parrafo", "texto": "Para definir el aporte que esta variable hará a la puntuación final, como primer paso, la siguiente tabla establece unos créditos que se asignarán a la posición del ranking de los jugadores a valorar:" },
+        {
+          "tipo": "tabla",
+          "tabla": {
+            "titulo": "Créditos por puesto en el ranking",
+            "columnas": ["Puesto del jugador en el ranking", "Créditos aportados para valorar la pareja"],
+            "filas": [
+              ["1º", "10.000"],
+              ["2º", "9.999"],
+              ["3º", "9.998"],
+              ["…", "…"],
+              ["10.000º", "1"],
+              ["10.001º y siguientes", "1"]
+            ]
+          }
+        },
+        { "tipo": "parrafo", "texto": "Una vez sumados los créditos de todos los jugadores a valorar, la siguiente tabla define el aporte que significará finalmente esta variable en la puntuación que otorgue una prueba:" },
+        {
+          "tipo": "tabla",
+          "tabla": {
+            "titulo": "Puntos por créditos de los jugadores",
+            "columnas": ["Créditos aportados por los jugadores de las parejas a valorar", "Puntos que finalmente se aportan al puntaje del ganador de esa prueba"],
+            "filas": [
+              ["Más de 120.000 créditos", "3.000"],
+              ["Entre 110.000 y 119.999 créditos", "2.800"],
+              ["Entre 100.000 y 109.999 créditos", "2.600"],
+              ["Entre 90.000 y 99.999 créditos", "2.400"],
+              ["Entre 80.000 y 89.999 créditos", "2.200"],
+              ["Entre 70.000 y 79.999 créditos", "2.000"],
+              ["Entre 60.000 y 69.999 créditos", "1.800"],
+              ["Entre 50.000 y 59.999 créditos", "1.600"],
+              ["Entre 40.000 y 49.999 créditos", "1.400"],
+              ["Entre 30.000 y 39.999 créditos", "1.200"],
+              ["Entre 20.000 y 29.999 créditos", "1.000"],
+              ["Entre 10.000 y 19.999 créditos", "800"],
+              ["Entre 5.000 y 9.999 créditos", "600"],
+              ["Entre 2.500 y 4.999 créditos", "400"],
+              ["Entre 1.250 y 2.499 créditos", "200"],
+              ["Menos de 1.249 créditos", "0"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "numero-de-parejas",
+      "titulo": "Número de parejas",
+      "bloques": [
+        { "tipo": "parrafo", "texto": "Para esta valoración, en ningún caso serán tenidas en cuenta las parejas que hubiesen perdido por WO en su primer partido." },
+        { "tipo": "parrafo", "texto": "La siguiente tabla establece la aportación que la cantidad de parejas participantes de una prueba significará en la puntuación que finalmente otorgue una prueba:" },
+        {
+          "tipo": "tabla",
+          "tabla": {
+            "titulo": "Puntos por número de parejas",
+            "columnas": ["Cantidad de parejas participantes (sin WO en el primer partido)", "Puntos que se aportan al puntaje del ganador de esa prueba"],
+            "filas": [
+              ["64 o más parejas", "2.000"],
+              ["32 a 63 parejas", "1.600"],
+              ["16 a 31 parejas", "1.200"],
+              ["12 a 15 parejas", "800"],
+              ["8 a 11 parejas", "400"],
+              ["7 o menos parejas*", "0"]
+            ]
+          }
+        },
+        { "tipo": "nota", "texto": "*Ninguna prueba cuya participación sea inferior a 8 parejas será puntuable para el Ranking Único Absoluto FEP, independientemente de que las variables restantes le aportaran puntuación." }
+      ]
+    },
+    {
+      "id": "numero-de-licencias",
+      "titulo": "Número de licencias de la federación",
+      "bloques": [
+        { "tipo": "parrafo", "texto": "La siguiente tabla establece la aportación que la cantidad de licencias de la autonomía en la que se realice la prueba significará en la puntuación que finalmente otorgue esa competición:" },
+        {
+          "tipo": "tabla",
+          "tabla": {
+            "titulo": "Puntos por número de licencias",
+            "columnas": ["Cantidad de licencias", "Puntos que se aportan al puntaje del ganador de esa prueba"],
+            "filas": [
+              ["Pruebas nacionales*", "1.000"],
+              ["10.000 o más", "800"],
+              ["6.000 a 9.999", "600"],
+              ["3.000 a 5.999", "400"],
+              ["1.000 a 2.999", "200"],
+              ["999 o menos", "0"]
+            ]
+          }
+        },
+        { "tipo": "nota", "texto": "*En cualquier caso, las pruebas nacionales incluidas en el Calendario de la FEP tendrán la máxima valoración según esta variable." }
+      ]
+    },
+    {
+      "id": "campeonatos-absolutos",
+      "titulo": "Campeonatos absolutos",
+      "bloques": [
+        { "tipo": "parrafo", "texto": "La valoración que finalmente surja de la ponderación de las variables:" },
+        {
+          "tipo": "lista",
+          "elementos": [
+            { "destacado": null, "texto": "Para los Campeonatos Absolutos de España se multiplicará por 2 para su puntuación final." },
+            { "destacado": null, "texto": "Para los Campeonatos Absolutos territoriales en formato OPEN se multiplicará por 1,5 para su puntuación final." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pruebas-world-padel-tour",
+      "titulo": "Pruebas World Padel Tour",
+      "bloques": [
+        { "tipo": "parrafo", "texto": "Puntuarán para la configuración del Ranking Único todas aquellas pruebas del calendario oficial del WPT que se celebren en suelo nacional." },
+        { "tipo": "parrafo", "texto": "La puntuación de esas pruebas tendrá una puntuación máxima para los campeones de:" },
+        {
+          "tipo": "lista",
+          "elementos": [
+            { "destacado": "MASTER y OPEN", "texto": "10.000 puntos" },
+            { "destacado": "CHALLENGER", "texto": "7.500 puntos" }
+          ]
+        }
+      ]
+    }
+  ]
+}

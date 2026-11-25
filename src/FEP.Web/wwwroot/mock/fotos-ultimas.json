@@ -1,0 +1,26 @@
+[
+  {
+    "idGaleria": 725,
+    "archivo": "CCA-Absoluta-79.jpg",
+    "imagenUrl": "assets/img/fep/multimedia/cca-absoluta-79.jpg",
+    "subtitulo": "",
+    "fechaEvento": "2026-01-01",
+    "fechaModificacion": "2026-11-01T00:00:00"
+  },
+  {
+    "idGaleria": 725,
+    "archivo": "CCA-Absoluta-80.jpg",
+    "imagenUrl": "assets/img/fep/multimedia/cca-absoluta-80.jpg",
+    "subtitulo": "",
+    "fechaEvento": "2026-01-01",
+    "fechaModificacion": "2026-11-01T00:00:00"
+  },
+  {
+    "idGaleria": 725,
+    "archivo": "CCA-Absoluta-81.jpg",
+    "imagenUrl": "assets/img/fep/multimedia/cca-absoluta-81.jpg",
+    "subtitulo": "",
+    "fechaEvento": "2026-01-01",
+    "fechaModificacion": "2026-11-01T00:00:00"
+  }
+]

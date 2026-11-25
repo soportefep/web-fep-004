@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Portal · Federación Española de Pádel</title>
+  <meta name="description" content="Área privada de las personas federadas: panel de jugador/a (licencia, ranking, inscripciones, certificados) o de juez-árbitro (designaciones, disponibilidad, formación).">
+  <meta name="robots" content="noindex">
+  <!-- Base de la API nueva. Vacío = mismo origen. Si la API no responde se usan los JSON de /mock. -->
+  <meta name="fep-api-base" content="">
+  <meta name="fep-legacy-base" content="https://www.padelfederacion.es/">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fep.css">
+  <link rel="stylesheet" href="assets/css/tema-003.css">
+  <link rel="stylesheet" href="assets/css/area-privada-003.css">
+  <link rel="stylesheet" href="assets/css/area-privada-dashboard.css">
+  <!-- Diseño elegido (propuesta 1, "sobria") -->
+  <link rel="stylesheet" href="assets/css/area-privada-tema.css">
+  <!-- Página aislada de la web (sin cabecera, pie, menú ni asistente): no carga comun.js -->
+  <script defer src="mock/mocks.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/area-privada-003.js"></script>
+</head>
+<!-- ============ ÁREA PRIVADA: Mi Portal (dashboard aislado) ============
+     Lo pinta assets/js/area-privada-003.js según data-area. PROTOTIPO: acceso por ID con datos de prueba
+     (mock/area-privada-*.json, personas y club ficticios); en producción, con usuario y contraseña FEP. -->
+<body class="dash ap-003 ap-sin-sesion" data-area="portal">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ ACCESO (sin sesión) ============ -->
+  <div class="dash-acceso" id="ap-acceso">
+    <section class="dash-acceso__marca" aria-labelledby="ap-acceso-titulo">
+      <a class="dash-logo" href="index.html" aria-label="Federación Española de Pádel – volver a la web">
+        <img src="assets/img/logo.png" alt="Federación Española de Pádel" width="132" height="44">
+      </a>
+      <div>
+        <p class="dash-acceso__eyebrow">Área privada</p>
+        <h1 class="dash-acceso__titulo" id="ap-acceso-titulo">Mi Portal</h1>
+        <p class="dash-acceso__lead">Tu panel de federado: licencia, ranking, inscripciones y certificados si juegas; designaciones, disponibilidad y formación si eres juez-árbitro.</p>
+      </div>
+      <nav class="dash-acceso__areas" aria-label="Áreas privadas">
+        <a href="mi-portal.html" aria-current="page"><strong>Mi Portal</strong> <span>Jugadores y árbitros</span></a>
+        <a href="mi-club.html"><strong>Mi Club</strong> <span>Clubes</span></a>
+      </nav>
+    </section>
+
+    <main class="dash-acceso__cuerpo" id="contenido-acceso">
+      <div class="dash-acceso__caja">
+        <h2 class="dash-acceso__h2">Entra en Mi Portal</h2>
+        <p class="dash-acceso__txt">Accede con tu número de licencia. Verás el panel de jugador/a o de juez-árbitro según tu licencia.</p>
+        <form class="ap-acceso__form" id="ap-form" novalidate>
+          <label for="ap-id">Número de licencia</label>
+          <div class="ap-acceso__fila">
+            <input id="ap-id" name="id" type="text" inputmode="text" autocomplete="off" maxlength="12" required
+                   placeholder="Ej.: 900001" aria-describedby="ap-id-ayuda">
+            <button type="submit" class="btn btn--red btn--lg" id="ap-entrar">Entrar</button>
+          </div>
+          <p class="ap-acceso__ayuda" id="ap-id-ayuda">El número que aparece en tu licencia federativa.</p>
+        </form>
+        <p class="ap-error" id="ap-error" role="alert" hidden></p>
+
+        <div class="dash-acceso__demo" aria-labelledby="ap-demo-titulo">
+          <p class="ap-demo__etiqueta">Prototipo</p>
+          <h2 class="dash-acceso__demo-titulo" id="ap-demo-titulo">Prueba con un ID de ejemplo</h2>
+          <ul class="ap-demo__lista">
+            <li><button type="button" class="ap-demo__btn" data-id-demo="900001"><strong>900001</strong><span>Jugador (ejemplo)</span></button></li>
+            <li><button type="button" class="ap-demo__btn" data-id-demo="900002"><strong>900002</strong><span>Juez-árbitro (ejemplo)</span></button></li>
+          </ul>
+          <p class="dash-acceso__nota">Datos de ejemplo con personas y club ficticios. En la web real se entrará con el usuario y la contraseña de la FEP y cada persona o club verá solo su propio panel.</p>
+        </div>
+      </div>
+      <a class="dash-volver" href="index.html">← Volver a la web de la FEP</a>
+    </main>
+  </div>
+
+  <!-- ============ DASHBOARD (con sesión) ============ -->
+  <div class="dash-app" id="ap-app" hidden>
+    <aside class="dash-side" id="ap-side" aria-label="Menú de Mi Portal">
+      <div class="dash-side__cab">
+        <a class="dash-logo" href="index.html" aria-label="Federación Española de Pádel – volver a la web">
+          <img src="assets/img/logo.png" alt="Federación Española de Pádel" width="102" height="34">
+        </a>
+        <span class="dash-side__area">Mi Portal</span>
+      </div>
+      <div class="dash-user" id="ap-usuario"></div>
+      <nav class="dash-nav" aria-label="Secciones">
+        <ul id="ap-indice"></ul>
+      </nav>
+      <div class="dash-side__pie">
+        <a class="dash-side__link" href="index.html">← Volver a la web</a>
+        <button type="button" class="dash-side__link" id="ap-salir">Cambiar de ID / salir</button>
+      </div>
+    </aside>
+    <div class="dash-velo" id="ap-velo" hidden></div>
+
+    <div class="dash-main">
+      <header class="dash-top">
+        <button type="button" class="dash-top__menu" id="ap-menu" aria-controls="ap-side" aria-expanded="false" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <a class="dash-top__logo" href="index.html" aria-label="Federación Española de Pádel – volver a la web"><img src="assets/img/logo.png" alt="" width="105" height="35"></a>
+        <div class="dash-top__titulos">
+          <p class="dash-top__miga" id="ap-miga">Mi Portal</p>
+          <h1 class="dash-top__titulo" id="titulo-pagina">Resumen</h1>
+        </div>
+        <p class="dash-top__demo">Datos de ejemplo</p>
+        <span class="dash-top__avatar" id="ap-avatar" aria-hidden="true"></span>
+        <button type="button" class="dash-top__salir" id="ap-salir-top">Salir</button>
+      </header>
+      <main class="dash-contenido" id="contenido" tabindex="-1">
+        <div class="ap-panel" id="ap-panel"></div>
+      </main>
+    </div>
+  </div>
+
+  <p class="ap-aviso" id="ap-aviso" role="status" aria-live="polite" hidden></p>
+</body>
+</html>
