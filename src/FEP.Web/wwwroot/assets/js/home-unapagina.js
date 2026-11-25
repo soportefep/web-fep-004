@@ -557,4 +557,59 @@
   const alScroll = () => arriba.classList.toggle('is-visible', scrollY > 800);
   addEventListener('scroll', alScroll, { passive: true });
   alScroll();
+
+  /* ---------- Asistente FEPi: estilo según el fondo que tiene detrás ----------
+     asistente.js crea .fep-asis por su cuenta; aquí se mira qué hay debajo del botón
+     (blanco, negro, rojo o una foto) y se marca en data-fondo para que
+     asistente-unapagina.css cambie los colores y el botón destaque siempre. */
+  const EXCLUIR_FONDO = '.fep-asis, .volver-arriba';
+
+  /** Clasifica el fondo real de un punto de la pantalla, ignorando el propio asistente. */
+  function fondoEn(x, y) {
+    const pila = document.elementsFromPoint(x, y).filter((n) => !n.closest(EXCLUIR_FONDO));
+    for (let n = pila[0]; n && n !== document.documentElement; n = n.parentElement) {
+      if (n.tagName === 'IMG' || n.tagName === 'VIDEO') return 'foto';
+      const cs = getComputedStyle(n);
+      if (cs.backgroundImage !== 'none' && !cs.backgroundImage.includes('gradient')) return 'foto';
+      const m = cs.backgroundColor.match(/[\d.]+/g);
+      if (!m) continue;
+      const [r, g, b, a = 1] = m.map(Number);
+      if (a < .5) continue;   // transparente: manda el fondo del padre
+      if (r > 170 && g < 90 && b < 100) return 'rojo';
+      const luz = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+      return luz < .45 ? 'oscuro' : 'claro';
+    }
+    return 'claro';
+  }
+
+  function vigilarFondoAsistente(raiz) {
+    const boton = raiz.querySelector('.fep-asis__burbuja');
+    let pendiente = false;
+    const medir = () => {
+      pendiente = false;
+      if (!boton || boton.offsetParent === null) return;   // con el chat abierto no hace falta
+      const r = boton.getBoundingClientRect();
+      // Tres puntos a lo largo del botón: gana el fondo más repetido (o el del centro si empatan)
+      const ys = r.top + r.height / 2;
+      const votos = [r.left + 6, r.left + r.width / 2, r.right - 6].map((x) => fondoEn(x, ys));
+      const fondo = votos.find((v, i) => votos.indexOf(v) !== i) || votos[1];
+      if (raiz.dataset.fondo !== fondo) raiz.dataset.fondo = fondo;
+    };
+    const programar = () => { if (!pendiente) { pendiente = true; requestAnimationFrame(medir); } };
+    addEventListener('scroll', programar, { passive: true });
+    addEventListener('resize', programar);
+    // El carrusel y los reels cambian lo que hay detrás sin hacer scroll
+    setInterval(programar, 1500);
+    medir();
+  }
+
+  const asis = document.querySelector('.fep-asis');
+  if (asis) vigilarFondoAsistente(asis);
+  else {
+    const obs = new MutationObserver(() => {
+      const raiz = document.querySelector('.fep-asis');
+      if (raiz) { obs.disconnect(); vigilarFondoAsistente(raiz); }
+    });
+    obs.observe(document.body, { childList: true });
+  }
 })();

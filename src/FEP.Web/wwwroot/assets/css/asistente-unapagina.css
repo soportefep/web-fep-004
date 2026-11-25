@@ -1,0 +1,223 @@
+/* =========================================================================
+   Asistente FEPi · diseño para la portada de una sola página (index.html)
+   La lógica es la misma de toda la web (assets/js/asistente.js); este fichero
+   sustituye a asistente.css SOLO en la portada.
+   Estilo "editorial deportivo" de la portada: negro, rojo FEP, Archivo
+   condensado en mayúsculas, esquinas rectas y sombra dura roja para destacar.
+   ========================================================================= */
+
+.fep-asis {
+  --a-ink: #0A0A0A;
+  --a-ink-2: #1C1C1C;
+  --a-red: #E4002B;
+  --a-red-dark: #B80022;
+  --a-red-soft: #FFE8EC;
+  --a-paper: #F2F2EF;
+  --a-line: #D9D9D5;
+  --a-text-2: #5F5F5A;
+  --a-on-dark: #CFCFCA;
+  --asis-ancho: 420px;
+  --asis-alto: min(660px, calc(100vh - 120px));
+  position: fixed; right: 24px; bottom: 24px; z-index: 90;
+  font-family: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--a-ink);
+}
+.fep-asis .sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.fep-asis :focus-visible { outline: 3px solid var(--a-red); outline-offset: 2px; }
+
+/* ---------- Lanzador: bloque negro con etiqueta, no una burbuja redonda ---------- */
+.fep-asis__burbuja {
+  position: relative; display: flex; align-items: center; gap: 12px; margin-left: auto;
+  height: 60px; padding: 0 22px 0 8px; border: 0; border-left: 6px solid var(--a-red); border-radius: 0;
+  background: var(--a-ink); color: #fff; cursor: pointer;
+  box-shadow: 6px 6px 0 var(--a-red);
+  transition: transform .2s cubic-bezier(.2, .8, .2, 1), box-shadow .2s cubic-bezier(.2, .8, .2, 1);
+  animation: fep-asis-entrada .6s cubic-bezier(.2, .8, .2, 1) .8s both;
+}
+/* Icono de pala en un cuadrado rojo */
+.fep-asis__burbuja > svg {
+  box-sizing: content-box; flex: none; width: 26px; height: 26px; padding: 9px; background: var(--a-red);
+}
+/* Etiqueta visible (decorativa: el nombre accesible ya lo da el texto oculto del botón) */
+.fep-asis__burbuja::after {
+  content: "Pregunta a FEPi" / "";
+  font-stretch: 75%; font-weight: 800; font-size: 16px; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap;
+}
+/* Punto "en línea" que late */
+.fep-asis__burbuja::before {
+  content: ""; position: absolute; top: 9px; left: 40px; width: 10px; height: 10px; border-radius: 50%;
+  background: #2BD576; box-shadow: 0 0 0 2px var(--a-ink); animation: fep-asis-latido 2s ease-out infinite;
+}
+.fep-asis__burbuja:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--a-red); }
+.fep-asis__burbuja:active { transform: translate(0, 0); box-shadow: 3px 3px 0 var(--a-red); }
+.fep-asis.is-abierto .fep-asis__burbuja { display: none; }
+
+/* ---------- Variantes según el fondo que hay detrás (data-fondo lo pone home-unapagina.js) ----------
+   Cada variante cambia relleno, filete y sombra para que el botón contraste siempre:
+   - claro  (blanco / gris): bloque negro, filete y sombra rojos (el de arriba, por defecto)
+   - oscuro (portada, reels, pie…): bloque blanco, filete y sombra rojos
+   - rojo   (teletipo, botones rojos): bloque blanco, filete y sombra negros
+   - foto   (carrusel, carteles, reels): bloque negro con contorno blanco y sombra roja */
+.fep-asis__burbuja { --anillo: var(--a-ink); transition: transform .2s cubic-bezier(.2, .8, .2, 1), box-shadow .3s, background-color .3s, color .3s, border-color .3s; }
+.fep-asis__burbuja::before { box-shadow: 0 0 0 2px var(--anillo); }
+.fep-asis[data-fondo="oscuro"] .fep-asis__burbuja { --anillo: #fff; background: #fff; color: var(--a-ink); }
+.fep-asis[data-fondo="rojo"] .fep-asis__burbuja { --anillo: #fff; background: #fff; color: var(--a-ink); border-left-color: var(--a-ink); box-shadow: 6px 6px 0 var(--a-ink); }
+.fep-asis[data-fondo="rojo"] .fep-asis__burbuja:hover { box-shadow: 9px 9px 0 var(--a-ink); }
+.fep-asis[data-fondo="rojo"] .fep-asis__burbuja > svg { background: var(--a-ink); }
+.fep-asis[data-fondo="foto"] .fep-asis__burbuja { box-shadow: 0 0 0 2px #fff, 6px 6px 0 var(--a-red); }
+.fep-asis[data-fondo="foto"] .fep-asis__burbuja:hover { box-shadow: 0 0 0 2px #fff, 9px 9px 0 var(--a-red); }
+/* El panel abierto sobre fondo oscuro o foto lleva contorno blanco para separarse */
+.fep-asis[data-fondo="oscuro"] .fep-asis__panel,
+.fep-asis[data-fondo="foto"] .fep-asis__panel { border-color: #fff; }
+
+@keyframes fep-asis-entrada { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes fep-asis-latido {
+  0% { box-shadow: 0 0 0 2px var(--anillo, var(--a-ink)), 0 0 0 2px rgba(43, 213, 118, .6); }
+  70% { box-shadow: 0 0 0 2px var(--anillo, var(--a-ink)), 0 0 0 10px rgba(43, 213, 118, 0); }
+  100% { box-shadow: 0 0 0 2px var(--anillo, var(--a-ink)), 0 0 0 2px rgba(43, 213, 118, 0); }
+}
+
+/* ---------- Panel ---------- */
+.fep-asis__panel {
+  display: flex; flex-direction: column; width: var(--asis-ancho); height: var(--asis-alto);
+  background: #fff; border: 3px solid var(--a-ink); border-radius: 0; overflow: hidden;
+  box-shadow: 10px 10px 0 var(--a-red), 0 30px 60px rgba(0, 0, 0, .35);
+  animation: fep-asis-abrir .35s cubic-bezier(.2, .8, .2, 1);
+}
+.fep-asis__panel[hidden] { display: none; }
+@keyframes fep-asis-abrir { from { opacity: 0; transform: translateY(16px) scale(.98); } to { opacity: 1; transform: none; } }
+
+/* Cabecera negra con filete rojo */
+.fep-asis__cabecera {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 14px 12px 14px 16px; background: var(--a-ink); color: #fff; border-bottom: 6px solid var(--a-red);
+}
+.fep-asis__marca { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.fep-asis__marca > div { min-width: 0; }
+.fep-asis__avatar { display: grid; place-items: center; flex: none; width: 42px; height: 42px; background: var(--a-red); color: #fff; }
+.fep-asis__titulo {
+  margin: 0; font-stretch: 68%; font-weight: 800; font-size: 30px; line-height: .9; letter-spacing: -.01em; text-transform: uppercase;
+}
+.fep-asis__subtitulo {
+  margin: 4px 0 0; font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--a-on-dark);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.fep-asis__acciones { display: flex; align-items: center; gap: 4px; flex: none; }
+.fep-asis__idioma { display: flex; margin-right: 4px; border: 2px solid rgba(255, 255, 255, .35); }
+.fep-asis__idioma button {
+  padding: 4px 8px; border: 0; background: transparent; color: var(--a-on-dark);
+  font: inherit; font-size: 11px; font-weight: 800; letter-spacing: .06em; cursor: pointer;
+}
+.fep-asis__idioma button[aria-pressed="true"] { background: #fff; color: var(--a-ink); }
+.fep-asis__icono {
+  display: grid; place-items: center; width: 36px; height: 36px;
+  border: 2px solid transparent; background: transparent; color: #fff; cursor: pointer;
+}
+.fep-asis__icono:hover { border-color: #fff; }
+
+/* ---------- Mensajes ---------- */
+.fep-asis__mensajes {
+  flex: 1; overflow-y: auto; overscroll-behavior: contain;
+  display: flex; flex-direction: column; gap: 12px; padding: 18px 16px; background: var(--a-paper);
+}
+.fep-asis__msg { max-width: 90%; padding: 12px 14px; border-radius: 0; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+.fep-asis__msg p { margin: 0; }
+.fep-asis__msg p + p, .fep-asis__msg p + ul, .fep-asis__msg p + ol, .fep-asis__msg ul + p, .fep-asis__msg ol + p { margin-top: 8px; }
+.fep-asis__msg ul, .fep-asis__msg ol { margin: 6px 0 0; padding-left: 20px; }
+.fep-asis__md ul, .fep-asis__fuentes ul { list-style: square; }
+.fep-asis__md ol { list-style: decimal; }
+.fep-asis__msg li + li { margin-top: 2px; }
+.fep-asis__msg li::marker { color: var(--a-red); }
+.fep-asis__msg a { color: var(--a-red-dark); font-weight: 700; }
+.fep-asis__msg strong { font-weight: 800; }
+
+/* Usuario: bloque negro a la derecha */
+.fep-asis__msg--usuario { align-self: flex-end; background: var(--a-ink); color: #fff; white-space: pre-wrap; }
+/* FEPi: tarjeta blanca con filete rojo a la izquierda */
+.fep-asis__msg--asistente { align-self: flex-start; background: #fff; border: 1px solid var(--a-line); border-left: 4px solid var(--a-red); }
+.fep-asis__msg--error { border-color: var(--a-red); background: var(--a-red-soft); }
+
+.fep-asis__fuentes { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--a-line); font-size: 12px; color: var(--a-text-2); }
+.fep-asis__fuentes-titulo { font-weight: 800; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--a-ink); }
+.fep-asis__fuentes ul { margin: 4px 0 0; padding-left: 16px; }
+
+.fep-asis__derivar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--a-line); font-size: 13px; font-weight: 700;
+}
+.fep-asis__msg .fep-asis__boton-contacto {
+  display: inline-block; padding: 8px 14px; background: var(--a-red); color: #fff; text-decoration: none;
+  font-size: 11.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+}
+.fep-asis__msg .fep-asis__boton-contacto:hover { background: var(--a-ink); }
+
+/* Sugerencias: filas numeradas como los índices de la portada */
+.fep-asis__sugerencias { display: grid; gap: 6px; counter-reset: sug; }
+.fep-asis__sugerencia {
+  counter-increment: sug; display: grid; grid-template-columns: 28px 1fr 18px; align-items: center; gap: 8px;
+  width: 100%; padding: 10px 12px; border: 2px solid var(--a-ink); border-radius: 0; background: #fff; color: var(--a-ink);
+  font: inherit; font-size: 13px; font-weight: 700; line-height: 1.3; text-align: left; cursor: pointer;
+  transition: background .2s, color .2s, transform .2s;
+}
+.fep-asis__sugerencia::before { content: counter(sug, decimal-leading-zero); font-stretch: 70%; font-weight: 800; font-size: 15px; color: var(--a-red); }
+.fep-asis__sugerencia::after { content: "→"; font-weight: 800; }
+.fep-asis__sugerencia:hover { background: var(--a-ink); color: #fff; transform: translateX(3px); }
+.fep-asis__sugerencia:hover::before { color: #fff; }
+
+.fep-asis__pensando { display: flex; align-items: center; gap: 10px; color: var(--a-text-2); font-weight: 600; }
+.fep-asis__puntos { display: inline-flex; gap: 4px; }
+.fep-asis__puntos i { width: 8px; height: 8px; background: var(--a-red); animation: fep-asis-punto 1.2s infinite ease-in-out; }
+.fep-asis__puntos i:nth-child(2) { animation-delay: .15s; }
+.fep-asis__puntos i:nth-child(3) { animation-delay: .3s; }
+@keyframes fep-asis-punto { 0%, 80%, 100% { opacity: .3; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-4px); } }
+
+/* ---------- Pie: campo de texto ---------- */
+.fep-asis__pie { position: relative; padding: 12px 12px 10px; border-top: 3px solid var(--a-ink); background: #fff; }
+.fep-asis__form { display: flex; align-items: flex-end; gap: 8px; }
+.fep-asis__campo {
+  flex: 1; resize: none; min-height: 46px; max-height: 140px; padding: 12px; border: 2px solid var(--a-ink); border-radius: 0;
+  font: inherit; font-size: 14px; line-height: 1.4; color: inherit; background: #fff;
+}
+.fep-asis__campo:hover { border-color: var(--a-red); }
+.fep-asis__campo:focus { border-color: var(--a-red); outline: none; }
+.fep-asis__enviar {
+  display: grid; place-items: center; flex: none; width: 46px; height: 46px;
+  border: 0; border-radius: 0; background: var(--a-red); color: #fff; cursor: pointer; transition: background .2s;
+}
+.fep-asis__enviar:hover { background: var(--a-ink); }
+.fep-asis__enviar:disabled { opacity: .5; cursor: wait; }
+.fep-asis__contador { position: absolute; right: 70px; top: -20px; font-size: 11px; font-weight: 700; color: var(--a-text-2); }
+.fep-asis__aviso { margin: 8px 2px 0; font-size: 11px; line-height: 1.35; color: var(--a-text-2); }
+
+/* ---------- Tablet y móvil ---------- */
+@media (max-width: 760px) {
+  /* El lanzador se queda en el cuadrado rojo con el icono (sin texto) */
+  .fep-asis__burbuja { height: auto; padding: 0; border-left: 0; background: transparent; box-shadow: 4px 4px 0 var(--a-ink); }
+  .fep-asis__burbuja::after { content: none; }
+  .fep-asis__burbuja > svg { width: 28px; height: 28px; padding: 13px; }
+  .fep-asis__burbuja::before { top: -4px; left: auto; right: -4px; }
+  .fep-asis__burbuja:hover { box-shadow: 7px 7px 0 var(--a-ink); }
+  /* Variantes de fondo para el botón cuadrado */
+  .fep-asis[data-fondo] .fep-asis__burbuja { background: transparent; }
+  .fep-asis[data-fondo="oscuro"] .fep-asis__burbuja { box-shadow: 4px 4px 0 #fff; }
+  .fep-asis[data-fondo="rojo"] .fep-asis__burbuja { box-shadow: 4px 4px 0 #fff; }
+  .fep-asis[data-fondo="foto"] .fep-asis__burbuja { box-shadow: 0 0 0 2px #fff, 4px 4px 0 var(--a-ink); }
+  .fep-asis[data-fondo="oscuro"] .fep-asis__burbuja:hover,
+  .fep-asis[data-fondo="rojo"] .fep-asis__burbuja:hover { box-shadow: 7px 7px 0 #fff; }
+}
+@media (max-width: 520px) {
+  .fep-asis { right: 16px; bottom: 16px; }
+  .fep-asis.is-abierto { inset: 0; }
+  .fep-asis__panel { width: 100%; height: 100%; height: 100dvh; border: 0; box-shadow: none; }
+  .fep-asis__msg { max-width: 94%; }
+  .fep-asis__campo { font-size: 16px; } /* evita el zoom automático de iOS */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fep-asis__burbuja, .fep-asis__panel, .fep-asis__sugerencia { animation: none; transition: none; }
+  .fep-asis__burbuja::before, .fep-asis__puntos i { animation: none; }
+}
+@media print { .fep-asis { display: none; } }
