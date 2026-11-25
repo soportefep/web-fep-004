@@ -168,10 +168,14 @@
   (function carrusel() {
     const slides = [...document.querySelectorAll('.carrusel .slide')];
     if (!slides.length) return;
-    const n = document.getElementById('slide-n');
     const caption = document.getElementById('slide-caption');
     const pausa = document.getElementById('slide-pause');
-    document.getElementById('slide-total').textContent = String(slides.length).padStart(2, '0');
+    // Una rayita por foto: la activa se alarga y se pone roja
+    const puntos = slides.map((s, i) => el('button', {
+      type: 'button', class: 'carrusel__punto', 'aria-label': `Destacado ${i + 1} de ${slides.length}: ${s.dataset.titulo}`,
+    }));
+    document.getElementById('slide-puntos').replaceChildren(...puntos);
+    puntos.forEach((p, i) => p.addEventListener('click', () => { mostrar(i); programar(); }));
     let actual = 0;
     let pausado = reduceMotion.matches;
     let temporizador = null;
@@ -183,7 +187,7 @@
         s.setAttribute('aria-hidden', String(k !== actual));
       });
       const s = slides[actual];
-      n.textContent = String(actual + 1).padStart(2, '0');
+      puntos.forEach((p, k) => { if (k === actual) p.setAttribute('aria-current', 'true'); else p.removeAttribute('aria-current'); });
       caption.textContent = s.dataset.titulo;
       caption.href = s.dataset.enlace || '#actualidad';
       s.querySelector('img').loading = 'eager';
@@ -198,8 +202,6 @@
       pausa.setAttribute('aria-label', si ? 'Reanudar carrusel' : 'Pausar carrusel');
       programar();
     }
-    document.getElementById('slide-prev').addEventListener('click', () => { mostrar(actual - 1); programar(); });
-    document.getElementById('slide-next').addEventListener('click', () => { mostrar(actual + 1); programar(); });
     pausa.addEventListener('click', () => pausar(!pausado));
     mostrar(0);
     pausar(pausado);

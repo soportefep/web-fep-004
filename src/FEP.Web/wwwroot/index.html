@@ -88,6 +88,24 @@
 
     <!-- ============ PORTADA + BUSCADOR GUIADO ============ -->
     <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="hero__escena">
+        <!-- Carrusel de destacados como fondo de la portada: la foto ocupa la derecha y se funde
+             con el negro hacia la izquierda, donde va el texto.
+             --foco = punto de la foto que se mantiene visible al recortarla.
+             1 · Qatar (1920×1282): el podio con los trofeos.
+             2 · Cto. España Junior (2880×1000): el banner ya viene difuminado a la izquierda y nítido en el trofeo. -->
+        <div class="carrusel" aria-roledescription="carrusel" aria-label="Destacados">
+          <figure class="slide is-active" aria-roledescription="diapositiva" aria-label="1 de 2" style="--foco: 50% 38%"
+                  data-titulo="Histórico doblete en Qatar" data-enlace="https://www.padelfederacion.es/noticia.asp?Idnoticia=2976">
+            <img src="assets/img/fep/noticias/1208982169.jpg" alt="La selección española, campeona femenina y masculina del FIP World Cup Qatar 2026, celebra en el podio con los dos trofeos" width="1920" height="1282">
+          </figure>
+          <figure class="slide" aria-roledescription="diapositiva" aria-label="2 de 2" style="--foco: 72% 40%"
+                  data-titulo="El futuro del pádel español brilla en Aragón tras un Campeonato de España Infantil y Junior de récord"
+                  data-enlace="https://www.padelfederacion.es/noticia.asp?Idnoticia=2977">
+            <img src="assets/img/fep/portada/cto-espana-junior-2026.jpg" alt="Trofeo de campeón del Campeonato de España por Equipos Junior, Zaragoza 2026" width="2880" height="1000" loading="lazy" decoding="async">
+          </figure>
+        </div>
+
       <div class="container hero__grid">
         <div class="hero__texto">
           <p class="eyebrow eyebrow--light"><span class="tag-red">FEP</span> Temporada 2026</p>
@@ -133,30 +151,13 @@
             <p class="finder__destino" id="f-destino" aria-live="polite"></p>
           </form>
         </div>
+      </div>
 
-        <!-- Carrusel de destacados (mismas fotos y encuadres que web-fep-002).
-             --foco = punto de la foto que se mantiene visible al recortarla. -->
-        <div class="carrusel" aria-roledescription="carrusel" aria-label="Destacados">
-          <div class="carrusel__slides">
-            <figure class="slide is-active" aria-roledescription="diapositiva" aria-label="1 de 2" style="--foco: 50% 35%"
-                    data-titulo="Histórico doblete en Qatar" data-enlace="https://www.padelfederacion.es/noticia.asp?Idnoticia=2976">
-              <img src="assets/img/fep/noticias/1208982169.jpg" alt="La selección española, campeona femenina y masculina del FIP World Cup Qatar 2026, celebra en el podio con los dos trofeos" width="1920" height="1282">
-            </figure>
-            <figure class="slide" aria-roledescription="diapositiva" aria-label="2 de 2" style="--foco: 71% 42%"
-                    data-titulo="El futuro del pádel español brilla en Aragón tras un Campeonato de España Infantil y Junior de récord"
-                    data-enlace="https://www.padelfederacion.es/noticia.asp?Idnoticia=2977">
-              <img src="assets/img/fep/portada/cto-espana-junior-2026.jpg" alt="Trofeo de campeón del Campeonato de España por Equipos Junior, Zaragoza 2026" width="2880" height="1000" loading="lazy" decoding="async">
-            </figure>
-          </div>
-          <div class="carrusel__bar">
-            <p class="carrusel__count" aria-hidden="true"><strong id="slide-n">01</strong> / <span id="slide-total">02</span></p>
-            <a class="carrusel__caption" id="slide-caption" href="#"></a>
-            <div class="carrusel__ctrl">
-              <button type="button" class="sq" id="slide-prev" aria-label="Destacado anterior"><span aria-hidden="true">←</span></button>
-              <button type="button" class="sq" id="slide-pause" aria-pressed="false" aria-label="Pausar carrusel"><span aria-hidden="true" class="pausa"></span></button>
-              <button type="button" class="sq" id="slide-next" aria-label="Destacado siguiente"><span aria-hidden="true">→</span></button>
-            </div>
-          </div>
+        <!-- Controles discretos del carrusel, abajo a la derecha: título enlazado, una rayita por foto y pausa -->
+        <div class="container carrusel__bar">
+          <a class="carrusel__caption" id="slide-caption" href="#"></a>
+          <div class="carrusel__puntos" id="slide-puntos" role="group" aria-label="Elegir destacado"></div>
+          <button type="button" class="carrusel__pausa" id="slide-pause" aria-pressed="false" aria-label="Pausar carrusel"><span aria-hidden="true" class="pausa"></span></button>
         </div>
       </div>
 
